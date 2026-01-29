@@ -4,6 +4,7 @@
 #include <string>
 #include <stdexcept>
 #include <cstdint>
+#include <vector>
 
 namespace egl {
 
@@ -160,7 +161,12 @@ public:
     BufferType getType() const;
 
     void setData(int64_t size, const void* data, BufferUsage usage); // size in bytes
+    template <typename T>
+    void setData(std::vector<T> data, BufferUsage usage) { setData(data.size() * sizeof(T), (void*)data.data(), usage); }
+
     void setStorage(int64_t size, const void* data, BufferFlag flags); // size in bytes
+    template <typename T>
+    void setStorage(std::vector<T> data, BufferFlag flags) { setStorage(data.size() * sizeof(T), (void*)data.data(), flags); }
 
     void setSubData(int64_t offset, int64_t size, const void* data); // offset and size in bytes
 

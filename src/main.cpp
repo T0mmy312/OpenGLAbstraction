@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -17,14 +18,18 @@ public:
     void run() override {
         useContext();
 
-        float positions[6] = {
+        std::vector<float> positions = {
             -0.5f, -0.5f,
-            0.0f,  0.5f,
-            0.5f, -0.5f
+             0.0f,  0.5f,
+             0.5f, -0.5f,
+
+             0.5f, -0.5f,
+             0.0f,  0.5f,
+             1.0f,  0.5f
         };
 
         egl::Buffer vbo(egl::BufferType::Array);
-        vbo.setData(6 * sizeof(float), (void*)positions, egl::BufferUsage::StaticDraw);
+        vbo.setData(positions, egl::BufferUsage::StaticDraw);
         vbo.bind();
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (const void*)0); // define attribute 0 of the vbo
@@ -45,7 +50,7 @@ public:
             /* Render here */
             GL_CALL(glClear(GL_COLOR_BUFFER_BIT));
 
-            GL_CALL(glDrawArrays(GL_TRIANGLES, 0, 3));
+            GL_CALL(glDrawArrays(GL_TRIANGLES, 0, (int)(positions.size() / 2)));
 
             swapBuffers();
 
