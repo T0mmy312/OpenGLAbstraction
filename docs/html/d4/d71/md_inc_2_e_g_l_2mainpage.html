@@ -94,10 +94,21 @@ $(function(){initNavTree('d4/d71/md_inc_2_e_g_l_2mainpage.html','../../',''); })
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <p>This project provides a low-level OpenGL abstraction implemented in modern C++, using try-catch based error handling and classes representing various OpenGL objects.</p>
-<dl class="section note"><dt>Note</dt><dd>The recommended setup is to initialize and bind the OpenGL context in main, and then create all Easy OpenGL abstractions one scope deeper. This follows the RAII principle and ensures that all resources are properly cleaned up before the OpenGL context is destroyed otherwise errors may occur during destruction and cleanup of Easy OpenGL classes. </dd></dl>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Recommended Setup</h1>
+<p>The recommended setup is to have your main code class inherit from <span class="tt"><a class="el" href="../../d2/d41/classegl_1_1_window_context.html" title="An abstract class to contain an window based application.">egl::WindowContext</a></span> and implement your logic in the provided virtual run function.</p>
+<p>Calling <span class="tt"><a class="el" href="../../d2/d41/classegl_1_1_window_context.html#a53a5f0a67b1b943cc3de2d8f420ce45b" title="Makes the owned window the current context.">egl::WindowContext::useContext</a></span> is recommended to avoid potential errors.</p>
+<p>Inside of <span class="tt"><a class="el" href="../../d2/d41/classegl_1_1_window_context.html#acd76c03d3bdf79bcdd83e022cdfa1127" title="Virtual run method to overload when implementing a child class.">egl::WindowContext::run</a></span> any Easy OpenGL functionality can be used safely. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

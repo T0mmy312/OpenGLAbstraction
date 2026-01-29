@@ -1,4 +1,12 @@
 var searchData=
 [
-  ['toglenum_0',['toGLenum',['../d1/d73/namespaceegl.html#a5b49c788db9d2063d7ab77f98703f900',1,'egl::toGLenum(BufferType type)'],['../d1/d73/namespaceegl.html#a0ae23397829820009b95472f8cd4c48c',1,'egl::toGLenum(BufferUsage usage)'],['../d1/d73/namespaceegl.html#a0688070e56c8b033413a91f82b999792',1,'egl::toGLenum(MapUsage usage)'],['../d1/d73/namespaceegl.html#a7d27ff3fcab64e012f9a138459b63a67',1,'egl::toGLenum(BufferFlag flag)'],['../d1/d73/namespaceegl.html#a9944b5ef4b7af7d46ac6a17c01acab89',1,'egl::toGLenum(ShaderType type)']]]
+  ['setdata_0',['setData',['../d3/d66/classegl_1_1_buffer.html#a45f2a70b803a24809345b425da6c0e50',1,'egl::Buffer']]],
+  ['setstorage_1',['setStorage',['../d3/d66/classegl_1_1_buffer.html#a685c9de7c40cad0b90a118d9d33e8017',1,'egl::Buffer']]],
+  ['setsubdata_2',['setSubData',['../d3/d66/classegl_1_1_buffer.html#a472ef3daa21a5f71959bf9e54531a4d5',1,'egl::Buffer']]],
+  ['shader_3',['Shader',['../db/de5/classegl_1_1_shader.html#a100a52df2c0a7147e8b479a452a239cd',1,'egl::Shader::Shader()=delete'],['../db/de5/classegl_1_1_shader.html#a39888f7b45ee6587eb746ea8691bf246',1,'egl::Shader::Shader(ShaderType type)'],['../db/de5/classegl_1_1_shader.html#a0c911b9b38089486bcb51a3882b566f1',1,'egl::Shader::Shader(ShaderType type, const char *src)'],['../db/de5/classegl_1_1_shader.html#ac170df674fe9614b301036e55def99de',1,'egl::Shader::Shader(ShaderType type, const std::string &amp;src)'],['../db/de5/classegl_1_1_shader.html#a3bd4fac3ed96490bc6e6d295ad2d838e',1,'egl::Shader::Shader(ShaderType type, std::istream &amp;in)'],['../db/de5/classegl_1_1_shader.html#a8e6ba020255e77d1182c6d0fcebd22b2',1,'egl::Shader::Shader(ShaderType type, std::istream &amp;&amp;in)'],['../db/de5/classegl_1_1_shader.html#a9d124861d0651264869e4c06b2cc923d',1,'egl::Shader::Shader(Shader &amp;&amp;other)'],['../db/de5/classegl_1_1_shader.html#a3b0abf11783a3e3557d4150606f3af25',1,'egl::Shader::Shader(const Shader &amp;other)=delete']]],
+  ['shadercompileerror_4',['ShaderCompileError',['../d7/d26/classegl_1_1_shader_compile_error.html#af9f41430ff4058ceac3a59b5672de21e',1,'egl::ShaderCompileError']]],
+  ['shadertypetostring_5',['shaderTypeToString',['../d1/d73/namespaceegl.html#a87f2578a6769933eb523e5a008d3f1fb',1,'egl']]],
+  ['shouldclose_6',['shouldClose',['../d2/d41/classegl_1_1_window_context.html#afd150625e4956daa2f2787acace296e1',1,'egl::WindowContext']]],
+  ['size_7',['size',['../d3/d66/classegl_1_1_buffer.html#ad150bd3e569897627f147c40cb7b8a40',1,'egl::Buffer']]],
+  ['swapbuffers_8',['swapBuffers',['../d2/d41/classegl_1_1_window_context.html#a7c3abb5729fba8187c54006521adf62d',1,'egl::WindowContext']]]
 ];

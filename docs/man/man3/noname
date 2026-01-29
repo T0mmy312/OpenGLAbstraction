@@ -2,8 +2,8 @@
 .ad l
 .nh
 .SH NAME
-EGL buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h 
+EGL buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h windowContext\&.h 
 .PP
-inc EGL buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h 
+inc EGL buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h windowContext\&.h 
 .PP
 

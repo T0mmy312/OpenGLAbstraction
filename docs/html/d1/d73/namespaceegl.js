@@ -7,6 +7,7 @@ var namespaceegl =
     [ "ShaderCompileError", "d7/d26/classegl_1_1_shader_compile_error.html", "d7/d26/classegl_1_1_shader_compile_error" ],
     [ "Shader", "db/de5/classegl_1_1_shader.html", "db/de5/classegl_1_1_shader" ],
     [ "VertexBuffer", "d0/def/classegl_1_1_vertex_buffer.html", null ],
+    [ "WindowContext", "d2/d41/classegl_1_1_window_context.html", "d2/d41/classegl_1_1_window_context" ],
     [ "BufferFlag", "d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150", [
       [ "None", "d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "DynamicStorage", "d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a4a7fd22ec9dd772a4a534f5259e133f2", null ],
@@ -64,6 +65,7 @@ var namespaceegl =
     ] ],
     [ "glCheckError", "d1/d73/namespaceegl.html#a3bbf040016c69492e2a5f73ba1405b45", null ],
     [ "glErrorString", "d1/d73/namespaceegl.html#aaf82114960a088c58a478591198f4c16", null ],
+    [ "initGLFW", "d1/d73/namespaceegl.html#a687cef4344f705088c0253a1013f5e9f", null ],
     [ "operator&", "d1/d73/namespaceegl.html#a5b04786d00995760e2d9c6f6f68c1d5e", null ],
     [ "operator&", "d1/d73/namespaceegl.html#a669e7d0b93fcd64dfc8d7723e5b35b6c", null ],
     [ "operator|", "d1/d73/namespaceegl.html#aed2d31751a7a5b60ace5876e657f47fe", null ],
@@ -71,6 +73,7 @@ var namespaceegl =
     [ "operator|=", "d1/d73/namespaceegl.html#a1475de49ec91100a500484e0afd10338", null ],
     [ "operator|=", "d1/d73/namespaceegl.html#a6734858937e6a141ae2d1956b686c4fc", null ],
     [ "shaderTypeToString", "d1/d73/namespaceegl.html#a87f2578a6769933eb523e5a008d3f1fb", null ],
+    [ "terminateGLFW", "d1/d73/namespaceegl.html#a563123e5c4200084c73d609e132346cc", null ],
     [ "toGLenum", "d1/d73/namespaceegl.html#a7d27ff3fcab64e012f9a138459b63a67", null ],
     [ "toGLenum", "d1/d73/namespaceegl.html#a5b49c788db9d2063d7ab77f98703f900", null ],
     [ "toGLenum", "d1/d73/namespaceegl.html#a0ae23397829820009b95472f8cd4c48c", null ],

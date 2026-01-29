@@ -16,7 +16,9 @@ class \doxymbox{\hyperlink{classegl_1_1_shader_compile_error}{Shader\+Compile\+E
 class \doxymbox{\hyperlink{classegl_1_1_shader}{Shader}}
 \begin{DoxyCompactList}\small\item\em \doxylink{classegl_1_1_shader}{Shader} class to abstract Open\+GL Shaders. \end{DoxyCompactList}\item 
 class \doxymbox{\hyperlink{classegl_1_1_vertex_buffer}{Vertex\+Buffer}}
-\end{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classegl_1_1_window_context}{Window\+Context}}
+\begin{DoxyCompactList}\small\item\em An abstract class to contain an window based application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -123,7 +125,11 @@ void \doxymbox{\hyperlink{namespaceegl_a3bbf040016c69492e2a5f73ba1405b45}{gl\+Ch
 constexpr std::\+string \doxymbox{\hyperlink{namespaceegl_a87f2578a6769933eb523e5a008d3f1fb}{shader\+Type\+To\+String}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type)
 \begin{DoxyCompactList}\small\item\em Converts the \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} enum into a std::\+string. \end{DoxyCompactList}\item 
 unsigned int \doxymbox{\hyperlink{namespaceegl_a9944b5ef4b7af7d46ac6a17c01acab89}{to\+GLenum}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type)
-\begin{DoxyCompactList}\small\item\em Converts the \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} enum into an Open\+GL enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Converts the \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} enum into an Open\+GL enum. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{namespaceegl_a687cef4344f705088c0253a1013f5e9f}{init\+GLFW}} ()
+\begin{DoxyCompactList}\small\item\em Initialize GLFW. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{namespaceegl_a563123e5c4200084c73d609e132346cc}{terminate\+GLFW}} ()
+\begin{DoxyCompactList}\small\item\em Terminates GLFW. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-enum-members}
@@ -545,6 +551,24 @@ Mainly used in the GL\+\_\+\+CALL macro in the backend of the Easy Open\+GL abst
 \begin{DoxyReturn}{Returns}
 c-\/style NULL terminated string 
 \end{DoxyReturn}
+\Hypertarget{namespaceegl_a687cef4344f705088c0253a1013f5e9f}\index{egl@{egl}!initGLFW@{initGLFW}}
+\index{initGLFW@{initGLFW}!egl@{egl}}
+\doxysubsubsection{\texorpdfstring{initGLFW()}{initGLFW()}}
+{\footnotesize\ttfamily \label{namespaceegl_a687cef4344f705088c0253a1013f5e9f} 
+bool egl::\+init\+GLFW (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initialize GLFW. 
+
+Sets up error callbacks and calls glfw\+Init.
+
+\begin{DoxyNote}{Note}
+\doxylink{namespaceegl_a687cef4344f705088c0253a1013f5e9f}{egl::\+init\+GLFW} is thread safe.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+true if GLFW has been successfully initialized. 
+\end{DoxyReturn}
 \Hypertarget{namespaceegl_a5b04786d00995760e2d9c6f6f68c1d5e}\index{egl@{egl}!operator\&@{operator\&}}
 \index{operator\&@{operator\&}!egl@{egl}}
 \doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -599,6 +623,19 @@ Converts the \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+T
 \begin{DoxyReturn}{Returns}
 The name of the given \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} (if unknown "{}\+INVALID"{} is returned). 
 \end{DoxyReturn}
+\Hypertarget{namespaceegl_a563123e5c4200084c73d609e132346cc}\index{egl@{egl}!terminateGLFW@{terminateGLFW}}
+\index{terminateGLFW@{terminateGLFW}!egl@{egl}}
+\doxysubsubsection{\texorpdfstring{terminateGLFW()}{terminateGLFW()}}
+{\footnotesize\ttfamily \label{namespaceegl_a563123e5c4200084c73d609e132346cc} 
+void egl::\+terminate\+GLFW (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Terminates GLFW. 
+
+\begin{DoxyNote}{Note}
+\doxylink{namespaceegl_a563123e5c4200084c73d609e132346cc}{egl::\+terminate\+GLFW} is thread safe. 
+\end{DoxyNote}
 \Hypertarget{namespaceegl_a7d27ff3fcab64e012f9a138459b63a67}\index{egl@{egl}!toGLenum@{toGLenum}}
 \index{toGLenum@{toGLenum}!egl@{egl}}
 \doxysubsubsection{\texorpdfstring{toGLenum()}{toGLenum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}

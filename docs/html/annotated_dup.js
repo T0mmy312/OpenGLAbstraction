@@ -7,6 +7,7 @@ var annotated_dup =
       [ "Program", "d6/d3a/classegl_1_1_program.html", "d6/d3a/classegl_1_1_program" ],
       [ "ShaderCompileError", "d7/d26/classegl_1_1_shader_compile_error.html", "d7/d26/classegl_1_1_shader_compile_error" ],
       [ "Shader", "db/de5/classegl_1_1_shader.html", "db/de5/classegl_1_1_shader" ],
-      [ "VertexBuffer", "d0/def/classegl_1_1_vertex_buffer.html", null ]
+      [ "VertexBuffer", "d0/def/classegl_1_1_vertex_buffer.html", null ],
+      [ "WindowContext", "d2/d41/classegl_1_1_window_context.html", "d2/d41/classegl_1_1_window_context" ]
     ] ]
 ];

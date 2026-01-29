@@ -25,7 +25,9 @@
 var NAVTREE =
 [
   [ "Easy OpenGL", "index.html", [
-    [ "Introduction", "d4/d71/md_inc_2_e_g_l_2mainpage.html", null ],
+    [ "Introduction", "d4/d71/md_inc_2_e_g_l_2mainpage.html", [
+      [ "Recommended Setup", "d4/d71/md_inc_2_e_g_l_2mainpage.html#autotoc_md1", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -57,7 +59,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespacemembers_func.html"
+"db/de5/classegl_1_1_shader.html#a8e6ba020255e77d1182c6d0fcebd22b2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

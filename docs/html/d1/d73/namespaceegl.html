@@ -107,6 +107,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:Shader" id="r_Shader"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../db/de5/classegl_1_1_shader.html">Shader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/de5/classegl_1_1_shader.html" title="Shader class to abstract OpenGL Shaders.">Shader</a> class to abstract OpenGL Shaders.  <a href="../../db/de5/classegl_1_1_shader.html#details">More...</a><br /></td></tr>
 <tr class="memitem:VertexBuffer" id="r_VertexBuffer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d0/def/classegl_1_1_vertex_buffer.html">VertexBuffer</a></td></tr>
+<tr class="memitem:WindowContext" id="r_WindowContext"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d2/d41/classegl_1_1_window_context.html">WindowContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class to contain an window based application.  <a href="../../d2/d41/classegl_1_1_window_context.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -207,6 +209,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a87f2578a6769933eb523e5a008d3f1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="#aaaec9f917c250f938f83b38200719753" title="ShaderType enum to indicate usage.">ShaderType</a> enum into a std::string.  <br /></td></tr>
 <tr class="memitem:a9944b5ef4b7af7d46ac6a17c01acab89" id="r_a9944b5ef4b7af7d46ac6a17c01acab89"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a9944b5ef4b7af7d46ac6a17c01acab89">toGLenum</a> (<a class="el" href="#aaaec9f917c250f938f83b38200719753">ShaderType</a> type)</td></tr>
 <tr class="memdesc:a9944b5ef4b7af7d46ac6a17c01acab89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="#aaaec9f917c250f938f83b38200719753" title="ShaderType enum to indicate usage.">ShaderType</a> enum into an OpenGL enum.  <br /></td></tr>
+<tr class="memitem:a687cef4344f705088c0253a1013f5e9f" id="r_a687cef4344f705088c0253a1013f5e9f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a687cef4344f705088c0253a1013f5e9f">initGLFW</a> ()</td></tr>
+<tr class="memdesc:a687cef4344f705088c0253a1013f5e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize GLFW.  <br /></td></tr>
+<tr class="memitem:a563123e5c4200084c73d609e132346cc" id="r_a563123e5c4200084c73d609e132346cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a563123e5c4200084c73d609e132346cc">terminateGLFW</a> ()</td></tr>
+<tr class="memdesc:a563123e5c4200084c73d609e132346cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates GLFW.  <br /></td></tr>
 </table>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
 <a id="a26041025f1dffb8975174b439d5f0150" name="a26041025f1dffb8975174b439d5f0150"></a>
@@ -507,6 +513,28 @@ Mainly used in the GL_CALL macro in the backend of the Easy OpenGL abstraction.<
 
 </div>
 </div>
+<a id="a687cef4344f705088c0253a1013f5e9f" name="a687cef4344f705088c0253a1013f5e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687cef4344f705088c0253a1013f5e9f">&#9670;&#160;</a></span>initGLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool egl::initGLFW </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize GLFW. </p>
+<p>Sets up error callbacks and calls glfwInit.</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="#a687cef4344f705088c0253a1013f5e9f" title="Initialize GLFW.">egl::initGLFW</a> is thread safe.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if GLFW has been successfully initialized. </dd></dl>
+
+</div>
+</div>
 <a id="a5b04786d00995760e2d9c6f6f68c1d5e" name="a5b04786d00995760e2d9c6f6f68c1d5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b04786d00995760e2d9c6f6f68c1d5e">&#9670;&#160;</a></span>operator&amp;() <span class="overload">[1/2]</span></h2>
 
@@ -712,6 +740,26 @@ Mainly used in the GL_CALL macro in the backend of the Easy OpenGL abstraction.<
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The name of the given <a class="el" href="#aaaec9f917c250f938f83b38200719753" title="ShaderType enum to indicate usage.">ShaderType</a> (if unknown "INVALID" is returned). </dd></dl>
+
+</div>
+</div>
+<a id="a563123e5c4200084c73d609e132346cc" name="a563123e5c4200084c73d609e132346cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563123e5c4200084c73d609e132346cc">&#9670;&#160;</a></span>terminateGLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::terminateGLFW </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Terminates GLFW. </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="#a563123e5c4200084c73d609e132346cc" title="Terminates GLFW.">egl::terminateGLFW</a> is thread safe. </dd></dl>
 
 </div>
 </div>

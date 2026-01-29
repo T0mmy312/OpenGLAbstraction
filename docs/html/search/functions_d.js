@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unbind_0',['unbind',['../d6/d3a/classegl_1_1_program.html#a59cce8f9cb55bcd5cca5aabdd93fd313',1,'egl::Program']]],
-  ['unmap_1',['unmap',['../d3/d66/classegl_1_1_buffer.html#a592d8d8e84ffe3f0c51a0798114f1a8a',1,'egl::Buffer']]]
+  ['terminateglfw_0',['terminateGLFW',['../d1/d73/namespaceegl.html#a563123e5c4200084c73d609e132346cc',1,'egl']]],
+  ['toglenum_1',['toGLenum',['../d1/d73/namespaceegl.html#a5b49c788db9d2063d7ab77f98703f900',1,'egl::toGLenum(BufferType type)'],['../d1/d73/namespaceegl.html#a0ae23397829820009b95472f8cd4c48c',1,'egl::toGLenum(BufferUsage usage)'],['../d1/d73/namespaceegl.html#a0688070e56c8b033413a91f82b999792',1,'egl::toGLenum(MapUsage usage)'],['../d1/d73/namespaceegl.html#a7d27ff3fcab64e012f9a138459b63a67',1,'egl::toGLenum(BufferFlag flag)'],['../d1/d73/namespaceegl.html#a9944b5ef4b7af7d46ac6a17c01acab89',1,'egl::toGLenum(ShaderType type)']]]
 ];

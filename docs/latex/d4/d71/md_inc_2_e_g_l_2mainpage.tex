@@ -4,8 +4,9 @@
 \Hypertarget{md_inc_2_e_g_l_2mainpage_autotoc_md0}%
 
 
-This project provides a low-\/level Open\+GL abstraction implemented in modern C++, using try-\/catch based error handling and classes representing various Open\+GL objects.
+This project provides a low-\/level Open\+GL abstraction implemented in modern C++, using try-\/catch based error handling and classes representing various Open\+GL objects.\hypertarget{md_inc_2_e_g_l_2mainpage_autotoc_md1}{}\doxysection{\texorpdfstring{Recommended Setup}{Recommended Setup}}\label{md_inc_2_e_g_l_2mainpage_autotoc_md1}
+The recommended setup is to have your main code class inherit from {\ttfamily \doxylink{classegl_1_1_window_context}{egl::\+\+Window\+Context}} and implement your logic in the provided virtual run function.
 
-\begin{DoxyNote}{Note}
-The recommended setup is to initialize and bind the Open\+GL context in main, and then create all Easy Open\+GL abstractions one scope deeper. This follows the RAII principle and ensures that all resources are properly cleaned up before the Open\+GL context is destroyed otherwise errors may occur during destruction and cleanup of Easy Open\+GL classes. 
-\end{DoxyNote}
+Calling {\ttfamily \doxylink{classegl_1_1_window_context_a53a5f0a67b1b943cc3de2d8f420ce45b}{egl::\+\+Window\+Context::\+use\+Context}} is recommended to avoid potential errors.
+
+Inside of {\ttfamily \doxylink{classegl_1_1_window_context_acd76c03d3bdf79bcdd83e022cdfa1127}{egl::\+\+Window\+Context::\+run}} any Easy Open\+GL functionality can be used safely. 

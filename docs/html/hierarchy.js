@@ -8,5 +8,6 @@ var hierarchy =
       [ "egl::ShaderCompileError", "d7/d26/classegl_1_1_shader_compile_error.html", null ]
     ] ],
     [ "egl::Shader", "db/de5/classegl_1_1_shader.html", null ],
-    [ "egl::VertexBuffer", "d0/def/classegl_1_1_vertex_buffer.html", null ]
+    [ "egl::VertexBuffer", "d0/def/classegl_1_1_vertex_buffer.html", null ],
+    [ "egl::WindowContext", "d2/d41/classegl_1_1_window_context.html", null ]
 ];

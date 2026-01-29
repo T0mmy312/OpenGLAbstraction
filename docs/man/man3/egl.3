@@ -35,6 +35,10 @@ egl
 .ti -1c
 .RI "class \fBVertexBuffer\fP"
 .br
+.ti -1c
+.RI "class \fBWindowContext\fP"
+.br
+.RI "An abstract class to contain an window based application\&. "
 .in -1c
 .SS "Enumerations"
 
@@ -115,6 +119,14 @@ egl
 .RI "unsigned int \fBtoGLenum\fP (\fBShaderType\fP type)"
 .br
 .RI "Converts the \fBShaderType\fP enum into an OpenGL enum\&. "
+.ti -1c
+.RI "bool \fBinitGLFW\fP ()"
+.br
+.RI "Initialize GLFW\&. "
+.ti -1c
+.RI "void \fBterminateGLFW\fP ()"
+.br
+.RI "Terminates GLFW\&. "
 .in -1c
 .SH "Enumeration Type Documentation"
 .PP 
@@ -367,6 +379,23 @@ c-style NULL terminated string
 .RE
 .PP
 
+.SS "bool egl::initGLFW ()"
+
+.PP
+Initialize GLFW\&. Sets up error callbacks and calls glfwInit\&.
+
+.PP
+\fBNote\fP
+.RS 4
+\fBegl::initGLFW\fP is thread safe\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if GLFW has been successfully initialized\&. 
+.RE
+.PP
+
 .SS "\fBBufferFlag\fP egl::operator& (\fBBufferFlag\fP a, \fBBufferFlag\fP b)\fR [inline]\fP"
 
 .SS "\fBMapUsage\fP egl::operator& (\fBMapUsage\fP a, \fBMapUsage\fP b)\fR [inline]\fP"
@@ -392,6 +421,17 @@ Converts the \fBShaderType\fP enum into a std::string\&.
 \fBReturns\fP
 .RS 4
 The name of the given \fBShaderType\fP (if unknown "INVALID" is returned)\&. 
+.RE
+.PP
+
+.SS "void egl::terminateGLFW ()"
+
+.PP
+Terminates GLFW\&. 
+.PP
+\fBNote\fP
+.RS 4
+\fBegl::terminateGLFW\fP is thread safe\&. 
 .RE
 .PP
 

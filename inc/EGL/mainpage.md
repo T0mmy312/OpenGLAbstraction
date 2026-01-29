@@ -2,4 +2,10 @@
 
 This project provides a low-level OpenGL abstraction implemented in modern C++, using try-catch based error handling and classes representing various OpenGL objects.
 
-@note The recommended setup is to initialize and bind the OpenGL context in main, and then create all Easy OpenGL abstractions one scope deeper. This follows the RAII principle and ensures that all resources are properly cleaned up before the OpenGL context is destroyed otherwise errors may occur during destruction and cleanup of Easy OpenGL classes.
+# Recommended Setup
+
+The recommended setup is to have your main code class inherit from `egl::WindowContext` and implement your logic in the provided virtual run function.
+
+Calling `egl::WindowContext::useContext` is recommended to avoid potential errors.
+
+Inside of `egl::WindowContext::run` any Easy OpenGL functionality can be used safely.
