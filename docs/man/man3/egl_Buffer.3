@@ -1,0 +1,147 @@
+.TH "egl::Buffer" 3 "Easy OpenGL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+egl::Buffer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <buffer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBuffer\fP ()=delete"
+.br
+.ti -1c
+.RI "\fBBuffer\fP (\fBBufferType\fP type)"
+.br
+.ti -1c
+.RI "\fBBuffer\fP (Buffer &&other)"
+.br
+.ti -1c
+.RI "\fBBuffer\fP (const Buffer &other)=delete"
+.br
+.ti -1c
+.RI "\fB~Buffer\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBbind\fP () const"
+.br
+.ti -1c
+.RI "int64_t \fBsize\fP () const"
+.br
+.ti -1c
+.RI "\fBBufferType\fP \fBgetType\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetData\fP (int64_t \fBsize\fP, const void *data, \fBBufferUsage\fP usage)"
+.br
+.ti -1c
+.RI "void \fBsetStorage\fP (int64_t \fBsize\fP, const void *data, \fBBufferFlag\fP flags)"
+.br
+.ti -1c
+.RI "void \fBsetSubData\fP (int64_t offset, int64_t \fBsize\fP, const void *data)"
+.br
+.ti -1c
+.RI "void \fBgetSubData\fP (int64_t offset, int64_t \fBsize\fP, void *data)"
+.br
+.ti -1c
+.RI "void * \fBmap\fP (int64_t offset, int64_t length, \fBMapUsage\fP access)"
+.br
+.ti -1c
+.RI "void \fBunmap\fP ()"
+.br
+.ti -1c
+.RI "\fBBuffer\fP & \fBoperator=\fP (\fBBuffer\fP &&other)"
+.br
+.ti -1c
+.RI "\fBBuffer\fP & \fBoperator=\fP (const \fBBuffer\fP &other)=delete"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_delete\fP ()"
+.br
+.ti -1c
+.RI "void \fB_check\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fB_id\fP = 0"
+.br
+.ti -1c
+.RI "bool \fB_mapped\fP = false"
+.br
+.ti -1c
+.RI "\fBMapUsage\fP \fB_mapUsage\fP = \fBMapUsage::None\fP"
+.br
+.ti -1c
+.RI "\fBBufferFlag\fP \fB_flags\fP = \fBBufferFlag::None\fP"
+.br
+.ti -1c
+.RI "\fBBufferType\fP \fB_type\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "egl::Buffer::Buffer ()\fR [delete]\fP"
+
+.SS "egl::Buffer::Buffer (\fBBufferType\fP type)"
+
+.SS "egl::Buffer::Buffer (Buffer && other)"
+
+.SS "egl::Buffer::Buffer (const Buffer & other)\fR [delete]\fP"
+
+.SS "egl::Buffer::~Buffer ()\fR [noexcept]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void egl::Buffer::_check ()\fR [protected]\fP"
+
+.SS "void egl::Buffer::_delete ()\fR [protected]\fP"
+
+.SS "void egl::Buffer::bind () const"
+
+.SS "void egl::Buffer::getSubData (int64_t offset, int64_t size, void * data)"
+
+.SS "\fBBufferType\fP egl::Buffer::getType () const"
+
+.SS "void * egl::Buffer::map (int64_t offset, int64_t length, \fBMapUsage\fP access)"
+
+.SS "\fBBuffer\fP & egl::Buffer::operator= (\fBBuffer\fP && other)"
+
+.SS "\fBBuffer\fP & egl::Buffer::operator= (const \fBBuffer\fP & other)\fR [delete]\fP"
+
+.SS "void egl::Buffer::setData (int64_t size, const void * data, \fBBufferUsage\fP usage)"
+
+.SS "void egl::Buffer::setStorage (int64_t size, const void * data, \fBBufferFlag\fP flags)"
+
+.SS "void egl::Buffer::setSubData (int64_t offset, int64_t size, const void * data)"
+
+.SS "int64_t egl::Buffer::size () const"
+
+.SS "void egl::Buffer::unmap ()"
+
+.SH "Field Documentation"
+.PP 
+.SS "\fBBufferFlag\fP egl::Buffer::_flags = \fBBufferFlag::None\fP\fR [protected]\fP"
+
+.SS "unsigned int egl::Buffer::_id = 0\fR [protected]\fP"
+
+.SS "bool egl::Buffer::_mapped = false\fR [protected]\fP"
+
+.SS "\fBMapUsage\fP egl::Buffer::_mapUsage = \fBMapUsage::None\fP\fR [protected]\fP"
+
+.SS "\fBBufferType\fP egl::Buffer::_type\fR [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Easy OpenGL from the source code\&.

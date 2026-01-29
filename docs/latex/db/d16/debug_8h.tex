@@ -1,0 +1,67 @@
+\doxysection{inc/\+\+EGL/\+debug.h File Reference}
+\hypertarget{debug_8h}{}\label{debug_8h}\index{inc/EGL/debug.h@{inc/EGL/debug.h}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceegl}{egl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{debug_8h_add165165c35549fda9fb0100e16e9739}{GL\+\_\+\+CALL}}(x)
+\begin{DoxyCompactList}\small\item\em Runs the given code and checks for errors. \end{DoxyCompactList}\item 
+\+\#define \doxymbox{\hyperlink{debug_8h_a62befecc75f88dc6f648669c64987d1b}{DEBUG\+\_\+\+ONLY}}(x)
+\begin{DoxyCompactList}\small\item\em Runs given code only if DEBUG\+\_\+\+BUILD is defined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespaceegl_aaf82114960a088c58a478591198f4c16}{egl::\+gl\+Error\+String}} (unsigned int err)
+\begin{DoxyCompactList}\small\item\em Gets a c-\/style string from from a Open\+GL enum. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{namespaceegl_a3bbf040016c69492e2a5f73ba1405b45}{egl::\+gl\+Check\+Error}} (const char \texorpdfstring{$\ast$}{*}func, const char \texorpdfstring{$\ast$}{*}file, int line)
+\begin{DoxyCompactList}\small\item\em Checks and prints if any Open\+GL error has occured. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{debug_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{debug_8h_a62befecc75f88dc6f648669c64987d1b}\index{debug.h@{debug.h}!DEBUG\_ONLY@{DEBUG\_ONLY}}
+\index{DEBUG\_ONLY@{DEBUG\_ONLY}!debug.h@{debug.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_ONLY}{DEBUG\_ONLY}}
+{\footnotesize\ttfamily \label{debug_8h_a62befecc75f88dc6f648669c64987d1b} 
+\+\#define DEBUG\+\_\+\+ONLY(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((void)0)}
+
+\end{DoxyCode}
+
+
+Runs given code only if DEBUG\+\_\+\+BUILD is defined. 
+
+\Hypertarget{debug_8h_add165165c35549fda9fb0100e16e9739}\index{debug.h@{debug.h}!GL\_CALL@{GL\_CALL}}
+\index{GL\_CALL@{GL\_CALL}!debug.h@{debug.h}}
+\doxysubsubsection{\texorpdfstring{GL\_CALL}{GL\_CALL}}
+{\footnotesize\ttfamily \label{debug_8h_add165165c35549fda9fb0100e16e9739} 
+\+\#define GL\+\_\+\+CALL(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{x}
+
+\end{DoxyCode}
+
+
+Runs the given code and checks for errors. 
+
+\begin{DoxyNote}{Note}
+For performance reasons \doxylink{namespaceegl_a3bbf040016c69492e2a5f73ba1405b45}{egl::\+gl\+Check\+Error} is only called when DEBUG\+\_\+\+BUILD is defined. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+The code is run in a scope below the current.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The code to run before checking for errors \\
+\hline
+\end{DoxyParams}

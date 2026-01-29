@@ -1,0 +1,84 @@
+\doxysection{shader.\+h}
+\hypertarget{shader_8h_source}{}\label{shader_8h_source}\index{inc/EGL/shader.h@{inc/EGL/shader.h}}
+\doxymbox{\hyperlink{shader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EGL\_SHADER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EGL\_SHADER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iosfwd>}\ \textcolor{comment}{//\ std::istream\ forward-\/declared}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespaceegl}{egl}}\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_program}{Program}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753a37d01b98065725fe3a1d30acf3a0064a}{Fragment}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753ab22b929ba52471a02d18bb3a4e4472e6}{Vertex}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753ad9c6333623e6357515fcbf17be806273}{Geometry}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753a40965fc25637f8587bc34c0f2fa6e3f9}{TessEvaluation}},\ }
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753a6c2ab859b54837522f9f738ef3bf846d}{TessControl}},\ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753aa623a8d0366bf079411aa30be45b2d10}{Compute}}\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{constexpr}\ std::string\ \doxymbox{\hyperlink{namespaceegl_a87f2578a6769933eb523e5a008d3f1fb}{shaderTypeToString}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{namespaceegl_a5b49c788db9d2063d7ab77f98703f900}{toGLenum}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_shader_compile_error_af9f41430ff4058ceac3a59b5672de21e}{ShaderCompileError}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00046\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_compile_error_af9f41430ff4058ceac3a59b5672de21e}{ShaderCompileError}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}},}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ infoLog)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ :\ std::runtime\_error(}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Shader\ compile\ failed\ ("{}}\ +\ \doxymbox{\hyperlink{namespaceegl_a87f2578a6769933eb523e5a008d3f1fb}{shaderTypeToString}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}})\ +\ \textcolor{stringliteral}{"{}):\(\backslash\)n"{}}\ +\ infoLog)\ \{\}}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\ \{}
+\DoxyCodeLine{00069\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classegl_1_1_shader_a2ca317c7039c1fe6330ec53308356640}{\_id}}\ =\ 0;}
+\DoxyCodeLine{00071\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ \doxymbox{\hyperlink{classegl_1_1_shader_a0f11b0bd57439caa5d5e1bc00f9b1f8e}{\_type}};}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classegl_1_1_shader_aea1aa57561249d449a235a8049964561}{\_compiled}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_a4d1cf3c3c797f349d1d393cf1e505904}{\_delete}}();}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_af6ebd199359d80bc084fc75abe73666a}{\_check}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_ae6220fac09e752d7ce7d3af153f48edb}{\_ensure}}();}
+\DoxyCodeLine{00077\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classegl_1_1_shader_a639e465da633b83b459462bc0f5cc8fb}{\_getError}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00080\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00087\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a39888f7b45ee6587eb746ea8691bf246}{Shader}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type);}
+\DoxyCodeLine{00096\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a0c911b9b38089486bcb51a3882b566f1}{Shader}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src);}
+\DoxyCodeLine{00105\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_ac170df674fe9614b301036e55def99de}{Shader}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type,\ \textcolor{keyword}{const}\ std::string\&\ src);}
+\DoxyCodeLine{00117\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a3bd4fac3ed96490bc6e6d295ad2d838e}{Shader}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type,\ std::istream\&\ in);}
+\DoxyCodeLine{00129\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a8e6ba020255e77d1182c6d0fcebd22b2}{Shader}}(\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ type,\ std::istream\&\&\ in);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a9d124861d0651264869e4c06b2cc923d}{Shader}}(\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\&\&\ other);}
+\DoxyCodeLine{00132\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a3b0abf11783a3e3557d4150606f3af25}{Shader}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\&\ other)\ =\ \textcolor{keyword}{delete};\ \textcolor{comment}{//\ OpenGL\ Shaders\ are\ not\ copy\ safe}}
+\DoxyCodeLine{00133\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a0a10a26daa59da469324a4574b4513d3}{\string~Shader}}()\ noexcept;}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset}}();}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classegl_1_1_shader_a6193f42fdc0dbbb316318d1f25d52867}{compiled}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classegl_1_1_shader_aea1aa57561249d449a235a8049964561}{\_compiled}};\ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00153\ \ \ \ \ \doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{ShaderType}}\ \doxymbox{\hyperlink{classegl_1_1_shader_a9507c35a181e66b9c14fc032805cf13c}{getType}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classegl_1_1_shader_a0f11b0bd57439caa5d5e1bc00f9b1f8e}{\_type}};\ \}}
+\DoxyCodeLine{00154\ \ \ \ \ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_a90965768ffda367593016c848dd5e448}{compile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_a5b9c7d980a72234fce1bdd953801e798}{compile}}(std::istream\&\ in);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_a3537478d020a0f9a772c46635a2c9653}{compile}}(std::istream\&\&\ in);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_shader_ac4d78fb3e2ae96f3c3ce4deb4f8e43c3}{compile}}(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{classegl_1_1_shader_ad3814f333d665a1d793acc57f57be4e3}{Program}};}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\&\ \doxymbox{\hyperlink{classegl_1_1_shader_a637b730a1deff9358fa575111106a15b}{operator=}}(\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\&\&\ other);}
+\DoxyCodeLine{00211\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\&\ \doxymbox{\hyperlink{classegl_1_1_shader_a32d1d64875d0f10a3b5de864c83469bb}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}}\&\ other)\ =\ \textcolor{keyword}{delete};\ \textcolor{comment}{//\ OpenGL\ Shaders\ are\ not\ copy\ safe}}
+\DoxyCodeLine{00212\ \};}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

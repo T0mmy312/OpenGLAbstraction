@@ -1,0 +1,79 @@
+.TH "inc/EGL/debug.h" 3 "Easy OpenGL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inc/EGL/debug.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBegl\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGL_CALL\fP(x)"
+.br
+.RI "Runs the given code and checks for errors\&. "
+.ti -1c
+.RI "#define \fBDEBUG_ONLY\fP(x)"
+.br
+.RI "Runs given code only if DEBUG_BUILD is defined\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBegl::glErrorString\fP (unsigned int err)"
+.br
+.RI "Gets a c-style string from from a OpenGL enum\&. "
+.ti -1c
+.RI "void \fBegl::glCheckError\fP (const char *func, const char *file, int line)"
+.br
+.RI "Checks and prints if any OpenGL error has occured\&. "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DEBUG_ONLY( x)"
+\fBValue:\fP
+.nf
+((void)0)
+.PP
+.fi
+
+.PP
+Runs given code only if DEBUG_BUILD is defined\&. 
+.SS "#define GL_CALL( x)"
+\fBValue:\fP
+.nf
+x
+.PP
+.fi
+
+.PP
+Runs the given code and checks for errors\&. 
+.PP
+\fBNote\fP
+.RS 4
+For performance reasons \fBegl::glCheckError\fP is only called when DEBUG_BUILD is defined\&. 
+.RE
+.PP
+\fBWarning\fP
+.RS 4
+The code is run in a scope below the current\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The code to run before checking for errors 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Easy OpenGL from the source code\&.

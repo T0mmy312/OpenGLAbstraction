@@ -1,0 +1,43 @@
+.TH "egl::ShaderCompileError" 3 "Easy OpenGL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+egl::ShaderCompileError \- Exception thrown when \fBShader\fP compilation fails\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <shader\&.h>\fP
+.PP
+Inherits std::runtime_error\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShaderCompileError\fP (\fBShaderType\fP \fBShaderType\fP, const std::string &infoLog)"
+.br
+.RI "Construct a new \fBShader\fP Compile Error object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Exception thrown when \fBShader\fP compilation fails\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "egl::ShaderCompileError::ShaderCompileError (\fBShaderType\fP ShaderType, const std::string & infoLog)\fR [inline]\fP"
+
+.PP
+Construct a new \fBShader\fP Compile Error object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBShaderType\fP\fP The type of \fBShader\fP that failed to compile\&. 
+.br
+\fIinfoLog\fP InfoLog buffer from glGetShaderInfoLog\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Easy OpenGL from the source code\&.

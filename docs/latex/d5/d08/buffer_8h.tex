@@ -1,0 +1,104 @@
+\doxysection{inc/\+\+EGL/\+buffer.h File Reference}
+\hypertarget{buffer_8h}{}\label{buffer_8h}\index{inc/EGL/buffer.h@{inc/EGL/buffer.h}}
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include $<$cstdint$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classegl_1_1_buffer}{egl::\+\+Buffer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceegl}{egl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{egl::\+\+Buffer\+Type}} \{ \newline
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a4410ec34d9e6c1a68100ca0ce033fb17}{egl::\+\+Array}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a718568e47d2de4af4d51fc1114cb3583}{egl::\+\+Atomic\+Counter}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a3a23dd1e2979213e268b02eca78f1093}{egl::\+\+Copy\+Read}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291aac0d23bb3afb6d4ffb725d00de2b3ffb}{egl::\+\+Copy\+Write}}
+, \newline
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a8b76d6291a8094d1fc459a056780dd54}{egl::\+\+Dispatch\+Indirect}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a95b0e6b8c7aa6af632295afda7a926bc}{egl::\+\+Draw\+Indirect}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a3726aa2adc65a493586528ddbd070204}{egl::\+\+Element\+Array}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a22702a714692d1c3a1ba2f02cf200c7a}{egl::\+\+Pixel\+Pack}}
+, \newline
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a454e29d3537454f75dba31fc3ab1fc0d}{egl::\+\+Pixel\+Unpack}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a66c1b4c7f3dc385b68a9fa903ccd016d}{egl::\+\+Query}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291a63d204f04170f5bbf958083589f6572f}{egl::\+\+Shader\+Storage}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291aa3e8ae43188ae76d38f414b2bdb0077b}{egl::\+\+Texture}}
+, \newline
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291af42c5721f003b0657f081141043576f6}{egl::\+\+Transform\+Feedback}}
+, \doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291af19516d11f2946f894070e92fcb56b6d}{egl::\+\+Uniform}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to indicate the type of \doxylink{classegl_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97}{egl::\+\+Buffer\+Usage}} \{ \newline
+\doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97ab831b12d8d415645f1f00e37e0426ca2}{egl::\+\+Stream\+Draw}}
+, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97a10953b8796ab666281dc734e99aa5180}{egl::\+\+Stream\+Read}}
+, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97a72d80d051f94e8aa1e3dc1ebfb6cc8cc}{egl::\+\+Stream\+Copy}}
+, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97ac3ed2ba606af12869974bdab26334e6c}{egl::\+\+Static\+Draw}}
+, \newline
+\doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97a3b35249bb273aea8b56c05f2c914a38a}{egl::\+\+Static\+Read}}
+, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97ac5a66e746248ebb7fe5f99443172fca7}{egl::\+\+Static\+Copy}}
+, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97a07988dce2d161630856fb73bc06682c0}{egl::\+\+Dynamic\+Draw}}
+, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97a2ca7cf82bf5d2f11738ae1a371d5ae32}{egl::\+\+Dynamic\+Read}}
+, \newline
+\doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97ac572ac15b4bcbc9e975b79480e253c14}{egl::\+\+Dynamic\+Copy}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to indicate \doxylink{classegl_1_1_buffer}{Buffer} Usage. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{egl::\+\+Map\+Usage}} :\+ uint32\+\_\+t \{ \newline
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a6adf97f83acf6453d4a6a4b1070f3754}{egl::\+\+None}} = 0
+, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a7a1a5f3e79fdc91edf2f5ead9d66abb4}{egl::\+\+Read}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a1129c0e4d43f2d121652a7302712cff6}{egl::\+\+Write}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a5fe7b9358c9cb1b9eaa8d5aec000def4}{egl::\+\+Persistent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \newline
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a65d2523d959087dc90e3070bf940f94c}{egl::\+\+Coherent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2aefcb4954ae74945cf0eba28983e28b6e}{egl::\+\+Invalid\+Range}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2acc6d7b432c2856582ca2627a8437bbe0}{egl::\+\+Invalidate\+Buffer}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2ab9698f5447ac81e5c28a7c3c53a196e3}{egl::\+\+Flush\+Explicit}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 6
+, \newline
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a7854699f8079e4a586a6c943703ac972}{egl::\+\+Unsynchronized}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 7
+ \}
+\begin{DoxyCompactList}\small\item\em Enum flags to indicate \doxylink{classegl_1_1_buffer}{Buffer} map usage. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{egl::\+\+Buffer\+Flag}} :\+ uint32\+\_\+t \{ \newline
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a6adf97f83acf6453d4a6a4b1070f3754}{egl::\+\+None}} = 0
+, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a4a7fd22ec9dd772a4a534f5259e133f2}{egl::\+\+Dynamic\+Storage}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150ac16a79d8306dc10ca7b16a409661847f}{egl::\+\+Map\+Read}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a4a0138ad7aa1d1355c00c3e6fef8157d}{egl::\+\+Map\+Write}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \newline
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a771e3ed8a1ecc75a7cbe5cae48bcbac0}{egl::\+\+Map\+Persistent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a70a75c211d5cddf35e9b546be29ab1c1}{egl::\+\+Map\+Coherent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a82f574c954f5e6699be84b6b1d03a17f}{egl::\+\+Client\+Storage}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+ \}
+\begin{DoxyCompactList}\small\item\em Enum falgs for explicit \doxylink{classegl_1_1_buffer}{Buffer} usage in set\+Storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} \doxymbox{\hyperlink{namespaceegl_ab1245bbebff076568c2cca71835900d1}{egl::\+operator\texorpdfstring{$\vert$}{|}}} (\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} a, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} b)
+\item 
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} \doxymbox{\hyperlink{namespaceegl_a669e7d0b93fcd64dfc8d7723e5b35b6c}{egl::\+operator\&}} (\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} a, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} b)
+\item 
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} \& \doxymbox{\hyperlink{namespaceegl_a6734858937e6a141ae2d1956b686c4fc}{egl::\+operator\texorpdfstring{$\vert$}{|}=}} (\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} \&a, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} b)
+\item 
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} \doxymbox{\hyperlink{namespaceegl_aed2d31751a7a5b60ace5876e657f47fe}{egl::\+operator\texorpdfstring{$\vert$}{|}}} (\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} a, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} b)
+\item 
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} \doxymbox{\hyperlink{namespaceegl_a5b04786d00995760e2d9c6f6f68c1d5e}{egl::\+operator\&}} (\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} a, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} b)
+\item 
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} \& \doxymbox{\hyperlink{namespaceegl_a1475de49ec91100a500484e0afd10338}{egl::\+operator\texorpdfstring{$\vert$}{|}=}} (\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} \&a, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} b)
+\item 
+unsigned int \doxymbox{\hyperlink{namespaceegl_a5b49c788db9d2063d7ab77f98703f900}{egl::\+to\+GLenum}} (\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}} type)
+\item 
+unsigned int \doxymbox{\hyperlink{namespaceegl_a0ae23397829820009b95472f8cd4c48c}{egl::\+to\+GLenum}} (\doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97}{Buffer\+Usage}} usage)
+\item 
+unsigned int \doxymbox{\hyperlink{namespaceegl_a0688070e56c8b033413a91f82b999792}{egl::\+to\+GLenum}} (\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} usage)
+\item 
+unsigned int \doxymbox{\hyperlink{namespaceegl_a7d27ff3fcab64e012f9a138459b63a67}{egl::\+to\+GLenum}} (\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} flag)
+\item 
+bool \doxymbox{\hyperlink{namespaceegl_a827e3e9edcc216c2b83c9cfe3af8343b}{egl::\+validate\+Map\+Usage}} (\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} usage, std::\+string \&error)
+\item 
+bool \doxymbox{\hyperlink{namespaceegl_a5ef35b2b7cce9cbf20fbeb47e595054e}{egl::\+validate\+Buffer\+Flag}} (\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} flag, std::\+string \&error)
+\end{DoxyCompactItemize}

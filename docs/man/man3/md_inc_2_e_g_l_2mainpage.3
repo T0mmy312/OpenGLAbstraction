@@ -1,0 +1,18 @@
+.TH "md_inc_2_e_g_l_2mainpage" 3 "Easy OpenGL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_inc_2_e_g_l_2mainpage \- Introduction 
+.PP
+
+
+.PP
+This project provides a low-level OpenGL abstraction implemented in modern C++, using try-catch based error handling and classes representing various OpenGL objects\&.
+
+.PP
+\fBNote\fP
+.RS 4
+The recommended setup is to initialize and bind the OpenGL context in main, and then create all Easy OpenGL abstractions one scope deeper\&. This follows the RAII principle and ensures that all resources are properly cleaned up before the OpenGL context is destroyed otherwise errors may occur during destruction and cleanup of Easy OpenGL classes\&. 
+.RE
+.PP
+

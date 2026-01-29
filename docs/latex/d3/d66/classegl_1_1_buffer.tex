@@ -1,0 +1,219 @@
+\doxysection{egl::\+Buffer Class Reference}
+\hypertarget{classegl_1_1_buffer}{}\label{classegl_1_1_buffer}\index{egl::Buffer@{egl::Buffer}}
+
+
+{\ttfamily \+\#include $<$buffer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} ()=delete
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a4bc82879484bb3e7cbaaba2dfd7bf205}{Buffer}} (\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}} type)
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a6a1da098a28d616adfce5c1bbc6b9a76}{Buffer}} (Buffer \&\&other)
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a5c48b0b11f8cf67a81e80f90abdcff6e}{Buffer}} (const Buffer \&other)=delete
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a7a4248ece01b7a14db753b54a9a1872c}{\texorpdfstring{$\sim$}{\string~}\+Buffer}} () noexcept
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_aa7e6f7fb21ef634de2c2b88b7bc8d62d}{bind}} () const
+\item 
+int64\+\_\+t \doxymbox{\hyperlink{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40}{size}} () const
+\item 
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}} \doxymbox{\hyperlink{classegl_1_1_buffer_ae2b0f85fc95b4fb5d4a831ce2c5641c6}{get\+Type}} () const
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a45f2a70b803a24809345b425da6c0e50}{set\+Data}} (int64\+\_\+t \doxymbox{\hyperlink{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40}{size}}, const void \texorpdfstring{$\ast$}{*}data, \doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97}{Buffer\+Usage}} usage)
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a685c9de7c40cad0b90a118d9d33e8017}{set\+Storage}} (int64\+\_\+t \doxymbox{\hyperlink{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40}{size}}, const void \texorpdfstring{$\ast$}{*}data, \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} flags)
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a472ef3daa21a5f71959bf9e54531a4d5}{set\+Sub\+Data}} (int64\+\_\+t offset, int64\+\_\+t \doxymbox{\hyperlink{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40}{size}}, const void \texorpdfstring{$\ast$}{*}data)
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a290f1650bb443d8d377ccf9e30c1f4a0}{get\+Sub\+Data}} (int64\+\_\+t offset, int64\+\_\+t \doxymbox{\hyperlink{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40}{size}}, void \texorpdfstring{$\ast$}{*}data)
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classegl_1_1_buffer_add697f15310d50fa942eeeff51a3fb63}{map}} (int64\+\_\+t offset, int64\+\_\+t length, \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} access)
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a592d8d8e84ffe3f0c51a0798114f1a8a}{unmap}} ()
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \& \doxymbox{\hyperlink{classegl_1_1_buffer_aed107413bb135b147bf275f29b58fa1d}{operator=}} (\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \&\&other)
+\item 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \& \doxymbox{\hyperlink{classegl_1_1_buffer_adf6f1925aeff8b794267696dc4052a78}{operator=}} (const \doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \&other)=delete
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a944f8ef35e53f9abc76f170b63bb4147}{\+\_\+delete}} ()
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_buffer_a328d43858bbb78be3e7e85f41c842dc0}{\+\_\+check}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \doxymbox{\hyperlink{classegl_1_1_buffer_a55ed2a64908b06ea6f684bb53987d578}{\+\_\+id}} = 0
+\item 
+bool \doxymbox{\hyperlink{classegl_1_1_buffer_a7bee745bcdd4f7166b9b563738213e9e}{\+\_\+mapped}} = false
+\item 
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} \doxymbox{\hyperlink{classegl_1_1_buffer_a683a2afd7b811afda1f5114d2f826e80}{\+\_\+map\+Usage}} = \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a6adf97f83acf6453d4a6a4b1070f3754}{Map\+Usage::\+\+None}}
+\item 
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} \doxymbox{\hyperlink{classegl_1_1_buffer_a4e6a8def4b5f4920b3ab54a6fd34749f}{\+\_\+flags}} = \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a6adf97f83acf6453d4a6a4b1070f3754}{Buffer\+Flag::\+\+None}}
+\item 
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}} \doxymbox{\hyperlink{classegl_1_1_buffer_a24c2b512d61e32ec1b2dbf45f0f53433}{\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classegl_1_1_buffer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}\index{egl::Buffer@{egl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3} 
+egl::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classegl_1_1_buffer_a4bc82879484bb3e7cbaaba2dfd7bf205}\index{egl::Buffer@{egl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a4bc82879484bb3e7cbaaba2dfd7bf205} 
+egl::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_a6a1da098a28d616adfce5c1bbc6b9a76}\index{egl::Buffer@{egl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a6a1da098a28d616adfce5c1bbc6b9a76} 
+egl::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}\item[{Buffer \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_a5c48b0b11f8cf67a81e80f90abdcff6e}\index{egl::Buffer@{egl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a5c48b0b11f8cf67a81e80f90abdcff6e} 
+egl::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}\item[{const Buffer \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classegl_1_1_buffer_a7a4248ece01b7a14db753b54a9a1872c}\index{egl::Buffer@{egl::Buffer}!````~Buffer@{\texorpdfstring{$\sim$}{\string~}Buffer}}
+\index{````~Buffer@{\texorpdfstring{$\sim$}{\string~}Buffer}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Buffer()}{\string~Buffer()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a7a4248ece01b7a14db753b54a9a1872c} 
+egl::\+\+Buffer::\+\texorpdfstring{$\sim$}{\string~}\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classegl_1_1_buffer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classegl_1_1_buffer_a328d43858bbb78be3e7e85f41c842dc0}\index{egl::Buffer@{egl::Buffer}!\_check@{\_check}}
+\index{\_check@{\_check}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_check()}{\_check()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a328d43858bbb78be3e7e85f41c842dc0} 
+void egl::\+\+Buffer::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_buffer_a944f8ef35e53f9abc76f170b63bb4147}\index{egl::Buffer@{egl::Buffer}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a944f8ef35e53f9abc76f170b63bb4147} 
+void egl::\+\+Buffer::\+\+\_\+delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_buffer_aa7e6f7fb21ef634de2c2b88b7bc8d62d}\index{egl::Buffer@{egl::Buffer}!bind@{bind}}
+\index{bind@{bind}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_aa7e6f7fb21ef634de2c2b88b7bc8d62d} 
+void egl::\+\+Buffer::\+bind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classegl_1_1_buffer_a290f1650bb443d8d377ccf9e30c1f4a0}\index{egl::Buffer@{egl::Buffer}!getSubData@{getSubData}}
+\index{getSubData@{getSubData}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{getSubData()}{getSubData()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a290f1650bb443d8d377ccf9e30c1f4a0} 
+void egl::\+\+Buffer::\+get\+Sub\+Data (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset}{, }\item[{int64\+\_\+t}]{size}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_ae2b0f85fc95b4fb5d4a831ce2c5641c6}\index{egl::Buffer@{egl::Buffer}!getType@{getType}}
+\index{getType@{getType}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_ae2b0f85fc95b4fb5d4a831ce2c5641c6} 
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}} egl::\+\+Buffer::\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classegl_1_1_buffer_add697f15310d50fa942eeeff51a3fb63}\index{egl::Buffer@{egl::Buffer}!map@{map}}
+\index{map@{map}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_add697f15310d50fa942eeeff51a3fb63} 
+void \texorpdfstring{$\ast$}{*} egl::\+\+Buffer::\+map (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset}{, }\item[{int64\+\_\+t}]{length}{, }\item[{\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}}}]{access}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_aed107413bb135b147bf275f29b58fa1d}\index{egl::Buffer@{egl::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_aed107413bb135b147bf275f29b58fa1d} 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \& egl::\+\+Buffer::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_adf6f1925aeff8b794267696dc4052a78}\index{egl::Buffer@{egl::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_adf6f1925aeff8b794267696dc4052a78} 
+\doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \& egl::\+\+Buffer::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classegl_1_1_buffer_a4c0bb261ed6631f6aecda907ce72f1b3}{Buffer}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classegl_1_1_buffer_a45f2a70b803a24809345b425da6c0e50}\index{egl::Buffer@{egl::Buffer}!setData@{setData}}
+\index{setData@{setData}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a45f2a70b803a24809345b425da6c0e50} 
+void egl::\+\+Buffer::\+set\+Data (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{size}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{\doxymbox{\hyperlink{namespaceegl_ac73662910801a578088c729c58a62c97}{Buffer\+Usage}}}]{usage}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_a685c9de7c40cad0b90a118d9d33e8017}\index{egl::Buffer@{egl::Buffer}!setStorage@{setStorage}}
+\index{setStorage@{setStorage}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{setStorage()}{setStorage()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a685c9de7c40cad0b90a118d9d33e8017} 
+void egl::\+\+Buffer::\+set\+Storage (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{size}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}}}]{flags}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_a472ef3daa21a5f71959bf9e54531a4d5}\index{egl::Buffer@{egl::Buffer}!setSubData@{setSubData}}
+\index{setSubData@{setSubData}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{setSubData()}{setSubData()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a472ef3daa21a5f71959bf9e54531a4d5} 
+void egl::\+\+Buffer::\+set\+Sub\+Data (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset}{, }\item[{int64\+\_\+t}]{size}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40}\index{egl::Buffer@{egl::Buffer}!size@{size}}
+\index{size@{size}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_ad150bd3e569897627f147c40cb7b8a40} 
+int64\+\_\+t egl::\+\+Buffer::\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classegl_1_1_buffer_a592d8d8e84ffe3f0c51a0798114f1a8a}\index{egl::Buffer@{egl::Buffer}!unmap@{unmap}}
+\index{unmap@{unmap}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{unmap()}{unmap()}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a592d8d8e84ffe3f0c51a0798114f1a8a} 
+void egl::\+\+Buffer::\+unmap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classegl_1_1_buffer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classegl_1_1_buffer_a4e6a8def4b5f4920b3ab54a6fd34749f}\index{egl::Buffer@{egl::Buffer}!\_flags@{\_flags}}
+\index{\_flags@{\_flags}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_flags}{\_flags}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a4e6a8def4b5f4920b3ab54a6fd34749f} 
+\doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150}{Buffer\+Flag}} egl::\+\+Buffer::\+\+\_\+flags = \doxymbox{\hyperlink{namespaceegl_a26041025f1dffb8975174b439d5f0150a6adf97f83acf6453d4a6a4b1070f3754}{Buffer\+Flag::\+\+None}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_buffer_a55ed2a64908b06ea6f684bb53987d578}\index{egl::Buffer@{egl::Buffer}!\_id@{\_id}}
+\index{\_id@{\_id}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a55ed2a64908b06ea6f684bb53987d578} 
+unsigned int egl::\+\+Buffer::\+\+\_\+id = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_buffer_a7bee745bcdd4f7166b9b563738213e9e}\index{egl::Buffer@{egl::Buffer}!\_mapped@{\_mapped}}
+\index{\_mapped@{\_mapped}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_mapped}{\_mapped}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a7bee745bcdd4f7166b9b563738213e9e} 
+bool egl::\+\+Buffer::\+\+\_\+mapped = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_buffer_a683a2afd7b811afda1f5114d2f826e80}\index{egl::Buffer@{egl::Buffer}!\_mapUsage@{\_mapUsage}}
+\index{\_mapUsage@{\_mapUsage}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_mapUsage}{\_mapUsage}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a683a2afd7b811afda1f5114d2f826e80} 
+\doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2}{Map\+Usage}} egl::\+\+Buffer::\+\+\_\+map\+Usage = \doxymbox{\hyperlink{namespaceegl_a79ed3ca25fe4c77c1ebacb3f1283d4b2a6adf97f83acf6453d4a6a4b1070f3754}{Map\+Usage::\+\+None}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_buffer_a24c2b512d61e32ec1b2dbf45f0f53433}\index{egl::Buffer@{egl::Buffer}!\_type@{\_type}}
+\index{\_type@{\_type}!egl::Buffer@{egl::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_type}{\_type}}
+{\footnotesize\ttfamily \label{classegl_1_1_buffer_a24c2b512d61e32ec1b2dbf45f0f53433} 
+\doxymbox{\hyperlink{namespaceegl_a9d3c4e1c16d66cc0e4de86e7ac323291}{Buffer\+Type}} egl::\+\+Buffer::\+\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+inc/\+\+EGL/\+\doxymbox{\hyperlink{buffer_8h}{buffer.\+h}}\end{DoxyCompactItemize}

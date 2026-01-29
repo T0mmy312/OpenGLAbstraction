@@ -1,0 +1,455 @@
+\doxysection{egl::\+Shader Class Reference}
+\hypertarget{classegl_1_1_shader}{}\label{classegl_1_1_shader}\index{egl::Shader@{egl::Shader}}
+
+
+\doxylink{classegl_1_1_shader}{Shader} class to abstract Open\+GL Shaders.  
+
+
+
+
+{\ttfamily \+\#include $<$shader.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} ()=delete
+\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a39888f7b45ee6587eb746ea8691bf246}{Shader}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classegl_1_1_shader}{Shader} object of given type. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a0c911b9b38089486bcb51a3882b566f1}{Shader}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type, const char \texorpdfstring{$\ast$}{*}src)
+\begin{DoxyCompactList}\small\item\em Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_ac170df674fe9614b301036e55def99de}{Shader}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type, const std::\+string \&src)
+\begin{DoxyCompactList}\small\item\em Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a3bd4fac3ed96490bc6e6d295ad2d838e}{Shader}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type, std::\+istream \&in)
+\begin{DoxyCompactList}\small\item\em Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a8e6ba020255e77d1182c6d0fcebd22b2}{Shader}} (\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} type, std::\+istream \&\&in)
+\begin{DoxyCompactList}\small\item\em Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a9d124861d0651264869e4c06b2cc923d}{Shader}} (Shader \&\&other)
+\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a3b0abf11783a3e3557d4150606f3af25}{Shader}} (const Shader \&other)=delete
+\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a0a10a26daa59da469324a4574b4513d3}{\texorpdfstring{$\sim$}{\string~}\+Shader}} () noexcept
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the \doxylink{classegl_1_1_shader}{Shader} to an empty state. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classegl_1_1_shader_a6193f42fdc0dbbb316318d1f25d52867}{compiled}} () const
+\begin{DoxyCompactList}\small\item\em Gets if the \doxylink{classegl_1_1_shader}{Shader} has been successfully compiled. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} \doxymbox{\hyperlink{classegl_1_1_shader_a9507c35a181e66b9c14fc032805cf13c}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the type of the \doxylink{classegl_1_1_shader}{Shader}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_a90965768ffda367593016c848dd5e448}{compile}} (const char \texorpdfstring{$\ast$}{*}src)
+\begin{DoxyCompactList}\small\item\em Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_a5b9c7d980a72234fce1bdd953801e798}{compile}} (std::\+istream \&in)
+\begin{DoxyCompactList}\small\item\em Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source input stream. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_a3537478d020a0f9a772c46635a2c9653}{compile}} (std::\+istream \&\&in)
+\begin{DoxyCompactList}\small\item\em Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source input stream. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_ac4d78fb3e2ae96f3c3ce4deb4f8e43c3}{compile}} (const std::\+string \&str)
+\begin{DoxyCompactList}\small\item\em Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \& \doxymbox{\hyperlink{classegl_1_1_shader_a637b730a1deff9358fa575111106a15b}{operator=}} (\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \&\&other)
+\item 
+\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \& \doxymbox{\hyperlink{classegl_1_1_shader_a32d1d64875d0f10a3b5de864c83469bb}{operator=}} (const \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \&other)=delete
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+friend \doxymbox{\hyperlink{classegl_1_1_shader_ad3814f333d665a1d793acc57f57be4e3}{Program}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_a4d1cf3c3c797f349d1d393cf1e505904}{\+\_\+delete}} ()
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_af6ebd199359d80bc084fc75abe73666a}{\+\_\+check}} ()
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_shader_ae6220fac09e752d7ce7d3af153f48edb}{\+\_\+ensure}} ()
+\item 
+std::\+string \doxymbox{\hyperlink{classegl_1_1_shader_a639e465da633b83b459462bc0f5cc8fb}{\+\_\+get\+Error}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \doxymbox{\hyperlink{classegl_1_1_shader_a2ca317c7039c1fe6330ec53308356640}{\+\_\+id}} = 0
+\item 
+\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} \doxymbox{\hyperlink{classegl_1_1_shader_a0f11b0bd57439caa5d5e1bc00f9b1f8e}{\+\_\+type}}
+\item 
+bool \doxymbox{\hyperlink{classegl_1_1_shader_aea1aa57561249d449a235a8049964561}{\+\_\+compiled}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classegl_1_1_shader}{Shader} class to abstract Open\+GL Shaders. 
+
+\begin{DoxyWarning}{Warning}
+\doxylink{classegl_1_1_shader}{Shader} must be deconstructed before the Open\+GL context is destroyed. 
+
+This class is not guaranteed to be thread-\/safe.
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+This class owns the underlying Open\+GL \doxylink{classegl_1_1_shader}{Shader} object and releases it upon destruction or \doxylink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset()}. 
+\end{DoxyNote}
+
+
+\label{doc-constructors}
+\Hypertarget{classegl_1_1_shader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classegl_1_1_shader_a39888f7b45ee6587eb746ea8691bf246}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a39888f7b45ee6587eb746ea8691bf246} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classegl_1_1_shader}{Shader} object of given type. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the given \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} is invalid. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a \doxylink{classegl_1_1_shader}{Shader} object. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classegl_1_1_shader_a0c911b9b38089486bcb51a3882b566f1}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a0c911b9b38089486bcb51a3882b566f1} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}}}]{type}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{src}{}\end{DoxyParamCaption})}
+
+
+
+Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the given \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} is invalid. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a \doxylink{classegl_1_1_shader}{Shader} object. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classegl_1_1_shader_ac170df674fe9614b301036e55def99de}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_ac170df674fe9614b301036e55def99de} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}}}]{type}{, }\item[{const std::\+string \&}]{src}{}\end{DoxyParamCaption})}
+
+
+
+Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the given \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} is invalid. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a \doxylink{classegl_1_1_shader}{Shader} object. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classegl_1_1_shader_a3bd4fac3ed96490bc6e6d295ad2d838e}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a3bd4fac3ed96490bc6e6d295ad2d838e} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}}}]{type}{, }\item[{std::\+istream \&}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the given \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} is invalid. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a \doxylink{classegl_1_1_shader}{Shader} object. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the istream is not good(). \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If in fails to read the \doxylink{classegl_1_1_shader}{Shader} source. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the given input stream is invalid. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classegl_1_1_shader_a8e6ba020255e77d1182c6d0fcebd22b2}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a8e6ba020255e77d1182c6d0fcebd22b2} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}}}]{type}{, }\item[{std::\+istream \&\&}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Constructs and compiles a new \doxylink{classegl_1_1_shader}{Shader} object of given type. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the given \doxylink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type} is invalid. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a \doxylink{classegl_1_1_shader}{Shader} object. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the istream is not good(). \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If in fails to read the \doxylink{classegl_1_1_shader}{Shader} source. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the given input stream is invalid. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classegl_1_1_shader_a9d124861d0651264869e4c06b2cc923d}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a9d124861d0651264869e4c06b2cc923d} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{Shader \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_shader_a3b0abf11783a3e3557d4150606f3af25}\index{egl::Shader@{egl::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a3b0abf11783a3e3557d4150606f3af25} 
+egl::\+\+Shader::\+\+Shader (\begin{DoxyParamCaption}\item[{const Shader \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classegl_1_1_shader_a0a10a26daa59da469324a4574b4513d3}\index{egl::Shader@{egl::Shader}!````~Shader@{\texorpdfstring{$\sim$}{\string~}Shader}}
+\index{````~Shader@{\texorpdfstring{$\sim$}{\string~}Shader}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Shader()}{\string~Shader()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a0a10a26daa59da469324a4574b4513d3} 
+egl::\+\+Shader::\+\texorpdfstring{$\sim$}{\string~}\+Shader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classegl_1_1_shader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classegl_1_1_shader_af6ebd199359d80bc084fc75abe73666a}\index{egl::Shader@{egl::Shader}!\_check@{\_check}}
+\index{\_check@{\_check}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_check()}{\_check()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_af6ebd199359d80bc084fc75abe73666a} 
+void egl::\+\+Shader::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_a4d1cf3c3c797f349d1d393cf1e505904}\index{egl::Shader@{egl::Shader}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a4d1cf3c3c797f349d1d393cf1e505904} 
+void egl::\+\+Shader::\+\+\_\+delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_ae6220fac09e752d7ce7d3af153f48edb}\index{egl::Shader@{egl::Shader}!\_ensure@{\_ensure}}
+\index{\_ensure@{\_ensure}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_ensure()}{\_ensure()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_ae6220fac09e752d7ce7d3af153f48edb} 
+void egl::\+\+Shader::\+\+\_\+ensure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_a639e465da633b83b459462bc0f5cc8fb}\index{egl::Shader@{egl::Shader}!\_getError@{\_getError}}
+\index{\_getError@{\_getError}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_getError()}{\_getError()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a639e465da633b83b459462bc0f5cc8fb} 
+std::\+string egl::\+\+Shader::\+\+\_\+get\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_a90965768ffda367593016c848dd5e448}\index{egl::Shader@{egl::Shader}!compile@{compile}}
+\index{compile@{compile}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a90965768ffda367593016c848dd5e448} 
+void egl::\+\+Shader::\+compile (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{src}{}\end{DoxyParamCaption})}
+
+
+
+Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_shader}{Shader} object does not exist (\doxylink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset()} is recommended to return to a valid state). \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Null terminated c-\/style string to compile. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_shader_ac4d78fb3e2ae96f3c3ce4deb4f8e43c3}\index{egl::Shader@{egl::Shader}!compile@{compile}}
+\index{compile@{compile}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_ac4d78fb3e2ae96f3c3ce4deb4f8e43c3} 
+void egl::\+\+Shader::\+compile (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & If the given input stream is invalid. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_shader}{Shader} object does not exist (\doxylink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset()} is recommended to return to a valid state). \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source to compile. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_shader_a3537478d020a0f9a772c46635a2c9653}\index{egl::Shader@{egl::Shader}!compile@{compile}}
+\index{compile@{compile}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a3537478d020a0f9a772c46635a2c9653} 
+void egl::\+\+Shader::\+compile (\begin{DoxyParamCaption}\item[{std::\+istream \&\&}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source input stream. 
+
+\begin{DoxyNote}{Note}
+Reads the entire stream and compiles it.
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & If the istream is not good(). \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If in fails to read the \doxylink{classegl_1_1_shader}{Shader} source. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_shader}{Shader} object does not exist (\doxylink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset()} is recommended to return to a valid state). \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input stream to compile. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_shader_a5b9c7d980a72234fce1bdd953801e798}\index{egl::Shader@{egl::Shader}!compile@{compile}}
+\index{compile@{compile}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a5b9c7d980a72234fce1bdd953801e798} 
+void egl::\+\+Shader::\+compile (\begin{DoxyParamCaption}\item[{std::\+istream \&}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Compiles the \doxylink{classegl_1_1_shader}{Shader} with the given source input stream. 
+
+\begin{DoxyNote}{Note}
+Reads the entire stream and compiles it.
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & If the istream is not good(). \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If in fails to read the \doxylink{classegl_1_1_shader}{Shader} source. \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{classegl_1_1_shader}{Shader} source is NULL. \\
+\hline
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_shader}{Shader} object does not exist (\doxylink{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}{reset()} is recommended to return to a valid state). \\
+\hline
+{\em \doxylink{classegl_1_1_shader_compile_error}{egl::\+\+Shader\+Compile\+Error}} & If the \doxylink{classegl_1_1_shader}{Shader} fails to compile.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input stream to compile. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_shader_a6193f42fdc0dbbb316318d1f25d52867}\index{egl::Shader@{egl::Shader}!compiled@{compiled}}
+\index{compiled@{compiled}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{compiled()}{compiled()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a6193f42fdc0dbbb316318d1f25d52867} 
+bool egl::\+\+Shader::\+compiled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets if the \doxylink{classegl_1_1_shader}{Shader} has been successfully compiled. 
+
+\Hypertarget{classegl_1_1_shader_a9507c35a181e66b9c14fc032805cf13c}\index{egl::Shader@{egl::Shader}!getType@{getType}}
+\index{getType@{getType}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a9507c35a181e66b9c14fc032805cf13c} 
+\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} egl::\+\+Shader::\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the type of the \doxylink{classegl_1_1_shader}{Shader}. 
+
+\Hypertarget{classegl_1_1_shader_a32d1d64875d0f10a3b5de864c83469bb}\index{egl::Shader@{egl::Shader}!operator=@{operator=}}
+\index{operator=@{operator=}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a32d1d64875d0f10a3b5de864c83469bb} 
+\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \& egl::\+\+Shader::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classegl_1_1_shader_a637b730a1deff9358fa575111106a15b}\index{egl::Shader@{egl::Shader}!operator=@{operator=}}
+\index{operator=@{operator=}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a637b730a1deff9358fa575111106a15b} 
+\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \& egl::\+\+Shader::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classegl_1_1_shader_a100a52df2c0a7147e8b479a452a239cd}{Shader}} \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f}\index{egl::Shader@{egl::Shader}!reset@{reset}}
+\index{reset@{reset}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a2dda7169e2fef7b36a890887a807c18f} 
+void egl::\+\+Shader::\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the \doxylink{classegl_1_1_shader}{Shader} to an empty state. 
+
+\begin{DoxyNote}{Note}
+Reset creates an entirely new \doxylink{classegl_1_1_shader}{Shader} object of the current type and therefore can be used to get a valid State as long as Open\+GL doesn\textquotesingle{}t fail to create a new \doxylink{classegl_1_1_shader}{Shader} object.
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a new \doxylink{classegl_1_1_shader}{Shader} object. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-variable-members}
+\Hypertarget{classegl_1_1_shader_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classegl_1_1_shader_aea1aa57561249d449a235a8049964561}\index{egl::Shader@{egl::Shader}!\_compiled@{\_compiled}}
+\index{\_compiled@{\_compiled}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_compiled}{\_compiled}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_aea1aa57561249d449a235a8049964561} 
+bool egl::\+\+Shader::\+\+\_\+compiled = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_a2ca317c7039c1fe6330ec53308356640}\index{egl::Shader@{egl::Shader}!\_id@{\_id}}
+\index{\_id@{\_id}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a2ca317c7039c1fe6330ec53308356640} 
+unsigned int egl::\+\+Shader::\+\+\_\+id = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_a0f11b0bd57439caa5d5e1bc00f9b1f8e}\index{egl::Shader@{egl::Shader}!\_type@{\_type}}
+\index{\_type@{\_type}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{\_type}{\_type}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_a0f11b0bd57439caa5d5e1bc00f9b1f8e} 
+\doxymbox{\hyperlink{namespaceegl_aaaec9f917c250f938f83b38200719753}{Shader\+Type}} egl::\+\+Shader::\+\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_shader_ad3814f333d665a1d793acc57f57be4e3}\index{egl::Shader@{egl::Shader}!Program@{Program}}
+\index{Program@{Program}!egl::Shader@{egl::Shader}}
+\doxysubsubsection{\texorpdfstring{Program}{Program}}
+{\footnotesize\ttfamily \label{classegl_1_1_shader_ad3814f333d665a1d793acc57f57be4e3} 
+friend egl::\+\+Shader::\+\+Program}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+inc/\+\+EGL/\+\doxymbox{\hyperlink{shader_8h}{shader.\+h}}\end{DoxyCompactItemize}

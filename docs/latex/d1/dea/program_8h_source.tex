@@ -1,0 +1,69 @@
+\doxysection{program.\+h}
+\hypertarget{program_8h_source}{}\label{program_8h_source}\index{inc/EGL/program.h@{inc/EGL/program.h}}
+\doxymbox{\hyperlink{program_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EGL\_PROGRAM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EGL\_PROGRAM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespaceegl}{egl}}\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_shader}{Shader}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_program_link_error_a9f0f473602a4751f0b20b21aab139a98}{ProgramLinkError}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_link_error_a9f0f473602a4751f0b20b21aab139a98}{ProgramLinkError}}(\textcolor{keyword}{const}\ std::string\&\ infoLog)}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ :\ std::runtime\_error(}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Program\ link\ failed:\(\backslash\)n"{}}\ +\ infoLog)\ \{\}}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_program_validate_error_a4e3b6ab4c756640a0f9d0cc3880c078a}{ProgramValidateError}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_validate_error_a4e3b6ab4c756640a0f9d0cc3880c078a}{ProgramValidateError}}(\textcolor{keyword}{const}\ std::string\&\ infoLog)}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ :\ std::runtime\_error(}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Program\ validation\ failed:\(\backslash\)n"{}}\ +\ infoLog)\ \{\}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\ \{}
+\DoxyCodeLine{00051\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classegl_1_1_program_a8227aba9b050889b227706b443b8816e}{\_id}}\ =\ 0;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classegl_1_1_program_aa371f5f0cb626edc13006ee6ed50db0e}{\_linked}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a9cb5062523e92f185b8092f6c7b3cd59}{\_delete}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a128fe35ff4cbf34fd149c171f36e7f05}{\_check}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a51710977ce556b99a1e035837d9b3dab}{\_ensure}}();}
+\DoxyCodeLine{00058\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classegl_1_1_program_ac19d067e0778963f68922b41a190429a}{\_getError}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_af86af5a394ad21350ce6e79da09ddab4}{Program}}(\doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\&\&\ other);}
+\DoxyCodeLine{00066\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_abe2a3e58d779b20b30b08e7d333bb8f7}{Program}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\&)\ =\ \textcolor{keyword}{delete};\ \textcolor{comment}{//\ OpenGL\ Programs\ are\ not\ copy\ safe}}
+\DoxyCodeLine{00067\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_a41c73aeace6c6a425587d097cb461377}{\string~Program}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classegl_1_1_program_a86803b014169b9c4c9bf1c513af81a91}{attached}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_shader}{Shader}}\&\ shader);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a80586d03da7e5cc52b7771244e0fd6fc}{attach}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_shader}{Shader}}\&\ shader);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_acf0e628917e163379acdce5ac0b4b001}{detach}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_shader}{Shader}}\&\ shader);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classegl_1_1_program_a955685993f1b3a7a6fdfd64597763819}{linked}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classegl_1_1_program_aa371f5f0cb626edc13006ee6ed50db0e}{\_linked}};\ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a1f28faa9fa6e602bc749618ec5ac647f}{link}}();}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_ac633a72ad0a8cc5ffdf7b77bf8d8253a}{bind}}();}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_program_a59cce8f9cb55bcd5cca5aabdd93fd313}{unbind}}();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\&\ \doxymbox{\hyperlink{classegl_1_1_program_a22267ce0ea24799b31d59fe8f9b80745}{operator=}}(\doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\&\&\ other);}
+\DoxyCodeLine{00144\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\&\ \doxymbox{\hyperlink{classegl_1_1_program_a25861fa2eed6a4eff139b0b51c072773}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}}\&)\ =\ \textcolor{keyword}{delete};\ \textcolor{comment}{//\ OpenGL\ Programs\ are\ not\ copy\ safe}}
+\DoxyCodeLine{00145\ \};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

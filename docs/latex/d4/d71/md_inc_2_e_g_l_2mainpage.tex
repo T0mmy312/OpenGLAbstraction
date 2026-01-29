@@ -1,0 +1,11 @@
+\chapter{Introduction }
+\hypertarget{md_inc_2_e_g_l_2mainpage}{}\label{md_inc_2_e_g_l_2mainpage}\index{Introduction@{Introduction}}
+\label{md_inc_2_e_g_l_2mainpage_autotoc_md0}%
+\Hypertarget{md_inc_2_e_g_l_2mainpage_autotoc_md0}%
+
+
+This project provides a low-\/level Open\+GL abstraction implemented in modern C++, using try-\/catch based error handling and classes representing various Open\+GL objects.
+
+\begin{DoxyNote}{Note}
+The recommended setup is to initialize and bind the Open\+GL context in main, and then create all Easy Open\+GL abstractions one scope deeper. This follows the RAII principle and ensures that all resources are properly cleaned up before the Open\+GL context is destroyed otherwise errors may occur during destruction and cleanup of Easy Open\+GL classes. 
+\end{DoxyNote}

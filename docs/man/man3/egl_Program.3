@@ -1,0 +1,281 @@
+.TH "egl::Program" 3 "Easy OpenGL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+egl::Program \- \fBProgram\fP class to abstract OpenGL \fBShader\fP Programs\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <program\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProgram\fP ()"
+.br
+.RI "Construct an empty \fBProgram\fP object\&. "
+.ti -1c
+.RI "\fBProgram\fP (Program &&other)"
+.br
+.ti -1c
+.RI "\fBProgram\fP (const Program &)=delete"
+.br
+.ti -1c
+.RI "\fB~Program\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.RI "Resets the \fBProgram\fP to an empty State\&. "
+.ti -1c
+.RI "bool \fBattached\fP (const \fBShader\fP &shader)"
+.br
+.RI "Checks if the given \fBShader\fP is attached to the \fBProgram\fP\&. "
+.ti -1c
+.RI "void \fBattach\fP (const \fBShader\fP &shader)"
+.br
+.RI "Attaches \fBShader\fP to \fBProgram\fP for linking\&. "
+.ti -1c
+.RI "void \fBdetach\fP (const \fBShader\fP &shader)"
+.br
+.RI "Detaches \fBShader\fP from \fBProgram\fP for linking\&. "
+.ti -1c
+.RI "bool \fBlinked\fP () const"
+.br
+.RI "Gets if the \fBProgram\fP has been successfully linked\&. "
+.ti -1c
+.RI "void \fBlink\fP ()"
+.br
+.RI "Links all attached Shaders and creates a valid \fBProgram\fP\&. "
+.ti -1c
+.RI "void \fBbind\fP ()"
+.br
+.RI "Binds this \fBProgram\fP\&. "
+.ti -1c
+.RI "\fBProgram\fP & \fBoperator=\fP (\fBProgram\fP &&other)"
+.br
+.ti -1c
+.RI "\fBProgram\fP & \fBoperator=\fP (const \fBProgram\fP &)=delete"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBunbind\fP ()"
+.br
+.RI "Unbinds a \fBProgram\fP by binding id 0\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_delete\fP ()"
+.br
+.ti -1c
+.RI "void \fB_check\fP ()"
+.br
+.ti -1c
+.RI "void \fB_ensure\fP ()"
+.br
+.ti -1c
+.RI "std::string \fB_getError\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fB_id\fP = 0"
+.br
+.ti -1c
+.RI "bool \fB_linked\fP = false"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBProgram\fP class to abstract OpenGL \fBShader\fP Programs\&. 
+
+
+.PP
+\fBWarning\fP
+.RS 4
+\fBProgram\fP must be deconstructed before the OpenGL context is destroyed\&. 
+
+.PP
+This class is not guaranteed to be thread-safe\&.
+.RE
+.PP
+\fBNote\fP
+.RS 4
+This class owns the underlying OpenGL \fBProgram\fP object and releases it upon destruction or \fBreset()\fP\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "egl::Program::Program ()"
+
+.PP
+Construct an empty \fBProgram\fP object\&. 
+.SS "egl::Program::Program (Program && other)"
+
+.SS "egl::Program::Program (const Program & )\fR [delete]\fP"
+
+.SS "egl::Program::~Program ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void egl::Program::_check ()\fR [protected]\fP"
+
+.SS "void egl::Program::_delete ()\fR [protected]\fP"
+
+.SS "void egl::Program::_ensure ()\fR [protected]\fP"
+
+.SS "std::string egl::Program::_getError ()\fR [protected]\fP"
+
+.SS "void egl::Program::attach (const \fBShader\fP & shader)"
+
+.PP
+Attaches \fBShader\fP to \fBProgram\fP for linking\&. 
+.PP
+\fBNote\fP
+.RS 4
+Attaching a \fBShader\fP invalidates the current link state\&.
+.RE
+.PP
+\fBWarning\fP
+.RS 4
+Attaching a destroyed \fBShader\fP is undefined behavior\&. 
+
+.PP
+Attached Shaders must outlive the \fBProgram\fP (at least until linking)\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If the \fBShader\fP has already been attached\&. 
+.br
+\fIstd::logic_error\fP If the current \fBProgram\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP The \fBShader\fP that should be attached to the \fBProgram\fP\&. 
+.RE
+.PP
+
+.SS "bool egl::Program::attached (const \fBShader\fP & shader)"
+
+.PP
+Checks if the given \fBShader\fP is attached to the \fBProgram\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP The \fBShader\fP to check\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the current \fBProgram\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the \fBShader\fP is attached, false otherwise\&. 
+.RE
+.PP
+
+.SS "void egl::Program::bind ()"
+
+.PP
+Binds this \fBProgram\fP\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the current \fBProgram\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&. 
+.br
+\fIstd::runtime_error\fP If the \fBProgram\fP was not linked to avoid invalid usage\&. 
+.RE
+.PP
+
+.SS "void egl::Program::detach (const \fBShader\fP & shader)"
+
+.PP
+Detaches \fBShader\fP from \fBProgram\fP for linking\&. 
+.PP
+\fBNote\fP
+.RS 4
+Detaching a \fBShader\fP invalidates the current link state\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If the \fBShader\fP was not attached\&. 
+.br
+\fIstd::logic_error\fP If the current \fBProgram\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP The \fBShader\fP that should be detached from the \fBProgram\fP\&. 
+.RE
+.PP
+
+.SS "void egl::Program::link ()"
+
+.PP
+Links all attached Shaders and creates a valid \fBProgram\fP\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the current \fBProgram\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&. 
+.br
+\fI\fBegl::ProgramLinkError\fP\fP If the \fBProgram\fP fails to link\&. The \fBProgram\fP remains in a valid state afterwards\&. 
+.br
+\fI\fBegl::ProgramValidateError\fP\fP If the \fBProgram\fP fails to validate\&. This only occurs when DEBUG_BUILD is defined else the validity is not checked\&. 
+.RE
+.PP
+
+.SS "bool egl::Program::linked () const\fR [inline]\fP"
+
+.PP
+Gets if the \fBProgram\fP has been successfully linked\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the \fBProgram\fP is linked, false otherwise\&. 
+.RE
+.PP
+
+.SS "\fBProgram\fP & egl::Program::operator= (const \fBProgram\fP & )\fR [delete]\fP"
+
+.SS "\fBProgram\fP & egl::Program::operator= (\fBProgram\fP && other)"
+
+.SS "void egl::Program::reset ()"
+
+.PP
+Resets the \fBProgram\fP to an empty State\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If OpenGL failed to create a new \fBProgram\fP\&. 
+.RE
+.PP
+
+.SS "void egl::Program::unbind ()\fR [static]\fP"
+
+.PP
+Unbinds a \fBProgram\fP by binding id 0\&. 
+.SH "Field Documentation"
+.PP 
+.SS "unsigned int egl::Program::_id = 0\fR [protected]\fP"
+
+.SS "bool egl::Program::_linked = false\fR [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Easy OpenGL from the source code\&.
