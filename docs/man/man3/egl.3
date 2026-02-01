@@ -21,6 +21,9 @@ egl
 .br
 .RI "Exception thrown when \fBProgram\fP validation fails, mainly used in debug builds\&. "
 .ti -1c
+.RI "struct \fB_uniformData\fP"
+.br
+.ti -1c
 .RI "class \fBProgram\fP"
 .br
 .RI "\fBProgram\fP class to abstract OpenGL \fBShader\fP Programs\&. "
@@ -39,6 +42,13 @@ egl
 .RI "class \fBWindowContext\fP"
 .br
 .RI "An abstract class to contain an window based application\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBegl::_uniformData\fP \fBUniformData\fP"
+.br
 .in -1c
 .SS "Enumerations"
 
@@ -138,6 +148,10 @@ egl
 .br
 .RI "Polls GLFW events\&. "
 .in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBegl::_uniformData\fP \fBegl::UniformData\fP"
+
 .SH "Enumeration Type Documentation"
 .PP 
 .SS "enum class \fBegl::BufferFlag\fP : uint32_t\fR [strong]\fP"

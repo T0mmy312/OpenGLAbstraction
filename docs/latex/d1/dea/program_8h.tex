@@ -2,6 +2,11 @@
 \hypertarget{program_8h}{}\label{program_8h}\index{inc/EGL/program.h@{inc/EGL/program.h}}
 {\ttfamily \+\#include $<$string$>$}\newline
 {\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \+\#include $<$glm/\+vec2.\+hpp$>$}\newline
+{\ttfamily \+\#include $<$glm/\+vec3.\+hpp$>$}\newline
+{\ttfamily \+\#include $<$glm/\+vec4.\+hpp$>$}\newline
+{\ttfamily \+\#include $<$glm/\+matrix.\+hpp$>$}\newline
 \doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
@@ -9,10 +14,21 @@ class \doxymbox{\hyperlink{classegl_1_1_program_link_error}{egl::\+\+Program\+Li
 \begin{DoxyCompactList}\small\item\em Exception thrown when \doxylink{classegl_1_1_program}{Program} linking fails. \end{DoxyCompactList}\item 
 class \doxymbox{\hyperlink{classegl_1_1_program_validate_error}{egl::\+\+Program\+Validate\+Error}}
 \begin{DoxyCompactList}\small\item\em Exception thrown when \doxylink{classegl_1_1_program}{Program} validation fails, mainly used in debug builds. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structegl_1_1__uniform_data}{egl::\+\+\_\+uniform\+Data}}
+\item 
 class \doxymbox{\hyperlink{classegl_1_1_program}{egl::\+\+Program}}
-\begin{DoxyCompactList}\small\item\em \doxylink{classegl_1_1_program}{Program} class to abstract Open\+GL \doxylink{classegl_1_1_shader}{Shader} Programs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \doxylink{classegl_1_1_program}{Program} class to abstract Open\+GL \doxylink{classegl_1_1_shader}{Shader} Programs. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy}{egl::\+\+Program::\+\+Uniform\+Proxy}}
+\item 
+class \doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy_const}{egl::\+\+Program::\+\+Uniform\+Proxy\+Const}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
 namespace \doxymbox{\hyperlink{namespaceegl}{egl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \doxymbox{\hyperlink{structegl_1_1__uniform_data}{egl::\+\+\_\+uniform\+Data}} \doxymbox{\hyperlink{namespaceegl_a99c234b350fbf99fa2289578b0fc399e}{egl::\+\+Uniform\+Data}}
 \end{DoxyCompactItemize}

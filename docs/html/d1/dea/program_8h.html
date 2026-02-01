@@ -94,6 +94,11 @@ $(function(){initNavTree('d1/dea/program_8h.html','../../',''); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;glm/vec2.hpp&gt;</code><br />
+<code>#include &lt;glm/vec3.hpp&gt;</code><br />
+<code>#include &lt;glm/vec4.hpp&gt;</code><br />
+<code>#include &lt;glm/matrix.hpp&gt;</code><br />
 </div>
 <p><a href="../../d1/dea/program_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -103,12 +108,19 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> linking fails.  <a href="../../d0/d13/classegl_1_1_program_link_error.html#details">More...</a><br /></td></tr>
 <tr class="memitem:egl_3A_3AProgramValidateError" id="r_egl_3A_3AProgramValidateError"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d5/d5e/classegl_1_1_program_validate_error.html">egl::ProgramValidateError</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> validation fails, mainly used in debug builds.  <a href="../../d5/d5e/classegl_1_1_program_validate_error.html#details">More...</a><br /></td></tr>
+<tr class="memitem:egl_3A_3A_5FuniformData" id="r_egl_3A_3A_5FuniformData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="../../d4/da7/structegl_1_1__uniform_data.html">egl::_uniformData</a></td></tr>
 <tr class="memitem:egl_3A_3AProgram" id="r_egl_3A_3AProgram"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d3a/classegl_1_1_program.html">egl::Program</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> class to abstract OpenGL <a class="el" href="../../db/de5/classegl_1_1_shader.html" title="Shader class to abstract OpenGL Shaders.">Shader</a> Programs.  <a href="../../d6/d3a/classegl_1_1_program.html#details">More...</a><br /></td></tr>
+<tr class="memitem:egl_3A_3AProgram_3A_3AUniformProxy" id="r_egl_3A_3AProgram_3A_3AUniformProxy"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/dba/classegl_1_1_program_1_1_uniform_proxy.html">egl::Program::UniformProxy</a></td></tr>
+<tr class="memitem:egl_3A_3AProgram_3A_3AUniformProxyConst" id="r_egl_3A_3AProgram_3A_3AUniformProxyConst"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../da/d64/classegl_1_1_program_1_1_uniform_proxy_const.html">egl::Program::UniformProxyConst</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:egl" id="r_egl"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html">egl</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a99c234b350fbf99fa2289578b0fc399e" id="r_a99c234b350fbf99fa2289578b0fc399e"><td class="memItemLeft">typedef struct <a class="el" href="../../d4/da7/structegl_1_1__uniform_data.html">egl::_uniformData</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a99c234b350fbf99fa2289578b0fc399e">egl::UniformData</a></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

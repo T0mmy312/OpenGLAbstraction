@@ -9,6 +9,13 @@
 
 {\ttfamily \+\#include $<$program.\+h$>$}
 
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}}
+\item 
+class \doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,12 +39,190 @@ bool \doxymbox{\hyperlink{classegl_1_1_program_a955685993f1b3a7a6fdfd64597763819
 \begin{DoxyCompactList}\small\item\em Gets if the \doxylink{classegl_1_1_program}{Program} has been successfully linked. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{classegl_1_1_program_a1f28faa9fa6e602bc749618ec5ac647f}{link}} ()
 \begin{DoxyCompactList}\small\item\em Links all attached Shaders and creates a valid \doxylink{classegl_1_1_program}{Program}. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classegl_1_1_program_ac633a72ad0a8cc5ffdf7b77bf8d8253a}{bind}} ()
+void \doxymbox{\hyperlink{classegl_1_1_program_a7c7477394ba1cd4ef4b9e22a0eda13ce}{bind}} () const
 \begin{DoxyCompactList}\small\item\em Binds this \doxylink{classegl_1_1_program}{Program}. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb}{get\+Uniform\+Location}} (const std::\+string \&name) const
+\begin{DoxyCompactList}\small\item\em Gets the Location of the given Uniform. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ae57bcdfd1bf4e60724ca4f91a877e2a0}{set\+Uniform}} (int location, float data)
+\begin{DoxyCompactList}\small\item\em Sets a uniform at the given location. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_adc0ad0882a904c67d0a3dde88c882646}{set\+Uniform}} (int location, const glm::\+vec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a2b725dab5a23c41b1dac92b01aad2fd1}{set\+Uniform}} (int location, const glm::\+vec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a67b8cf5dab1c545bf3cecdcad8defded}{set\+Uniform}} (int location, const glm::\+vec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a76001e81309dc47570f7661a235f438f}{set\+Uniform}} (int location, int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a6c7d49198a3e1465cd6f744458caf0dd}{set\+Uniform}} (int location, const glm::\+ivec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a2c1566091cdeb9580d348a3fbc19d185}{set\+Uniform}} (int location, const glm::\+ivec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aba70b402e38002dad4753e7a0c8a4024}{set\+Uniform}} (int location, const glm::\+ivec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a8a170e81fbd929d42f5686286b7f06fe}{set\+Uniform}} (int location, unsigned int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ab66148731dae0fa5de3b0a43ea12b270}{set\+Uniform}} (int location, const glm::\+uvec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aefd866ac1617cf64c73164bbbd87670b}{set\+Uniform}} (int location, const glm::\+uvec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a6e2501c9d63e11171ff2d36c3699535a}{set\+Uniform}} (int location, const glm::\+uvec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a5959620c7dc9ccc2804f544b2702ac0f}{set\+Uniform}} (int location, const glm::\+mat2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a6814de4a6fc9b738800819adfd2d8992}{set\+Uniform}} (int location, const glm::\+mat3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a2fbcd122266ac9638a75048820e2364f}{set\+Uniform}} (int location, const glm::\+mat4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aef0df907bfde7650986a56caad4824f5}{set\+Uniform}} (int location, const glm::\+mat2x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a261145c6678c4aa40351a6027f1ce727}{set\+Uniform}} (int location, const glm::\+mat3x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a8fb14d925b462a38f5abcfd06e9b6e13}{set\+Uniform}} (int location, const glm::\+mat2x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a638519cb4b44ab06d651708a3a8d602f}{set\+Uniform}} (int location, const glm::\+mat4x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_af64c2f537bf3242c424560524d71a885}{set\+Uniform}} (int location, const glm::\+mat3x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aa22b18a9f26a74607685e1d1029562aa}{set\+Uniform}} (int location, const glm::\+mat4x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a9b2e3e685708e99136f7aba932f3d962}{set\+Uniform}} (const std::\+string \&name, float data)
+\begin{DoxyCompactList}\small\item\em Sets a uniform at the given name. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ad8e277f746a1ce2af3af21215d55f0e7}{set\+Uniform}} (const std::\+string \&name, const glm::\+vec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7bb36e23007fdc307c5fccd13367f7c6}{set\+Uniform}} (const std::\+string \&name, const glm::\+vec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aa19ebdbf4d5627726e725aa2f96ef37f}{set\+Uniform}} (const std::\+string \&name, const glm::\+vec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a13c5f6732963353c57d7d5676fc74429}{set\+Uniform}} (const std::\+string \&name, int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ac97a4900bef077d9bbbe3be4ccc73359}{set\+Uniform}} (const std::\+string \&name, const glm::\+ivec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aed391d33b5a7c1d5d651adac32f7a48d}{set\+Uniform}} (const std::\+string \&name, const glm::\+ivec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7c0b1a9ccc0b52c3af7e36f55a7234e1}{set\+Uniform}} (const std::\+string \&name, const glm::\+ivec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_afc70fa47ff63c735d840f34c78f1a16c}{set\+Uniform}} (const std::\+string \&name, unsigned int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aba71fb11799ce2c3e1ee5989db8b5736}{set\+Uniform}} (const std::\+string \&name, const glm::\+uvec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a09bc85e90db15b506f239a558a507bf8}{set\+Uniform}} (const std::\+string \&name, const glm::\+uvec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aa4a29d2f4dc186bb8c9ecb6cd48d4d03}{set\+Uniform}} (const std::\+string \&name, const glm::\+uvec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a57ebdde1efe2588b18721f7579f3b816}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a007dc2cc80cb7fe9a73076662f4a8822}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_af4a3ea3f51cdd7d8a25659d27ecb0a77}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aab2edfeb1e9199aed1d26d8657fe7da9}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat2x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_adba420943a958828004f2ad1b491ae27}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat3x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a0072db99d7ed7c7a466a5c14e8acd6e1}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat2x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a65dcf58d33800ba58a2f9180c902f608}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat4x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aeb117115ab8067cf7a34e3d298cfe265}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat3x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_afc7d9deea7fe427c6afa7bc616caa305}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat4x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814}{get\+Uniform}} (int location, float \&data) const
+\begin{DoxyCompactList}\small\item\em Gets a uniform at the given location. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a61b1693df58a11737787d1201a0e6342}{get\+Uniform}} (int location, glm::\+vec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a413f68491f0d002df78b05ad50211743}{get\+Uniform}} (int location, glm::\+vec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a1dd9342d327912b0dd068d3606afc7ec}{get\+Uniform}} (int location, glm::\+vec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aced8e5afc85b86a43161ebc5eda2250f}{get\+Uniform}} (int location, int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7909baabb662853fcdbb9bc2d715c776}{get\+Uniform}} (int location, glm::\+ivec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_adf8b1c985ce45aaf0170fa2984709d05}{get\+Uniform}} (int location, glm::\+ivec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a31da370f83a8014eda24460090ee1229}{get\+Uniform}} (int location, glm::\+ivec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a238f718cbc7dbf11f031a96e72d99b5a}{get\+Uniform}} (int location, unsigned int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a0d048e52be831cbc5e577b0745c2f8ea}{get\+Uniform}} (int location, glm::\+uvec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ae62a10e9cee73e350ed85e293e71b9a4}{get\+Uniform}} (int location, glm::\+uvec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7ff177b4b8e2d959e007214a15edd393}{get\+Uniform}} (int location, glm::\+uvec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a2076e4caa7f5a46db4e22d28504d090d}{get\+Uniform}} (int location, glm::\+mat2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a13494c8468bb74794d884f323440abaa}{get\+Uniform}} (int location, glm::\+mat3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ac2e7bb162754ebd9df13fb2559f9ac03}{get\+Uniform}} (int location, glm::\+mat4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a9d9b98b4738fc3a623f41af0259d2464}{get\+Uniform}} (int location, glm::\+mat2x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ac895fc2cf361aed6d62501e7898e4f44}{get\+Uniform}} (int location, glm::\+mat3x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a12539928ec4e49c2aa2cd2d23b000b0a}{get\+Uniform}} (int location, glm::\+mat2x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a03f9f5e9138a3a2e21ba4dc24ce571b2}{get\+Uniform}} (int location, glm::\+mat4x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ab87346f9902342a0bd13c5d72c893a92}{get\+Uniform}} (int location, glm::\+mat3x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ac32e76296bac10fb26f03fc8aa7f489e}{get\+Uniform}} (int location, glm::\+mat4x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a64eb999ba66ccbda4490b45678bfb958}{get\+Uniform}} (const std::\+string \&name, float \&data) const
+\begin{DoxyCompactList}\small\item\em Gets a uniform at the given name. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7c7726abe85a8d3b098c4817506e66f1}{get\+Uniform}} (const std::\+string \&name, glm::\+vec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a954922c1f4a3be2b9b0d3c5af2f93482}{get\+Uniform}} (const std::\+string \&name, glm::\+vec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a8abf70e7bd5d6643d807334a6db3aaa9}{get\+Uniform}} (const std::\+string \&name, glm::\+vec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a9b4676c87811a77228af7583d3df438b}{get\+Uniform}} (const std::\+string \&name, int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a57d56255482210bf72be30d5ea02d845}{get\+Uniform}} (const std::\+string \&name, glm::\+ivec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a21e68e9134ababaef5546366a432e647}{get\+Uniform}} (const std::\+string \&name, glm::\+ivec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a78a4bb6a7919dc1c7bbc764e3508b60a}{get\+Uniform}} (const std::\+string \&name, glm::\+ivec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a311a972c08775b0581e17971c8cd27d3}{get\+Uniform}} (const std::\+string \&name, unsigned int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a4d30f9f3255e2e57a690e2437127d774}{get\+Uniform}} (const std::\+string \&name, glm::\+uvec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a5e4bac6f7d4775a79a2dec975844fe42}{get\+Uniform}} (const std::\+string \&name, glm::\+uvec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a3825249906ea18f7f3ad2ccc805b53db}{get\+Uniform}} (const std::\+string \&name, glm::\+uvec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_ad8cbd2810729e08ed1d35c2d2416b9c6}{get\+Uniform}} (const std::\+string \&name, glm::\+mat2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7f7937073f49eba282c186d5fe83d95b}{get\+Uniform}} (const std::\+string \&name, glm::\+mat3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a82c002cc059436ddad67dea2d005645b}{get\+Uniform}} (const std::\+string \&name, glm::\+mat4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a2f3f17f09873e42c831de9dca7eeba1b}{get\+Uniform}} (const std::\+string \&name, glm::\+mat2x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a1fa9bd99f4ec819adde1244dca14e414}{get\+Uniform}} (const std::\+string \&name, glm::\+mat3x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a6a4a690d89da9740f55eaa2f134d9a73}{get\+Uniform}} (const std::\+string \&name, glm::\+mat2x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_aeb2a8cc9f52bd46331973ccf9658e3ad}{get\+Uniform}} (const std::\+string \&name, glm::\+mat4x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a54bca27888ab6445e2befa6fa6e7f5ee}{get\+Uniform}} (const std::\+string \&name, glm::\+mat3x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a578a8542eebc261690c61f755bc5d898}{get\+Uniform}} (const std::\+string \&name, glm::\+mat4x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}} \& \doxymbox{\hyperlink{classegl_1_1_program_a22267ce0ea24799b31d59fe8f9b80745}{operator=}} (\doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}} \&\&other)
 \item 
 \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}} \& \doxymbox{\hyperlink{classegl_1_1_program_a25861fa2eed6a4eff139b0b51c072773}{operator=}} (const \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}} \&)=delete
-\end{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} \doxymbox{\hyperlink{classegl_1_1_program_a6f547efb08d0cc9fc19084658d6b4ce5}{operator\+[$\,$]\+}} (int location)
+\begin{DoxyCompactList}\small\item\em Returns a Proxy to get /\+ set the uniform at the given location with assignment and type conversion operators. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} \doxymbox{\hyperlink{classegl_1_1_program_a9323475adb7a6db4c9aabf481ca22db4}{operator\+[$\,$]\+}} (const std::\+string \&name)
+\begin{DoxyCompactList}\small\item\em Returns a Proxy to get /\+ set the uniform with the given name with assignment and type conversion operators. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} \doxymbox{\hyperlink{classegl_1_1_program_aded21d727a68d54fbcf9ecda23ecbeb1}{operator\+[$\,$]\+}} (int location) const
+\begin{DoxyCompactList}\small\item\em Returns a constant only Proxy to get the uniform at the given location with type conversion operators. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} \doxymbox{\hyperlink{classegl_1_1_program_aa091e173bf4263b3eabe76fc5efdbd59}{operator\+[$\,$]\+}} (const std::\+string \&name) const
+\begin{DoxyCompactList}\small\item\em Returns a Proxy to get the uniform with the given name with type conversion operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,9 +233,13 @@ static void \doxymbox{\hyperlink{classegl_1_1_program_a59cce8f9cb55bcd5cca5aabdd
 \item 
 void \doxymbox{\hyperlink{classegl_1_1_program_a9cb5062523e92f185b8092f6c7b3cd59}{\+\_\+delete}} ()
 \item 
-void \doxymbox{\hyperlink{classegl_1_1_program_a128fe35ff4cbf34fd149c171f36e7f05}{\+\_\+check}} ()
+void \doxymbox{\hyperlink{classegl_1_1_program_a73120d3f8cd4dd259a3fff1a2ecd94b2}{\+\_\+check}} () const
 \item 
-void \doxymbox{\hyperlink{classegl_1_1_program_a51710977ce556b99a1e035837d9b3dab}{\+\_\+ensure}} ()
+void \doxymbox{\hyperlink{classegl_1_1_program_a7394768fe859bcc4457f4bf79903e05b}{\+\_\+ensure}} () const
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a9a0033d2d8198051431f1d9c37edf8d1}{\+\_\+query\+Uniform\+Data}} ()
+\item 
+void \doxymbox{\hyperlink{classegl_1_1_program_a7f88481ee8d1d5b2acdc09e6719a4721}{\+\_\+setup\+Uniform}} (int loc, int size\+Check, int type\+Check) const
 \item 
 std::\+string \doxymbox{\hyperlink{classegl_1_1_program_ac19d067e0778963f68922b41a190429a}{\+\_\+get\+Error}} ()
 \end{DoxyCompactItemize}
@@ -60,6 +249,12 @@ std::\+string \doxymbox{\hyperlink{classegl_1_1_program_ac19d067e0778963f68922b4
 unsigned int \doxymbox{\hyperlink{classegl_1_1_program_a8227aba9b050889b227706b443b8816e}{\+\_\+id}} = 0
 \item 
 bool \doxymbox{\hyperlink{classegl_1_1_program_aa371f5f0cb626edc13006ee6ed50db0e}{\+\_\+linked}} = false
+\item 
+std::\+unordered\+\_\+map$<$ std::\+string, int $>$ \doxymbox{\hyperlink{classegl_1_1_program_a3f03effe46afe4fc125ead48a101d8d4}{\+\_\+uniform\+Index\+Map}} = \{\}
+\item 
+std::\+unordered\+\_\+map$<$ int, int $>$ \doxymbox{\hyperlink{classegl_1_1_program_a8e0428dafaad35d5834e353a60584ac9}{\+\_\+uniform\+Location\+Index\+Map}} = \{\}
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{namespaceegl_a99c234b350fbf99fa2289578b0fc399e}{Uniform\+Data}} $>$ \doxymbox{\hyperlink{classegl_1_1_program_a7a2d1cfc17558bd258de42f694992031}{\+\_\+uniform\+Data}} = \{\}
 \end{DoxyCompactItemize}
 
 
@@ -112,11 +307,11 @@ egl::\+\+Program::\+\texorpdfstring{$\sim$}{\string~}\+Program (\begin{DoxyParam
 \label{doc-func-members}
 \Hypertarget{classegl_1_1_program_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classegl_1_1_program_a128fe35ff4cbf34fd149c171f36e7f05}\index{egl::Program@{egl::Program}!\_check@{\_check}}
+\Hypertarget{classegl_1_1_program_a73120d3f8cd4dd259a3fff1a2ecd94b2}\index{egl::Program@{egl::Program}!\_check@{\_check}}
 \index{\_check@{\_check}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{\_check()}{\_check()}}
-{\footnotesize\ttfamily \label{classegl_1_1_program_a128fe35ff4cbf34fd149c171f36e7f05} 
-void egl::\+\+Program::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a73120d3f8cd4dd259a3fff1a2ecd94b2} 
+void egl::\+\+Program::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
 \Hypertarget{classegl_1_1_program_a9cb5062523e92f185b8092f6c7b3cd59}\index{egl::Program@{egl::Program}!\_delete@{\_delete}}
 \index{\_delete@{\_delete}!egl::Program@{egl::Program}}
@@ -124,17 +319,29 @@ void egl::\+\+Program::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParam
 {\footnotesize\ttfamily \label{classegl_1_1_program_a9cb5062523e92f185b8092f6c7b3cd59} 
 void egl::\+\+Program::\+\+\_\+delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-\Hypertarget{classegl_1_1_program_a51710977ce556b99a1e035837d9b3dab}\index{egl::Program@{egl::Program}!\_ensure@{\_ensure}}
+\Hypertarget{classegl_1_1_program_a7394768fe859bcc4457f4bf79903e05b}\index{egl::Program@{egl::Program}!\_ensure@{\_ensure}}
 \index{\_ensure@{\_ensure}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{\_ensure()}{\_ensure()}}
-{\footnotesize\ttfamily \label{classegl_1_1_program_a51710977ce556b99a1e035837d9b3dab} 
-void egl::\+\+Program::\+\+\_\+ensure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7394768fe859bcc4457f4bf79903e05b} 
+void egl::\+\+Program::\+\+\_\+ensure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
 \Hypertarget{classegl_1_1_program_ac19d067e0778963f68922b41a190429a}\index{egl::Program@{egl::Program}!\_getError@{\_getError}}
 \index{\_getError@{\_getError}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{\_getError()}{\_getError()}}
 {\footnotesize\ttfamily \label{classegl_1_1_program_ac19d067e0778963f68922b41a190429a} 
 std::\+string egl::\+\+Program::\+\+\_\+get\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_program_a9a0033d2d8198051431f1d9c37edf8d1}\index{egl::Program@{egl::Program}!\_queryUniformData@{\_queryUniformData}}
+\index{\_queryUniformData@{\_queryUniformData}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{\_queryUniformData()}{\_queryUniformData()}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a9a0033d2d8198051431f1d9c37edf8d1} 
+void egl::\+\+Program::\+\+\_\+query\+Uniform\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_program_a7f88481ee8d1d5b2acdc09e6719a4721}\index{egl::Program@{egl::Program}!\_setupUniform@{\_setupUniform}}
+\index{\_setupUniform@{\_setupUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{\_setupUniform()}{\_setupUniform()}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7f88481ee8d1d5b2acdc09e6719a4721} 
+void egl::\+\+Program::\+\+\_\+setup\+Uniform (\begin{DoxyParamCaption}\item[{int}]{loc}{, }\item[{int}]{size\+Check}{, }\item[{int}]{type\+Check}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
 \Hypertarget{classegl_1_1_program_a80586d03da7e5cc52b7771244e0fd6fc}\index{egl::Program@{egl::Program}!attach@{attach}}
 \index{attach@{attach}!egl::Program@{egl::Program}}
@@ -158,7 +365,7 @@ Attached Shaders must outlive the \doxylink{classegl_1_1_program}{Program} (at l
 \begin{DoxyExceptions}{Exceptions}
 {\em std::\+runtime\+\_\+error} & If the \doxylink{classegl_1_1_shader}{Shader} has already been attached. \\
 \hline
-{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state).\\
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state)\\
 \hline
 \end{DoxyExceptions}
 
@@ -183,17 +390,17 @@ Checks if the given \doxylink{classegl_1_1_shader}{Shader} is attached to the \d
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state).\\
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state)\\
 \hline
 \end{DoxyExceptions}
 \begin{DoxyReturn}{Returns}
 true if the \doxylink{classegl_1_1_shader}{Shader} is attached, false otherwise. 
 \end{DoxyReturn}
-\Hypertarget{classegl_1_1_program_ac633a72ad0a8cc5ffdf7b77bf8d8253a}\index{egl::Program@{egl::Program}!bind@{bind}}
+\Hypertarget{classegl_1_1_program_a7c7477394ba1cd4ef4b9e22a0eda13ce}\index{egl::Program@{egl::Program}!bind@{bind}}
 \index{bind@{bind}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{bind()}{bind()}}
-{\footnotesize\ttfamily \label{classegl_1_1_program_ac633a72ad0a8cc5ffdf7b77bf8d8253a} 
-void egl::\+\+Program::\+bind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7c7477394ba1cd4ef4b9e22a0eda13ce} 
+void egl::\+\+Program::\+bind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -201,7 +408,7 @@ Binds this \doxylink{classegl_1_1_program}{Program}.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state). \\
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
 \hline
 {\em std::\+runtime\+\_\+error} & If the \doxylink{classegl_1_1_program}{Program} was not linked to avoid invalid usage. \\
 \hline
@@ -223,7 +430,7 @@ Detaching a \doxylink{classegl_1_1_shader}{Shader} invalidates the current link 
 \begin{DoxyExceptions}{Exceptions}
 {\em std::\+runtime\+\_\+error} & If the \doxylink{classegl_1_1_shader}{Shader} was not attached. \\
 \hline
-{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state).\\
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state)\\
 \hline
 \end{DoxyExceptions}
 
@@ -231,6 +438,493 @@ Detaching a \doxylink{classegl_1_1_shader}{Shader} invalidates the current link 
 {\em shader} & The \doxylink{classegl_1_1_shader}{Shader} that should be detached from the \doxylink{classegl_1_1_program}{Program}. \\
 \hline
 \end{DoxyParams}
+\Hypertarget{classegl_1_1_program_a64eb999ba66ccbda4490b45678bfb958}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a64eb999ba66ccbda4490b45678bfb958} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{float \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a uniform at the given name. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to get a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+{\em data} & The variable to store the data in\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classegl_1_1_program_a57d56255482210bf72be30d5ea02d845}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a57d56255482210bf72be30d5ea02d845} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a21e68e9134ababaef5546366a432e647}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a21e68e9134ababaef5546366a432e647} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a78a4bb6a7919dc1c7bbc764e3508b60a}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a78a4bb6a7919dc1c7bbc764e3508b60a} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ad8cbd2810729e08ed1d35c2d2416b9c6}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ad8cbd2810729e08ed1d35c2d2416b9c6} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a2f3f17f09873e42c831de9dca7eeba1b}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a2f3f17f09873e42c831de9dca7eeba1b} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a6a4a690d89da9740f55eaa2f134d9a73}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a6a4a690d89da9740f55eaa2f134d9a73} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a7f7937073f49eba282c186d5fe83d95b}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7f7937073f49eba282c186d5fe83d95b} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a1fa9bd99f4ec819adde1244dca14e414}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [9/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a1fa9bd99f4ec819adde1244dca14e414} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a54bca27888ab6445e2befa6fa6e7f5ee}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [10/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a54bca27888ab6445e2befa6fa6e7f5ee} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a82c002cc059436ddad67dea2d005645b}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [11/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a82c002cc059436ddad67dea2d005645b} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aeb2a8cc9f52bd46331973ccf9658e3ad}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [12/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aeb2a8cc9f52bd46331973ccf9658e3ad} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a578a8542eebc261690c61f755bc5d898}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [13/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a578a8542eebc261690c61f755bc5d898} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a4d30f9f3255e2e57a690e2437127d774}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [14/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a4d30f9f3255e2e57a690e2437127d774} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a5e4bac6f7d4775a79a2dec975844fe42}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [15/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a5e4bac6f7d4775a79a2dec975844fe42} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a3825249906ea18f7f3ad2ccc805b53db}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [16/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a3825249906ea18f7f3ad2ccc805b53db} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a7c7726abe85a8d3b098c4817506e66f1}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [17/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7c7726abe85a8d3b098c4817506e66f1} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a954922c1f4a3be2b9b0d3c5af2f93482}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [18/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a954922c1f4a3be2b9b0d3c5af2f93482} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a8abf70e7bd5d6643d807334a6db3aaa9}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [19/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a8abf70e7bd5d6643d807334a6db3aaa9} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a9b4676c87811a77228af7583d3df438b}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [20/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a9b4676c87811a77228af7583d3df438b} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{int \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a311a972c08775b0581e17971c8cd27d3}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [21/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a311a972c08775b0581e17971c8cd27d3} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{unsigned int \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [22/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{float \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets a uniform at the given location. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to get a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb}{get\+Uniform\+Location()} \\
+\hline
+{\em data} & The variable to store the data in\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classegl_1_1_program_a7909baabb662853fcdbb9bc2d715c776}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [23/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7909baabb662853fcdbb9bc2d715c776} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_adf8b1c985ce45aaf0170fa2984709d05}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [24/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_adf8b1c985ce45aaf0170fa2984709d05} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a31da370f83a8014eda24460090ee1229}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [25/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a31da370f83a8014eda24460090ee1229} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a2076e4caa7f5a46db4e22d28504d090d}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [26/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a2076e4caa7f5a46db4e22d28504d090d} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a9d9b98b4738fc3a623f41af0259d2464}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [27/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a9d9b98b4738fc3a623f41af0259d2464} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a12539928ec4e49c2aa2cd2d23b000b0a}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [28/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a12539928ec4e49c2aa2cd2d23b000b0a} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a13494c8468bb74794d884f323440abaa}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [29/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a13494c8468bb74794d884f323440abaa} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ac895fc2cf361aed6d62501e7898e4f44}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [30/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ac895fc2cf361aed6d62501e7898e4f44} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ab87346f9902342a0bd13c5d72c893a92}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [31/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ab87346f9902342a0bd13c5d72c893a92} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ac2e7bb162754ebd9df13fb2559f9ac03}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [32/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ac2e7bb162754ebd9df13fb2559f9ac03} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a03f9f5e9138a3a2e21ba4dc24ce571b2}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [33/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a03f9f5e9138a3a2e21ba4dc24ce571b2} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ac32e76296bac10fb26f03fc8aa7f489e}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [34/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ac32e76296bac10fb26f03fc8aa7f489e} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a0d048e52be831cbc5e577b0745c2f8ea}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [35/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a0d048e52be831cbc5e577b0745c2f8ea} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ae62a10e9cee73e350ed85e293e71b9a4}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [36/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ae62a10e9cee73e350ed85e293e71b9a4} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a7ff177b4b8e2d959e007214a15edd393}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [37/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7ff177b4b8e2d959e007214a15edd393} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a61b1693df58a11737787d1201a0e6342}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [38/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a61b1693df58a11737787d1201a0e6342} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a413f68491f0d002df78b05ad50211743}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [39/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a413f68491f0d002df78b05ad50211743} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a1dd9342d327912b0dd068d3606afc7ec}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [40/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a1dd9342d327912b0dd068d3606afc7ec} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aced8e5afc85b86a43161ebc5eda2250f}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [41/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aced8e5afc85b86a43161ebc5eda2250f} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{int \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a238f718cbc7dbf11f031a96e72d99b5a}\index{egl::Program@{egl::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [42/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a238f718cbc7dbf11f031a96e72d99b5a} 
+void egl::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{unsigned int \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb}\index{egl::Program@{egl::Program}!getUniformLocation@{getUniformLocation}}
+\index{getUniformLocation@{getUniformLocation}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{getUniformLocation()}{getUniformLocation()}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb} 
+int egl::\+\+Program::\+get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the Location of the given Uniform. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} was not linked before use \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the uniform does not exist\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the uniform to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The location of the uniform 
+\end{DoxyReturn}
 \Hypertarget{classegl_1_1_program_a1f28faa9fa6e602bc749618ec5ac647f}\index{egl::Program@{egl::Program}!link@{link}}
 \index{link@{link}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{link()}{link()}}
@@ -243,7 +937,7 @@ Links all attached Shaders and creates a valid \doxylink{classegl_1_1_program}{P
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state). \\
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
 \hline
 {\em \doxylink{classegl_1_1_program_link_error}{egl::\+\+Program\+Link\+Error}} & If the \doxylink{classegl_1_1_program}{Program} fails to link. The \doxylink{classegl_1_1_program}{Program} remains in a valid state afterwards. \\
 \hline
@@ -275,6 +969,106 @@ true if the \doxylink{classegl_1_1_program}{Program} is linked, false otherwise.
 {\footnotesize\ttfamily \label{classegl_1_1_program_a22267ce0ea24799b31d59fe8f9b80745} 
 \doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}} \& egl::\+\+Program::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classegl_1_1_program_a3a2a929f092c53b44d3094b75826e087}{Program}} \&\&}]{other}{}\end{DoxyParamCaption})}
 
+\Hypertarget{classegl_1_1_program_a9323475adb7a6db4c9aabf481ca22db4}\index{egl::Program@{egl::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a9323475adb7a6db4c9aabf481ca22db4} 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} egl::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Proxy to get /\+ set the uniform with the given name with assignment and type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors when assigning can be found under \doxylink{classegl_1_1_program_ae57bcdfd1bf4e60724ca4f91a877e2a0}{egl::\+\+Program::\+set\+Uniform}. 
+
+Possible errors on explicit type conversion can be found under \doxylink{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814}{egl::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} was not linked before use \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the uniform does not exist\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_program_aa091e173bf4263b3eabe76fc5efdbd59}\index{egl::Program@{egl::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aa091e173bf4263b3eabe76fc5efdbd59} 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} egl::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Proxy to get the uniform with the given name with type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors on explicit type conversion can be found under \doxylink{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814}{egl::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} was not linked before use \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the uniform does not exist\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_program_a6f547efb08d0cc9fc19084658d6b4ce5}\index{egl::Program@{egl::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a6f547efb08d0cc9fc19084658d6b4ce5} 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} egl::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{int}]{location}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Proxy to get /\+ set the uniform at the given location with assignment and type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors when assigning can be found under \doxylink{classegl_1_1_program_ae57bcdfd1bf4e60724ca4f91a877e2a0}{egl::\+\+Program::\+set\+Uniform}. 
+
+Possible errors on explicit type conversion can be found under \doxylink{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814}{egl::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb}{get\+Uniform\+Location()} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classegl_1_1_program_aded21d727a68d54fbcf9ecda23ecbeb1}\index{egl::Program@{egl::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aded21d727a68d54fbcf9ecda23ecbeb1} 
+\doxymbox{\hyperlink{classegl_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} egl::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{int}]{location}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a constant only Proxy to get the uniform at the given location with type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors on explicit type conversion can be found under \doxylink{classegl_1_1_program_a71d0a48e59222d6aff47a9940c0fc814}{egl::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb}{get\+Uniform\+Location()} \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}\index{egl::Program@{egl::Program}!reset@{reset}}
 \index{reset@{reset}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}}
@@ -290,6 +1084,472 @@ Resets the \doxylink{classegl_1_1_program}{Program} to an empty State.
 {\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a new \doxylink{classegl_1_1_program}{Program}. \\
 \hline
 \end{DoxyExceptions}
+\Hypertarget{classegl_1_1_program_ac97a4900bef077d9bbbe3be4ccc73359}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ac97a4900bef077d9bbbe3be4ccc73359} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aed391d33b5a7c1d5d651adac32f7a48d}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aed391d33b5a7c1d5d651adac32f7a48d} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a7c0b1a9ccc0b52c3af7e36f55a7234e1}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7c0b1a9ccc0b52c3af7e36f55a7234e1} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a57ebdde1efe2588b18721f7579f3b816}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a57ebdde1efe2588b18721f7579f3b816} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aab2edfeb1e9199aed1d26d8657fe7da9}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aab2edfeb1e9199aed1d26d8657fe7da9} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a0072db99d7ed7c7a466a5c14e8acd6e1}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a0072db99d7ed7c7a466a5c14e8acd6e1} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a007dc2cc80cb7fe9a73076662f4a8822}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a007dc2cc80cb7fe9a73076662f4a8822} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_adba420943a958828004f2ad1b491ae27}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_adba420943a958828004f2ad1b491ae27} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aeb117115ab8067cf7a34e3d298cfe265}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [9/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aeb117115ab8067cf7a34e3d298cfe265} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_af4a3ea3f51cdd7d8a25659d27ecb0a77}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [10/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_af4a3ea3f51cdd7d8a25659d27ecb0a77} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a65dcf58d33800ba58a2f9180c902f608}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [11/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a65dcf58d33800ba58a2f9180c902f608} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_afc7d9deea7fe427c6afa7bc616caa305}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [12/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_afc7d9deea7fe427c6afa7bc616caa305} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aba71fb11799ce2c3e1ee5989db8b5736}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [13/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aba71fb11799ce2c3e1ee5989db8b5736} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a09bc85e90db15b506f239a558a507bf8}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [14/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a09bc85e90db15b506f239a558a507bf8} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aa4a29d2f4dc186bb8c9ecb6cd48d4d03}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [15/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aa4a29d2f4dc186bb8c9ecb6cd48d4d03} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ad8e277f746a1ce2af3af21215d55f0e7}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [16/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ad8e277f746a1ce2af3af21215d55f0e7} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a7bb36e23007fdc307c5fccd13367f7c6}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [17/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7bb36e23007fdc307c5fccd13367f7c6} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aa19ebdbf4d5627726e725aa2f96ef37f}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [18/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aa19ebdbf4d5627726e725aa2f96ef37f} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a9b2e3e685708e99136f7aba932f3d962}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [19/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a9b2e3e685708e99136f7aba932f3d962} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{float}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets a uniform at the given name. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to set a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+{\em data} & The value to assign to the uniform\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classegl_1_1_program_a13c5f6732963353c57d7d5676fc74429}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [20/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a13c5f6732963353c57d7d5676fc74429} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{int}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_afc70fa47ff63c735d840f34c78f1a16c}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [21/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_afc70fa47ff63c735d840f34c78f1a16c} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{unsigned int}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a6c7d49198a3e1465cd6f744458caf0dd}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [22/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a6c7d49198a3e1465cd6f744458caf0dd} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a2c1566091cdeb9580d348a3fbc19d185}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [23/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a2c1566091cdeb9580d348a3fbc19d185} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aba70b402e38002dad4753e7a0c8a4024}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [24/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aba70b402e38002dad4753e7a0c8a4024} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a5959620c7dc9ccc2804f544b2702ac0f}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [25/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a5959620c7dc9ccc2804f544b2702ac0f} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aef0df907bfde7650986a56caad4824f5}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [26/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aef0df907bfde7650986a56caad4824f5} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a8fb14d925b462a38f5abcfd06e9b6e13}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [27/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a8fb14d925b462a38f5abcfd06e9b6e13} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a6814de4a6fc9b738800819adfd2d8992}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [28/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a6814de4a6fc9b738800819adfd2d8992} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a261145c6678c4aa40351a6027f1ce727}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [29/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a261145c6678c4aa40351a6027f1ce727} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_af64c2f537bf3242c424560524d71a885}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [30/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_af64c2f537bf3242c424560524d71a885} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a2fbcd122266ac9638a75048820e2364f}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [31/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a2fbcd122266ac9638a75048820e2364f} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a638519cb4b44ab06d651708a3a8d602f}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [32/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a638519cb4b44ab06d651708a3a8d602f} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aa22b18a9f26a74607685e1d1029562aa}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [33/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aa22b18a9f26a74607685e1d1029562aa} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ab66148731dae0fa5de3b0a43ea12b270}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [34/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ab66148731dae0fa5de3b0a43ea12b270} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_aefd866ac1617cf64c73164bbbd87670b}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [35/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_aefd866ac1617cf64c73164bbbd87670b} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a6e2501c9d63e11171ff2d36c3699535a}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [36/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a6e2501c9d63e11171ff2d36c3699535a} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_adc0ad0882a904c67d0a3dde88c882646}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [37/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_adc0ad0882a904c67d0a3dde88c882646} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a2b725dab5a23c41b1dac92b01aad2fd1}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [38/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a2b725dab5a23c41b1dac92b01aad2fd1} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a67b8cf5dab1c545bf3cecdcad8defded}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [39/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a67b8cf5dab1c545bf3cecdcad8defded} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_ae57bcdfd1bf4e60724ca4f91a877e2a0}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [40/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_ae57bcdfd1bf4e60724ca4f91a877e2a0} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{float}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Sets a uniform at the given location. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} object does not exist (\doxylink{classegl_1_1_program_a0d9bf7750add025ffc566b823e6f76ad}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to set a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classegl_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classegl_1_1_program_adde107716abc9c85ac325ad078bd8fdb}{get\+Uniform\+Location()} \\
+\hline
+{\em data} & The value to assign to the uniform\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classegl_1_1_program_a76001e81309dc47570f7661a235f438f}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [41/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a76001e81309dc47570f7661a235f438f} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{int}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classegl_1_1_program_a8a170e81fbd929d42f5686286b7f06fe}\index{egl::Program@{egl::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [42/42]}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a8a170e81fbd929d42f5686286b7f06fe} 
+void egl::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{unsigned int}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
 \Hypertarget{classegl_1_1_program_a59cce8f9cb55bcd5cca5aabdd93fd313}\index{egl::Program@{egl::Program}!unbind@{unbind}}
 \index{unbind@{unbind}!egl::Program@{egl::Program}}
 \doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
@@ -316,6 +1576,24 @@ unsigned int egl::\+\+Program::\+\+\_\+id = 0\hspace{0.3cm}{\ttfamily [protected
 \doxysubsubsection{\texorpdfstring{\_linked}{\_linked}}
 {\footnotesize\ttfamily \label{classegl_1_1_program_aa371f5f0cb626edc13006ee6ed50db0e} 
 bool egl::\+\+Program::\+\+\_\+linked = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_program_a7a2d1cfc17558bd258de42f694992031}\index{egl::Program@{egl::Program}!\_uniformData@{\_uniformData}}
+\index{\_uniformData@{\_uniformData}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{\_uniformData}{\_uniformData}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a7a2d1cfc17558bd258de42f694992031} 
+std::\+vector$<$\doxymbox{\hyperlink{namespaceegl_a99c234b350fbf99fa2289578b0fc399e}{Uniform\+Data}}$>$ egl::\+\+Program::\+\+\_\+uniform\+Data = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_program_a3f03effe46afe4fc125ead48a101d8d4}\index{egl::Program@{egl::Program}!\_uniformIndexMap@{\_uniformIndexMap}}
+\index{\_uniformIndexMap@{\_uniformIndexMap}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{\_uniformIndexMap}{\_uniformIndexMap}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a3f03effe46afe4fc125ead48a101d8d4} 
+std::\+unordered\+\_\+map$<$std::\+string, int$>$ egl::\+\+Program::\+\+\_\+uniform\+Index\+Map = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classegl_1_1_program_a8e0428dafaad35d5834e353a60584ac9}\index{egl::Program@{egl::Program}!\_uniformLocationIndexMap@{\_uniformLocationIndexMap}}
+\index{\_uniformLocationIndexMap@{\_uniformLocationIndexMap}!egl::Program@{egl::Program}}
+\doxysubsubsection{\texorpdfstring{\_uniformLocationIndexMap}{\_uniformLocationIndexMap}}
+{\footnotesize\ttfamily \label{classegl_1_1_program_a8e0428dafaad35d5834e353a60584ac9} 
+std::\+unordered\+\_\+map$<$int, int$>$ egl::\+\+Program::\+\+\_\+uniform\+Location\+Index\+Map = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 

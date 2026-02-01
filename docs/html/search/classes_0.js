@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer_0',['Buffer',['../d3/d66/classegl_1_1_buffer.html',1,'egl']]]
+  ['_5funiformdata_0',['_uniformData',['../d4/da7/structegl_1_1__uniform_data.html',1,'egl']]]
 ];

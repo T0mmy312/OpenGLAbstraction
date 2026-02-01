@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_0',['window',['../d2/d41/classegl_1_1_window_context.html#a7fa27fb25bb6fc261b2f4f65d7d202c2',1,'egl::WindowContext']]]
+  ['gltype_0',['glType',['../d4/da7/structegl_1_1__uniform_data.html#af086487dd0a68fda0ac80a0060a5813d',1,'egl::_uniformData']]]
 ];

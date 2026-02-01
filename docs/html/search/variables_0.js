@@ -6,5 +6,8 @@ var searchData=
   ['_5flinked_3',['_linked',['../d6/d3a/classegl_1_1_program.html#aa371f5f0cb626edc13006ee6ed50db0e',1,'egl::Program']]],
   ['_5fmapped_4',['_mapped',['../d3/d66/classegl_1_1_buffer.html#a7bee745bcdd4f7166b9b563738213e9e',1,'egl::Buffer']]],
   ['_5fmapusage_5',['_mapUsage',['../d3/d66/classegl_1_1_buffer.html#a683a2afd7b811afda1f5114d2f826e80',1,'egl::Buffer']]],
-  ['_5ftype_6',['_type',['../d3/d66/classegl_1_1_buffer.html#a24c2b512d61e32ec1b2dbf45f0f53433',1,'egl::Buffer::_type'],['../db/de5/classegl_1_1_shader.html#a0f11b0bd57439caa5d5e1bc00f9b1f8e',1,'egl::Shader::_type']]]
+  ['_5ftype_6',['_type',['../d3/d66/classegl_1_1_buffer.html#a24c2b512d61e32ec1b2dbf45f0f53433',1,'egl::Buffer::_type'],['../db/de5/classegl_1_1_shader.html#a0f11b0bd57439caa5d5e1bc00f9b1f8e',1,'egl::Shader::_type']]],
+  ['_5funiformdata_7',['_uniformData',['../d6/d3a/classegl_1_1_program.html#a7a2d1cfc17558bd258de42f694992031',1,'egl::Program']]],
+  ['_5funiformindexmap_8',['_uniformIndexMap',['../d6/d3a/classegl_1_1_program.html#a3f03effe46afe4fc125ead48a101d8d4',1,'egl::Program']]],
+  ['_5funiformlocationindexmap_9',['_uniformLocationIndexMap',['../d6/d3a/classegl_1_1_program.html#a8e0428dafaad35d5834e353a60584ac9',1,'egl::Program']]]
 ];

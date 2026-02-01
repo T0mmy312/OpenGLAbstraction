@@ -98,6 +98,11 @@ $(function(){initNavTree('d6/d3a/classegl_1_1_program.html','../../',''); });
 
 <p><code>#include &lt;<a class="el" href="../../d1/dea/program_8h_source.html">program.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:UniformProxy" id="r_UniformProxy"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/dba/classegl_1_1_program_1_1_uniform_proxy.html">UniformProxy</a></td></tr>
+<tr class="memitem:UniformProxyConst" id="r_UniformProxyConst"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../da/d64/classegl_1_1_program_1_1_uniform_proxy_const.html">UniformProxyConst</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a2a929f092c53b44d3094b75826e087" id="r_a3a2a929f092c53b44d3094b75826e087"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3a2a929f092c53b44d3094b75826e087">Program</a> ()</td></tr>
@@ -117,10 +122,188 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a955685993f1b3a7a6fdfd64597763819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if the <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> has been successfully linked.  <br /></td></tr>
 <tr class="memitem:a1f28faa9fa6e602bc749618ec5ac647f" id="r_a1f28faa9fa6e602bc749618ec5ac647f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1f28faa9fa6e602bc749618ec5ac647f">link</a> ()</td></tr>
 <tr class="memdesc:a1f28faa9fa6e602bc749618ec5ac647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links all attached Shaders and creates a valid <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a>.  <br /></td></tr>
-<tr class="memitem:ac633a72ad0a8cc5ffdf7b77bf8d8253a" id="r_ac633a72ad0a8cc5ffdf7b77bf8d8253a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac633a72ad0a8cc5ffdf7b77bf8d8253a">bind</a> ()</td></tr>
-<tr class="memdesc:ac633a72ad0a8cc5ffdf7b77bf8d8253a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds this <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a>.  <br /></td></tr>
+<tr class="memitem:a7c7477394ba1cd4ef4b9e22a0eda13ce" id="r_a7c7477394ba1cd4ef4b9e22a0eda13ce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c7477394ba1cd4ef4b9e22a0eda13ce">bind</a> () const</td></tr>
+<tr class="memdesc:a7c7477394ba1cd4ef4b9e22a0eda13ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds this <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a>.  <br /></td></tr>
+<tr class="memitem:adde107716abc9c85ac325ad078bd8fdb" id="r_adde107716abc9c85ac325ad078bd8fdb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adde107716abc9c85ac325ad078bd8fdb">getUniformLocation</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:adde107716abc9c85ac325ad078bd8fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Location of the given Uniform.  <br /></td></tr>
+<tr class="memitem:ae57bcdfd1bf4e60724ca4f91a877e2a0" id="r_ae57bcdfd1bf4e60724ca4f91a877e2a0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae57bcdfd1bf4e60724ca4f91a877e2a0">setUniform</a> (int location, float data)</td></tr>
+<tr class="memdesc:ae57bcdfd1bf4e60724ca4f91a877e2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a uniform at the given location.  <br /></td></tr>
+<tr class="memitem:adc0ad0882a904c67d0a3dde88c882646" id="r_adc0ad0882a904c67d0a3dde88c882646"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adc0ad0882a904c67d0a3dde88c882646">setUniform</a> (int location, const glm::vec2 &amp;data)</td></tr>
+<tr class="memdesc:adc0ad0882a904c67d0a3dde88c882646"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a2b725dab5a23c41b1dac92b01aad2fd1" id="r_a2b725dab5a23c41b1dac92b01aad2fd1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b725dab5a23c41b1dac92b01aad2fd1">setUniform</a> (int location, const glm::vec3 &amp;data)</td></tr>
+<tr class="memdesc:a2b725dab5a23c41b1dac92b01aad2fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a67b8cf5dab1c545bf3cecdcad8defded" id="r_a67b8cf5dab1c545bf3cecdcad8defded"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a67b8cf5dab1c545bf3cecdcad8defded">setUniform</a> (int location, const glm::vec4 &amp;data)</td></tr>
+<tr class="memdesc:a67b8cf5dab1c545bf3cecdcad8defded"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a76001e81309dc47570f7661a235f438f" id="r_a76001e81309dc47570f7661a235f438f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a76001e81309dc47570f7661a235f438f">setUniform</a> (int location, int data)</td></tr>
+<tr class="memdesc:a76001e81309dc47570f7661a235f438f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a6c7d49198a3e1465cd6f744458caf0dd" id="r_a6c7d49198a3e1465cd6f744458caf0dd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c7d49198a3e1465cd6f744458caf0dd">setUniform</a> (int location, const glm::ivec2 &amp;data)</td></tr>
+<tr class="memdesc:a6c7d49198a3e1465cd6f744458caf0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a2c1566091cdeb9580d348a3fbc19d185" id="r_a2c1566091cdeb9580d348a3fbc19d185"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2c1566091cdeb9580d348a3fbc19d185">setUniform</a> (int location, const glm::ivec3 &amp;data)</td></tr>
+<tr class="memdesc:a2c1566091cdeb9580d348a3fbc19d185"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aba70b402e38002dad4753e7a0c8a4024" id="r_aba70b402e38002dad4753e7a0c8a4024"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aba70b402e38002dad4753e7a0c8a4024">setUniform</a> (int location, const glm::ivec4 &amp;data)</td></tr>
+<tr class="memdesc:aba70b402e38002dad4753e7a0c8a4024"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a8a170e81fbd929d42f5686286b7f06fe" id="r_a8a170e81fbd929d42f5686286b7f06fe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8a170e81fbd929d42f5686286b7f06fe">setUniform</a> (int location, unsigned int data)</td></tr>
+<tr class="memdesc:a8a170e81fbd929d42f5686286b7f06fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ab66148731dae0fa5de3b0a43ea12b270" id="r_ab66148731dae0fa5de3b0a43ea12b270"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab66148731dae0fa5de3b0a43ea12b270">setUniform</a> (int location, const glm::uvec2 &amp;data)</td></tr>
+<tr class="memdesc:ab66148731dae0fa5de3b0a43ea12b270"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aefd866ac1617cf64c73164bbbd87670b" id="r_aefd866ac1617cf64c73164bbbd87670b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aefd866ac1617cf64c73164bbbd87670b">setUniform</a> (int location, const glm::uvec3 &amp;data)</td></tr>
+<tr class="memdesc:aefd866ac1617cf64c73164bbbd87670b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a6e2501c9d63e11171ff2d36c3699535a" id="r_a6e2501c9d63e11171ff2d36c3699535a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6e2501c9d63e11171ff2d36c3699535a">setUniform</a> (int location, const glm::uvec4 &amp;data)</td></tr>
+<tr class="memdesc:a6e2501c9d63e11171ff2d36c3699535a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a5959620c7dc9ccc2804f544b2702ac0f" id="r_a5959620c7dc9ccc2804f544b2702ac0f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5959620c7dc9ccc2804f544b2702ac0f">setUniform</a> (int location, const glm::mat2 &amp;data)</td></tr>
+<tr class="memdesc:a5959620c7dc9ccc2804f544b2702ac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a6814de4a6fc9b738800819adfd2d8992" id="r_a6814de4a6fc9b738800819adfd2d8992"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6814de4a6fc9b738800819adfd2d8992">setUniform</a> (int location, const glm::mat3 &amp;data)</td></tr>
+<tr class="memdesc:a6814de4a6fc9b738800819adfd2d8992"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a2fbcd122266ac9638a75048820e2364f" id="r_a2fbcd122266ac9638a75048820e2364f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2fbcd122266ac9638a75048820e2364f">setUniform</a> (int location, const glm::mat4 &amp;data)</td></tr>
+<tr class="memdesc:a2fbcd122266ac9638a75048820e2364f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aef0df907bfde7650986a56caad4824f5" id="r_aef0df907bfde7650986a56caad4824f5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aef0df907bfde7650986a56caad4824f5">setUniform</a> (int location, const glm::mat2x3 &amp;data)</td></tr>
+<tr class="memdesc:aef0df907bfde7650986a56caad4824f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a261145c6678c4aa40351a6027f1ce727" id="r_a261145c6678c4aa40351a6027f1ce727"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a261145c6678c4aa40351a6027f1ce727">setUniform</a> (int location, const glm::mat3x2 &amp;data)</td></tr>
+<tr class="memdesc:a261145c6678c4aa40351a6027f1ce727"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a8fb14d925b462a38f5abcfd06e9b6e13" id="r_a8fb14d925b462a38f5abcfd06e9b6e13"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8fb14d925b462a38f5abcfd06e9b6e13">setUniform</a> (int location, const glm::mat2x4 &amp;data)</td></tr>
+<tr class="memdesc:a8fb14d925b462a38f5abcfd06e9b6e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a638519cb4b44ab06d651708a3a8d602f" id="r_a638519cb4b44ab06d651708a3a8d602f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a638519cb4b44ab06d651708a3a8d602f">setUniform</a> (int location, const glm::mat4x2 &amp;data)</td></tr>
+<tr class="memdesc:a638519cb4b44ab06d651708a3a8d602f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:af64c2f537bf3242c424560524d71a885" id="r_af64c2f537bf3242c424560524d71a885"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af64c2f537bf3242c424560524d71a885">setUniform</a> (int location, const glm::mat3x4 &amp;data)</td></tr>
+<tr class="memdesc:af64c2f537bf3242c424560524d71a885"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aa22b18a9f26a74607685e1d1029562aa" id="r_aa22b18a9f26a74607685e1d1029562aa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa22b18a9f26a74607685e1d1029562aa">setUniform</a> (int location, const glm::mat4x3 &amp;data)</td></tr>
+<tr class="memdesc:aa22b18a9f26a74607685e1d1029562aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a9b2e3e685708e99136f7aba932f3d962" id="r_a9b2e3e685708e99136f7aba932f3d962"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b2e3e685708e99136f7aba932f3d962">setUniform</a> (const std::string &amp;name, float data)</td></tr>
+<tr class="memdesc:a9b2e3e685708e99136f7aba932f3d962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a uniform at the given name.  <br /></td></tr>
+<tr class="memitem:ad8e277f746a1ce2af3af21215d55f0e7" id="r_ad8e277f746a1ce2af3af21215d55f0e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad8e277f746a1ce2af3af21215d55f0e7">setUniform</a> (const std::string &amp;name, const glm::vec2 &amp;data)</td></tr>
+<tr class="memdesc:ad8e277f746a1ce2af3af21215d55f0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a7bb36e23007fdc307c5fccd13367f7c6" id="r_a7bb36e23007fdc307c5fccd13367f7c6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7bb36e23007fdc307c5fccd13367f7c6">setUniform</a> (const std::string &amp;name, const glm::vec3 &amp;data)</td></tr>
+<tr class="memdesc:a7bb36e23007fdc307c5fccd13367f7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aa19ebdbf4d5627726e725aa2f96ef37f" id="r_aa19ebdbf4d5627726e725aa2f96ef37f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa19ebdbf4d5627726e725aa2f96ef37f">setUniform</a> (const std::string &amp;name, const glm::vec4 &amp;data)</td></tr>
+<tr class="memdesc:aa19ebdbf4d5627726e725aa2f96ef37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a13c5f6732963353c57d7d5676fc74429" id="r_a13c5f6732963353c57d7d5676fc74429"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a13c5f6732963353c57d7d5676fc74429">setUniform</a> (const std::string &amp;name, int data)</td></tr>
+<tr class="memdesc:a13c5f6732963353c57d7d5676fc74429"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ac97a4900bef077d9bbbe3be4ccc73359" id="r_ac97a4900bef077d9bbbe3be4ccc73359"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac97a4900bef077d9bbbe3be4ccc73359">setUniform</a> (const std::string &amp;name, const glm::ivec2 &amp;data)</td></tr>
+<tr class="memdesc:ac97a4900bef077d9bbbe3be4ccc73359"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aed391d33b5a7c1d5d651adac32f7a48d" id="r_aed391d33b5a7c1d5d651adac32f7a48d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed391d33b5a7c1d5d651adac32f7a48d">setUniform</a> (const std::string &amp;name, const glm::ivec3 &amp;data)</td></tr>
+<tr class="memdesc:aed391d33b5a7c1d5d651adac32f7a48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a7c0b1a9ccc0b52c3af7e36f55a7234e1" id="r_a7c0b1a9ccc0b52c3af7e36f55a7234e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c0b1a9ccc0b52c3af7e36f55a7234e1">setUniform</a> (const std::string &amp;name, const glm::ivec4 &amp;data)</td></tr>
+<tr class="memdesc:a7c0b1a9ccc0b52c3af7e36f55a7234e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:afc70fa47ff63c735d840f34c78f1a16c" id="r_afc70fa47ff63c735d840f34c78f1a16c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc70fa47ff63c735d840f34c78f1a16c">setUniform</a> (const std::string &amp;name, unsigned int data)</td></tr>
+<tr class="memdesc:afc70fa47ff63c735d840f34c78f1a16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aba71fb11799ce2c3e1ee5989db8b5736" id="r_aba71fb11799ce2c3e1ee5989db8b5736"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aba71fb11799ce2c3e1ee5989db8b5736">setUniform</a> (const std::string &amp;name, const glm::uvec2 &amp;data)</td></tr>
+<tr class="memdesc:aba71fb11799ce2c3e1ee5989db8b5736"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a09bc85e90db15b506f239a558a507bf8" id="r_a09bc85e90db15b506f239a558a507bf8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a09bc85e90db15b506f239a558a507bf8">setUniform</a> (const std::string &amp;name, const glm::uvec3 &amp;data)</td></tr>
+<tr class="memdesc:a09bc85e90db15b506f239a558a507bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aa4a29d2f4dc186bb8c9ecb6cd48d4d03" id="r_aa4a29d2f4dc186bb8c9ecb6cd48d4d03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa4a29d2f4dc186bb8c9ecb6cd48d4d03">setUniform</a> (const std::string &amp;name, const glm::uvec4 &amp;data)</td></tr>
+<tr class="memdesc:aa4a29d2f4dc186bb8c9ecb6cd48d4d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a57ebdde1efe2588b18721f7579f3b816" id="r_a57ebdde1efe2588b18721f7579f3b816"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57ebdde1efe2588b18721f7579f3b816">setUniform</a> (const std::string &amp;name, const glm::mat2 &amp;data)</td></tr>
+<tr class="memdesc:a57ebdde1efe2588b18721f7579f3b816"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a007dc2cc80cb7fe9a73076662f4a8822" id="r_a007dc2cc80cb7fe9a73076662f4a8822"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a007dc2cc80cb7fe9a73076662f4a8822">setUniform</a> (const std::string &amp;name, const glm::mat3 &amp;data)</td></tr>
+<tr class="memdesc:a007dc2cc80cb7fe9a73076662f4a8822"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:af4a3ea3f51cdd7d8a25659d27ecb0a77" id="r_af4a3ea3f51cdd7d8a25659d27ecb0a77"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af4a3ea3f51cdd7d8a25659d27ecb0a77">setUniform</a> (const std::string &amp;name, const glm::mat4 &amp;data)</td></tr>
+<tr class="memdesc:af4a3ea3f51cdd7d8a25659d27ecb0a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aab2edfeb1e9199aed1d26d8657fe7da9" id="r_aab2edfeb1e9199aed1d26d8657fe7da9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aab2edfeb1e9199aed1d26d8657fe7da9">setUniform</a> (const std::string &amp;name, const glm::mat2x3 &amp;data)</td></tr>
+<tr class="memdesc:aab2edfeb1e9199aed1d26d8657fe7da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:adba420943a958828004f2ad1b491ae27" id="r_adba420943a958828004f2ad1b491ae27"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adba420943a958828004f2ad1b491ae27">setUniform</a> (const std::string &amp;name, const glm::mat3x2 &amp;data)</td></tr>
+<tr class="memdesc:adba420943a958828004f2ad1b491ae27"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a0072db99d7ed7c7a466a5c14e8acd6e1" id="r_a0072db99d7ed7c7a466a5c14e8acd6e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0072db99d7ed7c7a466a5c14e8acd6e1">setUniform</a> (const std::string &amp;name, const glm::mat2x4 &amp;data)</td></tr>
+<tr class="memdesc:a0072db99d7ed7c7a466a5c14e8acd6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a65dcf58d33800ba58a2f9180c902f608" id="r_a65dcf58d33800ba58a2f9180c902f608"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a65dcf58d33800ba58a2f9180c902f608">setUniform</a> (const std::string &amp;name, const glm::mat4x2 &amp;data)</td></tr>
+<tr class="memdesc:a65dcf58d33800ba58a2f9180c902f608"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aeb117115ab8067cf7a34e3d298cfe265" id="r_aeb117115ab8067cf7a34e3d298cfe265"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeb117115ab8067cf7a34e3d298cfe265">setUniform</a> (const std::string &amp;name, const glm::mat3x4 &amp;data)</td></tr>
+<tr class="memdesc:aeb117115ab8067cf7a34e3d298cfe265"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:afc7d9deea7fe427c6afa7bc616caa305" id="r_afc7d9deea7fe427c6afa7bc616caa305"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc7d9deea7fe427c6afa7bc616caa305">setUniform</a> (const std::string &amp;name, const glm::mat4x3 &amp;data)</td></tr>
+<tr class="memdesc:afc7d9deea7fe427c6afa7bc616caa305"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a71d0a48e59222d6aff47a9940c0fc814" id="r_a71d0a48e59222d6aff47a9940c0fc814"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a71d0a48e59222d6aff47a9940c0fc814">getUniform</a> (int location, float &amp;data) const</td></tr>
+<tr class="memdesc:a71d0a48e59222d6aff47a9940c0fc814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a uniform at the given location.  <br /></td></tr>
+<tr class="memitem:a61b1693df58a11737787d1201a0e6342" id="r_a61b1693df58a11737787d1201a0e6342"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a61b1693df58a11737787d1201a0e6342">getUniform</a> (int location, glm::vec2 &amp;data) const</td></tr>
+<tr class="memdesc:a61b1693df58a11737787d1201a0e6342"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a413f68491f0d002df78b05ad50211743" id="r_a413f68491f0d002df78b05ad50211743"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a413f68491f0d002df78b05ad50211743">getUniform</a> (int location, glm::vec3 &amp;data) const</td></tr>
+<tr class="memdesc:a413f68491f0d002df78b05ad50211743"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a1dd9342d327912b0dd068d3606afc7ec" id="r_a1dd9342d327912b0dd068d3606afc7ec"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1dd9342d327912b0dd068d3606afc7ec">getUniform</a> (int location, glm::vec4 &amp;data) const</td></tr>
+<tr class="memdesc:a1dd9342d327912b0dd068d3606afc7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aced8e5afc85b86a43161ebc5eda2250f" id="r_aced8e5afc85b86a43161ebc5eda2250f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aced8e5afc85b86a43161ebc5eda2250f">getUniform</a> (int location, int &amp;data) const</td></tr>
+<tr class="memdesc:aced8e5afc85b86a43161ebc5eda2250f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a7909baabb662853fcdbb9bc2d715c776" id="r_a7909baabb662853fcdbb9bc2d715c776"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7909baabb662853fcdbb9bc2d715c776">getUniform</a> (int location, glm::ivec2 &amp;data) const</td></tr>
+<tr class="memdesc:a7909baabb662853fcdbb9bc2d715c776"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:adf8b1c985ce45aaf0170fa2984709d05" id="r_adf8b1c985ce45aaf0170fa2984709d05"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adf8b1c985ce45aaf0170fa2984709d05">getUniform</a> (int location, glm::ivec3 &amp;data) const</td></tr>
+<tr class="memdesc:adf8b1c985ce45aaf0170fa2984709d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a31da370f83a8014eda24460090ee1229" id="r_a31da370f83a8014eda24460090ee1229"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a31da370f83a8014eda24460090ee1229">getUniform</a> (int location, glm::ivec4 &amp;data) const</td></tr>
+<tr class="memdesc:a31da370f83a8014eda24460090ee1229"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a238f718cbc7dbf11f031a96e72d99b5a" id="r_a238f718cbc7dbf11f031a96e72d99b5a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a238f718cbc7dbf11f031a96e72d99b5a">getUniform</a> (int location, unsigned int &amp;data) const</td></tr>
+<tr class="memdesc:a238f718cbc7dbf11f031a96e72d99b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a0d048e52be831cbc5e577b0745c2f8ea" id="r_a0d048e52be831cbc5e577b0745c2f8ea"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0d048e52be831cbc5e577b0745c2f8ea">getUniform</a> (int location, glm::uvec2 &amp;data) const</td></tr>
+<tr class="memdesc:a0d048e52be831cbc5e577b0745c2f8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ae62a10e9cee73e350ed85e293e71b9a4" id="r_ae62a10e9cee73e350ed85e293e71b9a4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae62a10e9cee73e350ed85e293e71b9a4">getUniform</a> (int location, glm::uvec3 &amp;data) const</td></tr>
+<tr class="memdesc:ae62a10e9cee73e350ed85e293e71b9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a7ff177b4b8e2d959e007214a15edd393" id="r_a7ff177b4b8e2d959e007214a15edd393"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7ff177b4b8e2d959e007214a15edd393">getUniform</a> (int location, glm::uvec4 &amp;data) const</td></tr>
+<tr class="memdesc:a7ff177b4b8e2d959e007214a15edd393"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a2076e4caa7f5a46db4e22d28504d090d" id="r_a2076e4caa7f5a46db4e22d28504d090d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2076e4caa7f5a46db4e22d28504d090d">getUniform</a> (int location, glm::mat2 &amp;data) const</td></tr>
+<tr class="memdesc:a2076e4caa7f5a46db4e22d28504d090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a13494c8468bb74794d884f323440abaa" id="r_a13494c8468bb74794d884f323440abaa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a13494c8468bb74794d884f323440abaa">getUniform</a> (int location, glm::mat3 &amp;data) const</td></tr>
+<tr class="memdesc:a13494c8468bb74794d884f323440abaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ac2e7bb162754ebd9df13fb2559f9ac03" id="r_ac2e7bb162754ebd9df13fb2559f9ac03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2e7bb162754ebd9df13fb2559f9ac03">getUniform</a> (int location, glm::mat4 &amp;data) const</td></tr>
+<tr class="memdesc:ac2e7bb162754ebd9df13fb2559f9ac03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a9d9b98b4738fc3a623f41af0259d2464" id="r_a9d9b98b4738fc3a623f41af0259d2464"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9d9b98b4738fc3a623f41af0259d2464">getUniform</a> (int location, glm::mat2x3 &amp;data) const</td></tr>
+<tr class="memdesc:a9d9b98b4738fc3a623f41af0259d2464"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ac895fc2cf361aed6d62501e7898e4f44" id="r_ac895fc2cf361aed6d62501e7898e4f44"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac895fc2cf361aed6d62501e7898e4f44">getUniform</a> (int location, glm::mat3x2 &amp;data) const</td></tr>
+<tr class="memdesc:ac895fc2cf361aed6d62501e7898e4f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a12539928ec4e49c2aa2cd2d23b000b0a" id="r_a12539928ec4e49c2aa2cd2d23b000b0a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12539928ec4e49c2aa2cd2d23b000b0a">getUniform</a> (int location, glm::mat2x4 &amp;data) const</td></tr>
+<tr class="memdesc:a12539928ec4e49c2aa2cd2d23b000b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a03f9f5e9138a3a2e21ba4dc24ce571b2" id="r_a03f9f5e9138a3a2e21ba4dc24ce571b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a03f9f5e9138a3a2e21ba4dc24ce571b2">getUniform</a> (int location, glm::mat4x2 &amp;data) const</td></tr>
+<tr class="memdesc:a03f9f5e9138a3a2e21ba4dc24ce571b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ab87346f9902342a0bd13c5d72c893a92" id="r_ab87346f9902342a0bd13c5d72c893a92"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab87346f9902342a0bd13c5d72c893a92">getUniform</a> (int location, glm::mat3x4 &amp;data) const</td></tr>
+<tr class="memdesc:ab87346f9902342a0bd13c5d72c893a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ac32e76296bac10fb26f03fc8aa7f489e" id="r_ac32e76296bac10fb26f03fc8aa7f489e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac32e76296bac10fb26f03fc8aa7f489e">getUniform</a> (int location, glm::mat4x3 &amp;data) const</td></tr>
+<tr class="memdesc:ac32e76296bac10fb26f03fc8aa7f489e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a64eb999ba66ccbda4490b45678bfb958" id="r_a64eb999ba66ccbda4490b45678bfb958"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a64eb999ba66ccbda4490b45678bfb958">getUniform</a> (const std::string &amp;name, float &amp;data) const</td></tr>
+<tr class="memdesc:a64eb999ba66ccbda4490b45678bfb958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a uniform at the given name.  <br /></td></tr>
+<tr class="memitem:a7c7726abe85a8d3b098c4817506e66f1" id="r_a7c7726abe85a8d3b098c4817506e66f1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c7726abe85a8d3b098c4817506e66f1">getUniform</a> (const std::string &amp;name, glm::vec2 &amp;data) const</td></tr>
+<tr class="memdesc:a7c7726abe85a8d3b098c4817506e66f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a954922c1f4a3be2b9b0d3c5af2f93482" id="r_a954922c1f4a3be2b9b0d3c5af2f93482"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a954922c1f4a3be2b9b0d3c5af2f93482">getUniform</a> (const std::string &amp;name, glm::vec3 &amp;data) const</td></tr>
+<tr class="memdesc:a954922c1f4a3be2b9b0d3c5af2f93482"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a8abf70e7bd5d6643d807334a6db3aaa9" id="r_a8abf70e7bd5d6643d807334a6db3aaa9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8abf70e7bd5d6643d807334a6db3aaa9">getUniform</a> (const std::string &amp;name, glm::vec4 &amp;data) const</td></tr>
+<tr class="memdesc:a8abf70e7bd5d6643d807334a6db3aaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a9b4676c87811a77228af7583d3df438b" id="r_a9b4676c87811a77228af7583d3df438b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b4676c87811a77228af7583d3df438b">getUniform</a> (const std::string &amp;name, int &amp;data) const</td></tr>
+<tr class="memdesc:a9b4676c87811a77228af7583d3df438b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a57d56255482210bf72be30d5ea02d845" id="r_a57d56255482210bf72be30d5ea02d845"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57d56255482210bf72be30d5ea02d845">getUniform</a> (const std::string &amp;name, glm::ivec2 &amp;data) const</td></tr>
+<tr class="memdesc:a57d56255482210bf72be30d5ea02d845"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a21e68e9134ababaef5546366a432e647" id="r_a21e68e9134ababaef5546366a432e647"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a21e68e9134ababaef5546366a432e647">getUniform</a> (const std::string &amp;name, glm::ivec3 &amp;data) const</td></tr>
+<tr class="memdesc:a21e68e9134ababaef5546366a432e647"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a78a4bb6a7919dc1c7bbc764e3508b60a" id="r_a78a4bb6a7919dc1c7bbc764e3508b60a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a78a4bb6a7919dc1c7bbc764e3508b60a">getUniform</a> (const std::string &amp;name, glm::ivec4 &amp;data) const</td></tr>
+<tr class="memdesc:a78a4bb6a7919dc1c7bbc764e3508b60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a311a972c08775b0581e17971c8cd27d3" id="r_a311a972c08775b0581e17971c8cd27d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a311a972c08775b0581e17971c8cd27d3">getUniform</a> (const std::string &amp;name, unsigned int &amp;data) const</td></tr>
+<tr class="memdesc:a311a972c08775b0581e17971c8cd27d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a4d30f9f3255e2e57a690e2437127d774" id="r_a4d30f9f3255e2e57a690e2437127d774"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4d30f9f3255e2e57a690e2437127d774">getUniform</a> (const std::string &amp;name, glm::uvec2 &amp;data) const</td></tr>
+<tr class="memdesc:a4d30f9f3255e2e57a690e2437127d774"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a5e4bac6f7d4775a79a2dec975844fe42" id="r_a5e4bac6f7d4775a79a2dec975844fe42"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e4bac6f7d4775a79a2dec975844fe42">getUniform</a> (const std::string &amp;name, glm::uvec3 &amp;data) const</td></tr>
+<tr class="memdesc:a5e4bac6f7d4775a79a2dec975844fe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a3825249906ea18f7f3ad2ccc805b53db" id="r_a3825249906ea18f7f3ad2ccc805b53db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3825249906ea18f7f3ad2ccc805b53db">getUniform</a> (const std::string &amp;name, glm::uvec4 &amp;data) const</td></tr>
+<tr class="memdesc:a3825249906ea18f7f3ad2ccc805b53db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:ad8cbd2810729e08ed1d35c2d2416b9c6" id="r_ad8cbd2810729e08ed1d35c2d2416b9c6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad8cbd2810729e08ed1d35c2d2416b9c6">getUniform</a> (const std::string &amp;name, glm::mat2 &amp;data) const</td></tr>
+<tr class="memdesc:ad8cbd2810729e08ed1d35c2d2416b9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a7f7937073f49eba282c186d5fe83d95b" id="r_a7f7937073f49eba282c186d5fe83d95b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7f7937073f49eba282c186d5fe83d95b">getUniform</a> (const std::string &amp;name, glm::mat3 &amp;data) const</td></tr>
+<tr class="memdesc:a7f7937073f49eba282c186d5fe83d95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a82c002cc059436ddad67dea2d005645b" id="r_a82c002cc059436ddad67dea2d005645b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a82c002cc059436ddad67dea2d005645b">getUniform</a> (const std::string &amp;name, glm::mat4 &amp;data) const</td></tr>
+<tr class="memdesc:a82c002cc059436ddad67dea2d005645b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a2f3f17f09873e42c831de9dca7eeba1b" id="r_a2f3f17f09873e42c831de9dca7eeba1b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2f3f17f09873e42c831de9dca7eeba1b">getUniform</a> (const std::string &amp;name, glm::mat2x3 &amp;data) const</td></tr>
+<tr class="memdesc:a2f3f17f09873e42c831de9dca7eeba1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a1fa9bd99f4ec819adde1244dca14e414" id="r_a1fa9bd99f4ec819adde1244dca14e414"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1fa9bd99f4ec819adde1244dca14e414">getUniform</a> (const std::string &amp;name, glm::mat3x2 &amp;data) const</td></tr>
+<tr class="memdesc:a1fa9bd99f4ec819adde1244dca14e414"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a6a4a690d89da9740f55eaa2f134d9a73" id="r_a6a4a690d89da9740f55eaa2f134d9a73"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a4a690d89da9740f55eaa2f134d9a73">getUniform</a> (const std::string &amp;name, glm::mat2x4 &amp;data) const</td></tr>
+<tr class="memdesc:a6a4a690d89da9740f55eaa2f134d9a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:aeb2a8cc9f52bd46331973ccf9658e3ad" id="r_aeb2a8cc9f52bd46331973ccf9658e3ad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeb2a8cc9f52bd46331973ccf9658e3ad">getUniform</a> (const std::string &amp;name, glm::mat4x2 &amp;data) const</td></tr>
+<tr class="memdesc:aeb2a8cc9f52bd46331973ccf9658e3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a54bca27888ab6445e2befa6fa6e7f5ee" id="r_a54bca27888ab6445e2befa6fa6e7f5ee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54bca27888ab6445e2befa6fa6e7f5ee">getUniform</a> (const std::string &amp;name, glm::mat3x4 &amp;data) const</td></tr>
+<tr class="memdesc:a54bca27888ab6445e2befa6fa6e7f5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
+<tr class="memitem:a578a8542eebc261690c61f755bc5d898" id="r_a578a8542eebc261690c61f755bc5d898"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a578a8542eebc261690c61f755bc5d898">getUniform</a> (const std::string &amp;name, glm::mat4x3 &amp;data) const</td></tr>
+<tr class="memdesc:a578a8542eebc261690c61f755bc5d898"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <br /></td></tr>
 <tr class="memitem:a22267ce0ea24799b31d59fe8f9b80745" id="r_a22267ce0ea24799b31d59fe8f9b80745"><td class="memItemLeft"><a class="el" href="#a3a2a929f092c53b44d3094b75826e087">Program</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a22267ce0ea24799b31d59fe8f9b80745">operator=</a> (<a class="el" href="#a3a2a929f092c53b44d3094b75826e087">Program</a> &amp;&amp;other)</td></tr>
 <tr class="memitem:a25861fa2eed6a4eff139b0b51c072773" id="r_a25861fa2eed6a4eff139b0b51c072773"><td class="memItemLeft"><a class="el" href="#a3a2a929f092c53b44d3094b75826e087">Program</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a25861fa2eed6a4eff139b0b51c072773">operator=</a> (const <a class="el" href="#a3a2a929f092c53b44d3094b75826e087">Program</a> &amp;)=delete</td></tr>
+<tr class="memitem:a6f547efb08d0cc9fc19084658d6b4ce5" id="r_a6f547efb08d0cc9fc19084658d6b4ce5"><td class="memItemLeft"><a class="el" href="../../d1/dba/classegl_1_1_program_1_1_uniform_proxy.html">UniformProxy</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6f547efb08d0cc9fc19084658d6b4ce5">operator[]</a> (int location)</td></tr>
+<tr class="memdesc:a6f547efb08d0cc9fc19084658d6b4ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Proxy to get / set the uniform at the given location with assignment and type conversion operators.  <br /></td></tr>
+<tr class="memitem:a9323475adb7a6db4c9aabf481ca22db4" id="r_a9323475adb7a6db4c9aabf481ca22db4"><td class="memItemLeft"><a class="el" href="../../d1/dba/classegl_1_1_program_1_1_uniform_proxy.html">UniformProxy</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9323475adb7a6db4c9aabf481ca22db4">operator[]</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a9323475adb7a6db4c9aabf481ca22db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Proxy to get / set the uniform with the given name with assignment and type conversion operators.  <br /></td></tr>
+<tr class="memitem:aded21d727a68d54fbcf9ecda23ecbeb1" id="r_aded21d727a68d54fbcf9ecda23ecbeb1"><td class="memItemLeft"><a class="el" href="../../da/d64/classegl_1_1_program_1_1_uniform_proxy_const.html">UniformProxyConst</a>&#160;</td><td class="memItemRight"><a class="el" href="#aded21d727a68d54fbcf9ecda23ecbeb1">operator[]</a> (int location) const</td></tr>
+<tr class="memdesc:aded21d727a68d54fbcf9ecda23ecbeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant only Proxy to get the uniform at the given location with type conversion operators.  <br /></td></tr>
+<tr class="memitem:aa091e173bf4263b3eabe76fc5efdbd59" id="r_aa091e173bf4263b3eabe76fc5efdbd59"><td class="memItemLeft"><a class="el" href="../../da/d64/classegl_1_1_program_1_1_uniform_proxy_const.html">UniformProxyConst</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa091e173bf4263b3eabe76fc5efdbd59">operator[]</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:aa091e173bf4263b3eabe76fc5efdbd59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Proxy to get the uniform with the given name with type conversion operators.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -130,14 +313,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9cb5062523e92f185b8092f6c7b3cd59" id="r_a9cb5062523e92f185b8092f6c7b3cd59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9cb5062523e92f185b8092f6c7b3cd59">_delete</a> ()</td></tr>
-<tr class="memitem:a128fe35ff4cbf34fd149c171f36e7f05" id="r_a128fe35ff4cbf34fd149c171f36e7f05"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a128fe35ff4cbf34fd149c171f36e7f05">_check</a> ()</td></tr>
-<tr class="memitem:a51710977ce556b99a1e035837d9b3dab" id="r_a51710977ce556b99a1e035837d9b3dab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a51710977ce556b99a1e035837d9b3dab">_ensure</a> ()</td></tr>
+<tr class="memitem:a73120d3f8cd4dd259a3fff1a2ecd94b2" id="r_a73120d3f8cd4dd259a3fff1a2ecd94b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73120d3f8cd4dd259a3fff1a2ecd94b2">_check</a> () const</td></tr>
+<tr class="memitem:a7394768fe859bcc4457f4bf79903e05b" id="r_a7394768fe859bcc4457f4bf79903e05b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7394768fe859bcc4457f4bf79903e05b">_ensure</a> () const</td></tr>
+<tr class="memitem:a9a0033d2d8198051431f1d9c37edf8d1" id="r_a9a0033d2d8198051431f1d9c37edf8d1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a0033d2d8198051431f1d9c37edf8d1">_queryUniformData</a> ()</td></tr>
+<tr class="memitem:a7f88481ee8d1d5b2acdc09e6719a4721" id="r_a7f88481ee8d1d5b2acdc09e6719a4721"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7f88481ee8d1d5b2acdc09e6719a4721">_setupUniform</a> (int loc, int sizeCheck, int typeCheck) const</td></tr>
 <tr class="memitem:ac19d067e0778963f68922b41a190429a" id="r_ac19d067e0778963f68922b41a190429a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ac19d067e0778963f68922b41a190429a">_getError</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a8227aba9b050889b227706b443b8816e" id="r_a8227aba9b050889b227706b443b8816e"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a8227aba9b050889b227706b443b8816e">_id</a> = 0</td></tr>
 <tr class="memitem:aa371f5f0cb626edc13006ee6ed50db0e" id="r_aa371f5f0cb626edc13006ee6ed50db0e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa371f5f0cb626edc13006ee6ed50db0e">_linked</a> = false</td></tr>
+<tr class="memitem:a3f03effe46afe4fc125ead48a101d8d4" id="r_a3f03effe46afe4fc125ead48a101d8d4"><td class="memItemLeft">std::unordered_map&lt; std::string, int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3f03effe46afe4fc125ead48a101d8d4">_uniformIndexMap</a> = {}</td></tr>
+<tr class="memitem:a8e0428dafaad35d5834e353a60584ac9" id="r_a8e0428dafaad35d5834e353a60584ac9"><td class="memItemLeft">std::unordered_map&lt; int, int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8e0428dafaad35d5834e353a60584ac9">_uniformLocationIndexMap</a> = {}</td></tr>
+<tr class="memitem:a7a2d1cfc17558bd258de42f694992031" id="r_a7a2d1cfc17558bd258de42f694992031"><td class="memItemLeft">std::vector&lt; <a class="el" href="../../d1/d73/namespaceegl.html#a99c234b350fbf99fa2289578b0fc399e">UniformData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7a2d1cfc17558bd258de42f694992031">_uniformData</a> = {}</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> class to abstract OpenGL <a class="el" href="../../db/de5/classegl_1_1_shader.html" title="Shader class to abstract OpenGL Shaders.">Shader</a> Programs. </p>
@@ -225,8 +413,8 @@ This class is not guaranteed to be thread-safe.</dd></dl>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a128fe35ff4cbf34fd149c171f36e7f05" name="a128fe35ff4cbf34fd149c171f36e7f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a128fe35ff4cbf34fd149c171f36e7f05">&#9670;&#160;</a></span>_check()</h2>
+<a id="a73120d3f8cd4dd259a3fff1a2ecd94b2" name="a73120d3f8cd4dd259a3fff1a2ecd94b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73120d3f8cd4dd259a3fff1a2ecd94b2">&#9670;&#160;</a></span>_check()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +426,7 @@ This class is not guaranteed to be thread-safe.</dd></dl>
           <td class="memname">void egl::Program::_check </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -275,8 +463,8 @@ This class is not guaranteed to be thread-safe.</dd></dl>
 
 </div>
 </div>
-<a id="a51710977ce556b99a1e035837d9b3dab" name="a51710977ce556b99a1e035837d9b3dab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51710977ce556b99a1e035837d9b3dab">&#9670;&#160;</a></span>_ensure()</h2>
+<a id="a7394768fe859bcc4457f4bf79903e05b" name="a7394768fe859bcc4457f4bf79903e05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7394768fe859bcc4457f4bf79903e05b">&#9670;&#160;</a></span>_ensure()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +476,7 @@ This class is not guaranteed to be thread-safe.</dd></dl>
           <td class="memname">void egl::Program::_ensure </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -325,6 +513,65 @@ This class is not guaranteed to be thread-safe.</dd></dl>
 
 </div>
 </div>
+<a id="a9a0033d2d8198051431f1d9c37edf8d1" name="a9a0033d2d8198051431f1d9c37edf8d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0033d2d8198051431f1d9c37edf8d1">&#9670;&#160;</a></span>_queryUniformData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::_queryUniformData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f88481ee8d1d5b2acdc09e6719a4721" name="a7f88481ee8d1d5b2acdc09e6719a4721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f88481ee8d1d5b2acdc09e6719a4721">&#9670;&#160;</a></span>_setupUniform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::_setupUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>loc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sizeCheck</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>typeCheck</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a80586d03da7e5cc52b7771244e0fd6fc" name="a80586d03da7e5cc52b7771244e0fd6fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80586d03da7e5cc52b7771244e0fd6fc">&#9670;&#160;</a></span>attach()</h2>
 
@@ -348,7 +595,7 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::runtime_error</td><td>If the <a class="el" href="../../db/de5/classegl_1_1_shader.html" title="Shader class to abstract OpenGL Shaders.">Shader</a> has already been attached. </td></tr>
-    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state).</td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state)</td></tr>
   </table>
   </dd>
 </dl>
@@ -385,7 +632,7 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state).</td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state)</td></tr>
   </table>
   </dd>
 </dl>
@@ -393,8 +640,8 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 
 </div>
 </div>
-<a id="ac633a72ad0a8cc5ffdf7b77bf8d8253a" name="ac633a72ad0a8cc5ffdf7b77bf8d8253a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac633a72ad0a8cc5ffdf7b77bf8d8253a">&#9670;&#160;</a></span>bind()</h2>
+<a id="a7c7477394ba1cd4ef4b9e22a0eda13ce" name="a7c7477394ba1cd4ef4b9e22a0eda13ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7477394ba1cd4ef4b9e22a0eda13ce">&#9670;&#160;</a></span>bind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +650,7 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
           <td class="memname">void egl::Program::bind </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -411,7 +658,7 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 <p>Binds this <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a>. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state). </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
     <tr><td class="paramname">std::runtime_error</td><td>If the <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> was not linked to avoid invalid usage. </td></tr>
   </table>
   </dd>
@@ -439,7 +686,7 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::runtime_error</td><td>If the <a class="el" href="../../db/de5/classegl_1_1_shader.html" title="Shader class to abstract OpenGL Shaders.">Shader</a> was not attached. </td></tr>
-    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state).</td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state)</td></tr>
   </table>
   </dd>
 </dl>
@@ -449,6 +696,1210 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a64eb999ba66ccbda4490b45678bfb958" name="a64eb999ba66ccbda4490b45678bfb958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64eb999ba66ccbda4490b45678bfb958">&#9670;&#160;</a></span>getUniform() <span class="overload">[1/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a uniform at the given name. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the location does not correspond to a uniform </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the type does not correspond to the GLSL type </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If it attempts to get a GLSL array </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> is unlinked</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The uniform name </td></tr>
+    <tr><td class="paramname">data</td><td>The variable to store the data in</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This overload works for <span class="tt">float</span>, <span class="tt">int</span>, <span class="tt">glm::vec*</span>, <span class="tt">glm::mat*</span>, etc. </p>
+
+</div>
+</div>
+<a id="a57d56255482210bf72be30d5ea02d845" name="a57d56255482210bf72be30d5ea02d845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d56255482210bf72be30d5ea02d845">&#9670;&#160;</a></span>getUniform() <span class="overload">[2/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a21e68e9134ababaef5546366a432e647" name="a21e68e9134ababaef5546366a432e647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e68e9134ababaef5546366a432e647">&#9670;&#160;</a></span>getUniform() <span class="overload">[3/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a78a4bb6a7919dc1c7bbc764e3508b60a" name="a78a4bb6a7919dc1c7bbc764e3508b60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a4bb6a7919dc1c7bbc764e3508b60a">&#9670;&#160;</a></span>getUniform() <span class="overload">[4/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ad8cbd2810729e08ed1d35c2d2416b9c6" name="ad8cbd2810729e08ed1d35c2d2416b9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8cbd2810729e08ed1d35c2d2416b9c6">&#9670;&#160;</a></span>getUniform() <span class="overload">[5/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a2f3f17f09873e42c831de9dca7eeba1b" name="a2f3f17f09873e42c831de9dca7eeba1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3f17f09873e42c831de9dca7eeba1b">&#9670;&#160;</a></span>getUniform() <span class="overload">[6/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat2x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a6a4a690d89da9740f55eaa2f134d9a73" name="a6a4a690d89da9740f55eaa2f134d9a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4a690d89da9740f55eaa2f134d9a73">&#9670;&#160;</a></span>getUniform() <span class="overload">[7/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat2x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a7f7937073f49eba282c186d5fe83d95b" name="a7f7937073f49eba282c186d5fe83d95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7937073f49eba282c186d5fe83d95b">&#9670;&#160;</a></span>getUniform() <span class="overload">[8/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a1fa9bd99f4ec819adde1244dca14e414" name="a1fa9bd99f4ec819adde1244dca14e414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa9bd99f4ec819adde1244dca14e414">&#9670;&#160;</a></span>getUniform() <span class="overload">[9/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat3x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a54bca27888ab6445e2befa6fa6e7f5ee" name="a54bca27888ab6445e2befa6fa6e7f5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54bca27888ab6445e2befa6fa6e7f5ee">&#9670;&#160;</a></span>getUniform() <span class="overload">[10/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat3x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a82c002cc059436ddad67dea2d005645b" name="a82c002cc059436ddad67dea2d005645b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c002cc059436ddad67dea2d005645b">&#9670;&#160;</a></span>getUniform() <span class="overload">[11/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aeb2a8cc9f52bd46331973ccf9658e3ad" name="aeb2a8cc9f52bd46331973ccf9658e3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2a8cc9f52bd46331973ccf9658e3ad">&#9670;&#160;</a></span>getUniform() <span class="overload">[12/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat4x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a578a8542eebc261690c61f755bc5d898" name="a578a8542eebc261690c61f755bc5d898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578a8542eebc261690c61f755bc5d898">&#9670;&#160;</a></span>getUniform() <span class="overload">[13/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat4x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a4d30f9f3255e2e57a690e2437127d774" name="a4d30f9f3255e2e57a690e2437127d774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d30f9f3255e2e57a690e2437127d774">&#9670;&#160;</a></span>getUniform() <span class="overload">[14/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a5e4bac6f7d4775a79a2dec975844fe42" name="a5e4bac6f7d4775a79a2dec975844fe42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4bac6f7d4775a79a2dec975844fe42">&#9670;&#160;</a></span>getUniform() <span class="overload">[15/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a3825249906ea18f7f3ad2ccc805b53db" name="a3825249906ea18f7f3ad2ccc805b53db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3825249906ea18f7f3ad2ccc805b53db">&#9670;&#160;</a></span>getUniform() <span class="overload">[16/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a7c7726abe85a8d3b098c4817506e66f1" name="a7c7726abe85a8d3b098c4817506e66f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7726abe85a8d3b098c4817506e66f1">&#9670;&#160;</a></span>getUniform() <span class="overload">[17/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a954922c1f4a3be2b9b0d3c5af2f93482" name="a954922c1f4a3be2b9b0d3c5af2f93482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954922c1f4a3be2b9b0d3c5af2f93482">&#9670;&#160;</a></span>getUniform() <span class="overload">[18/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a8abf70e7bd5d6643d807334a6db3aaa9" name="a8abf70e7bd5d6643d807334a6db3aaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abf70e7bd5d6643d807334a6db3aaa9">&#9670;&#160;</a></span>getUniform() <span class="overload">[19/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a9b4676c87811a77228af7583d3df438b" name="a9b4676c87811a77228af7583d3df438b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b4676c87811a77228af7583d3df438b">&#9670;&#160;</a></span>getUniform() <span class="overload">[20/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a311a972c08775b0581e17971c8cd27d3" name="a311a972c08775b0581e17971c8cd27d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311a972c08775b0581e17971c8cd27d3">&#9670;&#160;</a></span>getUniform() <span class="overload">[21/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a71d0a48e59222d6aff47a9940c0fc814" name="a71d0a48e59222d6aff47a9940c0fc814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d0a48e59222d6aff47a9940c0fc814">&#9670;&#160;</a></span>getUniform() <span class="overload">[22/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a uniform at the given location. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the location does not correspond to a uniform </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the type does not correspond to the GLSL type </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If it attempts to get a GLSL array </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> is unlinked</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">location</td><td>The uniform location returned by <a class="el" href="#adde107716abc9c85ac325ad078bd8fdb" title="Gets the Location of the given Uniform.">getUniformLocation()</a> </td></tr>
+    <tr><td class="paramname">data</td><td>The variable to store the data in</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This overload works for <span class="tt">float</span>, <span class="tt">int</span>, <span class="tt">glm::vec*</span>, <span class="tt">glm::mat*</span>, etc. </p>
+
+</div>
+</div>
+<a id="a7909baabb662853fcdbb9bc2d715c776" name="a7909baabb662853fcdbb9bc2d715c776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7909baabb662853fcdbb9bc2d715c776">&#9670;&#160;</a></span>getUniform() <span class="overload">[23/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="adf8b1c985ce45aaf0170fa2984709d05" name="adf8b1c985ce45aaf0170fa2984709d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8b1c985ce45aaf0170fa2984709d05">&#9670;&#160;</a></span>getUniform() <span class="overload">[24/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a31da370f83a8014eda24460090ee1229" name="a31da370f83a8014eda24460090ee1229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31da370f83a8014eda24460090ee1229">&#9670;&#160;</a></span>getUniform() <span class="overload">[25/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a2076e4caa7f5a46db4e22d28504d090d" name="a2076e4caa7f5a46db4e22d28504d090d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2076e4caa7f5a46db4e22d28504d090d">&#9670;&#160;</a></span>getUniform() <span class="overload">[26/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a9d9b98b4738fc3a623f41af0259d2464" name="a9d9b98b4738fc3a623f41af0259d2464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9b98b4738fc3a623f41af0259d2464">&#9670;&#160;</a></span>getUniform() <span class="overload">[27/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat2x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a12539928ec4e49c2aa2cd2d23b000b0a" name="a12539928ec4e49c2aa2cd2d23b000b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12539928ec4e49c2aa2cd2d23b000b0a">&#9670;&#160;</a></span>getUniform() <span class="overload">[28/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat2x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a13494c8468bb74794d884f323440abaa" name="a13494c8468bb74794d884f323440abaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13494c8468bb74794d884f323440abaa">&#9670;&#160;</a></span>getUniform() <span class="overload">[29/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ac895fc2cf361aed6d62501e7898e4f44" name="ac895fc2cf361aed6d62501e7898e4f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac895fc2cf361aed6d62501e7898e4f44">&#9670;&#160;</a></span>getUniform() <span class="overload">[30/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat3x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ab87346f9902342a0bd13c5d72c893a92" name="ab87346f9902342a0bd13c5d72c893a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87346f9902342a0bd13c5d72c893a92">&#9670;&#160;</a></span>getUniform() <span class="overload">[31/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat3x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ac2e7bb162754ebd9df13fb2559f9ac03" name="ac2e7bb162754ebd9df13fb2559f9ac03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e7bb162754ebd9df13fb2559f9ac03">&#9670;&#160;</a></span>getUniform() <span class="overload">[32/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a03f9f5e9138a3a2e21ba4dc24ce571b2" name="a03f9f5e9138a3a2e21ba4dc24ce571b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f9f5e9138a3a2e21ba4dc24ce571b2">&#9670;&#160;</a></span>getUniform() <span class="overload">[33/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat4x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ac32e76296bac10fb26f03fc8aa7f489e" name="ac32e76296bac10fb26f03fc8aa7f489e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32e76296bac10fb26f03fc8aa7f489e">&#9670;&#160;</a></span>getUniform() <span class="overload">[34/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::mat4x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a0d048e52be831cbc5e577b0745c2f8ea" name="a0d048e52be831cbc5e577b0745c2f8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d048e52be831cbc5e577b0745c2f8ea">&#9670;&#160;</a></span>getUniform() <span class="overload">[35/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ae62a10e9cee73e350ed85e293e71b9a4" name="ae62a10e9cee73e350ed85e293e71b9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62a10e9cee73e350ed85e293e71b9a4">&#9670;&#160;</a></span>getUniform() <span class="overload">[36/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a7ff177b4b8e2d959e007214a15edd393" name="a7ff177b4b8e2d959e007214a15edd393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff177b4b8e2d959e007214a15edd393">&#9670;&#160;</a></span>getUniform() <span class="overload">[37/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a61b1693df58a11737787d1201a0e6342" name="a61b1693df58a11737787d1201a0e6342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b1693df58a11737787d1201a0e6342">&#9670;&#160;</a></span>getUniform() <span class="overload">[38/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a413f68491f0d002df78b05ad50211743" name="a413f68491f0d002df78b05ad50211743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413f68491f0d002df78b05ad50211743">&#9670;&#160;</a></span>getUniform() <span class="overload">[39/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a1dd9342d327912b0dd068d3606afc7ec" name="a1dd9342d327912b0dd068d3606afc7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd9342d327912b0dd068d3606afc7ec">&#9670;&#160;</a></span>getUniform() <span class="overload">[40/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aced8e5afc85b86a43161ebc5eda2250f" name="aced8e5afc85b86a43161ebc5eda2250f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced8e5afc85b86a43161ebc5eda2250f">&#9670;&#160;</a></span>getUniform() <span class="overload">[41/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a238f718cbc7dbf11f031a96e72d99b5a" name="a238f718cbc7dbf11f031a96e72d99b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238f718cbc7dbf11f031a96e72d99b5a">&#9670;&#160;</a></span>getUniform() <span class="overload">[42/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::getUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="adde107716abc9c85ac325ad078bd8fdb" name="adde107716abc9c85ac325ad078bd8fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde107716abc9c85ac325ad078bd8fdb">&#9670;&#160;</a></span>getUniformLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int egl::Program::getUniformLocation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the Location of the given Uniform. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> was not linked before use </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the uniform does not exist</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the uniform to find </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The location of the uniform </dd></dl>
 
 </div>
 </div>
@@ -470,7 +1921,7 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 <p>Links all attached Shaders and creates a valid <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a>. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state). </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
     <tr><td class="paramname"><a class="el" href="../../d0/d13/classegl_1_1_program_link_error.html" title="Exception thrown when Program linking fails.">egl::ProgramLinkError</a></td><td>If the <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> fails to link. The <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> remains in a valid state afterwards. </td></tr>
     <tr><td class="paramname"><a class="el" href="../../d5/d5e/classegl_1_1_program_validate_error.html" title="Exception thrown when Program validation fails, mainly used in debug builds.">egl::ProgramValidateError</a></td><td>If the <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> fails to validate. This only occurs when DEBUG_BUILD is defined else the validity is not checked. </td></tr>
   </table>
@@ -549,6 +2000,164 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
 
 </div>
 </div>
+<a id="a9323475adb7a6db4c9aabf481ca22db4" name="a9323475adb7a6db4c9aabf481ca22db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9323475adb7a6db4c9aabf481ca22db4">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dba/classegl_1_1_program_1_1_uniform_proxy.html">UniformProxy</a> egl::Program::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a Proxy to get / set the uniform with the given name with assignment and type conversion operators. </p>
+<dl class="section note"><dt>Note</dt><dd>Possible errors when assigning can be found under <a class="el" href="#ae57bcdfd1bf4e60724ca4f91a877e2a0" title="Sets a uniform at the given location.">egl::Program::setUniform</a>. </dd>
+<dd>
+Possible errors on explicit type conversion can be found under <a class="el" href="#a71d0a48e59222d6aff47a9940c0fc814" title="Gets a uniform at the given location.">egl::Program::getUniform</a>.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Setting a uniform binds the program.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> was not linked before use </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the uniform does not exist</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The uniform name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa091e173bf4263b3eabe76fc5efdbd59" name="aa091e173bf4263b3eabe76fc5efdbd59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa091e173bf4263b3eabe76fc5efdbd59">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d64/classegl_1_1_program_1_1_uniform_proxy_const.html">UniformProxyConst</a> egl::Program::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a Proxy to get the uniform with the given name with type conversion operators. </p>
+<dl class="section note"><dt>Note</dt><dd>Possible errors on explicit type conversion can be found under <a class="el" href="#a71d0a48e59222d6aff47a9940c0fc814" title="Gets a uniform at the given location.">egl::Program::getUniform</a>.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> was not linked before use </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the uniform does not exist</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The uniform name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f547efb08d0cc9fc19084658d6b4ce5" name="a6f547efb08d0cc9fc19084658d6b4ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f547efb08d0cc9fc19084658d6b4ce5">&#9670;&#160;</a></span>operator[]() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dba/classegl_1_1_program_1_1_uniform_proxy.html">UniformProxy</a> egl::Program::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a Proxy to get / set the uniform at the given location with assignment and type conversion operators. </p>
+<dl class="section note"><dt>Note</dt><dd>Possible errors when assigning can be found under <a class="el" href="#ae57bcdfd1bf4e60724ca4f91a877e2a0" title="Sets a uniform at the given location.">egl::Program::setUniform</a>. </dd>
+<dd>
+Possible errors on explicit type conversion can be found under <a class="el" href="#a71d0a48e59222d6aff47a9940c0fc814" title="Gets a uniform at the given location.">egl::Program::getUniform</a>.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Setting a uniform binds the program.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">location</td><td>The uniform location returned by <a class="el" href="#adde107716abc9c85ac325ad078bd8fdb" title="Gets the Location of the given Uniform.">getUniformLocation()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aded21d727a68d54fbcf9ecda23ecbeb1" name="aded21d727a68d54fbcf9ecda23ecbeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded21d727a68d54fbcf9ecda23ecbeb1">&#9670;&#160;</a></span>operator[]() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d64/classegl_1_1_program_1_1_uniform_proxy_const.html">UniformProxyConst</a> egl::Program::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a constant only Proxy to get the uniform at the given location with type conversion operators. </p>
+<dl class="section note"><dt>Note</dt><dd>Possible errors on explicit type conversion can be found under <a class="el" href="#a71d0a48e59222d6aff47a9940c0fc814" title="Gets a uniform at the given location.">egl::Program::getUniform</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">location</td><td>The uniform location returned by <a class="el" href="#adde107716abc9c85ac325ad078bd8fdb" title="Gets the Location of the given Uniform.">getUniformLocation()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0d9bf7750add025ffc566b823e6f76ad" name="a0d9bf7750add025ffc566b823e6f76ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d9bf7750add025ffc566b823e6f76ad">&#9670;&#160;</a></span>reset()</h2>
 
@@ -571,6 +2180,1178 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac97a4900bef077d9bbbe3be4ccc73359" name="ac97a4900bef077d9bbbe3be4ccc73359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac97a4900bef077d9bbbe3be4ccc73359">&#9670;&#160;</a></span>setUniform() <span class="overload">[1/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::ivec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aed391d33b5a7c1d5d651adac32f7a48d" name="aed391d33b5a7c1d5d651adac32f7a48d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed391d33b5a7c1d5d651adac32f7a48d">&#9670;&#160;</a></span>setUniform() <span class="overload">[2/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::ivec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a7c0b1a9ccc0b52c3af7e36f55a7234e1" name="a7c0b1a9ccc0b52c3af7e36f55a7234e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0b1a9ccc0b52c3af7e36f55a7234e1">&#9670;&#160;</a></span>setUniform() <span class="overload">[3/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::ivec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a57ebdde1efe2588b18721f7579f3b816" name="a57ebdde1efe2588b18721f7579f3b816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ebdde1efe2588b18721f7579f3b816">&#9670;&#160;</a></span>setUniform() <span class="overload">[4/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aab2edfeb1e9199aed1d26d8657fe7da9" name="aab2edfeb1e9199aed1d26d8657fe7da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2edfeb1e9199aed1d26d8657fe7da9">&#9670;&#160;</a></span>setUniform() <span class="overload">[5/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat2x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a0072db99d7ed7c7a466a5c14e8acd6e1" name="a0072db99d7ed7c7a466a5c14e8acd6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0072db99d7ed7c7a466a5c14e8acd6e1">&#9670;&#160;</a></span>setUniform() <span class="overload">[6/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat2x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a007dc2cc80cb7fe9a73076662f4a8822" name="a007dc2cc80cb7fe9a73076662f4a8822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007dc2cc80cb7fe9a73076662f4a8822">&#9670;&#160;</a></span>setUniform() <span class="overload">[7/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="adba420943a958828004f2ad1b491ae27" name="adba420943a958828004f2ad1b491ae27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba420943a958828004f2ad1b491ae27">&#9670;&#160;</a></span>setUniform() <span class="overload">[8/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat3x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aeb117115ab8067cf7a34e3d298cfe265" name="aeb117115ab8067cf7a34e3d298cfe265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb117115ab8067cf7a34e3d298cfe265">&#9670;&#160;</a></span>setUniform() <span class="overload">[9/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat3x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="af4a3ea3f51cdd7d8a25659d27ecb0a77" name="af4a3ea3f51cdd7d8a25659d27ecb0a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a3ea3f51cdd7d8a25659d27ecb0a77">&#9670;&#160;</a></span>setUniform() <span class="overload">[10/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a65dcf58d33800ba58a2f9180c902f608" name="a65dcf58d33800ba58a2f9180c902f608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65dcf58d33800ba58a2f9180c902f608">&#9670;&#160;</a></span>setUniform() <span class="overload">[11/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="afc7d9deea7fe427c6afa7bc616caa305" name="afc7d9deea7fe427c6afa7bc616caa305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7d9deea7fe427c6afa7bc616caa305">&#9670;&#160;</a></span>setUniform() <span class="overload">[12/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aba71fb11799ce2c3e1ee5989db8b5736" name="aba71fb11799ce2c3e1ee5989db8b5736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba71fb11799ce2c3e1ee5989db8b5736">&#9670;&#160;</a></span>setUniform() <span class="overload">[13/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::uvec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a09bc85e90db15b506f239a558a507bf8" name="a09bc85e90db15b506f239a558a507bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bc85e90db15b506f239a558a507bf8">&#9670;&#160;</a></span>setUniform() <span class="overload">[14/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::uvec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aa4a29d2f4dc186bb8c9ecb6cd48d4d03" name="aa4a29d2f4dc186bb8c9ecb6cd48d4d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a29d2f4dc186bb8c9ecb6cd48d4d03">&#9670;&#160;</a></span>setUniform() <span class="overload">[15/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::uvec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ad8e277f746a1ce2af3af21215d55f0e7" name="ad8e277f746a1ce2af3af21215d55f0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e277f746a1ce2af3af21215d55f0e7">&#9670;&#160;</a></span>setUniform() <span class="overload">[16/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a7bb36e23007fdc307c5fccd13367f7c6" name="a7bb36e23007fdc307c5fccd13367f7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb36e23007fdc307c5fccd13367f7c6">&#9670;&#160;</a></span>setUniform() <span class="overload">[17/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aa19ebdbf4d5627726e725aa2f96ef37f" name="aa19ebdbf4d5627726e725aa2f96ef37f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa19ebdbf4d5627726e725aa2f96ef37f">&#9670;&#160;</a></span>setUniform() <span class="overload">[18/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a9b2e3e685708e99136f7aba932f3d962" name="a9b2e3e685708e99136f7aba932f3d962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2e3e685708e99136f7aba932f3d962">&#9670;&#160;</a></span>setUniform() <span class="overload">[19/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a uniform at the given name. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the location does not correspond to a uniform </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the type does not correspond to the GLSL type </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If it attempts to set a GLSL array </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> is unlinked</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>Setting a uniform binds the program.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The uniform name </td></tr>
+    <tr><td class="paramname">data</td><td>The value to assign to the uniform</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This overload works for <span class="tt">float</span>, <span class="tt">int</span>, <span class="tt">glm::vec*</span>, <span class="tt">glm::mat*</span>, etc. </p>
+
+</div>
+</div>
+<a id="a13c5f6732963353c57d7d5676fc74429" name="a13c5f6732963353c57d7d5676fc74429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c5f6732963353c57d7d5676fc74429">&#9670;&#160;</a></span>setUniform() <span class="overload">[20/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="afc70fa47ff63c735d840f34c78f1a16c" name="afc70fa47ff63c735d840f34c78f1a16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc70fa47ff63c735d840f34c78f1a16c">&#9670;&#160;</a></span>setUniform() <span class="overload">[21/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a6c7d49198a3e1465cd6f744458caf0dd" name="a6c7d49198a3e1465cd6f744458caf0dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7d49198a3e1465cd6f744458caf0dd">&#9670;&#160;</a></span>setUniform() <span class="overload">[22/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::ivec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a2c1566091cdeb9580d348a3fbc19d185" name="a2c1566091cdeb9580d348a3fbc19d185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1566091cdeb9580d348a3fbc19d185">&#9670;&#160;</a></span>setUniform() <span class="overload">[23/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::ivec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aba70b402e38002dad4753e7a0c8a4024" name="aba70b402e38002dad4753e7a0c8a4024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba70b402e38002dad4753e7a0c8a4024">&#9670;&#160;</a></span>setUniform() <span class="overload">[24/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::ivec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a5959620c7dc9ccc2804f544b2702ac0f" name="a5959620c7dc9ccc2804f544b2702ac0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5959620c7dc9ccc2804f544b2702ac0f">&#9670;&#160;</a></span>setUniform() <span class="overload">[25/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aef0df907bfde7650986a56caad4824f5" name="aef0df907bfde7650986a56caad4824f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0df907bfde7650986a56caad4824f5">&#9670;&#160;</a></span>setUniform() <span class="overload">[26/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat2x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a8fb14d925b462a38f5abcfd06e9b6e13" name="a8fb14d925b462a38f5abcfd06e9b6e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb14d925b462a38f5abcfd06e9b6e13">&#9670;&#160;</a></span>setUniform() <span class="overload">[27/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat2x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a6814de4a6fc9b738800819adfd2d8992" name="a6814de4a6fc9b738800819adfd2d8992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6814de4a6fc9b738800819adfd2d8992">&#9670;&#160;</a></span>setUniform() <span class="overload">[28/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a261145c6678c4aa40351a6027f1ce727" name="a261145c6678c4aa40351a6027f1ce727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261145c6678c4aa40351a6027f1ce727">&#9670;&#160;</a></span>setUniform() <span class="overload">[29/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat3x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="af64c2f537bf3242c424560524d71a885" name="af64c2f537bf3242c424560524d71a885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64c2f537bf3242c424560524d71a885">&#9670;&#160;</a></span>setUniform() <span class="overload">[30/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat3x4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a2fbcd122266ac9638a75048820e2364f" name="a2fbcd122266ac9638a75048820e2364f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbcd122266ac9638a75048820e2364f">&#9670;&#160;</a></span>setUniform() <span class="overload">[31/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a638519cb4b44ab06d651708a3a8d602f" name="a638519cb4b44ab06d651708a3a8d602f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638519cb4b44ab06d651708a3a8d602f">&#9670;&#160;</a></span>setUniform() <span class="overload">[32/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4x2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aa22b18a9f26a74607685e1d1029562aa" name="aa22b18a9f26a74607685e1d1029562aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa22b18a9f26a74607685e1d1029562aa">&#9670;&#160;</a></span>setUniform() <span class="overload">[33/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4x3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ab66148731dae0fa5de3b0a43ea12b270" name="ab66148731dae0fa5de3b0a43ea12b270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66148731dae0fa5de3b0a43ea12b270">&#9670;&#160;</a></span>setUniform() <span class="overload">[34/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::uvec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aefd866ac1617cf64c73164bbbd87670b" name="aefd866ac1617cf64c73164bbbd87670b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd866ac1617cf64c73164bbbd87670b">&#9670;&#160;</a></span>setUniform() <span class="overload">[35/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::uvec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a6e2501c9d63e11171ff2d36c3699535a" name="a6e2501c9d63e11171ff2d36c3699535a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2501c9d63e11171ff2d36c3699535a">&#9670;&#160;</a></span>setUniform() <span class="overload">[36/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::uvec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="adc0ad0882a904c67d0a3dde88c882646" name="adc0ad0882a904c67d0a3dde88c882646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0ad0882a904c67d0a3dde88c882646">&#9670;&#160;</a></span>setUniform() <span class="overload">[37/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a2b725dab5a23c41b1dac92b01aad2fd1" name="a2b725dab5a23c41b1dac92b01aad2fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b725dab5a23c41b1dac92b01aad2fd1">&#9670;&#160;</a></span>setUniform() <span class="overload">[38/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a67b8cf5dab1c545bf3cecdcad8defded" name="a67b8cf5dab1c545bf3cecdcad8defded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b8cf5dab1c545bf3cecdcad8defded">&#9670;&#160;</a></span>setUniform() <span class="overload">[39/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ae57bcdfd1bf4e60724ca4f91a877e2a0" name="ae57bcdfd1bf4e60724ca4f91a877e2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57bcdfd1bf4e60724ca4f91a877e2a0">&#9670;&#160;</a></span>setUniform() <span class="overload">[40/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a uniform at the given location. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> object does not exist (<a class="el" href="#a0d9bf7750add025ffc566b823e6f76ad" title="Resets the Program to an empty State.">reset()</a> is recommended to return to a valid state) </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If the location does not correspond to a uniform </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the type does not correspond to the GLSL type </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If it attempts to set a GLSL array </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If the current <a class="el" href="../../d6/d3a/classegl_1_1_program.html" title="Program class to abstract OpenGL Shader Programs.">Program</a> is unlinked</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>Setting a uniform binds the program.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">location</td><td>The uniform location returned by <a class="el" href="#adde107716abc9c85ac325ad078bd8fdb" title="Gets the Location of the given Uniform.">getUniformLocation()</a> </td></tr>
+    <tr><td class="paramname">data</td><td>The value to assign to the uniform</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This overload works for <span class="tt">float</span>, <span class="tt">int</span>, <span class="tt">glm::vec*</span>, <span class="tt">glm::mat*</span>, etc. </p>
+
+</div>
+</div>
+<a id="a76001e81309dc47570f7661a235f438f" name="a76001e81309dc47570f7661a235f438f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76001e81309dc47570f7661a235f438f">&#9670;&#160;</a></span>setUniform() <span class="overload">[41/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a8a170e81fbd929d42f5686286b7f06fe" name="a8a170e81fbd929d42f5686286b7f06fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a170e81fbd929d42f5686286b7f06fe">&#9670;&#160;</a></span>setUniform() <span class="overload">[42/42]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void egl::Program::setUniform </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -635,6 +3416,72 @@ Attached Shaders must outlive the <a class="el" href="../../d6/d3a/classegl_1_1_
       <table class="memname">
         <tr>
           <td class="memname">bool egl::Program::_linked = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a2d1cfc17558bd258de42f694992031" name="a7a2d1cfc17558bd258de42f694992031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2d1cfc17558bd258de42f694992031">&#9670;&#160;</a></span>_uniformData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d1/d73/namespaceegl.html#a99c234b350fbf99fa2289578b0fc399e">UniformData</a>&gt; egl::Program::_uniformData = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f03effe46afe4fc125ead48a101d8d4" name="a3f03effe46afe4fc125ead48a101d8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f03effe46afe4fc125ead48a101d8d4">&#9670;&#160;</a></span>_uniformIndexMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, int&gt; egl::Program::_uniformIndexMap = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e0428dafaad35d5834e353a60584ac9" name="a8e0428dafaad35d5834e353a60584ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0428dafaad35d5834e353a60584ac9">&#9670;&#160;</a></span>_uniformLocationIndexMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;int, int&gt; egl::Program::_uniformLocationIndexMap = {}</td>
         </tr>
       </table>
   </td>

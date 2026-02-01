@@ -10,6 +10,16 @@ inc/EGL/program.h
 .br
 \fR#include <stdexcept>\fP
 .br
+\fR#include <unordered_map>\fP
+.br
+\fR#include <glm/vec2\&.hpp>\fP
+.br
+\fR#include <glm/vec3\&.hpp>\fP
+.br
+\fR#include <glm/vec4\&.hpp>\fP
+.br
+\fR#include <glm/matrix\&.hpp>\fP
+.br
 
 .SS "Data Structures"
 
@@ -23,15 +33,31 @@ inc/EGL/program.h
 .br
 .RI "Exception thrown when \fBProgram\fP validation fails, mainly used in debug builds\&. "
 .ti -1c
+.RI "struct \fBegl::_uniformData\fP"
+.br
+.ti -1c
 .RI "class \fBegl::Program\fP"
 .br
 .RI "\fBProgram\fP class to abstract OpenGL \fBShader\fP Programs\&. "
+.ti -1c
+.RI "class \fBegl::Program::UniformProxy\fP"
+.br
+.ti -1c
+.RI "class \fBegl::Program::UniformProxyConst\fP"
+.br
 .in -1c
 .SS "Namespaces"
 
 .in +1c
 .ti -1c
 .RI "namespace \fBegl\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBegl::_uniformData\fP \fBegl::UniformData\fP"
 .br
 .in -1c
 .SH "Author"

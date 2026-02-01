@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <thread>
+#include <chrono>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -44,11 +45,19 @@ public:
 
         program.link();
 
+        program["uColor"] = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
+
         program.bind();
+
+        auto start = std::chrono::system_clock::now();
 
         while (!shouldClose())
         {
             GL_CALL(glClear(GL_COLOR_BUFFER_BIT));
+
+            auto duration = start - std::chrono::system_clock::now();
+            float val = (std::sin(std::chrono::duration_cast<std::chrono::milliseconds>(duration).count() / 1000.0f) + 1) / 2.0f;
+            program["uColor"] = glm::vec4(1.0f, val, val, 1.0f);
 
             GL_CALL(glDrawArrays(GL_TRIANGLES, 0, (int)(positions.size() / 2)));
 
