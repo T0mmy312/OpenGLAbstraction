@@ -1,8 +1,8 @@
-.TH "inc/EGL/shader.h" 3 "Easy OpenGL" \" -*- nroff -*-
+.TH "inc/GLA/shader.h" 3 "OpenGL Abstraction" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-inc/EGL/shader.h
+inc/GLA/shader.h
 .SH SYNOPSIS
 .br
 .PP
@@ -17,11 +17,11 @@ inc/EGL/shader.h
 
 .in +1c
 .ti -1c
-.RI "class \fBegl::ShaderCompileError\fP"
+.RI "class \fBgla::ShaderCompileError\fP"
 .br
 .RI "Exception thrown when \fBShader\fP compilation fails\&. "
 .ti -1c
-.RI "class \fBegl::Shader\fP"
+.RI "class \fBgla::Shader\fP"
 .br
 .RI "\fBShader\fP class to abstract OpenGL Shaders\&. "
 .in -1c
@@ -29,14 +29,14 @@ inc/EGL/shader.h
 
 .in +1c
 .ti -1c
-.RI "namespace \fBegl\fP"
+.RI "namespace \fBgla\fP"
 .br
 .in -1c
 .SS "Enumerations"
 
 .in +1c
 .ti -1c
-.RI "enum class \fBegl::ShaderType\fP { \fBegl::Fragment\fP, \fBegl::Vertex\fP, \fBegl::Geometry\fP, \fBegl::TessEvaluation\fP, \fBegl::TessControl\fP, \fBegl::Compute\fP }"
+.RI "enum class \fBgla::ShaderType\fP { \fBgla::Fragment\fP, \fBgla::Vertex\fP, \fBgla::Geometry\fP, \fBgla::TessEvaluation\fP, \fBgla::TessControl\fP, \fBgla::Compute\fP }"
 .br
 .RI "\fBShaderType\fP enum to indicate usage\&. "
 .in -1c
@@ -44,14 +44,14 @@ inc/EGL/shader.h
 
 .in +1c
 .ti -1c
-.RI "constexpr std::string \fBegl::shaderTypeToString\fP (\fBShaderType\fP type)"
+.RI "constexpr std::string \fBgla::shaderTypeToString\fP (\fBShaderType\fP type)"
 .br
 .RI "Converts the \fBShaderType\fP enum into a std::string\&. "
 .ti -1c
-.RI "unsigned int \fBegl::toGLenum\fP (\fBShaderType\fP type)"
+.RI "unsigned int \fBgla::toGLenum\fP (\fBShaderType\fP type)"
 .br
 .RI "Converts the \fBShaderType\fP enum into an OpenGL enum\&. "
 .in -1c
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Easy OpenGL from the source code\&.
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

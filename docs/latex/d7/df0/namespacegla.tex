@@ -1,0 +1,784 @@
+\doxysection{gla Namespace Reference}
+\hypertarget{namespacegla}{}\label{namespacegla}\index{gla@{gla}}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classgla_1_1_buffer}{Buffer}}
+\item 
+class \doxymbox{\hyperlink{classgla_1_1_program_link_error}{Program\+Link\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when \doxylink{classgla_1_1_program}{Program} linking fails. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classgla_1_1_program_validate_error}{Program\+Validate\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when \doxylink{classgla_1_1_program}{Program} validation fails, mainly used in debug builds. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structgla_1_1__uniform_data}{\+\_\+uniform\+Data}}
+\item 
+class \doxymbox{\hyperlink{classgla_1_1_program}{Program}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classgla_1_1_program}{Program} class to abstract Open\+GL \doxylink{classgla_1_1_shader}{Shader} Programs. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classgla_1_1_shader_compile_error}{Shader\+Compile\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when \doxylink{classgla_1_1_shader}{Shader} compilation fails. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classgla_1_1_shader}{Shader} class to abstract Open\+GL Shaders. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classgla_1_1_vertex_buffer}{Vertex\+Buffer}}
+\item 
+class \doxymbox{\hyperlink{classgla_1_1_window_context}{Window\+Context}}
+\begin{DoxyCompactList}\small\item\em An abstract class to contain an window based application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \doxymbox{\hyperlink{structgla_1_1__uniform_data}{gla::\+\+\_\+uniform\+Data}} \doxymbox{\hyperlink{namespacegla_acf6bf243ea77f0ae5acbb6fed2f7317e}{Uniform\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} \{ \newline
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada4410ec34d9e6c1a68100ca0ce033fb17}{Array}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada718568e47d2de4af4d51fc1114cb3583}{Atomic\+Counter}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada3a23dd1e2979213e268b02eca78f1093}{Copy\+Read}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecadaac0d23bb3afb6d4ffb725d00de2b3ffb}{Copy\+Write}}
+, \newline
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada8b76d6291a8094d1fc459a056780dd54}{Dispatch\+Indirect}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada95b0e6b8c7aa6af632295afda7a926bc}{Draw\+Indirect}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada3726aa2adc65a493586528ddbd070204}{Element\+Array}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada22702a714692d1c3a1ba2f02cf200c7a}{Pixel\+Pack}}
+, \newline
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada454e29d3537454f75dba31fc3ab1fc0d}{Pixel\+Unpack}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada66c1b4c7f3dc385b68a9fa903ccd016d}{Query}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecada63d204f04170f5bbf958083589f6572f}{Shader\+Storage}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecadaa3e8ae43188ae76d38f414b2bdb0077b}{Texture}}
+, \newline
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecadaf42c5721f003b0657f081141043576f6}{Transform\+Feedback}}
+, \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecadaf19516d11f2946f894070e92fcb56b6d}{Uniform}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to indicate the type of \doxylink{classgla_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}} \{ \newline
+\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ab831b12d8d415645f1f00e37e0426ca2}{Stream\+Draw}}
+, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a10953b8796ab666281dc734e99aa5180}{Stream\+Read}}
+, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a72d80d051f94e8aa1e3dc1ebfb6cc8cc}{Stream\+Copy}}
+, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac3ed2ba606af12869974bdab26334e6c}{Static\+Draw}}
+, \newline
+\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a3b35249bb273aea8b56c05f2c914a38a}{Static\+Read}}
+, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac5a66e746248ebb7fe5f99443172fca7}{Static\+Copy}}
+, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a07988dce2d161630856fb73bc06682c0}{Dynamic\+Draw}}
+, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a2ca7cf82bf5d2f11738ae1a371d5ae32}{Dynamic\+Read}}
+, \newline
+\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac572ac15b4bcbc9e975b79480e253c14}{Dynamic\+Copy}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to indicate \doxylink{classgla_1_1_buffer}{Buffer} Usage. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} :\+ uint32\+\_\+t \{ \newline
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a6adf97f83acf6453d4a6a4b1070f3754}{None}} = 0
+, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a7a1a5f3e79fdc91edf2f5ead9d66abb4}{Read}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a1129c0e4d43f2d121652a7302712cff6}{Write}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4}{Persistent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \newline
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a65d2523d959087dc90e3070bf940f94c}{Coherent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6aefcb4954ae74945cf0eba28983e28b6e}{Invalid\+Range}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6acc6d7b432c2856582ca2627a8437bbe0}{Invalidate\+Buffer}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6ab9698f5447ac81e5c28a7c3c53a196e3}{Flush\+Explicit}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 6
+, \newline
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a7854699f8079e4a586a6c943703ac972}{Unsynchronized}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 7
+ \}
+\begin{DoxyCompactList}\small\item\em Enum flags to indicate \doxylink{classgla_1_1_buffer}{Buffer} map usage. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} :\+ uint32\+\_\+t \{ \newline
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da6adf97f83acf6453d4a6a4b1070f3754}{None}} = 0
+, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da4a7fd22ec9dd772a4a534f5259e133f2}{Dynamic\+Storage}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144dac16a79d8306dc10ca7b16a409661847f}{Map\+Read}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da4a0138ad7aa1d1355c00c3e6fef8157d}{Map\+Write}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \newline
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da771e3ed8a1ecc75a7cbe5cae48bcbac0}{Map\+Persistent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da70a75c211d5cddf35e9b546be29ab1c1}{Map\+Coherent}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da82f574c954f5e6699be84b6b1d03a17f}{Client\+Storage}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+ \}
+\begin{DoxyCompactList}\small\item\em Enum falgs for explicit \doxylink{classgla_1_1_buffer}{Buffer} usage in set\+Storage. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type}} \{ \newline
+\doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea37d01b98065725fe3a1d30acf3a0064a}{Fragment}}
+, \doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49eab22b929ba52471a02d18bb3a4e4472e6}{Vertex}}
+, \doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ead9c6333623e6357515fcbf17be806273}{Geometry}}
+, \doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea40965fc25637f8587bc34c0f2fa6e3f9}{Tess\+Evaluation}}
+, \newline
+\doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea6c2ab859b54837522f9f738ef3bf846d}{Tess\+Control}}
+, \doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49eaa623a8d0366bf079411aa30be45b2d10}{Compute}}
+ \}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} enum to indicate usage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \doxymbox{\hyperlink{namespacegla_ae30bc3b5e2fca298cee7293d696a1b36}{operator\texorpdfstring{$\vert$}{|}}} (\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} a, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} b)
+\item 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \doxymbox{\hyperlink{namespacegla_a629e588320ddd382a7f9267a5a4f42ea}{operator\&}} (\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} a, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} b)
+\item 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \& \doxymbox{\hyperlink{namespacegla_ac7ad9193d3fdb969b8d45dbd9779b6a8}{operator\texorpdfstring{$\vert$}{|}=}} (\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \&a, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} b)
+\item 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \doxymbox{\hyperlink{namespacegla_a6a18de69fef3b1561e2103a99a84db5b}{operator\texorpdfstring{$\vert$}{|}}} (\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} a, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} b)
+\item 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \doxymbox{\hyperlink{namespacegla_a2b45a6d51b1efe291f8222b735d812e4}{operator\&}} (\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} a, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} b)
+\item 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \& \doxymbox{\hyperlink{namespacegla_a5742e73ee3bf8a0147809a06ce264c0e}{operator\texorpdfstring{$\vert$}{|}=}} (\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \&a, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} b)
+\item 
+unsigned int \doxymbox{\hyperlink{namespacegla_acf5a79b8cdeed0b99411c2712fc19983}{to\+GLenum}} (\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type} enum into a GLenum. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{namespacegla_a4b4bacba96f547896387fbba6d5898e3}{to\+GLenum}} (\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}} usage)
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage} enum into a GLenum. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{namespacegla_a6c392caaf616a9937dba0c8dd8f9b768}{to\+GLenum}} (\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} usage)
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} enum into a GLenum. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{namespacegla_ad8b71108c99800624cd9491771c14f6f}{to\+GLenum}} (\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} flag)
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} enum into a GLenum. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{namespacegla_a1f8401457b01e0015a39ce292c68e05a}{validate\+Map\+Usage}} (\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} usage, std::\+string \&error)
+\begin{DoxyCompactList}\small\item\em Checks if the given \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} flag combination is valid. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{namespacegla_af502fa0e70fae632dc81f756820e783e}{validate\+Buffer\+Flag}} (\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} flag, std::\+string \&error)
+\begin{DoxyCompactList}\small\item\em Checks if the given \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} flag combination is valid. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacegla_abcdac3b947f67c9ed54ceddb2ef9a63a}{gl\+Error\+String}} (unsigned int err)
+\begin{DoxyCompactList}\small\item\em Gets a c-\/style string from from a Open\+GL enum. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{namespacegla_a776fa1ca8c6db42ad2ace3c425ae9466}{gl\+Check\+Error}} (const char \texorpdfstring{$\ast$}{*}func, const char \texorpdfstring{$\ast$}{*}file, int line)
+\begin{DoxyCompactList}\small\item\em Checks and prints if any Open\+GL error has occured. \end{DoxyCompactList}\item 
+constexpr std::\+string \doxymbox{\hyperlink{namespacegla_a0248dee42aae373cdcff4657749fee7c}{shader\+Type\+To\+String}} (\doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Converts the \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} enum into a std::\+string. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{namespacegla_a9a20bfdfb244ff5c4c81780624aaf724}{to\+GLenum}} (\doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Converts the \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} enum into an Open\+GL enum. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{namespacegla_a3bcbafb907ed85c4d0a347a33d2ef1e3}{init\+GLFW}} ()
+\begin{DoxyCompactList}\small\item\em Initialize GLFW. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{namespacegla_a7170a7e3c268553105f21d787e411004}{terminate\+GLFW}} ()
+\begin{DoxyCompactList}\small\item\em Terminates GLFW. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{namespacegla_adfccd667467a1a415a56f83717b3e760}{poll\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Polls GLFW events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{namespacegla_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespacegla_acf6bf243ea77f0ae5acbb6fed2f7317e}\index{gla@{gla}!UniformData@{UniformData}}
+\index{UniformData@{UniformData}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{UniformData}{UniformData}}
+{\footnotesize\ttfamily \label{namespacegla_acf6bf243ea77f0ae5acbb6fed2f7317e} 
+typedef struct \doxymbox{\hyperlink{structgla_1_1__uniform_data}{gla::\+\+\_\+uniform\+Data}} \doxymbox{\hyperlink{namespacegla_acf6bf243ea77f0ae5acbb6fed2f7317e}{gla::\+\+Uniform\+Data}}}
+
+
+
+\label{doc-enum-members}
+\Hypertarget{namespacegla_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144d}\index{gla@{gla}!BufferFlag@{BufferFlag}}
+\index{BufferFlag@{BufferFlag}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{BufferFlag}{BufferFlag}}
+{\footnotesize\ttfamily \label{namespacegla_a350bd3821a2aee5521c6872af830144d} 
+enum class \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{gla::\+\+Buffer\+Flag}} :\+ uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum falgs for explicit \doxylink{classgla_1_1_buffer}{Buffer} usage in set\+Storage. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!gla@{gla}}
+\index{gla@{gla}!None@{None}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144da6adf97f83acf6453d4a6a4b1070f3754}\label{namespacegla_a350bd3821a2aee5521c6872af830144da6adf97f83acf6453d4a6a4b1070f3754} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DynamicStorage@{DynamicStorage}!gla@{gla}}
+\index{gla@{gla}!DynamicStorage@{DynamicStorage}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144da4a7fd22ec9dd772a4a534f5259e133f2}\label{namespacegla_a350bd3821a2aee5521c6872af830144da4a7fd22ec9dd772a4a534f5259e133f2} 
+Dynamic\+Storage&Indicates that the contents of the data store may be updated after creation through calls to gl\+Buffer\+Sub\+Data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapRead@{MapRead}!gla@{gla}}
+\index{gla@{gla}!MapRead@{MapRead}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144dac16a79d8306dc10ca7b16a409661847f}\label{namespacegla_a350bd3821a2aee5521c6872af830144dac16a79d8306dc10ca7b16a409661847f} 
+Map\+Read&Indicates that the data store may be mapped by the client for read access and a pointer in the client\textquotesingle{}s address space obtained that may be read from. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapWrite@{MapWrite}!gla@{gla}}
+\index{gla@{gla}!MapWrite@{MapWrite}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144da4a0138ad7aa1d1355c00c3e6fef8157d}\label{namespacegla_a350bd3821a2aee5521c6872af830144da4a0138ad7aa1d1355c00c3e6fef8157d} 
+Map\+Write&Indicates that the data store may be mapped by the client for write access and a pointer in the client\textquotesingle{}s address space obtained that may be written through. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapPersistent@{MapPersistent}!gla@{gla}}
+\index{gla@{gla}!MapPersistent@{MapPersistent}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144da771e3ed8a1ecc75a7cbe5cae48bcbac0}\label{namespacegla_a350bd3821a2aee5521c6872af830144da771e3ed8a1ecc75a7cbe5cae48bcbac0} 
+Map\+Persistent&Indicates that the client may request that the server read from or write to the buffer while it is mapped. The client\textquotesingle{}s pointer to the data store remains valid so long as the data store is mapped, even during execution of drawing or dispatch commands. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapCoherent@{MapCoherent}!gla@{gla}}
+\index{gla@{gla}!MapCoherent@{MapCoherent}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144da70a75c211d5cddf35e9b546be29ab1c1}\label{namespacegla_a350bd3821a2aee5521c6872af830144da70a75c211d5cddf35e9b546be29ab1c1} 
+Map\+Coherent&Indicates thar shared access to buffers that are simultaneously mapped for client access and are used by the server will be coherent, so long as that mapping is performed using gl\+Map\+Buffer\+Range. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ClientStorage@{ClientStorage}!gla@{gla}}
+\index{gla@{gla}!ClientStorage@{ClientStorage}}
+}\Hypertarget{namespacegla_a350bd3821a2aee5521c6872af830144da82f574c954f5e6699be84b6b1d03a17f}\label{namespacegla_a350bd3821a2aee5521c6872af830144da82f574c954f5e6699be84b6b1d03a17f} 
+Client\+Storage&When all other criteria for the buffer storage allocation are met, this bit may be used by an implementation to determine whether to use storage that is local to the server or to the client to serve as the backing store for the buffer. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespacegla_a7442220d0141215247011f052258ecad}\index{gla@{gla}!BufferType@{BufferType}}
+\index{BufferType@{BufferType}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{BufferType}{BufferType}}
+{\footnotesize\ttfamily \label{namespacegla_a7442220d0141215247011f052258ecad} 
+enum class \doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{gla::\+\+Buffer\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum to indicate the type of \doxylink{classgla_1_1_buffer}{Buffer}. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Array@{Array}!gla@{gla}}
+\index{gla@{gla}!Array@{Array}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada4410ec34d9e6c1a68100ca0ce033fb17}\label{namespacegla_a7442220d0141215247011f052258ecada4410ec34d9e6c1a68100ca0ce033fb17} 
+Array&Vertex attributes. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AtomicCounter@{AtomicCounter}!gla@{gla}}
+\index{gla@{gla}!AtomicCounter@{AtomicCounter}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada718568e47d2de4af4d51fc1114cb3583}\label{namespacegla_a7442220d0141215247011f052258ecada718568e47d2de4af4d51fc1114cb3583} 
+Atomic\+Counter&Atomic counter storage. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CopyRead@{CopyRead}!gla@{gla}}
+\index{gla@{gla}!CopyRead@{CopyRead}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada3a23dd1e2979213e268b02eca78f1093}\label{namespacegla_a7442220d0141215247011f052258ecada3a23dd1e2979213e268b02eca78f1093} 
+Copy\+Read&\doxylink{classgla_1_1_buffer}{Buffer} copy source. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CopyWrite@{CopyWrite}!gla@{gla}}
+\index{gla@{gla}!CopyWrite@{CopyWrite}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecadaac0d23bb3afb6d4ffb725d00de2b3ffb}\label{namespacegla_a7442220d0141215247011f052258ecadaac0d23bb3afb6d4ffb725d00de2b3ffb} 
+Copy\+Write&\doxylink{classgla_1_1_buffer}{Buffer} copy destination. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DispatchIndirect@{DispatchIndirect}!gla@{gla}}
+\index{gla@{gla}!DispatchIndirect@{DispatchIndirect}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada8b76d6291a8094d1fc459a056780dd54}\label{namespacegla_a7442220d0141215247011f052258ecada8b76d6291a8094d1fc459a056780dd54} 
+Dispatch\+Indirect&Indirect compute dispatch commands. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DrawIndirect@{DrawIndirect}!gla@{gla}}
+\index{gla@{gla}!DrawIndirect@{DrawIndirect}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada95b0e6b8c7aa6af632295afda7a926bc}\label{namespacegla_a7442220d0141215247011f052258ecada95b0e6b8c7aa6af632295afda7a926bc} 
+Draw\+Indirect&Indirect command arguments. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ElementArray@{ElementArray}!gla@{gla}}
+\index{gla@{gla}!ElementArray@{ElementArray}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada3726aa2adc65a493586528ddbd070204}\label{namespacegla_a7442220d0141215247011f052258ecada3726aa2adc65a493586528ddbd070204} 
+Element\+Array&Vertex array indices. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PixelPack@{PixelPack}!gla@{gla}}
+\index{gla@{gla}!PixelPack@{PixelPack}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada22702a714692d1c3a1ba2f02cf200c7a}\label{namespacegla_a7442220d0141215247011f052258ecada22702a714692d1c3a1ba2f02cf200c7a} 
+Pixel\+Pack&Pixel read target. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PixelUnpack@{PixelUnpack}!gla@{gla}}
+\index{gla@{gla}!PixelUnpack@{PixelUnpack}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada454e29d3537454f75dba31fc3ab1fc0d}\label{namespacegla_a7442220d0141215247011f052258ecada454e29d3537454f75dba31fc3ab1fc0d} 
+Pixel\+Unpack&Texture data source. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Query@{Query}!gla@{gla}}
+\index{gla@{gla}!Query@{Query}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada66c1b4c7f3dc385b68a9fa903ccd016d}\label{namespacegla_a7442220d0141215247011f052258ecada66c1b4c7f3dc385b68a9fa903ccd016d} 
+Query&Query result buffer. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ShaderStorage@{ShaderStorage}!gla@{gla}}
+\index{gla@{gla}!ShaderStorage@{ShaderStorage}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecada63d204f04170f5bbf958083589f6572f}\label{namespacegla_a7442220d0141215247011f052258ecada63d204f04170f5bbf958083589f6572f} 
+Shader\+Storage&Read-\/write storage for shaders. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Texture@{Texture}!gla@{gla}}
+\index{gla@{gla}!Texture@{Texture}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecadaa3e8ae43188ae76d38f414b2bdb0077b}\label{namespacegla_a7442220d0141215247011f052258ecadaa3e8ae43188ae76d38f414b2bdb0077b} 
+Texture&Texture data buffer. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransformFeedback@{TransformFeedback}!gla@{gla}}
+\index{gla@{gla}!TransformFeedback@{TransformFeedback}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecadaf42c5721f003b0657f081141043576f6}\label{namespacegla_a7442220d0141215247011f052258ecadaf42c5721f003b0657f081141043576f6} 
+Transform\+Feedback&Transform feedback buffer. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Uniform@{Uniform}!gla@{gla}}
+\index{gla@{gla}!Uniform@{Uniform}}
+}\Hypertarget{namespacegla_a7442220d0141215247011f052258ecadaf19516d11f2946f894070e92fcb56b6d}\label{namespacegla_a7442220d0141215247011f052258ecadaf19516d11f2946f894070e92fcb56b6d} 
+Uniform&Uniform block storage. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}\index{gla@{gla}!BufferUsage@{BufferUsage}}
+\index{BufferUsage@{BufferUsage}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{BufferUsage}{BufferUsage}}
+{\footnotesize\ttfamily \label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5} 
+enum class \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{gla::\+\+Buffer\+Usage}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum to indicate \doxylink{classgla_1_1_buffer}{Buffer} Usage. 
+
+The Usage of a \doxylink{classgla_1_1_buffer}{Buffer} can be split into two parts as follows:\+
+
+The frequency of usage may be one of these:\+
+
+Stream
+\begin{DoxyItemize}
+\item The data store contents will be modified once and used at most a few times.
+\end{DoxyItemize}
+
+Static
+\begin{DoxyItemize}
+\item The data store contents will be modified once and used many times.
+\end{DoxyItemize}
+
+Dynamic
+\begin{DoxyItemize}
+\item The data store contents will be modified repeatedly and used many times.
+\end{DoxyItemize}
+
+The nature of usage may be one of these:\+
+
+Draw
+\begin{DoxyItemize}
+\item The data store contents are modified by the application, and used as the source for GL drawing and image specification commands.
+\end{DoxyItemize}
+
+Read
+\begin{DoxyItemize}
+\item The data store contents are modified by reading data from the GL, and used to return that data when queried by the application.
+\end{DoxyItemize}
+
+Copy
+\begin{DoxyItemize}
+\item The data store contents are modified by reading data from the GL, and used as the source for GL drawing and image specification commands. 
+\end{DoxyItemize}\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StreamDraw@{StreamDraw}!gla@{gla}}
+\index{gla@{gla}!StreamDraw@{StreamDraw}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ab831b12d8d415645f1f00e37e0426ca2}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ab831b12d8d415645f1f00e37e0426ca2} 
+Stream\+Draw&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StreamRead@{StreamRead}!gla@{gla}}
+\index{gla@{gla}!StreamRead@{StreamRead}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a10953b8796ab666281dc734e99aa5180}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a10953b8796ab666281dc734e99aa5180} 
+Stream\+Read&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StreamCopy@{StreamCopy}!gla@{gla}}
+\index{gla@{gla}!StreamCopy@{StreamCopy}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a72d80d051f94e8aa1e3dc1ebfb6cc8cc}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a72d80d051f94e8aa1e3dc1ebfb6cc8cc} 
+Stream\+Copy&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StaticDraw@{StaticDraw}!gla@{gla}}
+\index{gla@{gla}!StaticDraw@{StaticDraw}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac3ed2ba606af12869974bdab26334e6c}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac3ed2ba606af12869974bdab26334e6c} 
+Static\+Draw&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StaticRead@{StaticRead}!gla@{gla}}
+\index{gla@{gla}!StaticRead@{StaticRead}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a3b35249bb273aea8b56c05f2c914a38a}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a3b35249bb273aea8b56c05f2c914a38a} 
+Static\+Read&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StaticCopy@{StaticCopy}!gla@{gla}}
+\index{gla@{gla}!StaticCopy@{StaticCopy}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac5a66e746248ebb7fe5f99443172fca7}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac5a66e746248ebb7fe5f99443172fca7} 
+Static\+Copy&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DynamicDraw@{DynamicDraw}!gla@{gla}}
+\index{gla@{gla}!DynamicDraw@{DynamicDraw}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a07988dce2d161630856fb73bc06682c0}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a07988dce2d161630856fb73bc06682c0} 
+Dynamic\+Draw&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DynamicRead@{DynamicRead}!gla@{gla}}
+\index{gla@{gla}!DynamicRead@{DynamicRead}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a2ca7cf82bf5d2f11738ae1a371d5ae32}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5a2ca7cf82bf5d2f11738ae1a371d5ae32} 
+Dynamic\+Read&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DynamicCopy@{DynamicCopy}!gla@{gla}}
+\index{gla@{gla}!DynamicCopy@{DynamicCopy}}
+}\Hypertarget{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac572ac15b4bcbc9e975b79480e253c14}\label{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5ac572ac15b4bcbc9e975b79480e253c14} 
+Dynamic\+Copy&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6}\index{gla@{gla}!MapUsage@{MapUsage}}
+\index{MapUsage@{MapUsage}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{MapUsage}{MapUsage}}
+{\footnotesize\ttfamily \label{namespacegla_ae8a5a47275ed0181bb48c170596019b6} 
+enum class \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{gla::\+\+Map\+Usage}} :\+ uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum flags to indicate \doxylink{classgla_1_1_buffer}{Buffer} map usage. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!gla@{gla}}
+\index{gla@{gla}!None@{None}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6a6adf97f83acf6453d4a6a4b1070f3754}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6a6adf97f83acf6453d4a6a4b1070f3754} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Read@{Read}!gla@{gla}}
+\index{gla@{gla}!Read@{Read}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6a7a1a5f3e79fdc91edf2f5ead9d66abb4}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6a7a1a5f3e79fdc91edf2f5ead9d66abb4} 
+Read&Indicates that the returned pointer may be used to read buffer object data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Write@{Write}!gla@{gla}}
+\index{gla@{gla}!Write@{Write}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6a1129c0e4d43f2d121652a7302712cff6}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6a1129c0e4d43f2d121652a7302712cff6} 
+Write&Indicates that the returned pointer may be used to modify buffer object data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Persistent@{Persistent}!gla@{gla}}
+\index{gla@{gla}!Persistent@{Persistent}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4} 
+Persistent&Indicates that the mapping is to be made in a persistent fassion and that the client intends to hold and use the returned pointer during subsequent GL operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Coherent@{Coherent}!gla@{gla}}
+\index{gla@{gla}!Coherent@{Coherent}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6a65d2523d959087dc90e3070bf940f94c}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6a65d2523d959087dc90e3070bf940f94c} 
+Coherent&Indicates that a persistent mapping is also to be coherent. Coherent maps guarantee that the effect of writes to a buffer\textquotesingle{}s data store by either the client or server will eventually become visible to the other without further intervention from the application. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InvalidRange@{InvalidRange}!gla@{gla}}
+\index{gla@{gla}!InvalidRange@{InvalidRange}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6aefcb4954ae74945cf0eba28983e28b6e}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6aefcb4954ae74945cf0eba28983e28b6e} 
+Invalid\+Range&Indicates that the previous contents of the specified range may be discarded. Data within this range are undefined with the exception of subsequently written data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InvalidateBuffer@{InvalidateBuffer}!gla@{gla}}
+\index{gla@{gla}!InvalidateBuffer@{InvalidateBuffer}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6acc6d7b432c2856582ca2627a8437bbe0}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6acc6d7b432c2856582ca2627a8437bbe0} 
+Invalidate\+Buffer&Indicates that the previous contents of the entire buffer may be discarded. Data within the entire buffer are undefined with the exception of subsequently written data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FlushExplicit@{FlushExplicit}!gla@{gla}}
+\index{gla@{gla}!FlushExplicit@{FlushExplicit}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6ab9698f5447ac81e5c28a7c3c53a196e3}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6ab9698f5447ac81e5c28a7c3c53a196e3} 
+Flush\+Explicit&Indicates that one or more discrete subranges of the mapping may be modified. When this flag is set, modifications to each subrange must be explicitly flushed by calling gl\+Flush\+Mapped\+Buffer\+Range. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unsynchronized@{Unsynchronized}!gla@{gla}}
+\index{gla@{gla}!Unsynchronized@{Unsynchronized}}
+}\Hypertarget{namespacegla_ae8a5a47275ed0181bb48c170596019b6a7854699f8079e4a586a6c943703ac972}\label{namespacegla_ae8a5a47275ed0181bb48c170596019b6a7854699f8079e4a586a6c943703ac972} 
+Unsynchronized&Indicates that the GL should not attempt to synchronize pending operations on the buffer prior to returning from gl\+Map\+Buffer\+Range or gl\+Map\+Named\+Buffer\+Range. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}\index{gla@{gla}!ShaderType@{ShaderType}}
+\index{ShaderType@{ShaderType}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{ShaderType}{ShaderType}}
+{\footnotesize\ttfamily \label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e} 
+enum class \doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{gla::\+\+Shader\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+\doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} enum to indicate usage. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fragment@{Fragment}!gla@{gla}}
+\index{gla@{gla}!Fragment@{Fragment}}
+}\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea37d01b98065725fe3a1d30acf3a0064a}\label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea37d01b98065725fe3a1d30acf3a0064a} 
+Fragment&A \doxylink{classgla_1_1_shader}{Shader} that is intended to run on the programmable fragment processor. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vertex@{Vertex}!gla@{gla}}
+\index{gla@{gla}!Vertex@{Vertex}}
+}\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49eab22b929ba52471a02d18bb3a4e4472e6}\label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49eab22b929ba52471a02d18bb3a4e4472e6} 
+Vertex&A \doxylink{classgla_1_1_shader}{Shader} that is intended to run on the programmable vertex processor. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Geometry@{Geometry}!gla@{gla}}
+\index{gla@{gla}!Geometry@{Geometry}}
+}\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ead9c6333623e6357515fcbf17be806273}\label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ead9c6333623e6357515fcbf17be806273} 
+Geometry&A \doxylink{classgla_1_1_shader}{Shader} that is intended to run on the programmable geometry processor. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TessEvaluation@{TessEvaluation}!gla@{gla}}
+\index{gla@{gla}!TessEvaluation@{TessEvaluation}}
+}\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea40965fc25637f8587bc34c0f2fa6e3f9}\label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea40965fc25637f8587bc34c0f2fa6e3f9} 
+Tess\+Evaluation&A \doxylink{classgla_1_1_shader}{Shader} that is intended to run on the programmable tessellation processor in the evaluation stage. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TessControl@{TessControl}!gla@{gla}}
+\index{gla@{gla}!TessControl@{TessControl}}
+}\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea6c2ab859b54837522f9f738ef3bf846d}\label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49ea6c2ab859b54837522f9f738ef3bf846d} 
+Tess\+Control&A \doxylink{classgla_1_1_shader}{Shader} that is intended to run on the programmable tessellation processor in the control stage. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Compute@{Compute}!gla@{gla}}
+\index{gla@{gla}!Compute@{Compute}}
+}\Hypertarget{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49eaa623a8d0366bf079411aa30be45b2d10}\label{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49eaa623a8d0366bf079411aa30be45b2d10} 
+Compute&A \doxylink{classgla_1_1_shader}{Shader} intended to run on the programmable compute processor. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacegla_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacegla_a776fa1ca8c6db42ad2ace3c425ae9466}\index{gla@{gla}!glCheckError@{glCheckError}}
+\index{glCheckError@{glCheckError}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{glCheckError()}{glCheckError()}}
+{\footnotesize\ttfamily \label{namespacegla_a776fa1ca8c6db42ad2ace3c425ae9466} 
+void gla::\+gl\+Check\+Error (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{func}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{int}]{line}{}\end{DoxyParamCaption})}
+
+
+
+Checks and prints if any Open\+GL error has occured. 
+
+Iterates over the Open\+GL error flags with gl\+Get\+Error and prints them until no error are found anymore.
+
+\begin{DoxyNote}{Note}
+Mainly used in the GL\+\_\+\+CALL macro in the backend of the Easy Open\+GL abstraction.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The line of code that is being checked as a c-\/style string for debug output \\
+\hline
+{\em file} & The file in which this function was called as a c-\/style string for debug output \\
+\hline
+{\em line} & The line on which this function was called for debug output \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacegla_abcdac3b947f67c9ed54ceddb2ef9a63a}\index{gla@{gla}!glErrorString@{glErrorString}}
+\index{glErrorString@{glErrorString}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{glErrorString()}{glErrorString()}}
+{\footnotesize\ttfamily \label{namespacegla_abcdac3b947f67c9ed54ceddb2ef9a63a} 
+const char \texorpdfstring{$\ast$}{*} gla::\+gl\+Error\+String (\begin{DoxyParamCaption}\item[{unsigned int}]{err}{}\end{DoxyParamCaption})}
+
+
+
+Gets a c-\/style string from from a Open\+GL enum. 
+
+\begin{DoxyNote}{Note}
+Returns "{}\+UNKNOWN\+\_\+\+ERROR"{} if the error is not known. 
+
+Mainly used in the GL\+\_\+\+CALL macro in the backend of the Easy Open\+GL abstraction.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em err} & Open\+GL error enum to get the string of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+c-\/style NULL terminated string 
+\end{DoxyReturn}
+\Hypertarget{namespacegla_a3bcbafb907ed85c4d0a347a33d2ef1e3}\index{gla@{gla}!initGLFW@{initGLFW}}
+\index{initGLFW@{initGLFW}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{initGLFW()}{initGLFW()}}
+{\footnotesize\ttfamily \label{namespacegla_a3bcbafb907ed85c4d0a347a33d2ef1e3} 
+bool gla::\+init\+GLFW (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initialize GLFW. 
+
+Sets up error callbacks and calls glfw\+Init.
+
+\begin{DoxyNote}{Note}
+\doxylink{namespacegla_a3bcbafb907ed85c4d0a347a33d2ef1e3}{gla::\+init\+GLFW} is not thread safe and may only be called from the main thread.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+true if GLFW has been successfully initialized. 
+\end{DoxyReturn}
+\Hypertarget{namespacegla_a2b45a6d51b1efe291f8222b735d812e4}\index{gla@{gla}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacegla_a2b45a6d51b1efe291f8222b735d812e4} 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} gla::\+operator\& (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{a}{, }\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacegla_a629e588320ddd382a7f9267a5a4f42ea}\index{gla@{gla}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacegla_a629e588320ddd382a7f9267a5a4f42ea} 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} gla::\+operator\& (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{a}{, }\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacegla_a6a18de69fef3b1561e2103a99a84db5b}\index{gla@{gla}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacegla_a6a18de69fef3b1561e2103a99a84db5b} 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} gla::\+operator\texorpdfstring{$\vert$}{|} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{a}{, }\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacegla_ae30bc3b5e2fca298cee7293d696a1b36}\index{gla@{gla}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacegla_ae30bc3b5e2fca298cee7293d696a1b36} 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} gla::\+operator\texorpdfstring{$\vert$}{|} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{a}{, }\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacegla_a5742e73ee3bf8a0147809a06ce264c0e}\index{gla@{gla}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacegla_a5742e73ee3bf8a0147809a06ce264c0e} 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \& gla::\+operator\texorpdfstring{$\vert$}{|}= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \&}]{a}{, }\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacegla_ac7ad9193d3fdb969b8d45dbd9779b6a8}\index{gla@{gla}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacegla_ac7ad9193d3fdb969b8d45dbd9779b6a8} 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \& gla::\+operator\texorpdfstring{$\vert$}{|}= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \&}]{a}{, }\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacegla_adfccd667467a1a415a56f83717b3e760}\index{gla@{gla}!pollEvents@{pollEvents}}
+\index{pollEvents@{pollEvents}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
+{\footnotesize\ttfamily \label{namespacegla_adfccd667467a1a415a56f83717b3e760} 
+void gla::\+poll\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Polls GLFW events. 
+
+\begin{DoxyNote}{Note}
+\doxylink{namespacegla_adfccd667467a1a415a56f83717b3e760}{gla::\+poll\+Events} is not thread safe and may only be called from the main thread. 
+\end{DoxyNote}
+\Hypertarget{namespacegla_a0248dee42aae373cdcff4657749fee7c}\index{gla@{gla}!shaderTypeToString@{shaderTypeToString}}
+\index{shaderTypeToString@{shaderTypeToString}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{shaderTypeToString()}{shaderTypeToString()}}
+{\footnotesize\ttfamily \label{namespacegla_a0248dee42aae373cdcff4657749fee7c} 
+std::\+string gla::\+shader\+Type\+To\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type}}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Converts the \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} enum into a std::\+string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} to convert to a std::\+string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the given \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} (if unknown "{}\+INVALID"{} is returned). 
+\end{DoxyReturn}
+\Hypertarget{namespacegla_a7170a7e3c268553105f21d787e411004}\index{gla@{gla}!terminateGLFW@{terminateGLFW}}
+\index{terminateGLFW@{terminateGLFW}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{terminateGLFW()}{terminateGLFW()}}
+{\footnotesize\ttfamily \label{namespacegla_a7170a7e3c268553105f21d787e411004} 
+void gla::\+terminate\+GLFW (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Terminates GLFW. 
+
+\begin{DoxyNote}{Note}
+\doxylink{namespacegla_a7170a7e3c268553105f21d787e411004}{gla::\+terminate\+GLFW} is not thread safe and may only be called from the main thread. 
+\end{DoxyNote}
+\Hypertarget{namespacegla_ad8b71108c99800624cd9491771c14f6f}\index{gla@{gla}!toGLenum@{toGLenum}}
+\index{toGLenum@{toGLenum}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{toGLenum()}{toGLenum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{namespacegla_ad8b71108c99800624cd9491771c14f6f} 
+unsigned int gla::\+to\+GLenum (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{flag}{}\end{DoxyParamCaption})}
+
+
+
+Converts a \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} enum into a GLenum. 
+
+\Hypertarget{namespacegla_acf5a79b8cdeed0b99411c2712fc19983}\index{gla@{gla}!toGLenum@{toGLenum}}
+\index{toGLenum@{toGLenum}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{toGLenum()}{toGLenum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{namespacegla_acf5a79b8cdeed0b99411c2712fc19983} 
+unsigned int gla::\+to\+GLenum (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Converts a \doxylink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type} enum into a GLenum. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type} is invalid. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacegla_a4b4bacba96f547896387fbba6d5898e3}\index{gla@{gla}!toGLenum@{toGLenum}}
+\index{toGLenum@{toGLenum}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{toGLenum()}{toGLenum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{namespacegla_a4b4bacba96f547896387fbba6d5898e3} 
+unsigned int gla::\+to\+GLenum (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}}}]{usage}{}\end{DoxyParamCaption})}
+
+
+
+Converts a \doxylink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage} enum into a GLenum. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & If the \doxylink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage} is invalid. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacegla_a6c392caaf616a9937dba0c8dd8f9b768}\index{gla@{gla}!toGLenum@{toGLenum}}
+\index{toGLenum@{toGLenum}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{toGLenum()}{toGLenum()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{namespacegla_a6c392caaf616a9937dba0c8dd8f9b768} 
+unsigned int gla::\+to\+GLenum (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{usage}{}\end{DoxyParamCaption})}
+
+
+
+Converts a \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} enum into a GLenum. 
+
+\Hypertarget{namespacegla_a9a20bfdfb244ff5c4c81780624aaf724}\index{gla@{gla}!toGLenum@{toGLenum}}
+\index{toGLenum@{toGLenum}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{toGLenum()}{toGLenum()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{namespacegla_a9a20bfdfb244ff5c4c81780624aaf724} 
+unsigned int gla::\+to\+GLenum (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Converts the \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} enum into an Open\+GL enum. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} is invalid.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The \doxylink{namespacegla_a0b120a09cab1e31bc4b42b97e9c3c49e}{Shader\+Type} to convert to a std::\+string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting Open\+GL enum. 
+\end{DoxyReturn}
+\Hypertarget{namespacegla_af502fa0e70fae632dc81f756820e783e}\index{gla@{gla}!validateBufferFlag@{validateBufferFlag}}
+\index{validateBufferFlag@{validateBufferFlag}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{validateBufferFlag()}{validateBufferFlag()}}
+{\footnotesize\ttfamily \label{namespacegla_af502fa0e70fae632dc81f756820e783e} 
+bool gla::\+validate\+Buffer\+Flag (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{flag}{, }\item[{std::\+string \&}]{error}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the given \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} flag combination is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} flag combination to check \\
+\hline
+{\em error} & Error string output if the combination is invalid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} combination is valid 
+\end{DoxyReturn}
+\Hypertarget{namespacegla_a1f8401457b01e0015a39ce292c68e05a}\index{gla@{gla}!validateMapUsage@{validateMapUsage}}
+\index{validateMapUsage@{validateMapUsage}!gla@{gla}}
+\doxysubsubsection{\texorpdfstring{validateMapUsage()}{validateMapUsage()}}
+{\footnotesize\ttfamily \label{namespacegla_a1f8401457b01e0015a39ce292c68e05a} 
+bool gla::\+validate\+Map\+Usage (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{usage}{, }\item[{std::\+string \&}]{error}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the given \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} flag combination is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em usage} & \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} flag combination to check \\
+\hline
+{\em error} & Error string output if the combination is invalid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} combination is valid 
+\end{DoxyReturn}

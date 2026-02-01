@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Easy OpenGL: inc/EGL/debug.h Source File</title>
+<title>OpenGL Abstraction: inc/GLA/debug.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Easy OpenGL
+   <div id="projectname">OpenGL Abstraction
    </div>
    <div id="projectbrief">A simple low level OpenGL wrapper to convert OpenGL to modern C++</div>
   </td>
@@ -92,14 +92,14 @@ $(function(){initNavTree('db/d16/debug_8h_source.html','../../',''); });
   <div class="headertitle"><div class="title">debug.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../db/d16/debug_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EGL_DEBUG_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define EGL_DEBUG_H</span></div>
+<a href="../../db/d16/debug_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GLA_DEBUG_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GLA_DEBUG_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d1/d73/namespaceegl.html">egl</a> {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d7/df0/namespacegla.html">gla</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d1/d73/namespaceegl.html#aaf82114960a088c58a478591198f4c16">   15</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="../../d1/d73/namespaceegl.html#aaf82114960a088c58a478591198f4c16">glErrorString</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> err);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d7/df0/namespacegla.html#abcdac3b947f67c9ed54ceddb2ef9a63a">   15</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="../../d7/df0/namespacegla.html#abcdac3b947f67c9ed54ceddb2ef9a63a">glErrorString</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> err);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d1/d73/namespaceegl.html#a3bbf040016c69492e2a5f73ba1405b45">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d73/namespaceegl.html#a3bbf040016c69492e2a5f73ba1405b45">glCheckError</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* func, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d7/df0/namespacegla.html#a776fa1ca8c6db42ad2ace3c425ae9466">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d7/df0/namespacegla.html#a776fa1ca8c6db42ad2ace3c425ae9466">glCheckError</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* func, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
@@ -107,7 +107,7 @@ $(function(){initNavTree('db/d16/debug_8h_source.html','../../',''); });
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifdef DEBUG_BUILD</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    #define GL_CALL(x) do { x; egl::glCheckError(#x, __FILE__, __LINE__); } while(0)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    #define GL_CALL(x) do { x; gla::glCheckError(#x, __FILE__, __LINE__); } while(0)</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    #define DEBUG_ONLY(x) x</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -120,16 +120,16 @@ $(function(){initNavTree('db/d16/debug_8h_source.html','../../',''); });
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespaceegl_html"><div class="ttname"><a href="../../d1/d73/namespaceegl.html">egl</a></div><div class="ttdef"><b>Definition</b> buffer.h:9</div></div>
-<div class="ttc" id="anamespaceegl_html_a3bbf040016c69492e2a5f73ba1405b45"><div class="ttname"><a href="../../d1/d73/namespaceegl.html#a3bbf040016c69492e2a5f73ba1405b45">egl::glCheckError</a></div><div class="ttdeci">void glCheckError(const char *func, const char *file, int line)</div><div class="ttdoc">Checks and prints if any OpenGL error has occured.</div></div>
-<div class="ttc" id="anamespaceegl_html_aaf82114960a088c58a478591198f4c16"><div class="ttname"><a href="../../d1/d73/namespaceegl.html#aaf82114960a088c58a478591198f4c16">egl::glErrorString</a></div><div class="ttdeci">const char * glErrorString(unsigned int err)</div><div class="ttdoc">Gets a c-style string from from a OpenGL enum.</div></div>
+<div class="ttc" id="anamespacegla_html"><div class="ttname"><a href="../../d7/df0/namespacegla.html">gla</a></div><div class="ttdef"><b>Definition</b> buffer.h:9</div></div>
+<div class="ttc" id="anamespacegla_html_a776fa1ca8c6db42ad2ace3c425ae9466"><div class="ttname"><a href="../../d7/df0/namespacegla.html#a776fa1ca8c6db42ad2ace3c425ae9466">gla::glCheckError</a></div><div class="ttdeci">void glCheckError(const char *func, const char *file, int line)</div><div class="ttdoc">Checks and prints if any OpenGL error has occured.</div></div>
+<div class="ttc" id="anamespacegla_html_abcdac3b947f67c9ed54ceddb2ef9a63a"><div class="ttname"><a href="../../d7/df0/namespacegla.html#abcdac3b947f67c9ed54ceddb2ef9a63a">gla::glErrorString</a></div><div class="ttdeci">const char * glErrorString(unsigned int err)</div><div class="ttdoc">Gets a c-style string from from a OpenGL enum.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="../../dir_d0e58c9a32265e58c2e221b88a397c65.html">EGL</a></li><li class="navelem"><a href="../../db/d16/debug_8h.html">debug.h</a></li>
+    <li class="navelem"><a href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="../../dir_6d66fef564e45ed0e46258a3533de6dc.html">GLA</a></li><li class="navelem"><a href="../../db/d16/debug_8h.html">debug.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
   </ul>
 </div>

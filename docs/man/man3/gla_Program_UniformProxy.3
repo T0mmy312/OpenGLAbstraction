@@ -1,0 +1,257 @@
+.TH "gla::Program::UniformProxy" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gla::Program::UniformProxy
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <program\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUniformProxy\fP (\fBProgram\fP &parent, int location)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP (UniformProxy &&other)=delete"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP (const UniformProxy &other)=delete"
+.br
+.ti -1c
+.RI "\fBoperator float\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::vec2\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::vec3\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::vec4\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator int\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::ivec2\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::ivec3\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::ivec4\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator unsigned int\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::uvec2\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::uvec3\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::uvec4\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat2\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat3\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat4\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat2x3\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat3x2\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat2x4\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat4x2\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat3x4\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator glm::mat4x3\fP () const"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (float other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::vec2 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::vec3 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::vec4 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (int other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::ivec2 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::ivec3 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::ivec4 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (unsigned int other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::uvec2 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::uvec3 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::uvec4 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat2 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat3 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat4 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat2x3 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat3x2 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat2x4 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat4x2 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat3x4 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const glm::mat4x3 &other)"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (const \fBUniformProxy\fP &other)=delete"
+.br
+.ti -1c
+.RI "\fBUniformProxy\fP & \fBoperator=\fP (\fBUniformProxy\fP &&other)=delete"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gla::Program::UniformProxy::UniformProxy (\fBProgram\fP & parent, int location)\fR [inline]\fP"
+
+.SS "gla::Program::UniformProxy::UniformProxy (UniformProxy && other)\fR [delete]\fP"
+
+.SS "gla::Program::UniformProxy::UniformProxy (const UniformProxy & other)\fR [delete]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "gla::Program::UniformProxy::operator float () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::ivec2 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::ivec3 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::ivec4 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat2 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat2x3 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat2x4 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat3 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat3x2 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat3x4 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat4 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat4x2 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::mat4x3 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::uvec2 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::uvec3 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::uvec4 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::vec2 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::vec3 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator glm::vec4 () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator int () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "gla::Program::UniformProxy::operator unsigned int () const\fR [inline]\fP, \fR [explicit]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::ivec2 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::ivec3 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::ivec4 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat2 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat2x3 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat2x4 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat3 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat3x2 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat3x4 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat4 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat4x2 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::mat4x3 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::uvec2 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::uvec3 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::uvec4 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::vec2 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::vec3 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const glm::vec4 & other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (const \fBUniformProxy\fP & other)\fR [delete]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (float other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (int other)\fR [inline]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (\fBUniformProxy\fP && other)\fR [delete]\fP"
+
+.SS "\fBUniformProxy\fP & gla::Program::UniformProxy::operator= (unsigned int other)\fR [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

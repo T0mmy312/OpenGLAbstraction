@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "egl", "d1/d73/namespaceegl.html", "d1/d73/namespaceegl" ]
+    [ "gla", "d7/df0/namespacegla.html", "d7/df0/namespacegla" ]
 ];

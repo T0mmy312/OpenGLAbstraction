@@ -1,0 +1,1602 @@
+\doxysection{gla::\+Program Class Reference}
+\hypertarget{classgla_1_1_program}{}\label{classgla_1_1_program}\index{gla::Program@{gla::Program}}
+
+
+\doxylink{classgla_1_1_program}{Program} class to abstract Open\+GL \doxylink{classgla_1_1_shader}{Shader} Programs.  
+
+
+
+
+{\ttfamily \+\#include $<$program.\+h$>$}
+
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}}
+\item 
+class \doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty \doxylink{classgla_1_1_program}{Program} object. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_program_abec45bebb1bb5ad7151566a09e233416}{Program}} (Program \&\&other)
+\item 
+\doxymbox{\hyperlink{classgla_1_1_program_a0fccc866b5fbc06e1ff479884b37365e}{Program}} (const Program \&)=delete
+\item 
+\doxymbox{\hyperlink{classgla_1_1_program_ab286f2daa55a3c73fc97cccf409b5293}{\texorpdfstring{$\sim$}{\string~}\+Program}} ()
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the \doxylink{classgla_1_1_program}{Program} to an empty State. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classgla_1_1_program_ad41765466b94da5ab21cbb7f2d0f1630}{attached}} (const \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}} \&shader)
+\begin{DoxyCompactList}\small\item\em Checks if the given \doxylink{classgla_1_1_shader}{Shader} is attached to the \doxylink{classgla_1_1_program}{Program}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ad327abad7abd10149666b8189c94427a}{attach}} (const \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}} \&shader)
+\begin{DoxyCompactList}\small\item\em Attaches \doxylink{classgla_1_1_shader}{Shader} to \doxylink{classgla_1_1_program}{Program} for linking. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7d39e5f532222c2da66464efd38ea2d1}{detach}} (const \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}} \&shader)
+\begin{DoxyCompactList}\small\item\em Detaches \doxylink{classgla_1_1_shader}{Shader} from \doxylink{classgla_1_1_program}{Program} for linking. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classgla_1_1_program_a515aa721ee0a2f08027f08ed95744c04}{linked}} () const
+\begin{DoxyCompactList}\small\item\em Gets if the \doxylink{classgla_1_1_program}{Program} has been successfully linked. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a42da615391eb64c0c365c780407065ca}{link}} ()
+\begin{DoxyCompactList}\small\item\em Links all attached Shaders and creates a valid \doxylink{classgla_1_1_program}{Program}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a5a4d54a673e87dd11144b5854fc2eb4c}{bind}} () const
+\begin{DoxyCompactList}\small\item\em Binds this \doxylink{classgla_1_1_program}{Program}. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de}{get\+Uniform\+Location}} (const std::\+string \&name) const
+\begin{DoxyCompactList}\small\item\em Gets the Location of the given Uniform. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a21c0cfd5b2de8702fc2b438b4b4cb268}{set\+Uniform}} (int location, float data)
+\begin{DoxyCompactList}\small\item\em Sets a uniform at the given location. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a0a3c82e57b48eb68217d9451b878eb5a}{set\+Uniform}} (int location, const glm::\+vec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a0fcf76c10dda566a22f4c7ec464b294d}{set\+Uniform}} (int location, const glm::\+vec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a3632574cd0eb2764b0b7abb1f5a14be2}{set\+Uniform}} (int location, const glm::\+vec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7fb71e07a216c075677532ce319976cc}{set\+Uniform}} (int location, int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ab41643f3119c1934f34c4acb69483216}{set\+Uniform}} (int location, const glm::\+ivec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a0a4d414c5c43c63d16b4f04383892892}{set\+Uniform}} (int location, const glm::\+ivec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a6c44d79d8a64adde3695e67012b7b403}{set\+Uniform}} (int location, const glm::\+ivec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ab25ede6b63339ae2952271c66f596e95}{set\+Uniform}} (int location, unsigned int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a07705e06635d5191519cc0bb0bafda67}{set\+Uniform}} (int location, const glm::\+uvec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_af3d9f82f504f0fb75353713716e7b48e}{set\+Uniform}} (int location, const glm::\+uvec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a30d66466997762834aa8efe2a4a3bc71}{set\+Uniform}} (int location, const glm::\+uvec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a841f119604b84dda9d3c946b6b8630f9}{set\+Uniform}} (int location, const glm::\+mat2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a9b25fa0bc01ba415f29fa6b2af122b10}{set\+Uniform}} (int location, const glm::\+mat3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a8da71e56661a83a1a723bdcc4e419fb4}{set\+Uniform}} (int location, const glm::\+mat4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a48d389ef66a1a69f4f8d423f40382c41}{set\+Uniform}} (int location, const glm::\+mat2x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a456c7010f8ee15d4cfe97fda742e696d}{set\+Uniform}} (int location, const glm::\+mat3x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_afdc7cf7b2ed287adff6cf49ba0d3032d}{set\+Uniform}} (int location, const glm::\+mat2x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_add4aa172042330f1232430f2724ff778}{set\+Uniform}} (int location, const glm::\+mat4x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a3b6118e73cd0eafc96b07a3a70f90122}{set\+Uniform}} (int location, const glm::\+mat3x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a708ffbebb53a19d989860e06e87c002f}{set\+Uniform}} (int location, const glm::\+mat4x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7af274b7002406226fb358b0d2b2b376}{set\+Uniform}} (const std::\+string \&name, float data)
+\begin{DoxyCompactList}\small\item\em Sets a uniform at the given name. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a820a0c0d382f0ac55a4dd7527dea7796}{set\+Uniform}} (const std::\+string \&name, const glm::\+vec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ab26c9dd1d8b711dc022143bc700a9984}{set\+Uniform}} (const std::\+string \&name, const glm::\+vec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a1ef809b05f5dd151f70eb58e6b11e915}{set\+Uniform}} (const std::\+string \&name, const glm::\+vec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a6f10419d7baed7e484aebcdafdbc4795}{set\+Uniform}} (const std::\+string \&name, int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a00f59fb9857f0fd42c4053afd8ce8f44}{set\+Uniform}} (const std::\+string \&name, const glm::\+ivec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a24652ad310c89273f9c83b9b7ff3fb76}{set\+Uniform}} (const std::\+string \&name, const glm::\+ivec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a930bdaf8cf440af39224fa8b74d7a139}{set\+Uniform}} (const std::\+string \&name, const glm::\+ivec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a920c03593ec16a046847a4996f963958}{set\+Uniform}} (const std::\+string \&name, unsigned int data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a733d17ae7300828261a7ca8af46b4085}{set\+Uniform}} (const std::\+string \&name, const glm::\+uvec2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a0afa11c7ec30527c2de78c041fcba253}{set\+Uniform}} (const std::\+string \&name, const glm::\+uvec3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7eeb1aff433b302f7b27647501a25dca}{set\+Uniform}} (const std::\+string \&name, const glm::\+uvec4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a5461ed1da2b9d572327c371de4d4594e}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a704cc1e0870c4c008beffa5d0d8a40be}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a479a561738a7f7f5adef3d64055adaeb}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a602e84a3adfa707a7761a5832de54b1c}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat2x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_af7ecdfe6657c4cff3ae5141d92953433}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat3x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a6e37aaae3ef3e4fa1d6c7d4e909c8e69}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat2x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ac104b9b7cee36936f22927ec42a528ef}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat4x2 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_adcfc2f7eed19dcc74d14275a73bd114f}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat3x4 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a56bf663fd2268dbad1c32e05b0b44a40}{set\+Uniform}} (const std::\+string \&name, const glm::\+mat4x3 \&data)
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4}{get\+Uniform}} (int location, float \&data) const
+\begin{DoxyCompactList}\small\item\em Gets a uniform at the given location. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ab67a65719eac0e3c29296d89f85c1753}{get\+Uniform}} (int location, glm::\+vec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a6caaa239b0b3c5f098f64cd628a7bf21}{get\+Uniform}} (int location, glm::\+vec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a8c328e81f4ddbbaafe5e00fa25871cde}{get\+Uniform}} (int location, glm::\+vec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ad06c3009537c1fcb1a03a464177d1bcd}{get\+Uniform}} (int location, int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7f95ecaf25512fa152044690576bae71}{get\+Uniform}} (int location, glm::\+ivec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_aa7fee34281d0bcbe5c4d22f4d7188ff4}{get\+Uniform}} (int location, glm::\+ivec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a40330b5515f5ab145f14e7c754204131}{get\+Uniform}} (int location, glm::\+ivec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a26c0b9a8f1a97b75c47105903ce82ff0}{get\+Uniform}} (int location, unsigned int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a14ac543d21486df46078c9378d910a61}{get\+Uniform}} (int location, glm::\+uvec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a8a4b813a8d17645e04d3ccc64606dc06}{get\+Uniform}} (int location, glm::\+uvec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a9367cfc51f7a2baffdb139074bb765d0}{get\+Uniform}} (int location, glm::\+uvec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_aa937bf11cf726ba4524f29efca6893b2}{get\+Uniform}} (int location, glm::\+mat2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_acd8471baae3ac25657315686f1dadb75}{get\+Uniform}} (int location, glm::\+mat3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_aaf56f55fb9baf65d35c28c230dd2dffa}{get\+Uniform}} (int location, glm::\+mat4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a3277671e9815498f3464bb12525effb9}{get\+Uniform}} (int location, glm::\+mat2x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a558217816a7f109d25325b0f4b2cbc74}{get\+Uniform}} (int location, glm::\+mat3x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a018c0a94141af7682ad029f896e876ba}{get\+Uniform}} (int location, glm::\+mat2x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a2b35bb91cb106647646f2dc2b997042e}{get\+Uniform}} (int location, glm::\+mat4x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a175defbb22b1f3f148debd6c49a0acd2}{get\+Uniform}} (int location, glm::\+mat3x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a79308742152585e22449c5f78adcb924}{get\+Uniform}} (int location, glm::\+mat4x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_afe3211a5d3deb3d5938350f7e6790d21}{get\+Uniform}} (const std::\+string \&name, float \&data) const
+\begin{DoxyCompactList}\small\item\em Gets a uniform at the given name. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a7e563e3bd5baa721525ebd6a2b135db4}{get\+Uniform}} (const std::\+string \&name, glm::\+vec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a6e59aba0e6514e5492b93015a924bbbf}{get\+Uniform}} (const std::\+string \&name, glm::\+vec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a725405e7335d92471e47ecd875dc936b}{get\+Uniform}} (const std::\+string \&name, glm::\+vec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a2cda0acd26292406c93f856be6cd8d25}{get\+Uniform}} (const std::\+string \&name, int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_abfbe3f73e9d30adcfb6d271832119a7d}{get\+Uniform}} (const std::\+string \&name, glm::\+ivec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ae8871335f5c898630652aa875b7061bd}{get\+Uniform}} (const std::\+string \&name, glm::\+ivec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a1560ade6cb5563d0fec9d61d2e4fef83}{get\+Uniform}} (const std::\+string \&name, glm::\+ivec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ace41d208238e82aa96938efbe2c6ebc6}{get\+Uniform}} (const std::\+string \&name, unsigned int \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a1f12cc19c4b85c5d3e549294d89868d6}{get\+Uniform}} (const std::\+string \&name, glm::\+uvec2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a0e89f9f721a23c1d8521b2733cf22533}{get\+Uniform}} (const std::\+string \&name, glm::\+uvec3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_acf7c9515a25252c01e0ecee456854b47}{get\+Uniform}} (const std::\+string \&name, glm::\+uvec4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ab0ba40018ada54aaf155257fffa28097}{get\+Uniform}} (const std::\+string \&name, glm::\+mat2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_abf0e14e5a4ec05b3f752bb9437a7cbe9}{get\+Uniform}} (const std::\+string \&name, glm::\+mat3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_aca7cd00671d2bfe5a4026a513741a769}{get\+Uniform}} (const std::\+string \&name, glm::\+mat4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a485bd086d2047a7680f673cd3a11cb97}{get\+Uniform}} (const std::\+string \&name, glm::\+mat2x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ad5a94a476be7653184d290bd430fd9b7}{get\+Uniform}} (const std::\+string \&name, glm::\+mat3x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a37f8a51ae708f92463b42713ce39c53f}{get\+Uniform}} (const std::\+string \&name, glm::\+mat2x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a1845ce21c138794a1c428055331aed92}{get\+Uniform}} (const std::\+string \&name, glm::\+mat4x2 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a6ad1a5bc541cdaf01eb6b5eec3552fa2}{get\+Uniform}} (const std::\+string \&name, glm::\+mat3x4 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a2ba020cdab8e19a97d8292ef8e3a6304}{get\+Uniform}} (const std::\+string \&name, glm::\+mat4x3 \&data) const
+\begin{DoxyCompactList}\small\item\em This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \& \doxymbox{\hyperlink{classgla_1_1_program_a76c17ed282a01d173aab470b1ce9b587}{operator=}} (\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \&\&other)
+\item 
+\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \& \doxymbox{\hyperlink{classgla_1_1_program_afceaab662097444b0e30137490da1778}{operator=}} (const \doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \&)=delete
+\item 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} \doxymbox{\hyperlink{classgla_1_1_program_a95a8d412d0d1e3c57541aee24943ca85}{operator\+[$\,$]\+}} (int location)
+\begin{DoxyCompactList}\small\item\em Returns a Proxy to get /\+ set the uniform at the given location with assignment and type conversion operators. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} \doxymbox{\hyperlink{classgla_1_1_program_a5cc7a1f347bae24e07eb0ee8c946c093}{operator\+[$\,$]\+}} (const std::\+string \&name)
+\begin{DoxyCompactList}\small\item\em Returns a Proxy to get /\+ set the uniform with the given name with assignment and type conversion operators. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} \doxymbox{\hyperlink{classgla_1_1_program_a2368321f0058ef710792af9782f63630}{operator\+[$\,$]\+}} (int location) const
+\begin{DoxyCompactList}\small\item\em Returns a constant only Proxy to get the uniform at the given location with type conversion operators. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} \doxymbox{\hyperlink{classgla_1_1_program_ab638474691daa2f68faa8278eeb9cd11}{operator\+[$\,$]\+}} (const std::\+string \&name) const
+\begin{DoxyCompactList}\small\item\em Returns a Proxy to get the uniform with the given name with type conversion operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{classgla_1_1_program_ae1c27bccf96e8489b4392564096dfbc3}{unbind}} ()
+\begin{DoxyCompactList}\small\item\em Unbinds a \doxylink{classgla_1_1_program}{Program} by binding id 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a1146ee6498ab4de07c013866bd933ded}{\+\_\+delete}} ()
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ab243c1c57e74e5754a26b17e3b59326b}{\+\_\+check}} () const
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a1dbbc7dc60bad4c2a85923d79b7a1396}{\+\_\+ensure}} () const
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_ae4477fa41dcb61667785d37ae3751cc3}{\+\_\+query\+Uniform\+Data}} ()
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_program_a59fbdca6f625282047027866c437abaf}{\+\_\+setup\+Uniform}} (int loc, int size\+Check, int type\+Check) const
+\item 
+std::\+string \doxymbox{\hyperlink{classgla_1_1_program_a1ed463c2a6240d90eb81ef00ab18764b}{\+\_\+get\+Error}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \doxymbox{\hyperlink{classgla_1_1_program_a8ad62972cb7e57324739868f943ae2ff}{\+\_\+id}} = 0
+\item 
+bool \doxymbox{\hyperlink{classgla_1_1_program_a563c531de7ac534cc4ad77328897584d}{\+\_\+linked}} = false
+\item 
+std::\+unordered\+\_\+map$<$ std::\+string, int $>$ \doxymbox{\hyperlink{classgla_1_1_program_a4f672450b9dc598c39ec0f35e74dcb1d}{\+\_\+uniform\+Index\+Map}} = \{\}
+\item 
+std::\+unordered\+\_\+map$<$ int, int $>$ \doxymbox{\hyperlink{classgla_1_1_program_a66e1fa0384a7f4deb81f39acd64fd3b1}{\+\_\+uniform\+Location\+Index\+Map}} = \{\}
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{namespacegla_acf6bf243ea77f0ae5acbb6fed2f7317e}{Uniform\+Data}} $>$ \doxymbox{\hyperlink{classgla_1_1_program_ae5c63d89af9261801036a450608ac05a}{\+\_\+uniform\+Data}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classgla_1_1_program}{Program} class to abstract Open\+GL \doxylink{classgla_1_1_shader}{Shader} Programs. 
+
+\begin{DoxyWarning}{Warning}
+\doxylink{classgla_1_1_program}{Program} must be deconstructed before the Open\+GL context is destroyed. 
+
+This class is not guaranteed to be thread-\/safe.
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+This class owns the underlying Open\+GL \doxylink{classgla_1_1_program}{Program} object and releases it upon destruction or \doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()}. 
+\end{DoxyNote}
+
+
+\label{doc-constructors}
+\Hypertarget{classgla_1_1_program_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}\index{gla::Program@{gla::Program}!Program@{Program}}
+\index{Program@{Program}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161} 
+gla::\+\+Program::\+\+Program (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construct an empty \doxylink{classgla_1_1_program}{Program} object. 
+
+\Hypertarget{classgla_1_1_program_abec45bebb1bb5ad7151566a09e233416}\index{gla::Program@{gla::Program}!Program@{Program}}
+\index{Program@{Program}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_abec45bebb1bb5ad7151566a09e233416} 
+gla::\+\+Program::\+\+Program (\begin{DoxyParamCaption}\item[{Program \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgla_1_1_program_a0fccc866b5fbc06e1ff479884b37365e}\index{gla::Program@{gla::Program}!Program@{Program}}
+\index{Program@{Program}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a0fccc866b5fbc06e1ff479884b37365e} 
+gla::\+\+Program::\+\+Program (\begin{DoxyParamCaption}\item[{const Program \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_program_ab286f2daa55a3c73fc97cccf409b5293}\index{gla::Program@{gla::Program}!````~Program@{\texorpdfstring{$\sim$}{\string~}Program}}
+\index{````~Program@{\texorpdfstring{$\sim$}{\string~}Program}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Program()}{\string~Program()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab286f2daa55a3c73fc97cccf409b5293} 
+gla::\+\+Program::\+\texorpdfstring{$\sim$}{\string~}\+Program (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classgla_1_1_program_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgla_1_1_program_ab243c1c57e74e5754a26b17e3b59326b}\index{gla::Program@{gla::Program}!\_check@{\_check}}
+\index{\_check@{\_check}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_check()}{\_check()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab243c1c57e74e5754a26b17e3b59326b} 
+void gla::\+\+Program::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a1146ee6498ab4de07c013866bd933ded}\index{gla::Program@{gla::Program}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1146ee6498ab4de07c013866bd933ded} 
+void gla::\+\+Program::\+\+\_\+delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a1dbbc7dc60bad4c2a85923d79b7a1396}\index{gla::Program@{gla::Program}!\_ensure@{\_ensure}}
+\index{\_ensure@{\_ensure}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_ensure()}{\_ensure()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1dbbc7dc60bad4c2a85923d79b7a1396} 
+void gla::\+\+Program::\+\+\_\+ensure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a1ed463c2a6240d90eb81ef00ab18764b}\index{gla::Program@{gla::Program}!\_getError@{\_getError}}
+\index{\_getError@{\_getError}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_getError()}{\_getError()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1ed463c2a6240d90eb81ef00ab18764b} 
+std::\+string gla::\+\+Program::\+\+\_\+get\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_ae4477fa41dcb61667785d37ae3751cc3}\index{gla::Program@{gla::Program}!\_queryUniformData@{\_queryUniformData}}
+\index{\_queryUniformData@{\_queryUniformData}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_queryUniformData()}{\_queryUniformData()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ae4477fa41dcb61667785d37ae3751cc3} 
+void gla::\+\+Program::\+\+\_\+query\+Uniform\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a59fbdca6f625282047027866c437abaf}\index{gla::Program@{gla::Program}!\_setupUniform@{\_setupUniform}}
+\index{\_setupUniform@{\_setupUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_setupUniform()}{\_setupUniform()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a59fbdca6f625282047027866c437abaf} 
+void gla::\+\+Program::\+\+\_\+setup\+Uniform (\begin{DoxyParamCaption}\item[{int}]{loc}{, }\item[{int}]{size\+Check}{, }\item[{int}]{type\+Check}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_ad327abad7abd10149666b8189c94427a}\index{gla::Program@{gla::Program}!attach@{attach}}
+\index{attach@{attach}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ad327abad7abd10149666b8189c94427a} 
+void gla::\+\+Program::\+attach (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}} \&}]{shader}{}\end{DoxyParamCaption})}
+
+
+
+Attaches \doxylink{classgla_1_1_shader}{Shader} to \doxylink{classgla_1_1_program}{Program} for linking. 
+
+\begin{DoxyNote}{Note}
+Attaching a \doxylink{classgla_1_1_shader}{Shader} invalidates the current link state.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Attaching a destroyed \doxylink{classgla_1_1_shader}{Shader} is undefined behavior. 
+
+Attached Shaders must outlive the \doxylink{classgla_1_1_program}{Program} (at least until linking).
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If the \doxylink{classgla_1_1_shader}{Shader} has already been attached. \\
+\hline
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state)\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & The \doxylink{classgla_1_1_shader}{Shader} that should be attached to the \doxylink{classgla_1_1_program}{Program}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_program_ad41765466b94da5ab21cbb7f2d0f1630}\index{gla::Program@{gla::Program}!attached@{attached}}
+\index{attached@{attached}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{attached()}{attached()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ad41765466b94da5ab21cbb7f2d0f1630} 
+bool gla::\+\+Program::\+attached (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}} \&}]{shader}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the given \doxylink{classgla_1_1_shader}{Shader} is attached to the \doxylink{classgla_1_1_program}{Program}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & The \doxylink{classgla_1_1_shader}{Shader} to check.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state)\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+true if the \doxylink{classgla_1_1_shader}{Shader} is attached, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgla_1_1_program_a5a4d54a673e87dd11144b5854fc2eb4c}\index{gla::Program@{gla::Program}!bind@{bind}}
+\index{bind@{bind}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a5a4d54a673e87dd11144b5854fc2eb4c} 
+void gla::\+\+Program::\+bind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Binds this \doxylink{classgla_1_1_program}{Program}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the \doxylink{classgla_1_1_program}{Program} was not linked to avoid invalid usage. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgla_1_1_program_a7d39e5f532222c2da66464efd38ea2d1}\index{gla::Program@{gla::Program}!detach@{detach}}
+\index{detach@{detach}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7d39e5f532222c2da66464efd38ea2d1} 
+void gla::\+\+Program::\+detach (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classgla_1_1_shader}{Shader}} \&}]{shader}{}\end{DoxyParamCaption})}
+
+
+
+Detaches \doxylink{classgla_1_1_shader}{Shader} from \doxylink{classgla_1_1_program}{Program} for linking. 
+
+\begin{DoxyNote}{Note}
+Detaching a \doxylink{classgla_1_1_shader}{Shader} invalidates the current link state.
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If the \doxylink{classgla_1_1_shader}{Shader} was not attached. \\
+\hline
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state)\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & The \doxylink{classgla_1_1_shader}{Shader} that should be detached from the \doxylink{classgla_1_1_program}{Program}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_program_afe3211a5d3deb3d5938350f7e6790d21}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_afe3211a5d3deb3d5938350f7e6790d21} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{float \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a uniform at the given name. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to get a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+{\em data} & The variable to store the data in\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classgla_1_1_program_abfbe3f73e9d30adcfb6d271832119a7d}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_abfbe3f73e9d30adcfb6d271832119a7d} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ae8871335f5c898630652aa875b7061bd}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ae8871335f5c898630652aa875b7061bd} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a1560ade6cb5563d0fec9d61d2e4fef83}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1560ade6cb5563d0fec9d61d2e4fef83} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ab0ba40018ada54aaf155257fffa28097}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab0ba40018ada54aaf155257fffa28097} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a485bd086d2047a7680f673cd3a11cb97}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a485bd086d2047a7680f673cd3a11cb97} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a37f8a51ae708f92463b42713ce39c53f}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a37f8a51ae708f92463b42713ce39c53f} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_abf0e14e5a4ec05b3f752bb9437a7cbe9}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_abf0e14e5a4ec05b3f752bb9437a7cbe9} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ad5a94a476be7653184d290bd430fd9b7}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [9/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ad5a94a476be7653184d290bd430fd9b7} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a6ad1a5bc541cdaf01eb6b5eec3552fa2}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [10/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a6ad1a5bc541cdaf01eb6b5eec3552fa2} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_aca7cd00671d2bfe5a4026a513741a769}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [11/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_aca7cd00671d2bfe5a4026a513741a769} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a1845ce21c138794a1c428055331aed92}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [12/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1845ce21c138794a1c428055331aed92} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a2ba020cdab8e19a97d8292ef8e3a6304}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [13/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a2ba020cdab8e19a97d8292ef8e3a6304} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a1f12cc19c4b85c5d3e549294d89868d6}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [14/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1f12cc19c4b85c5d3e549294d89868d6} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a0e89f9f721a23c1d8521b2733cf22533}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [15/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a0e89f9f721a23c1d8521b2733cf22533} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_acf7c9515a25252c01e0ecee456854b47}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [16/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_acf7c9515a25252c01e0ecee456854b47} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a7e563e3bd5baa721525ebd6a2b135db4}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [17/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7e563e3bd5baa721525ebd6a2b135db4} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a6e59aba0e6514e5492b93015a924bbbf}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [18/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a6e59aba0e6514e5492b93015a924bbbf} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a725405e7335d92471e47ecd875dc936b}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [19/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a725405e7335d92471e47ecd875dc936b} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a2cda0acd26292406c93f856be6cd8d25}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [20/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a2cda0acd26292406c93f856be6cd8d25} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{int \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ace41d208238e82aa96938efbe2c6ebc6}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [21/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ace41d208238e82aa96938efbe2c6ebc6} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{unsigned int \&}]{data}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [22/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{float \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets a uniform at the given location. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to get a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de}{get\+Uniform\+Location()} \\
+\hline
+{\em data} & The variable to store the data in\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classgla_1_1_program_a7f95ecaf25512fa152044690576bae71}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [23/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7f95ecaf25512fa152044690576bae71} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_aa7fee34281d0bcbe5c4d22f4d7188ff4}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [24/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_aa7fee34281d0bcbe5c4d22f4d7188ff4} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a40330b5515f5ab145f14e7c754204131}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [25/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a40330b5515f5ab145f14e7c754204131} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_aa937bf11cf726ba4524f29efca6893b2}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [26/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_aa937bf11cf726ba4524f29efca6893b2} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a3277671e9815498f3464bb12525effb9}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [27/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a3277671e9815498f3464bb12525effb9} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a018c0a94141af7682ad029f896e876ba}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [28/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a018c0a94141af7682ad029f896e876ba} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_acd8471baae3ac25657315686f1dadb75}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [29/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_acd8471baae3ac25657315686f1dadb75} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a558217816a7f109d25325b0f4b2cbc74}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [30/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a558217816a7f109d25325b0f4b2cbc74} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a175defbb22b1f3f148debd6c49a0acd2}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [31/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a175defbb22b1f3f148debd6c49a0acd2} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_aaf56f55fb9baf65d35c28c230dd2dffa}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [32/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_aaf56f55fb9baf65d35c28c230dd2dffa} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a2b35bb91cb106647646f2dc2b997042e}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [33/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a2b35bb91cb106647646f2dc2b997042e} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a79308742152585e22449c5f78adcb924}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [34/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a79308742152585e22449c5f78adcb924} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a14ac543d21486df46078c9378d910a61}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [35/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a14ac543d21486df46078c9378d910a61} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a8a4b813a8d17645e04d3ccc64606dc06}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [36/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a8a4b813a8d17645e04d3ccc64606dc06} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a9367cfc51f7a2baffdb139074bb765d0}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [37/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a9367cfc51f7a2baffdb139074bb765d0} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ab67a65719eac0e3c29296d89f85c1753}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [38/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab67a65719eac0e3c29296d89f85c1753} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a6caaa239b0b3c5f098f64cd628a7bf21}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [39/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a6caaa239b0b3c5f098f64cd628a7bf21} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a8c328e81f4ddbbaafe5e00fa25871cde}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [40/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a8c328e81f4ddbbaafe5e00fa25871cde} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ad06c3009537c1fcb1a03a464177d1bcd}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [41/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ad06c3009537c1fcb1a03a464177d1bcd} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{int \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a26c0b9a8f1a97b75c47105903ce82ff0}\index{gla::Program@{gla::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [42/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a26c0b9a8f1a97b75c47105903ce82ff0} 
+void gla::\+\+Program::\+get\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{unsigned int \&}]{data}{}\end{DoxyParamCaption}) const}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de}\index{gla::Program@{gla::Program}!getUniformLocation@{getUniformLocation}}
+\index{getUniformLocation@{getUniformLocation}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{getUniformLocation()}{getUniformLocation()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de} 
+int gla::\+\+Program::\+get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the Location of the given Uniform. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} was not linked before use \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the uniform does not exist\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the uniform to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The location of the uniform 
+\end{DoxyReturn}
+\Hypertarget{classgla_1_1_program_a42da615391eb64c0c365c780407065ca}\index{gla::Program@{gla::Program}!link@{link}}
+\index{link@{link}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a42da615391eb64c0c365c780407065ca} 
+void gla::\+\+Program::\+link (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Links all attached Shaders and creates a valid \doxylink{classgla_1_1_program}{Program}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em \doxylink{classgla_1_1_program_link_error}{gla::\+\+Program\+Link\+Error}} & If the \doxylink{classgla_1_1_program}{Program} fails to link. The \doxylink{classgla_1_1_program}{Program} remains in a valid state afterwards. \\
+\hline
+{\em \doxylink{classgla_1_1_program_validate_error}{gla::\+\+Program\+Validate\+Error}} & If the \doxylink{classgla_1_1_program}{Program} fails to validate. This only occurs when DEBUG\+\_\+\+BUILD is defined else the validity is not checked. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgla_1_1_program_a515aa721ee0a2f08027f08ed95744c04}\index{gla::Program@{gla::Program}!linked@{linked}}
+\index{linked@{linked}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{linked()}{linked()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a515aa721ee0a2f08027f08ed95744c04} 
+bool gla::\+\+Program::\+linked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets if the \doxylink{classgla_1_1_program}{Program} has been successfully linked. 
+
+\begin{DoxyReturn}{Returns}
+true if the \doxylink{classgla_1_1_program}{Program} is linked, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgla_1_1_program_afceaab662097444b0e30137490da1778}\index{gla::Program@{gla::Program}!operator=@{operator=}}
+\index{operator=@{operator=}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_afceaab662097444b0e30137490da1778} 
+\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \& gla::\+\+Program::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_program_a76c17ed282a01d173aab470b1ce9b587}\index{gla::Program@{gla::Program}!operator=@{operator=}}
+\index{operator=@{operator=}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a76c17ed282a01d173aab470b1ce9b587} 
+\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \& gla::\+\+Program::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classgla_1_1_program_ae3af3857d4f6722a4b1f78c42b335161}{Program}} \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgla_1_1_program_a5cc7a1f347bae24e07eb0ee8c946c093}\index{gla::Program@{gla::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a5cc7a1f347bae24e07eb0ee8c946c093} 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} gla::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Proxy to get /\+ set the uniform with the given name with assignment and type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors when assigning can be found under \doxylink{classgla_1_1_program_a21c0cfd5b2de8702fc2b438b4b4cb268}{gla::\+\+Program::\+set\+Uniform}. 
+
+Possible errors on explicit type conversion can be found under \doxylink{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4}{gla::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} was not linked before use \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the uniform does not exist\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_program_ab638474691daa2f68faa8278eeb9cd11}\index{gla::Program@{gla::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab638474691daa2f68faa8278eeb9cd11} 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} gla::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Proxy to get the uniform with the given name with type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors on explicit type conversion can be found under \doxylink{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4}{gla::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} was not linked before use \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the uniform does not exist\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_program_a95a8d412d0d1e3c57541aee24943ca85}\index{gla::Program@{gla::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a95a8d412d0d1e3c57541aee24943ca85} 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy}{Uniform\+Proxy}} gla::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{int}]{location}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Proxy to get /\+ set the uniform at the given location with assignment and type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors when assigning can be found under \doxylink{classgla_1_1_program_a21c0cfd5b2de8702fc2b438b4b4cb268}{gla::\+\+Program::\+set\+Uniform}. 
+
+Possible errors on explicit type conversion can be found under \doxylink{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4}{gla::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de}{get\+Uniform\+Location()} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_program_a2368321f0058ef710792af9782f63630}\index{gla::Program@{gla::Program}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a2368321f0058ef710792af9782f63630} 
+\doxymbox{\hyperlink{classgla_1_1_program_1_1_uniform_proxy_const}{Uniform\+Proxy\+Const}} gla::\+\+Program::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{int}]{location}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a constant only Proxy to get the uniform at the given location with type conversion operators. 
+
+\begin{DoxyNote}{Note}
+Possible errors on explicit type conversion can be found under \doxylink{classgla_1_1_program_a7c258ea3895c2309a12449095b6032d4}{gla::\+\+Program::\+get\+Uniform}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de}{get\+Uniform\+Location()} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}\index{gla::Program@{gla::Program}!reset@{reset}}
+\index{reset@{reset}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1} 
+void gla::\+\+Program::\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the \doxylink{classgla_1_1_program}{Program} to an empty State. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If Open\+GL failed to create a new \doxylink{classgla_1_1_program}{Program}. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgla_1_1_program_a00f59fb9857f0fd42c4053afd8ce8f44}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a00f59fb9857f0fd42c4053afd8ce8f44} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a24652ad310c89273f9c83b9b7ff3fb76}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a24652ad310c89273f9c83b9b7ff3fb76} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a930bdaf8cf440af39224fa8b74d7a139}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a930bdaf8cf440af39224fa8b74d7a139} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a5461ed1da2b9d572327c371de4d4594e}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a5461ed1da2b9d572327c371de4d4594e} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a602e84a3adfa707a7761a5832de54b1c}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a602e84a3adfa707a7761a5832de54b1c} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a6e37aaae3ef3e4fa1d6c7d4e909c8e69}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a6e37aaae3ef3e4fa1d6c7d4e909c8e69} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a704cc1e0870c4c008beffa5d0d8a40be}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a704cc1e0870c4c008beffa5d0d8a40be} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_af7ecdfe6657c4cff3ae5141d92953433}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_af7ecdfe6657c4cff3ae5141d92953433} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_adcfc2f7eed19dcc74d14275a73bd114f}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [9/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_adcfc2f7eed19dcc74d14275a73bd114f} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a479a561738a7f7f5adef3d64055adaeb}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [10/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a479a561738a7f7f5adef3d64055adaeb} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ac104b9b7cee36936f22927ec42a528ef}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [11/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ac104b9b7cee36936f22927ec42a528ef} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a56bf663fd2268dbad1c32e05b0b44a40}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [12/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a56bf663fd2268dbad1c32e05b0b44a40} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a733d17ae7300828261a7ca8af46b4085}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [13/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a733d17ae7300828261a7ca8af46b4085} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a0afa11c7ec30527c2de78c041fcba253}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [14/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a0afa11c7ec30527c2de78c041fcba253} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a7eeb1aff433b302f7b27647501a25dca}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [15/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7eeb1aff433b302f7b27647501a25dca} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a820a0c0d382f0ac55a4dd7527dea7796}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [16/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a820a0c0d382f0ac55a4dd7527dea7796} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ab26c9dd1d8b711dc022143bc700a9984}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [17/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab26c9dd1d8b711dc022143bc700a9984} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a1ef809b05f5dd151f70eb58e6b11e915}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [18/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a1ef809b05f5dd151f70eb58e6b11e915} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a7af274b7002406226fb358b0d2b2b376}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [19/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7af274b7002406226fb358b0d2b2b376} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{float}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets a uniform at the given name. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to set a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The uniform name \\
+\hline
+{\em data} & The value to assign to the uniform\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classgla_1_1_program_a6f10419d7baed7e484aebcdafdbc4795}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [20/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a6f10419d7baed7e484aebcdafdbc4795} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{int}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a920c03593ec16a046847a4996f963958}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [21/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a920c03593ec16a046847a4996f963958} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{unsigned int}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ab41643f3119c1934f34c4acb69483216}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [22/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab41643f3119c1934f34c4acb69483216} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+ivec2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a0a4d414c5c43c63d16b4f04383892892}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [23/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a0a4d414c5c43c63d16b4f04383892892} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+ivec3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a6c44d79d8a64adde3695e67012b7b403}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [24/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a6c44d79d8a64adde3695e67012b7b403} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+ivec4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a841f119604b84dda9d3c946b6b8630f9}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [25/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a841f119604b84dda9d3c946b6b8630f9} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a48d389ef66a1a69f4f8d423f40382c41}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [26/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a48d389ef66a1a69f4f8d423f40382c41} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat2x3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_afdc7cf7b2ed287adff6cf49ba0d3032d}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [27/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_afdc7cf7b2ed287adff6cf49ba0d3032d} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat2x4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a9b25fa0bc01ba415f29fa6b2af122b10}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [28/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a9b25fa0bc01ba415f29fa6b2af122b10} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a456c7010f8ee15d4cfe97fda742e696d}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [29/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a456c7010f8ee15d4cfe97fda742e696d} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat3x2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a3b6118e73cd0eafc96b07a3a70f90122}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [30/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a3b6118e73cd0eafc96b07a3a70f90122} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat3x4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a8da71e56661a83a1a723bdcc4e419fb4}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [31/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a8da71e56661a83a1a723bdcc4e419fb4} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_add4aa172042330f1232430f2724ff778}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [32/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_add4aa172042330f1232430f2724ff778} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat4x2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a708ffbebb53a19d989860e06e87c002f}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [33/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a708ffbebb53a19d989860e06e87c002f} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+mat4x3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a07705e06635d5191519cc0bb0bafda67}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [34/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a07705e06635d5191519cc0bb0bafda67} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+uvec2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_af3d9f82f504f0fb75353713716e7b48e}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [35/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_af3d9f82f504f0fb75353713716e7b48e} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+uvec3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a30d66466997762834aa8efe2a4a3bc71}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [36/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a30d66466997762834aa8efe2a4a3bc71} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+uvec4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a0a3c82e57b48eb68217d9451b878eb5a}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [37/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a0a3c82e57b48eb68217d9451b878eb5a} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+vec2 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a0fcf76c10dda566a22f4c7ec464b294d}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [38/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a0fcf76c10dda566a22f4c7ec464b294d} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+vec3 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a3632574cd0eb2764b0b7abb1f5a14be2}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [39/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a3632574cd0eb2764b0b7abb1f5a14be2} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{const glm::\+vec4 \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_a21c0cfd5b2de8702fc2b438b4b4cb268}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [40/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a21c0cfd5b2de8702fc2b438b4b4cb268} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{float}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Sets a uniform at the given location. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+logic\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} object does not exist (\doxylink{classgla_1_1_program_abab59908a135680e931c00ffbfd711c1}{reset()} is recommended to return to a valid state) \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If the location does not correspond to a uniform \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the type does not correspond to the GLSL type \\
+\hline
+{\em std::\+invalid\+\_\+argument} & If it attempts to set a GLSL array \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the current \doxylink{classgla_1_1_program}{Program} is unlinked\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyWarning}{Warning}
+Setting a uniform binds the program.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The uniform location returned by \doxylink{classgla_1_1_program_a96e8967430ad7c5e927d21e90b4379de}{get\+Uniform\+Location()} \\
+\hline
+{\em data} & The value to assign to the uniform\\
+\hline
+\end{DoxyParams}
+This overload works for {\ttfamily float}, {\ttfamily int}, {\ttfamily glm::\+vec\texorpdfstring{$\ast$}{*}}, {\ttfamily glm::\+mat\texorpdfstring{$\ast$}{*}}, etc. \Hypertarget{classgla_1_1_program_a7fb71e07a216c075677532ce319976cc}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [41/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a7fb71e07a216c075677532ce319976cc} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{int}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ab25ede6b63339ae2952271c66f596e95}\index{gla::Program@{gla::Program}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [42/42]}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ab25ede6b63339ae2952271c66f596e95} 
+void gla::\+\+Program::\+set\+Uniform (\begin{DoxyParamCaption}\item[{int}]{location}{, }\item[{unsigned int}]{data}{}\end{DoxyParamCaption})}
+
+
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+\Hypertarget{classgla_1_1_program_ae1c27bccf96e8489b4392564096dfbc3}\index{gla::Program@{gla::Program}!unbind@{unbind}}
+\index{unbind@{unbind}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ae1c27bccf96e8489b4392564096dfbc3} 
+void gla::\+\+Program::\+unbind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unbinds a \doxylink{classgla_1_1_program}{Program} by binding id 0. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classgla_1_1_program_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classgla_1_1_program_a8ad62972cb7e57324739868f943ae2ff}\index{gla::Program@{gla::Program}!\_id@{\_id}}
+\index{\_id@{\_id}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a8ad62972cb7e57324739868f943ae2ff} 
+unsigned int gla::\+\+Program::\+\+\_\+id = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a563c531de7ac534cc4ad77328897584d}\index{gla::Program@{gla::Program}!\_linked@{\_linked}}
+\index{\_linked@{\_linked}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_linked}{\_linked}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a563c531de7ac534cc4ad77328897584d} 
+bool gla::\+\+Program::\+\+\_\+linked = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_ae5c63d89af9261801036a450608ac05a}\index{gla::Program@{gla::Program}!\_uniformData@{\_uniformData}}
+\index{\_uniformData@{\_uniformData}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_uniformData}{\_uniformData}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_ae5c63d89af9261801036a450608ac05a} 
+std::\+vector$<$\doxymbox{\hyperlink{namespacegla_acf6bf243ea77f0ae5acbb6fed2f7317e}{Uniform\+Data}}$>$ gla::\+\+Program::\+\+\_\+uniform\+Data = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a4f672450b9dc598c39ec0f35e74dcb1d}\index{gla::Program@{gla::Program}!\_uniformIndexMap@{\_uniformIndexMap}}
+\index{\_uniformIndexMap@{\_uniformIndexMap}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_uniformIndexMap}{\_uniformIndexMap}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a4f672450b9dc598c39ec0f35e74dcb1d} 
+std::\+unordered\+\_\+map$<$std::\+string, int$>$ gla::\+\+Program::\+\+\_\+uniform\+Index\+Map = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_program_a66e1fa0384a7f4deb81f39acd64fd3b1}\index{gla::Program@{gla::Program}!\_uniformLocationIndexMap@{\_uniformLocationIndexMap}}
+\index{\_uniformLocationIndexMap@{\_uniformLocationIndexMap}!gla::Program@{gla::Program}}
+\doxysubsubsection{\texorpdfstring{\_uniformLocationIndexMap}{\_uniformLocationIndexMap}}
+{\footnotesize\ttfamily \label{classgla_1_1_program_a66e1fa0384a7f4deb81f39acd64fd3b1} 
+std::\+unordered\+\_\+map$<$int, int$>$ gla::\+\+Program::\+\+\_\+uniform\+Location\+Index\+Map = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+inc/\+\+GLA/\+\doxymbox{\hyperlink{program_8h}{program.\+h}}\end{DoxyCompactItemize}

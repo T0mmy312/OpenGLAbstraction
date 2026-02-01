@@ -1,7 +1,7 @@
 var window_context_8h =
 [
-    [ "egl::WindowContext", "d2/d41/classegl_1_1_window_context.html", "d2/d41/classegl_1_1_window_context" ],
-    [ "egl::initGLFW", "d1/d73/namespaceegl.html#a687cef4344f705088c0253a1013f5e9f", null ],
-    [ "egl::pollEvents", "d1/d73/namespaceegl.html#a06ae04f0a9cfd78ae442eadc5396e74d", null ],
-    [ "egl::terminateGLFW", "d1/d73/namespaceegl.html#a563123e5c4200084c73d609e132346cc", null ]
+    [ "gla::WindowContext", "d8/d3c/classgla_1_1_window_context.html", "d8/d3c/classgla_1_1_window_context" ],
+    [ "gla::initGLFW", "d7/df0/namespacegla.html#a3bcbafb907ed85c4d0a347a33d2ef1e3", null ],
+    [ "gla::pollEvents", "d7/df0/namespacegla.html#adfccd667467a1a415a56f83717b3e760", null ],
+    [ "gla::terminateGLFW", "d7/df0/namespacegla.html#a7170a7e3c268553105f21d787e411004", null ]
 ];

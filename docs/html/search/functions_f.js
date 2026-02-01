@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['validatebufferflag_0',['validateBufferFlag',['../d1/d73/namespaceegl.html#a5ef35b2b7cce9cbf20fbeb47e595054e',1,'egl']]],
-  ['validatemapusage_1',['validateMapUsage',['../d1/d73/namespaceegl.html#a827e3e9edcc216c2b83c9cfe3af8343b',1,'egl']]]
+  ['validatebufferflag_0',['validateBufferFlag',['../d7/df0/namespacegla.html#af502fa0e70fae632dc81f756820e783e',1,'gla']]],
+  ['validatemapusage_1',['validateMapUsage',['../d7/df0/namespacegla.html#a1f8401457b01e0015a39ce292c68e05a',1,'gla']]]
 ];

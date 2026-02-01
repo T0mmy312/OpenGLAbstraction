@@ -1,9 +1,9 @@
-\doxysection{inc/\+\+EGL/\+debug.h File Reference}
-\hypertarget{debug_8h}{}\label{debug_8h}\index{inc/EGL/debug.h@{inc/EGL/debug.h}}
+\doxysection{inc/\+\+GLA/\+debug.h File Reference}
+\hypertarget{debug_8h}{}\label{debug_8h}\index{inc/GLA/debug.h@{inc/GLA/debug.h}}
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \doxymbox{\hyperlink{namespaceegl}{egl}}
+namespace \doxymbox{\hyperlink{namespacegla}{gla}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
@@ -15,9 +15,9 @@ namespace \doxymbox{\hyperlink{namespaceegl}{egl}}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespaceegl_aaf82114960a088c58a478591198f4c16}{egl::\+gl\+Error\+String}} (unsigned int err)
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacegla_abcdac3b947f67c9ed54ceddb2ef9a63a}{gla::\+gl\+Error\+String}} (unsigned int err)
 \begin{DoxyCompactList}\small\item\em Gets a c-\/style string from from a Open\+GL enum. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{namespaceegl_a3bbf040016c69492e2a5f73ba1405b45}{egl::\+gl\+Check\+Error}} (const char \texorpdfstring{$\ast$}{*}func, const char \texorpdfstring{$\ast$}{*}file, int line)
+void \doxymbox{\hyperlink{namespacegla_a776fa1ca8c6db42ad2ace3c425ae9466}{gla::\+gl\+Check\+Error}} (const char \texorpdfstring{$\ast$}{*}func, const char \texorpdfstring{$\ast$}{*}file, int line)
 \begin{DoxyCompactList}\small\item\em Checks and prints if any Open\+GL error has occured. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -55,7 +55,7 @@ Runs given code only if DEBUG\+\_\+\+BUILD is defined.
 Runs the given code and checks for errors. 
 
 \begin{DoxyNote}{Note}
-For performance reasons \doxylink{namespaceegl_a3bbf040016c69492e2a5f73ba1405b45}{egl::\+gl\+Check\+Error} is only called when DEBUG\+\_\+\+BUILD is defined. 
+For performance reasons \doxylink{namespacegla_a776fa1ca8c6db42ad2ace3c425ae9466}{gla::\+gl\+Check\+Error} is only called when DEBUG\+\_\+\+BUILD is defined. 
 \end{DoxyNote}
 \begin{DoxyWarning}{Warning}
 The code is run in a scope below the current.

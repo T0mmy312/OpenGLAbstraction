@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertexbuffer_0',['VertexBuffer',['../d0/def/classegl_1_1_vertex_buffer.html',1,'egl']]]
+  ['vertexbuffer_0',['VertexBuffer',['../dc/d63/classgla_1_1_vertex_buffer.html',1,'gla']]]
 ];

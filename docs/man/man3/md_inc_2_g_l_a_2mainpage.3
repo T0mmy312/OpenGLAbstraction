@@ -1,0 +1,19 @@
+.TH "md_inc_2_g_l_a_2mainpage" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_inc_2_g_l_a_2mainpage \- Introduction 
+.PP
+
+
+.PP
+This project provides a low-level OpenGL abstraction implemented in modern C++, using try-catch based error handling and classes representing various OpenGL objects\&.
+.SH "Recommended Setup"
+.PP
+The recommended setup is to have your main code class inherit from \fR\fBgla::WindowContext\fP\fP and implement your logic in the provided virtual run function\&.
+
+.PP
+Calling \fR\fBgla::WindowContext::useContext\fP\fP is recommended to avoid potential errors\&.
+
+.PP
+Inside of \fR\fBgla::WindowContext::run\fP\fP any OpenGL Abstraction functionality can be used safely\&. 

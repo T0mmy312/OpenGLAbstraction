@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['_7ebuffer_0',['~Buffer',['../d3/d66/classegl_1_1_buffer.html#a7a4248ece01b7a14db753b54a9a1872c',1,'egl::Buffer']]],
-  ['_7eprogram_1',['~Program',['../d6/d3a/classegl_1_1_program.html#a41c73aeace6c6a425587d097cb461377',1,'egl::Program']]],
-  ['_7eshader_2',['~Shader',['../db/de5/classegl_1_1_shader.html#a0a10a26daa59da469324a4574b4513d3',1,'egl::Shader']]],
-  ['_7ewindowcontext_3',['~WindowContext',['../d2/d41/classegl_1_1_window_context.html#a5dea65a212c0e0f56b7217a56939b162',1,'egl::WindowContext']]]
+  ['_7ebuffer_0',['~Buffer',['../d5/ddd/classgla_1_1_buffer.html#aebd78e416c692f9ac2829d8f492f37e5',1,'gla::Buffer']]],
+  ['_7eprogram_1',['~Program',['../d0/dac/classgla_1_1_program.html#ab286f2daa55a3c73fc97cccf409b5293',1,'gla::Program']]],
+  ['_7eshader_2',['~Shader',['../d1/dc3/classgla_1_1_shader.html#a9f9ee93617fb699ba7a1b15e785ab379',1,'gla::Shader']]],
+  ['_7ewindowcontext_3',['~WindowContext',['../d8/d3c/classgla_1_1_window_context.html#a1c0cc2a2d548163d3088d788e7800d85',1,'gla::WindowContext']]]
 ];

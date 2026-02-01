@@ -1,15 +1,15 @@
 \doxysection{debug.\+h}
-\hypertarget{debug_8h_source}{}\label{debug_8h_source}\index{inc/EGL/debug.h@{inc/EGL/debug.h}}
+\hypertarget{debug_8h_source}{}\label{debug_8h_source}\index{inc/GLA/debug.h@{inc/GLA/debug.h}}
 \doxymbox{\hyperlink{debug_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EGL\_DEBUG\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EGL\_DEBUG\_H}}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GLA\_DEBUG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GLA\_DEBUG\_H}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespaceegl}{egl}}\ \{}
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacegla}{gla}}\ \{}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{namespaceegl_aaf82114960a088c58a478591198f4c16}{glErrorString}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ err);}
+\DoxyCodeLine{00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{namespacegla_abcdac3b947f67c9ed54ceddb2ef9a63a}{glErrorString}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ err);}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespaceegl_a3bbf040016c69492e2a5f73ba1405b45}{glCheckError}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ func,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ file,\ \textcolor{keywordtype}{int}\ line);}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacegla_a776fa1ca8c6db42ad2ace3c425ae9466}{glCheckError}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ func,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ file,\ \textcolor{keywordtype}{int}\ line);}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00030\ \};}
 \DoxyCodeLine{00031\ }
@@ -17,7 +17,7 @@
 \DoxyCodeLine{00044\ }
 \DoxyCodeLine{00045\ \textcolor{preprocessor}{\#ifdef\ DEBUG\_BUILD}}
 \DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \#define\ GL\_CALL(x)\ do\ \{\ x;\ egl::glCheckError(\#x,\ \_\_FILE\_\_,\ \_\_LINE\_\_);\ \}\ while(0)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \#define\ GL\_CALL(x)\ do\ \{\ x;\ gla::glCheckError(\#x,\ \_\_FILE\_\_,\ \_\_LINE\_\_);\ \}\ while(0)}}
 \DoxyCodeLine{00048\ }
 \DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ \#define\ DEBUG\_ONLY(x)\ x}}
 \DoxyCodeLine{00050\ }

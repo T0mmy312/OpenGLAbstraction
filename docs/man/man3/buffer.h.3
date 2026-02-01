@@ -1,8 +1,8 @@
-.TH "inc/EGL/buffer.h" 3 "Easy OpenGL" \" -*- nroff -*-
+.TH "inc/GLA/buffer.h" 3 "OpenGL Abstraction" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-inc/EGL/buffer.h
+inc/GLA/buffer.h
 .SH SYNOPSIS
 .br
 .PP
@@ -19,33 +19,33 @@ inc/EGL/buffer.h
 
 .in +1c
 .ti -1c
-.RI "class \fBegl::Buffer\fP"
+.RI "class \fBgla::Buffer\fP"
 .br
 .in -1c
 .SS "Namespaces"
 
 .in +1c
 .ti -1c
-.RI "namespace \fBegl\fP"
+.RI "namespace \fBgla\fP"
 .br
 .in -1c
 .SS "Enumerations"
 
 .in +1c
 .ti -1c
-.RI "enum class \fBegl::BufferType\fP { \fBegl::Array\fP, \fBegl::AtomicCounter\fP, \fBegl::CopyRead\fP, \fBegl::CopyWrite\fP, \fBegl::DispatchIndirect\fP, \fBegl::DrawIndirect\fP, \fBegl::ElementArray\fP, \fBegl::PixelPack\fP, \fBegl::PixelUnpack\fP, \fBegl::Query\fP, \fBegl::ShaderStorage\fP, \fBegl::Texture\fP, \fBegl::TransformFeedback\fP, \fBegl::Uniform\fP }"
+.RI "enum class \fBgla::BufferType\fP { \fBgla::Array\fP, \fBgla::AtomicCounter\fP, \fBgla::CopyRead\fP, \fBgla::CopyWrite\fP, \fBgla::DispatchIndirect\fP, \fBgla::DrawIndirect\fP, \fBgla::ElementArray\fP, \fBgla::PixelPack\fP, \fBgla::PixelUnpack\fP, \fBgla::Query\fP, \fBgla::ShaderStorage\fP, \fBgla::Texture\fP, \fBgla::TransformFeedback\fP, \fBgla::Uniform\fP }"
 .br
 .RI "Enum to indicate the type of \fBBuffer\fP\&. "
 .ti -1c
-.RI "enum class \fBegl::BufferUsage\fP { \fBegl::StreamDraw\fP, \fBegl::StreamRead\fP, \fBegl::StreamCopy\fP, \fBegl::StaticDraw\fP, \fBegl::StaticRead\fP, \fBegl::StaticCopy\fP, \fBegl::DynamicDraw\fP, \fBegl::DynamicRead\fP, \fBegl::DynamicCopy\fP }"
+.RI "enum class \fBgla::BufferUsage\fP { \fBgla::StreamDraw\fP, \fBgla::StreamRead\fP, \fBgla::StreamCopy\fP, \fBgla::StaticDraw\fP, \fBgla::StaticRead\fP, \fBgla::StaticCopy\fP, \fBgla::DynamicDraw\fP, \fBgla::DynamicRead\fP, \fBgla::DynamicCopy\fP }"
 .br
 .RI "Enum to indicate \fBBuffer\fP Usage\&. "
 .ti -1c
-.RI "enum class \fBegl::MapUsage\fP : uint32_t { \fBegl::None\fP = 0, \fBegl::Read\fP = 1 << 0, \fBegl::Write\fP = 1 << 1, \fBegl::Persistent\fP = 1 << 2, \fBegl::Coherent\fP = 1 << 3, \fBegl::InvalidRange\fP = 1 << 4, \fBegl::InvalidateBuffer\fP = 1 << 5, \fBegl::FlushExplicit\fP = 1 << 6, \fBegl::Unsynchronized\fP = 1 << 7 }"
+.RI "enum class \fBgla::MapUsage\fP : uint32_t { \fBgla::None\fP = 0, \fBgla::Read\fP = 1 << 0, \fBgla::Write\fP = 1 << 1, \fBgla::Persistent\fP = 1 << 2, \fBgla::Coherent\fP = 1 << 3, \fBgla::InvalidRange\fP = 1 << 4, \fBgla::InvalidateBuffer\fP = 1 << 5, \fBgla::FlushExplicit\fP = 1 << 6, \fBgla::Unsynchronized\fP = 1 << 7 }"
 .br
 .RI "Enum flags to indicate \fBBuffer\fP map usage\&. "
 .ti -1c
-.RI "enum class \fBegl::BufferFlag\fP : uint32_t { \fBegl::None\fP = 0, \fBegl::DynamicStorage\fP = 1 << 0, \fBegl::MapRead\fP = 1 << 1, \fBegl::MapWrite\fP = 1 << 2, \fBegl::MapPersistent\fP = 1 << 3, \fBegl::MapCoherent\fP = 1 << 4, \fBegl::ClientStorage\fP = 1 << 5 }"
+.RI "enum class \fBgla::BufferFlag\fP : uint32_t { \fBgla::None\fP = 0, \fBgla::DynamicStorage\fP = 1 << 0, \fBgla::MapRead\fP = 1 << 1, \fBgla::MapWrite\fP = 1 << 2, \fBgla::MapPersistent\fP = 1 << 3, \fBgla::MapCoherent\fP = 1 << 4, \fBgla::ClientStorage\fP = 1 << 5 }"
 .br
 .RI "Enum falgs for explicit \fBBuffer\fP usage in setStorage\&. "
 .in -1c
@@ -53,48 +53,48 @@ inc/EGL/buffer.h
 
 .in +1c
 .ti -1c
-.RI "\fBMapUsage\fP \fBegl::operator|\fP (\fBMapUsage\fP a, \fBMapUsage\fP b)"
+.RI "\fBMapUsage\fP \fBgla::operator|\fP (\fBMapUsage\fP a, \fBMapUsage\fP b)"
 .br
 .ti -1c
-.RI "\fBMapUsage\fP \fBegl::operator&\fP (\fBMapUsage\fP a, \fBMapUsage\fP b)"
+.RI "\fBMapUsage\fP \fBgla::operator&\fP (\fBMapUsage\fP a, \fBMapUsage\fP b)"
 .br
 .ti -1c
-.RI "\fBMapUsage\fP & \fBegl::operator|=\fP (\fBMapUsage\fP &a, \fBMapUsage\fP b)"
+.RI "\fBMapUsage\fP & \fBgla::operator|=\fP (\fBMapUsage\fP &a, \fBMapUsage\fP b)"
 .br
 .ti -1c
-.RI "\fBBufferFlag\fP \fBegl::operator|\fP (\fBBufferFlag\fP a, \fBBufferFlag\fP b)"
+.RI "\fBBufferFlag\fP \fBgla::operator|\fP (\fBBufferFlag\fP a, \fBBufferFlag\fP b)"
 .br
 .ti -1c
-.RI "\fBBufferFlag\fP \fBegl::operator&\fP (\fBBufferFlag\fP a, \fBBufferFlag\fP b)"
+.RI "\fBBufferFlag\fP \fBgla::operator&\fP (\fBBufferFlag\fP a, \fBBufferFlag\fP b)"
 .br
 .ti -1c
-.RI "\fBBufferFlag\fP & \fBegl::operator|=\fP (\fBBufferFlag\fP &a, \fBBufferFlag\fP b)"
+.RI "\fBBufferFlag\fP & \fBgla::operator|=\fP (\fBBufferFlag\fP &a, \fBBufferFlag\fP b)"
 .br
 .ti -1c
-.RI "unsigned int \fBegl::toGLenum\fP (\fBBufferType\fP type)"
+.RI "unsigned int \fBgla::toGLenum\fP (\fBBufferType\fP type)"
 .br
 .RI "Converts a \fBBufferType\fP enum into a GLenum\&. "
 .ti -1c
-.RI "unsigned int \fBegl::toGLenum\fP (\fBBufferUsage\fP usage)"
+.RI "unsigned int \fBgla::toGLenum\fP (\fBBufferUsage\fP usage)"
 .br
 .RI "Converts a \fBBufferUsage\fP enum into a GLenum\&. "
 .ti -1c
-.RI "unsigned int \fBegl::toGLenum\fP (\fBMapUsage\fP usage)"
+.RI "unsigned int \fBgla::toGLenum\fP (\fBMapUsage\fP usage)"
 .br
 .RI "Converts a \fBMapUsage\fP enum into a GLenum\&. "
 .ti -1c
-.RI "unsigned int \fBegl::toGLenum\fP (\fBBufferFlag\fP flag)"
+.RI "unsigned int \fBgla::toGLenum\fP (\fBBufferFlag\fP flag)"
 .br
 .RI "Converts a \fBBufferFlag\fP enum into a GLenum\&. "
 .ti -1c
-.RI "bool \fBegl::validateMapUsage\fP (\fBMapUsage\fP usage, std::string &error)"
+.RI "bool \fBgla::validateMapUsage\fP (\fBMapUsage\fP usage, std::string &error)"
 .br
 .RI "Checks if the given \fBMapUsage\fP flag combination is valid\&. "
 .ti -1c
-.RI "bool \fBegl::validateBufferFlag\fP (\fBBufferFlag\fP flag, std::string &error)"
+.RI "bool \fBgla::validateBufferFlag\fP (\fBBufferFlag\fP flag, std::string &error)"
 .br
 .RI "Checks if the given \fBBufferFlag\fP flag combination is valid\&. "
 .in -1c
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Easy OpenGL from the source code\&.
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

@@ -1,0 +1,41 @@
+.TH "gla::ProgramValidateError" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gla::ProgramValidateError \- Exception thrown when \fBProgram\fP validation fails, mainly used in debug builds\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <program\&.h>\fP
+.PP
+Inherits std::runtime_error\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProgramValidateError\fP (const std::string &infoLog)"
+.br
+.RI "Construct a new \fBProgram\fP Validate Error object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Exception thrown when \fBProgram\fP validation fails, mainly used in debug builds\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gla::ProgramValidateError::ProgramValidateError (const std::string & infoLog)\fR [inline]\fP"
+
+.PP
+Construct a new \fBProgram\fP Validate Error object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinfoLog\fP InfoLog buffer from glGetProgramInfoLog\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

@@ -1,43 +1,43 @@
 \doxysection{window\+Context.\+h}
-\hypertarget{window_context_8h_source}{}\label{window_context_8h_source}\index{inc/EGL/windowContext.h@{inc/EGL/windowContext.h}}
+\hypertarget{window_context_8h_source}{}\label{window_context_8h_source}\index{inc/GLA/windowContext.h@{inc/GLA/windowContext.h}}
 \doxymbox{\hyperlink{window_context_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WINDOW\_CONTEXT}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WINDOW\_CONTEXT}}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GLA\_WINDOW\_CONTEXT}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GLA\_WINDOW\_CONTEXT}}
 \DoxyCodeLine{00003\ }
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespaceegl}{egl}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacegla}{gla}}\ \{}
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00017\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{namespaceegl_a687cef4344f705088c0253a1013f5e9f}{initGLFW}}();}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{namespacegla_a3bcbafb907ed85c4d0a347a33d2ef1e3}{initGLFW}}();}
 \DoxyCodeLine{00018\ }
-\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespaceegl_a563123e5c4200084c73d609e132346cc}{terminateGLFW}}();}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacegla_a7170a7e3c268553105f21d787e411004}{terminateGLFW}}();}
 \DoxyCodeLine{00025\ }
-\DoxyCodeLine{00031\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespaceegl_a06ae04f0a9cfd78ae442eadc5396e74d}{pollEvents}}();}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacegla_adfccd667467a1a415a56f83717b3e760}{pollEvents}}();}
 \DoxyCodeLine{00032\ }
-\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\ \{}
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\ \{}
 \DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_ownsGLFW\ =\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00045\ }
 \DoxyCodeLine{00046\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00050\ \ \ \ \ GLFWwindow*\ \doxymbox{\hyperlink{classegl_1_1_window_context_a7fa27fb25bb6fc261b2f4f65d7d202c2}{window}}\ =\ NULL;}
+\DoxyCodeLine{00050\ \ \ \ \ GLFWwindow*\ \doxymbox{\hyperlink{classgla_1_1_window_context_a91ef69eb197ce203196779b51c94cb4b}{window}}\ =\ NULL;}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_window_context_a53a5f0a67b1b943cc3de2d8f420ce45b}{useContext}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classgla_1_1_window_context_a2807e9c49f62f2e8e2aa52ec5e95c4ac}{useContext}}();}
 \DoxyCodeLine{00058\ }
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classegl_1_1_window_context_afd150625e4956daa2f2787acace296e1}{shouldClose}}();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classgla_1_1_window_context_a14e5f7c28370bdf67a5f91332e569143}{shouldClose}}();}
 \DoxyCodeLine{00065\ }
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_window_context_a7c3abb5729fba8187c54006521adf62d}{swapBuffers}}();}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classgla_1_1_window_context_ac11855beb1caf71a571bf654319cd4cf}{swapBuffers}}();}
 \DoxyCodeLine{00072\ }
 \DoxyCodeLine{00073\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00085\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ windowName);}
-\DoxyCodeLine{00086\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_window_context_a76f4c3976c3f7d53a4206a5eb950612e}{WindowContext}}(\doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\&\&\ other);}
-\DoxyCodeLine{00087\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_window_context_af44e5104f4b045da49824cbb5c87d5df}{WindowContext}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\&\ other)\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00088\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_window_context_a5dea65a212c0e0f56b7217a56939b162}{\string~WindowContext}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ windowName);}
+\DoxyCodeLine{00086\ \ \ \ \ \doxymbox{\hyperlink{classgla_1_1_window_context_aa1655ad08baf94eafc0d202b2f57e1bf}{WindowContext}}(\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\&\&\ other);}
+\DoxyCodeLine{00087\ \ \ \ \ \doxymbox{\hyperlink{classgla_1_1_window_context_a9600401e78710cb91fb29ee46e9c258d}{WindowContext}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00088\ \ \ \ \ \doxymbox{\hyperlink{classgla_1_1_window_context_a1c0cc2a2d548163d3088d788e7800d85}{\string~WindowContext}}();}
 \DoxyCodeLine{00089\ }
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classegl_1_1_window_context_acd76c03d3bdf79bcdd83e022cdfa1127}{run}}()\ =\ 0;}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classgla_1_1_window_context_abfba43a1a6f8eb445ac2c9dd7deaf0f8}{run}}()\ =\ 0;}
 \DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\&\ \doxymbox{\hyperlink{classegl_1_1_window_context_aa75e7b1012f462a36fd94f0b08b694e7}{operator=}}(\doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\&\&\ other);}
-\DoxyCodeLine{00100\ \ \ \ \ \doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\&\ \doxymbox{\hyperlink{classegl_1_1_window_context_a619fe8e5cbff4497543fd39bd51930ad}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classegl_1_1_window_context_a9d294876b495bce3b21b8c79c6f46707}{WindowContext}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00099\ \ \ \ \ \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\&\ \doxymbox{\hyperlink{classgla_1_1_window_context_accdc28c47b6bcc9b175f8d6b8b3dd6e3}{operator=}}(\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\&\&\ other);}
+\DoxyCodeLine{00100\ \ \ \ \ \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\&\ \doxymbox{\hyperlink{classgla_1_1_window_context_af4218c5bdffd53bbbad03a8a8b205ee3}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{WindowContext}}\&\ other)\ =\ \textcolor{keyword}{delete};}
 \DoxyCodeLine{00101\ \};}
 \DoxyCodeLine{00102\ }
 \DoxyCodeLine{00103\ \}}

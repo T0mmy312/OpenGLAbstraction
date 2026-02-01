@@ -7,15 +7,15 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#include <EGL/program.h>
-#include <EGL/shader.h>
-#include <EGL/buffer.h>
-#include <EGL/debug.h>
-#include <EGL/windowContext.h>
+#include <GLA/program.h>
+#include <GLA/shader.h>
+#include <GLA/buffer.h>
+#include <GLA/debug.h>
+#include <GLA/windowContext.h>
 
-class TestWindow : public egl::WindowContext {
+class TestWindow : public gla::WindowContext {
 public:
-    TestWindow(int width, int height, const char* name) : egl::WindowContext(width, height, name) {}
+    TestWindow(int width, int height, const char* name) : gla::WindowContext(width, height, name) {}
 
     void run() override {
         useContext();
@@ -30,15 +30,15 @@ public:
              1.0f,  0.5f
         };
 
-        egl::Buffer vbo(egl::BufferType::Array);
-        vbo.setData(positions, egl::BufferUsage::StaticDraw);
+        gla::Buffer vbo(gla::BufferType::Array);
+        vbo.setData(positions, gla::BufferUsage::StaticDraw);
         vbo.bind();
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (const void*)0); // define attribute 0 of the vbo
 
-        egl::Shader vertex(egl::ShaderType::Vertex, std::ifstream("../../res/shaders/basicTriangle/vertex.shader"));
-        egl::Shader fragment(egl::ShaderType::Fragment, std::ifstream("../../res/shaders/basicTriangle/fragment.shader"));
-        egl::Program program;
+        gla::Shader vertex(gla::ShaderType::Vertex, std::ifstream("../../res/shaders/basicTriangle/vertex.shader"));
+        gla::Shader fragment(gla::ShaderType::Fragment, std::ifstream("../../res/shaders/basicTriangle/fragment.shader"));
+        gla::Program program;
 
         program.attach(vertex);
         program.attach(fragment);
@@ -63,7 +63,7 @@ public:
 
             swapBuffers();
 
-            egl::pollEvents();
+            gla::pollEvents();
         }
     }
 };

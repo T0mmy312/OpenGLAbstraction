@@ -1,0 +1,12 @@
+\chapter{Introduction }
+\hypertarget{md_inc_2_g_l_a_2mainpage}{}\label{md_inc_2_g_l_a_2mainpage}\index{Introduction@{Introduction}}
+\label{md_inc_2_g_l_a_2mainpage_autotoc_md0}%
+\Hypertarget{md_inc_2_g_l_a_2mainpage_autotoc_md0}%
+
+
+This project provides a low-\/level Open\+GL abstraction implemented in modern C++, using try-\/catch based error handling and classes representing various Open\+GL objects.\hypertarget{md_inc_2_g_l_a_2mainpage_autotoc_md1}{}\doxysection{\texorpdfstring{Recommended Setup}{Recommended Setup}}\label{md_inc_2_g_l_a_2mainpage_autotoc_md1}
+The recommended setup is to have your main code class inherit from {\ttfamily \doxylink{classgla_1_1_window_context}{gla::\+\+Window\+Context}} and implement your logic in the provided virtual run function.
+
+Calling {\ttfamily \doxylink{classgla_1_1_window_context_a2807e9c49f62f2e8e2aa52ec5e95c4ac}{gla::\+\+Window\+Context::\+use\+Context}} is recommended to avoid potential errors.
+
+Inside of {\ttfamily \doxylink{classgla_1_1_window_context_abfba43a1a6f8eb445ac2c9dd7deaf0f8}{gla::\+\+Window\+Context::\+run}} any Open\+GL Abstraction functionality can be used safely. 

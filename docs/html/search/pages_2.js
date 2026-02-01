@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setup_0',['Recommended Setup',['../d4/d71/md_inc_2_e_g_l_2mainpage.html#autotoc_md1',1,'']]]
+  ['setup_0',['Recommended Setup',['../d8/d0d/md_inc_2_g_l_a_2mainpage.html#autotoc_md1',1,'']]]
 ];

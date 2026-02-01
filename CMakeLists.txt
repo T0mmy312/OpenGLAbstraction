@@ -14,11 +14,11 @@ add_compile_definitions(GLEW_STATIC)
 add_executable(engine
     src/main.cpp
 
-    src/EGL/buffer.cpp
-    src/EGL/debug.cpp
-    src/EGL/program.cpp
-    src/EGL/shader.cpp
-    src/EGL/windowContext.cpp
+    src/GLA/buffer.cpp
+    src/GLA/debug.cpp
+    src/GLA/program.cpp
+    src/GLA/shader.cpp
+    src/GLA/windowContext.cpp
 )
 
 add_compile_definitions(DEBUG_BUILD) # define DEBUG_BUILD for GL_CALL error (slows down the program in release)

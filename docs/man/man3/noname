@@ -1,9 +1,9 @@
-.TH "" 3 "Easy OpenGL" \" -*- nroff -*-
+.TH "" 3 "OpenGL Abstraction" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-EGL buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h windowContext\&.h 
+GLA buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h windowContext\&.h 
 .PP
-inc EGL buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h windowContext\&.h 
+inc GLA buffer\&.h debug\&.h program\&.h shader\&.h vertexBuffer\&.h windowContext\&.h 
 .PP
 

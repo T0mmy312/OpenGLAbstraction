@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Easy OpenGL: inc/EGL/buffer.h File Reference</title>
+<title>OpenGL Abstraction: inc/GLA/buffer.h File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Easy OpenGL
+   <div id="projectname">OpenGL Abstraction
    </div>
    <div id="projectbrief">A simple low level OpenGL wrapper to convert OpenGL to modern C++</div>
   </td>
@@ -101,98 +101,98 @@ $(function(){initNavTree('d5/d08/buffer_8h.html','../../',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:egl_3A_3ABuffer" id="r_egl_3A_3ABuffer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d3/d66/classegl_1_1_buffer.html">egl::Buffer</a></td></tr>
+<tr class="memitem:gla_3A_3ABuffer" id="r_gla_3A_3ABuffer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d5/ddd/classgla_1_1_buffer.html">gla::Buffer</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:egl" id="r_egl"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html">egl</a></td></tr>
+<tr class="memitem:gla" id="r_gla"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html">gla</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a9d3c4e1c16d66cc0e4de86e7ac323291" id="r_a9d3c4e1c16d66cc0e4de86e7ac323291"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291">egl::BufferType</a> { <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a4410ec34d9e6c1a68100ca0ce033fb17">egl::Array</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a718568e47d2de4af4d51fc1114cb3583">egl::AtomicCounter</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a3a23dd1e2979213e268b02eca78f1093">egl::CopyRead</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291aac0d23bb3afb6d4ffb725d00de2b3ffb">egl::CopyWrite</a>
+<tr class="memitem:a7442220d0141215247011f052258ecad" id="r_a7442220d0141215247011f052258ecad"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecad">gla::BufferType</a> { <br />
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada4410ec34d9e6c1a68100ca0ce033fb17">gla::Array</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada718568e47d2de4af4d51fc1114cb3583">gla::AtomicCounter</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada3a23dd1e2979213e268b02eca78f1093">gla::CopyRead</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecadaac0d23bb3afb6d4ffb725d00de2b3ffb">gla::CopyWrite</a>
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a8b76d6291a8094d1fc459a056780dd54">egl::DispatchIndirect</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a95b0e6b8c7aa6af632295afda7a926bc">egl::DrawIndirect</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a3726aa2adc65a493586528ddbd070204">egl::ElementArray</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a22702a714692d1c3a1ba2f02cf200c7a">egl::PixelPack</a>
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada8b76d6291a8094d1fc459a056780dd54">gla::DispatchIndirect</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada95b0e6b8c7aa6af632295afda7a926bc">gla::DrawIndirect</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada3726aa2adc65a493586528ddbd070204">gla::ElementArray</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada22702a714692d1c3a1ba2f02cf200c7a">gla::PixelPack</a>
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a454e29d3537454f75dba31fc3ab1fc0d">egl::PixelUnpack</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a66c1b4c7f3dc385b68a9fa903ccd016d">egl::Query</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291a63d204f04170f5bbf958083589f6572f">egl::ShaderStorage</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291aa3e8ae43188ae76d38f414b2bdb0077b">egl::Texture</a>
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada454e29d3537454f75dba31fc3ab1fc0d">gla::PixelUnpack</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada66c1b4c7f3dc385b68a9fa903ccd016d">gla::Query</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecada63d204f04170f5bbf958083589f6572f">gla::ShaderStorage</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecadaa3e8ae43188ae76d38f414b2bdb0077b">gla::Texture</a>
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291af42c5721f003b0657f081141043576f6">egl::TransformFeedback</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291af19516d11f2946f894070e92fcb56b6d">egl::Uniform</a>
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecadaf42c5721f003b0657f081141043576f6">gla::TransformFeedback</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecadaf19516d11f2946f894070e92fcb56b6d">gla::Uniform</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a9d3c4e1c16d66cc0e4de86e7ac323291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to indicate the type of <a class="el" href="../../d3/d66/classegl_1_1_buffer.html">Buffer</a>.  <a href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291">More...</a><br /></td></tr>
-<tr class="memitem:ac73662910801a578088c729c58a62c97" id="r_ac73662910801a578088c729c58a62c97"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97">egl::BufferUsage</a> { <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97ab831b12d8d415645f1f00e37e0426ca2">egl::StreamDraw</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97a10953b8796ab666281dc734e99aa5180">egl::StreamRead</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97a72d80d051f94e8aa1e3dc1ebfb6cc8cc">egl::StreamCopy</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97ac3ed2ba606af12869974bdab26334e6c">egl::StaticDraw</a>
+<tr class="memdesc:a7442220d0141215247011f052258ecad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to indicate the type of <a class="el" href="../../d5/ddd/classgla_1_1_buffer.html">Buffer</a>.  <a href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecad">More...</a><br /></td></tr>
+<tr class="memitem:ab1275622d3bb4444f2d84c4ddec786d5" id="r_ab1275622d3bb4444f2d84c4ddec786d5"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5">gla::BufferUsage</a> { <br />
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5ab831b12d8d415645f1f00e37e0426ca2">gla::StreamDraw</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5a10953b8796ab666281dc734e99aa5180">gla::StreamRead</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5a72d80d051f94e8aa1e3dc1ebfb6cc8cc">gla::StreamCopy</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5ac3ed2ba606af12869974bdab26334e6c">gla::StaticDraw</a>
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97a3b35249bb273aea8b56c05f2c914a38a">egl::StaticRead</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97ac5a66e746248ebb7fe5f99443172fca7">egl::StaticCopy</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97a07988dce2d161630856fb73bc06682c0">egl::DynamicDraw</a>
-, <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97a2ca7cf82bf5d2f11738ae1a371d5ae32">egl::DynamicRead</a>
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5a3b35249bb273aea8b56c05f2c914a38a">gla::StaticRead</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5ac5a66e746248ebb7fe5f99443172fca7">gla::StaticCopy</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5a07988dce2d161630856fb73bc06682c0">gla::DynamicDraw</a>
+, <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5a2ca7cf82bf5d2f11738ae1a371d5ae32">gla::DynamicRead</a>
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97ac572ac15b4bcbc9e975b79480e253c14">egl::DynamicCopy</a>
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5ac572ac15b4bcbc9e975b79480e253c14">gla::DynamicCopy</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ac73662910801a578088c729c58a62c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to indicate <a class="el" href="../../d3/d66/classegl_1_1_buffer.html">Buffer</a> Usage.  <a href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97">More...</a><br /></td></tr>
-<tr class="memitem:a79ed3ca25fe4c77c1ebacb3f1283d4b2" id="r_a79ed3ca25fe4c77c1ebacb3f1283d4b2"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">egl::MapUsage</a> : uint32_t { <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a6adf97f83acf6453d4a6a4b1070f3754">egl::None</a> = 0
-, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a7a1a5f3e79fdc91edf2f5ead9d66abb4">egl::Read</a> = 1 &lt;&lt; 0
-, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a1129c0e4d43f2d121652a7302712cff6">egl::Write</a> = 1 &lt;&lt; 1
-, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a5fe7b9358c9cb1b9eaa8d5aec000def4">egl::Persistent</a> = 1 &lt;&lt; 2
+<tr class="memdesc:ab1275622d3bb4444f2d84c4ddec786d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to indicate <a class="el" href="../../d5/ddd/classgla_1_1_buffer.html">Buffer</a> Usage.  <a href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5">More...</a><br /></td></tr>
+<tr class="memitem:ae8a5a47275ed0181bb48c170596019b6" id="r_ae8a5a47275ed0181bb48c170596019b6"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">gla::MapUsage</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a6adf97f83acf6453d4a6a4b1070f3754">gla::None</a> = 0
+, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a7a1a5f3e79fdc91edf2f5ead9d66abb4">gla::Read</a> = 1 &lt;&lt; 0
+, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a1129c0e4d43f2d121652a7302712cff6">gla::Write</a> = 1 &lt;&lt; 1
+, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4">gla::Persistent</a> = 1 &lt;&lt; 2
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a65d2523d959087dc90e3070bf940f94c">egl::Coherent</a> = 1 &lt;&lt; 3
-, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2aefcb4954ae74945cf0eba28983e28b6e">egl::InvalidRange</a> = 1 &lt;&lt; 4
-, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2acc6d7b432c2856582ca2627a8437bbe0">egl::InvalidateBuffer</a> = 1 &lt;&lt; 5
-, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2ab9698f5447ac81e5c28a7c3c53a196e3">egl::FlushExplicit</a> = 1 &lt;&lt; 6
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a65d2523d959087dc90e3070bf940f94c">gla::Coherent</a> = 1 &lt;&lt; 3
+, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6aefcb4954ae74945cf0eba28983e28b6e">gla::InvalidRange</a> = 1 &lt;&lt; 4
+, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6acc6d7b432c2856582ca2627a8437bbe0">gla::InvalidateBuffer</a> = 1 &lt;&lt; 5
+, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6ab9698f5447ac81e5c28a7c3c53a196e3">gla::FlushExplicit</a> = 1 &lt;&lt; 6
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a7854699f8079e4a586a6c943703ac972">egl::Unsynchronized</a> = 1 &lt;&lt; 7
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a7854699f8079e4a586a6c943703ac972">gla::Unsynchronized</a> = 1 &lt;&lt; 7
 <br />
  }</td></tr>
-<tr class="memdesc:a79ed3ca25fe4c77c1ebacb3f1283d4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum flags to indicate <a class="el" href="../../d3/d66/classegl_1_1_buffer.html">Buffer</a> map usage.  <a href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">More...</a><br /></td></tr>
-<tr class="memitem:a26041025f1dffb8975174b439d5f0150" id="r_a26041025f1dffb8975174b439d5f0150"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">egl::BufferFlag</a> : uint32_t { <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a6adf97f83acf6453d4a6a4b1070f3754">egl::None</a> = 0
-, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a4a7fd22ec9dd772a4a534f5259e133f2">egl::DynamicStorage</a> = 1 &lt;&lt; 0
-, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150ac16a79d8306dc10ca7b16a409661847f">egl::MapRead</a> = 1 &lt;&lt; 1
-, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a4a0138ad7aa1d1355c00c3e6fef8157d">egl::MapWrite</a> = 1 &lt;&lt; 2
+<tr class="memdesc:ae8a5a47275ed0181bb48c170596019b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum flags to indicate <a class="el" href="../../d5/ddd/classgla_1_1_buffer.html">Buffer</a> map usage.  <a href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">More...</a><br /></td></tr>
+<tr class="memitem:a350bd3821a2aee5521c6872af830144d" id="r_a350bd3821a2aee5521c6872af830144d"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">gla::BufferFlag</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144da6adf97f83acf6453d4a6a4b1070f3754">gla::None</a> = 0
+, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144da4a7fd22ec9dd772a4a534f5259e133f2">gla::DynamicStorage</a> = 1 &lt;&lt; 0
+, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144dac16a79d8306dc10ca7b16a409661847f">gla::MapRead</a> = 1 &lt;&lt; 1
+, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144da4a0138ad7aa1d1355c00c3e6fef8157d">gla::MapWrite</a> = 1 &lt;&lt; 2
 , <br />
-&#160;&#160;<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a771e3ed8a1ecc75a7cbe5cae48bcbac0">egl::MapPersistent</a> = 1 &lt;&lt; 3
-, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a70a75c211d5cddf35e9b546be29ab1c1">egl::MapCoherent</a> = 1 &lt;&lt; 4
-, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150a82f574c954f5e6699be84b6b1d03a17f">egl::ClientStorage</a> = 1 &lt;&lt; 5
+&#160;&#160;<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144da771e3ed8a1ecc75a7cbe5cae48bcbac0">gla::MapPersistent</a> = 1 &lt;&lt; 3
+, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144da70a75c211d5cddf35e9b546be29ab1c1">gla::MapCoherent</a> = 1 &lt;&lt; 4
+, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144da82f574c954f5e6699be84b6b1d03a17f">gla::ClientStorage</a> = 1 &lt;&lt; 5
 <br />
  }</td></tr>
-<tr class="memdesc:a26041025f1dffb8975174b439d5f0150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum falgs for explicit <a class="el" href="../../d3/d66/classegl_1_1_buffer.html">Buffer</a> usage in setStorage.  <a href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">More...</a><br /></td></tr>
+<tr class="memdesc:a350bd3821a2aee5521c6872af830144d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum falgs for explicit <a class="el" href="../../d5/ddd/classgla_1_1_buffer.html">Buffer</a> usage in setStorage.  <a href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab1245bbebff076568c2cca71835900d1" id="r_ab1245bbebff076568c2cca71835900d1"><td class="memItemLeft"><a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#ab1245bbebff076568c2cca71835900d1">egl::operator|</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> a, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> b)</td></tr>
-<tr class="memitem:a669e7d0b93fcd64dfc8d7723e5b35b6c" id="r_a669e7d0b93fcd64dfc8d7723e5b35b6c"><td class="memItemLeft"><a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a669e7d0b93fcd64dfc8d7723e5b35b6c">egl::operator&amp;</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> a, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> b)</td></tr>
-<tr class="memitem:a6734858937e6a141ae2d1956b686c4fc" id="r_a6734858937e6a141ae2d1956b686c4fc"><td class="memItemLeft"><a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a6734858937e6a141ae2d1956b686c4fc">egl::operator|=</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> &amp;a, <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> b)</td></tr>
-<tr class="memitem:aed2d31751a7a5b60ace5876e657f47fe" id="r_aed2d31751a7a5b60ace5876e657f47fe"><td class="memItemLeft"><a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#aed2d31751a7a5b60ace5876e657f47fe">egl::operator|</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> a, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> b)</td></tr>
-<tr class="memitem:a5b04786d00995760e2d9c6f6f68c1d5e" id="r_a5b04786d00995760e2d9c6f6f68c1d5e"><td class="memItemLeft"><a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a5b04786d00995760e2d9c6f6f68c1d5e">egl::operator&amp;</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> a, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> b)</td></tr>
-<tr class="memitem:a1475de49ec91100a500484e0afd10338" id="r_a1475de49ec91100a500484e0afd10338"><td class="memItemLeft"><a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a1475de49ec91100a500484e0afd10338">egl::operator|=</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> &amp;a, <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> b)</td></tr>
-<tr class="memitem:a5b49c788db9d2063d7ab77f98703f900" id="r_a5b49c788db9d2063d7ab77f98703f900"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a5b49c788db9d2063d7ab77f98703f900">egl::toGLenum</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291">BufferType</a> type)</td></tr>
-<tr class="memdesc:a5b49c788db9d2063d7ab77f98703f900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d1/d73/namespaceegl.html#a9d3c4e1c16d66cc0e4de86e7ac323291" title="Enum to indicate the type of Buffer.">BufferType</a> enum into a GLenum.  <br /></td></tr>
-<tr class="memitem:a0ae23397829820009b95472f8cd4c48c" id="r_a0ae23397829820009b95472f8cd4c48c"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a0ae23397829820009b95472f8cd4c48c">egl::toGLenum</a> (<a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97">BufferUsage</a> usage)</td></tr>
-<tr class="memdesc:a0ae23397829820009b95472f8cd4c48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d1/d73/namespaceegl.html#ac73662910801a578088c729c58a62c97" title="Enum to indicate Buffer Usage.">BufferUsage</a> enum into a GLenum.  <br /></td></tr>
-<tr class="memitem:a0688070e56c8b033413a91f82b999792" id="r_a0688070e56c8b033413a91f82b999792"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a0688070e56c8b033413a91f82b999792">egl::toGLenum</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> usage)</td></tr>
-<tr class="memdesc:a0688070e56c8b033413a91f82b999792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2" title="Enum flags to indicate Buffer map usage.">MapUsage</a> enum into a GLenum.  <br /></td></tr>
-<tr class="memitem:a7d27ff3fcab64e012f9a138459b63a67" id="r_a7d27ff3fcab64e012f9a138459b63a67"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a7d27ff3fcab64e012f9a138459b63a67">egl::toGLenum</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> flag)</td></tr>
-<tr class="memdesc:a7d27ff3fcab64e012f9a138459b63a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150" title="Enum falgs for explicit Buffer usage in setStorage.">BufferFlag</a> enum into a GLenum.  <br /></td></tr>
-<tr class="memitem:a827e3e9edcc216c2b83c9cfe3af8343b" id="r_a827e3e9edcc216c2b83c9cfe3af8343b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a827e3e9edcc216c2b83c9cfe3af8343b">egl::validateMapUsage</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2">MapUsage</a> usage, std::string &amp;error)</td></tr>
-<tr class="memdesc:a827e3e9edcc216c2b83c9cfe3af8343b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given <a class="el" href="../../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2" title="Enum flags to indicate Buffer map usage.">MapUsage</a> flag combination is valid.  <br /></td></tr>
-<tr class="memitem:a5ef35b2b7cce9cbf20fbeb47e595054e" id="r_a5ef35b2b7cce9cbf20fbeb47e595054e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="../../d1/d73/namespaceegl.html#a5ef35b2b7cce9cbf20fbeb47e595054e">egl::validateBufferFlag</a> (<a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150">BufferFlag</a> flag, std::string &amp;error)</td></tr>
-<tr class="memdesc:a5ef35b2b7cce9cbf20fbeb47e595054e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given <a class="el" href="../../d1/d73/namespaceegl.html#a26041025f1dffb8975174b439d5f0150" title="Enum falgs for explicit Buffer usage in setStorage.">BufferFlag</a> flag combination is valid.  <br /></td></tr>
+<tr class="memitem:ae30bc3b5e2fca298cee7293d696a1b36" id="r_ae30bc3b5e2fca298cee7293d696a1b36"><td class="memItemLeft"><a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#ae30bc3b5e2fca298cee7293d696a1b36">gla::operator|</a> (<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> a, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> b)</td></tr>
+<tr class="memitem:a629e588320ddd382a7f9267a5a4f42ea" id="r_a629e588320ddd382a7f9267a5a4f42ea"><td class="memItemLeft"><a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a629e588320ddd382a7f9267a5a4f42ea">gla::operator&amp;</a> (<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> a, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> b)</td></tr>
+<tr class="memitem:ac7ad9193d3fdb969b8d45dbd9779b6a8" id="r_ac7ad9193d3fdb969b8d45dbd9779b6a8"><td class="memItemLeft"><a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#ac7ad9193d3fdb969b8d45dbd9779b6a8">gla::operator|=</a> (<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> &amp;a, <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> b)</td></tr>
+<tr class="memitem:a6a18de69fef3b1561e2103a99a84db5b" id="r_a6a18de69fef3b1561e2103a99a84db5b"><td class="memItemLeft"><a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a6a18de69fef3b1561e2103a99a84db5b">gla::operator|</a> (<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> a, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> b)</td></tr>
+<tr class="memitem:a2b45a6d51b1efe291f8222b735d812e4" id="r_a2b45a6d51b1efe291f8222b735d812e4"><td class="memItemLeft"><a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a>&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a2b45a6d51b1efe291f8222b735d812e4">gla::operator&amp;</a> (<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> a, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> b)</td></tr>
+<tr class="memitem:a5742e73ee3bf8a0147809a06ce264c0e" id="r_a5742e73ee3bf8a0147809a06ce264c0e"><td class="memItemLeft"><a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a5742e73ee3bf8a0147809a06ce264c0e">gla::operator|=</a> (<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> &amp;a, <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> b)</td></tr>
+<tr class="memitem:acf5a79b8cdeed0b99411c2712fc19983" id="r_acf5a79b8cdeed0b99411c2712fc19983"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#acf5a79b8cdeed0b99411c2712fc19983">gla::toGLenum</a> (<a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecad">BufferType</a> type)</td></tr>
+<tr class="memdesc:acf5a79b8cdeed0b99411c2712fc19983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d7/df0/namespacegla.html#a7442220d0141215247011f052258ecad" title="Enum to indicate the type of Buffer.">BufferType</a> enum into a GLenum.  <br /></td></tr>
+<tr class="memitem:a4b4bacba96f547896387fbba6d5898e3" id="r_a4b4bacba96f547896387fbba6d5898e3"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a4b4bacba96f547896387fbba6d5898e3">gla::toGLenum</a> (<a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5">BufferUsage</a> usage)</td></tr>
+<tr class="memdesc:a4b4bacba96f547896387fbba6d5898e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d7/df0/namespacegla.html#ab1275622d3bb4444f2d84c4ddec786d5" title="Enum to indicate Buffer Usage.">BufferUsage</a> enum into a GLenum.  <br /></td></tr>
+<tr class="memitem:a6c392caaf616a9937dba0c8dd8f9b768" id="r_a6c392caaf616a9937dba0c8dd8f9b768"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a6c392caaf616a9937dba0c8dd8f9b768">gla::toGLenum</a> (<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> usage)</td></tr>
+<tr class="memdesc:a6c392caaf616a9937dba0c8dd8f9b768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6" title="Enum flags to indicate Buffer map usage.">MapUsage</a> enum into a GLenum.  <br /></td></tr>
+<tr class="memitem:ad8b71108c99800624cd9491771c14f6f" id="r_ad8b71108c99800624cd9491771c14f6f"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#ad8b71108c99800624cd9491771c14f6f">gla::toGLenum</a> (<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> flag)</td></tr>
+<tr class="memdesc:ad8b71108c99800624cd9491771c14f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d" title="Enum falgs for explicit Buffer usage in setStorage.">BufferFlag</a> enum into a GLenum.  <br /></td></tr>
+<tr class="memitem:a1f8401457b01e0015a39ce292c68e05a" id="r_a1f8401457b01e0015a39ce292c68e05a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#a1f8401457b01e0015a39ce292c68e05a">gla::validateMapUsage</a> (<a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6">MapUsage</a> usage, std::string &amp;error)</td></tr>
+<tr class="memdesc:a1f8401457b01e0015a39ce292c68e05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given <a class="el" href="../../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6" title="Enum flags to indicate Buffer map usage.">MapUsage</a> flag combination is valid.  <br /></td></tr>
+<tr class="memitem:af502fa0e70fae632dc81f756820e783e" id="r_af502fa0e70fae632dc81f756820e783e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="../../d7/df0/namespacegla.html#af502fa0e70fae632dc81f756820e783e">gla::validateBufferFlag</a> (<a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d">BufferFlag</a> flag, std::string &amp;error)</td></tr>
+<tr class="memdesc:af502fa0e70fae632dc81f756820e783e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given <a class="el" href="../../d7/df0/namespacegla.html#a350bd3821a2aee5521c6872af830144d" title="Enum falgs for explicit Buffer usage in setStorage.">BufferFlag</a> flag combination is valid.  <br /></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -207,7 +207,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="../../dir_d0e58c9a32265e58c2e221b88a397c65.html">EGL</a></li><li class="navelem"><a href="../../d5/d08/buffer_8h.html">buffer.h</a></li>
+    <li class="navelem"><a href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="../../dir_6d66fef564e45ed0e46258a3533de6dc.html">GLA</a></li><li class="navelem"><a href="../../d5/d08/buffer_8h.html">buffer.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
   </ul>
 </div>

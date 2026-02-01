@@ -1,0 +1,202 @@
+\doxysection{gla::\+Window\+Context Class Reference}
+\hypertarget{classgla_1_1_window_context}{}\label{classgla_1_1_window_context}\index{gla::WindowContext@{gla::WindowContext}}
+
+
+An abstract class to contain an window based application.  
+
+
+
+
+{\ttfamily \+\#include $<$window\+Context.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} (int width, int height, const char \texorpdfstring{$\ast$}{*}window\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new Window Context object with given height, width and name. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_window_context_aa1655ad08baf94eafc0d202b2f57e1bf}{Window\+Context}} (Window\+Context \&\&other)
+\item 
+\doxymbox{\hyperlink{classgla_1_1_window_context_a9600401e78710cb91fb29ee46e9c258d}{Window\+Context}} (const Window\+Context \&other)=delete
+\item 
+\doxymbox{\hyperlink{classgla_1_1_window_context_a1c0cc2a2d548163d3088d788e7800d85}{\texorpdfstring{$\sim$}{\string~}\+Window\+Context}} ()
+\item 
+virtual void \doxymbox{\hyperlink{classgla_1_1_window_context_abfba43a1a6f8eb445ac2c9dd7deaf0f8}{run}} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual run method to overload when implementing a child class. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \& \doxymbox{\hyperlink{classgla_1_1_window_context_accdc28c47b6bcc9b175f8d6b8b3dd6e3}{operator=}} (\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \&\&other)
+\item 
+\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \& \doxymbox{\hyperlink{classgla_1_1_window_context_af4218c5bdffd53bbbad03a8a8b205ee3}{operator=}} (const \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \&other)=delete
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_window_context_a2807e9c49f62f2e8e2aa52ec5e95c4ac}{use\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Makes the owned window the current context. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classgla_1_1_window_context_a14e5f7c28370bdf67a5f91332e569143}{should\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the Window should close. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_window_context_ac11855beb1caf71a571bf654319cd4cf}{swap\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Swaps the display buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+GLFWwindow \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classgla_1_1_window_context_a91ef69eb197ce203196779b51c94cb4b}{window}} = NULL
+\begin{DoxyCompactList}\small\item\em GLFW window handle for low level GLFW access. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class to contain an window based application. 
+
+Instantiates a window in the constructor using GLFW and destroys it once it goes out of scope. That window can be bound and used in the child class in the \doxylink{classgla_1_1_window_context_abfba43a1a6f8eb445ac2c9dd7deaf0f8}{Window\+Context::\+run} method implementation containing the setup and rendering loop.
+
+\begin{DoxyNote}{Note}
+Calling use\+Context is recomended in run to ensure the local context is used. 
+
+\doxylink{classgla_1_1_window_context}{gla::\+\+Window\+Context} is not thread safe and may only be used on the main thread. 
+\end{DoxyNote}
+
+
+\label{doc-constructors}
+\Hypertarget{classgla_1_1_window_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}\index{gla::WindowContext@{gla::WindowContext}!WindowContext@{WindowContext}}
+\index{WindowContext@{WindowContext}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{WindowContext()}{WindowContext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161} 
+gla::\+\+Window\+Context::\+\+Window\+Context (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{window\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new Window Context object with given height, width and name. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If GLFW could not create a Window. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the GLFW Window is invalid. \\
+\hline
+{\em std::\+runtime\+\_\+error} & If GLEW could not be initialized.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the Window in pixels. \\
+\hline
+{\em height} & Height of the Window in pixels. \\
+\hline
+{\em window\+Name} & C-\/style NULL terminated string window name. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_window_context_aa1655ad08baf94eafc0d202b2f57e1bf}\index{gla::WindowContext@{gla::WindowContext}!WindowContext@{WindowContext}}
+\index{WindowContext@{WindowContext}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{WindowContext()}{WindowContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_aa1655ad08baf94eafc0d202b2f57e1bf} 
+gla::\+\+Window\+Context::\+\+Window\+Context (\begin{DoxyParamCaption}\item[{Window\+Context \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgla_1_1_window_context_a9600401e78710cb91fb29ee46e9c258d}\index{gla::WindowContext@{gla::WindowContext}!WindowContext@{WindowContext}}
+\index{WindowContext@{WindowContext}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{WindowContext()}{WindowContext()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_a9600401e78710cb91fb29ee46e9c258d} 
+gla::\+\+Window\+Context::\+\+Window\+Context (\begin{DoxyParamCaption}\item[{const Window\+Context \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_window_context_a1c0cc2a2d548163d3088d788e7800d85}\index{gla::WindowContext@{gla::WindowContext}!````~WindowContext@{\texorpdfstring{$\sim$}{\string~}WindowContext}}
+\index{````~WindowContext@{\texorpdfstring{$\sim$}{\string~}WindowContext}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}WindowContext()}{\string~WindowContext()}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_a1c0cc2a2d548163d3088d788e7800d85} 
+gla::\+\+Window\+Context::\+\texorpdfstring{$\sim$}{\string~}\+Window\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classgla_1_1_window_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgla_1_1_window_context_af4218c5bdffd53bbbad03a8a8b205ee3}\index{gla::WindowContext@{gla::WindowContext}!operator=@{operator=}}
+\index{operator=@{operator=}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_af4218c5bdffd53bbbad03a8a8b205ee3} 
+\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \& gla::\+\+Window\+Context::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_window_context_accdc28c47b6bcc9b175f8d6b8b3dd6e3}\index{gla::WindowContext@{gla::WindowContext}!operator=@{operator=}}
+\index{operator=@{operator=}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_accdc28c47b6bcc9b175f8d6b8b3dd6e3} 
+\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \& gla::\+\+Window\+Context::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classgla_1_1_window_context_abfd1897736415f3c29033c896648e161}{Window\+Context}} \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgla_1_1_window_context_abfba43a1a6f8eb445ac2c9dd7deaf0f8}\index{gla::WindowContext@{gla::WindowContext}!run@{run}}
+\index{run@{run}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_abfba43a1a6f8eb445ac2c9dd7deaf0f8} 
+virtual void gla::\+\+Window\+Context::\+run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual run method to overload when implementing a child class. 
+
+Virtual run method to contain the rendering and window handling for your Application.
+
+\begin{DoxyNote}{Note}
+Calling use\+Context is recomended in run to ensure the local context is used. 
+\end{DoxyNote}
+\Hypertarget{classgla_1_1_window_context_a14e5f7c28370bdf67a5f91332e569143}\index{gla::WindowContext@{gla::WindowContext}!shouldClose@{shouldClose}}
+\index{shouldClose@{shouldClose}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{shouldClose()}{shouldClose()}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_a14e5f7c28370bdf67a5f91332e569143} 
+bool gla::\+\+Window\+Context::\+should\+Close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Checks if the Window should close. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If the GLFW Window is invalid. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgla_1_1_window_context_ac11855beb1caf71a571bf654319cd4cf}\index{gla::WindowContext@{gla::WindowContext}!swapBuffers@{swapBuffers}}
+\index{swapBuffers@{swapBuffers}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{swapBuffers()}{swapBuffers()}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_ac11855beb1caf71a571bf654319cd4cf} 
+void gla::\+\+Window\+Context::\+swap\+Buffers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Swaps the display buffers. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If the GLFW Window is invalid. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgla_1_1_window_context_a2807e9c49f62f2e8e2aa52ec5e95c4ac}\index{gla::WindowContext@{gla::WindowContext}!useContext@{useContext}}
+\index{useContext@{useContext}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{useContext()}{useContext()}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_a2807e9c49f62f2e8e2aa52ec5e95c4ac} 
+void gla::\+\+Window\+Context::\+use\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Makes the owned window the current context. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If the GLFW window is invalid. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-variable-members}
+\Hypertarget{classgla_1_1_window_context_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classgla_1_1_window_context_a91ef69eb197ce203196779b51c94cb4b}\index{gla::WindowContext@{gla::WindowContext}!window@{window}}
+\index{window@{window}!gla::WindowContext@{gla::WindowContext}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily \label{classgla_1_1_window_context_a91ef69eb197ce203196779b51c94cb4b} 
+GLFWwindow\texorpdfstring{$\ast$}{*} gla::\+\+Window\+Context::\+window = NULL\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+GLFW window handle for low level GLFW access. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+inc/\+\+GLA/\+\doxymbox{\hyperlink{window_context_8h}{window\+Context.\+h}}\end{DoxyCompactItemize}

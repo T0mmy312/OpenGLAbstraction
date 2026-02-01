@@ -1,0 +1,392 @@
+.TH "gla::Shader" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gla::Shader \- \fBShader\fP class to abstract OpenGL Shaders\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <shader\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShader\fP ()=delete"
+.br
+.ti -1c
+.RI "\fBShader\fP (\fBShaderType\fP type)"
+.br
+.RI "Construct a new \fBShader\fP object of given type\&. "
+.ti -1c
+.RI "\fBShader\fP (\fBShaderType\fP type, const char *src)"
+.br
+.RI "Constructs and compiles a new \fBShader\fP object of given type\&. "
+.ti -1c
+.RI "\fBShader\fP (\fBShaderType\fP type, const std::string &src)"
+.br
+.RI "Constructs and compiles a new \fBShader\fP object of given type\&. "
+.ti -1c
+.RI "\fBShader\fP (\fBShaderType\fP type, std::istream &in)"
+.br
+.RI "Constructs and compiles a new \fBShader\fP object of given type\&. "
+.ti -1c
+.RI "\fBShader\fP (\fBShaderType\fP type, std::istream &&in)"
+.br
+.RI "Constructs and compiles a new \fBShader\fP object of given type\&. "
+.ti -1c
+.RI "\fBShader\fP (Shader &&other)"
+.br
+.ti -1c
+.RI "\fBShader\fP (const Shader &other)=delete"
+.br
+.ti -1c
+.RI "\fB~Shader\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.RI "Resets the \fBShader\fP to an empty state\&. "
+.ti -1c
+.RI "bool \fBcompiled\fP () const"
+.br
+.RI "Gets if the \fBShader\fP has been successfully compiled\&. "
+.ti -1c
+.RI "\fBShaderType\fP \fBgetType\fP () const"
+.br
+.RI "Get the type of the \fBShader\fP\&. "
+.ti -1c
+.RI "void \fBcompile\fP (const char *src)"
+.br
+.RI "Compiles the \fBShader\fP with the given source\&. "
+.ti -1c
+.RI "void \fBcompile\fP (std::istream &in)"
+.br
+.RI "Compiles the \fBShader\fP with the given source input stream\&. "
+.ti -1c
+.RI "void \fBcompile\fP (std::istream &&in)"
+.br
+.RI "Compiles the \fBShader\fP with the given source input stream\&. "
+.ti -1c
+.RI "void \fBcompile\fP (const std::string &str)"
+.br
+.RI "Compiles the \fBShader\fP with the given source\&. "
+.ti -1c
+.RI "\fBShader\fP & \fBoperator=\fP (\fBShader\fP &&other)"
+.br
+.ti -1c
+.RI "\fBShader\fP & \fBoperator=\fP (const \fBShader\fP &other)=delete"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "friend \fBProgram\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_delete\fP ()"
+.br
+.ti -1c
+.RI "void \fB_check\fP ()"
+.br
+.ti -1c
+.RI "void \fB_ensure\fP ()"
+.br
+.ti -1c
+.RI "std::string \fB_getError\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fB_id\fP = 0"
+.br
+.ti -1c
+.RI "\fBShaderType\fP \fB_type\fP"
+.br
+.ti -1c
+.RI "bool \fB_compiled\fP = false"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBShader\fP class to abstract OpenGL Shaders\&. 
+
+
+.PP
+\fBWarning\fP
+.RS 4
+\fBShader\fP must be deconstructed before the OpenGL context is destroyed\&. 
+
+.PP
+This class is not guaranteed to be thread-safe\&.
+.RE
+.PP
+\fBNote\fP
+.RS 4
+This class owns the underlying OpenGL \fBShader\fP object and releases it upon destruction or \fBreset()\fP\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gla::Shader::Shader ()\fR [delete]\fP"
+
+.SS "gla::Shader::Shader (\fBShaderType\fP type)"
+
+.PP
+Construct a new \fBShader\fP object of given type\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the given \fBShaderType\fP is invalid\&. 
+.br
+\fIstd::runtime_error\fP If OpenGL failed to create a \fBShader\fP object\&. 
+.RE
+.PP
+
+.SS "gla::Shader::Shader (\fBShaderType\fP type, const char * src)"
+
+.PP
+Constructs and compiles a new \fBShader\fP object of given type\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the given \fBShaderType\fP is invalid\&. 
+.br
+\fIstd::runtime_error\fP If OpenGL failed to create a \fBShader\fP object\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&. 
+.RE
+.PP
+
+.SS "gla::Shader::Shader (\fBShaderType\fP type, const std::string & src)"
+
+.PP
+Constructs and compiles a new \fBShader\fP object of given type\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the given \fBShaderType\fP is invalid\&. 
+.br
+\fIstd::runtime_error\fP If OpenGL failed to create a \fBShader\fP object\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&. 
+.RE
+.PP
+
+.SS "gla::Shader::Shader (\fBShaderType\fP type, std::istream & in)"
+
+.PP
+Constructs and compiles a new \fBShader\fP object of given type\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the given \fBShaderType\fP is invalid\&. 
+.br
+\fIstd::runtime_error\fP If OpenGL failed to create a \fBShader\fP object\&. 
+.br
+\fIstd::invalid_argument\fP If the istream is not good()\&. 
+.br
+\fIstd::invalid_argument\fP If in fails to read the \fBShader\fP source\&. 
+.br
+\fIstd::invalid_argument\fP If the given input stream is invalid\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&. 
+.RE
+.PP
+
+.SS "gla::Shader::Shader (\fBShaderType\fP type, std::istream && in)"
+
+.PP
+Constructs and compiles a new \fBShader\fP object of given type\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the given \fBShaderType\fP is invalid\&. 
+.br
+\fIstd::runtime_error\fP If OpenGL failed to create a \fBShader\fP object\&. 
+.br
+\fIstd::invalid_argument\fP If the istream is not good()\&. 
+.br
+\fIstd::invalid_argument\fP If in fails to read the \fBShader\fP source\&. 
+.br
+\fIstd::invalid_argument\fP If the given input stream is invalid\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&. 
+.RE
+.PP
+
+.SS "gla::Shader::Shader (Shader && other)"
+
+.SS "gla::Shader::Shader (const Shader & other)\fR [delete]\fP"
+
+.SS "gla::Shader::~Shader ()\fR [noexcept]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void gla::Shader::_check ()\fR [protected]\fP"
+
+.SS "void gla::Shader::_delete ()\fR [protected]\fP"
+
+.SS "void gla::Shader::_ensure ()\fR [protected]\fP"
+
+.SS "std::string gla::Shader::_getError ()\fR [protected]\fP"
+
+.SS "void gla::Shader::compile (const char * src)"
+
+.PP
+Compiles the \fBShader\fP with the given source\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fIstd::logic_error\fP If the current \fBShader\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIsrc\fP Null terminated c-style string to compile\&. 
+.RE
+.PP
+
+.SS "void gla::Shader::compile (const std::string & str)"
+
+.PP
+Compiles the \fBShader\fP with the given source\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP If the given input stream is invalid\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fIstd::logic_error\fP If the current \fBShader\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP Source to compile\&. 
+.RE
+.PP
+
+.SS "void gla::Shader::compile (std::istream && in)"
+
+.PP
+Compiles the \fBShader\fP with the given source input stream\&. 
+.PP
+\fBNote\fP
+.RS 4
+Reads the entire stream and compiles it\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP If the istream is not good()\&. 
+.br
+\fIstd::invalid_argument\fP If in fails to read the \fBShader\fP source\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fIstd::logic_error\fP If the current \fBShader\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIin\fP Input stream to compile\&. 
+.RE
+.PP
+
+.SS "void gla::Shader::compile (std::istream & in)"
+
+.PP
+Compiles the \fBShader\fP with the given source input stream\&. 
+.PP
+\fBNote\fP
+.RS 4
+Reads the entire stream and compiles it\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP If the istream is not good()\&. 
+.br
+\fIstd::invalid_argument\fP If in fails to read the \fBShader\fP source\&. 
+.br
+\fIstd::invalid_argument\fP If the \fBShader\fP source is NULL\&. 
+.br
+\fIstd::logic_error\fP If the current \fBShader\fP object does not exist (\fBreset()\fP is recommended to return to a valid state)\&. 
+.br
+\fI\fBgla::ShaderCompileError\fP\fP If the \fBShader\fP fails to compile\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIin\fP Input stream to compile\&. 
+.RE
+.PP
+
+.SS "bool gla::Shader::compiled () const\fR [inline]\fP"
+
+.PP
+Gets if the \fBShader\fP has been successfully compiled\&. 
+.SS "\fBShaderType\fP gla::Shader::getType () const\fR [inline]\fP"
+
+.PP
+Get the type of the \fBShader\fP\&. 
+.SS "\fBShader\fP & gla::Shader::operator= (const \fBShader\fP & other)\fR [delete]\fP"
+
+.SS "\fBShader\fP & gla::Shader::operator= (\fBShader\fP && other)"
+
+.SS "void gla::Shader::reset ()"
+
+.PP
+Resets the \fBShader\fP to an empty state\&. 
+.PP
+\fBNote\fP
+.RS 4
+Reset creates an entirely new \fBShader\fP object of the current type and therefore can be used to get a valid State as long as OpenGL doesn't fail to create a new \fBShader\fP object\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If OpenGL failed to create a new \fBShader\fP object\&. 
+.RE
+.PP
+
+.SH "Field Documentation"
+.PP 
+.SS "bool gla::Shader::_compiled = false\fR [protected]\fP"
+
+.SS "unsigned int gla::Shader::_id = 0\fR [protected]\fP"
+
+.SS "\fBShaderType\fP gla::Shader::_type\fR [protected]\fP"
+
+.SS "friend gla::Shader::Program"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

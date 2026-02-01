@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  1 FEB 2026 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  1 FEB 2026 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1058,7 +1058,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 225.
- (d4/d71/md_inc_2_e_g_l_2mainpage.tex
+ (d8/d0d/md_inc_2_g_l_a_2mainpage.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 18.66588pt on input line 1.
@@ -1094,7 +1094,7 @@ Chapter 6.
 
 ]
 Chapter 7.
-(dir_d0e58c9a32265e58c2e221b88a397c65.tex
+(dir_6d66fef564e45ed0e46258a3533de6dc.tex
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
 .
 
@@ -1108,7 +1108,7 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 
 ]
 Chapter 8.
-(d1/d73/namespaceegl.tex
+(d7/df0/namespacegla.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 9.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
@@ -1192,7 +1192,7 @@ Underfull \hbox (badness 10000) detected at line 782
 
 ]
 Chapter 9.
-(d4/da7/structegl_1_1__uniform_data.tex) (d3/d66/classegl_1_1_buffer.tex
+(d6/de4/structgla_1_1__uniform_data.tex) (d5/ddd/classgla_1_1_buffer.tex
 [27]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
 (Font)              Font shape `TS1/phv/m/sl' tried instead on input line 39.
@@ -1218,7 +1218,7 @@ Underfull \hbox (badness 10000) detected at line 208
 [][][]
  []
 
-[31] [32] [33]) (d6/d3a/classegl_1_1_program.tex [34] [35] [36] [37] [38]
+[31] [32] [33]) (d0/dac/classgla_1_1_program.tex [34] [35] [36] [37] [38]
 [39]
 Underfull \hbox (badness 10000) detected at line 264
 [][][]
@@ -1302,24 +1302,24 @@ Underfull \hbox (badness 10000) detected at line 1523
 [][][]
  []
 
-[63]) (d0/d13/classegl_1_1_program_link_error.tex <./d0/d13/classegl_1_1_progra
+[63]) (dc/dff/classgla_1_1_program_link_error.tex <./dc/dff/classgla_1_1_progra
 m_link_error.pdf>
-<d0/d13/classegl_1_1_program_link_error.pdf, id=4449, 501.875pt x 279.0425pt>
-File: d0/d13/classegl_1_1_program_link_error.pdf Graphic file (type pdf)
-<use d0/d13/classegl_1_1_program_link_error.pdf>
-Package pdftex.def Info: d0/d13/classegl_1_1_program_link_error.pdf  used on in
+<dc/dff/classgla_1_1_program_link_error.pdf, id=4449, 501.875pt x 279.0425pt>
+File: dc/dff/classgla_1_1_program_link_error.pdf Graphic file (type pdf)
+<use dc/dff/classgla_1_1_program_link_error.pdf>
+Package pdftex.def Info: dc/dff/classgla_1_1_program_link_error.pdf  used on in
 put line 15.
 (pdftex.def)             Requested size: 102.34897pt x 56.9055pt.
- [64]) (d5/d5e/classegl_1_1_program_validate_error.tex <./d5/d5e/classegl_1_1_p
+ [64]) (d5/d11/classgla_1_1_program_validate_error.tex <./d5/d11/classgla_1_1_p
 rogram_validate_error.pdf>
-<d5/d5e/classegl_1_1_program_validate_error.pdf, id=4475, 501.875pt x 240.9pt>
-File: d5/d5e/classegl_1_1_program_validate_error.pdf Graphic file (type pdf)
-<use d5/d5e/classegl_1_1_program_validate_error.pdf>
-Package pdftex.def Info: d5/d5e/classegl_1_1_program_validate_error.pdf  used o
+<d5/d11/classgla_1_1_program_validate_error.pdf, id=4475, 501.875pt x 240.9pt>
+File: d5/d11/classgla_1_1_program_validate_error.pdf Graphic file (type pdf)
+<use d5/d11/classgla_1_1_program_validate_error.pdf>
+Package pdftex.def Info: d5/d11/classgla_1_1_program_validate_error.pdf  used o
 n input line 15.
 (pdftex.def)             Requested size: 118.55327pt x 56.9055pt.
  [65])
-(db/de5/classegl_1_1_shader.tex [66]
+(d1/dc3/classgla_1_1_shader.tex [66]
 Underfull \hbox (badness 10000) detected at line 81
 [][][]
  []
@@ -1344,19 +1344,19 @@ Underfull \hbox (badness 10000) detected at line 414
 [][][]
  []
 
-) (d7/d26/classegl_1_1_shader_compile_error.tex <./d7/d26/classegl_1_1_shader_c
+) (d8/d03/classgla_1_1_shader_compile_error.tex <./d8/d03/classgla_1_1_shader_c
 ompile_error.pdf>
-<d7/d26/classegl_1_1_shader_compile_error.pdf, id=5251, 501.875pt x 252.945pt>
-File: d7/d26/classegl_1_1_shader_compile_error.pdf Graphic file (type pdf)
-<use d7/d26/classegl_1_1_shader_compile_error.pdf>
-Package pdftex.def Info: d7/d26/classegl_1_1_shader_compile_error.pdf  used on 
+<d8/d03/classgla_1_1_shader_compile_error.pdf, id=5251, 501.875pt x 252.945pt>
+File: d8/d03/classgla_1_1_shader_compile_error.pdf Graphic file (type pdf)
+<use d8/d03/classgla_1_1_shader_compile_error.pdf>
+Package pdftex.def Info: d8/d03/classgla_1_1_shader_compile_error.pdf  used on 
 input line 15.
 (pdftex.def)             Requested size: 112.90167pt x 56.9055pt.
- [73]) (d1/dba/classegl_1_1_program_1_1_uniform_proxy.tex
+ [73]) (d7/d71/classgla_1_1_program_1_1_uniform_proxy.tex
 [74] [75] [76] [77] [78] [79])
-(da/d64/classegl_1_1_program_1_1_uniform_proxy_const.tex [80] [81] [82]
-[83]) (d0/def/classegl_1_1_vertex_buffer.tex)
-(d2/d41/classegl_1_1_window_context.tex [84]
+(da/de1/classgla_1_1_program_1_1_uniform_proxy_const.tex [80] [81] [82]
+[83]) (dc/d63/classgla_1_1_vertex_buffer.tex)
+(d8/d3c/classgla_1_1_window_context.tex [84]
 Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
@@ -1421,12 +1421,12 @@ L3 programming layer <2025-12-29>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: A641E7D4644CF52998033215A809B196;75425.
+(rerunfilecheck)             Checksum: C6C7A1E79F4126363B5ADB7C42A40288;75425.
  ) 
 Here is how much of TeX's memory you used:
  22554 strings out of 467870
  434839 string characters out of 5418355
- 928090 words of memory out of 5000000
+ 927167 words of memory out of 5000000
  50009 multiletter control sequences out of 15000+600000
  686445 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1445,7 +1445,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Tommy/A
 ppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/Tom
 my/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/
 Tommy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (119 pages, 1162416 bytes).
+Output written on refman.pdf (119 pages, 1162607 bytes).
 PDF statistics:
  7891 PDF objects out of 8907 (max. 8388607)
  971 named destinations out of 1000 (max. 500000)

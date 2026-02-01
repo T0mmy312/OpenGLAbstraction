@@ -1,0 +1,171 @@
+.TH "gla::WindowContext" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gla::WindowContext \- An abstract class to contain an window based application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <windowContext\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWindowContext\fP (int width, int height, const char *windowName)"
+.br
+.RI "Construct a new Window Context object with given height, width and name\&. "
+.ti -1c
+.RI "\fBWindowContext\fP (WindowContext &&other)"
+.br
+.ti -1c
+.RI "\fBWindowContext\fP (const WindowContext &other)=delete"
+.br
+.ti -1c
+.RI "\fB~WindowContext\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBrun\fP ()=0"
+.br
+.RI "Virtual run method to overload when implementing a child class\&. "
+.ti -1c
+.RI "\fBWindowContext\fP & \fBoperator=\fP (\fBWindowContext\fP &&other)"
+.br
+.ti -1c
+.RI "\fBWindowContext\fP & \fBoperator=\fP (const \fBWindowContext\fP &other)=delete"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBuseContext\fP ()"
+.br
+.RI "Makes the owned window the current context\&. "
+.ti -1c
+.RI "bool \fBshouldClose\fP ()"
+.br
+.RI "Checks if the Window should close\&. "
+.ti -1c
+.RI "void \fBswapBuffers\fP ()"
+.br
+.RI "Swaps the display buffers\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "GLFWwindow * \fBwindow\fP = NULL"
+.br
+.RI "GLFW window handle for low level GLFW access\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+An abstract class to contain an window based application\&. 
+
+Instantiates a window in the constructor using GLFW and destroys it once it goes out of scope\&. That window can be bound and used in the child class in the \fBWindowContext::run\fP method implementation containing the setup and rendering loop\&.
+
+.PP
+\fBNote\fP
+.RS 4
+Calling useContext is recomended in run to ensure the local context is used\&. 
+
+.PP
+\fBgla::WindowContext\fP is not thread safe and may only be used on the main thread\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gla::WindowContext::WindowContext (int width, int height, const char * windowName)"
+
+.PP
+Construct a new Window Context object with given height, width and name\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If GLFW could not create a Window\&. 
+.br
+\fIstd::runtime_error\fP If the GLFW Window is invalid\&. 
+.br
+\fIstd::runtime_error\fP If GLEW could not be initialized\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP Width of the Window in pixels\&. 
+.br
+\fIheight\fP Height of the Window in pixels\&. 
+.br
+\fIwindowName\fP C-style NULL terminated string window name\&. 
+.RE
+.PP
+
+.SS "gla::WindowContext::WindowContext (WindowContext && other)"
+
+.SS "gla::WindowContext::WindowContext (const WindowContext & other)\fR [delete]\fP"
+
+.SS "gla::WindowContext::~WindowContext ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBWindowContext\fP & gla::WindowContext::operator= (const \fBWindowContext\fP & other)\fR [delete]\fP"
+
+.SS "\fBWindowContext\fP & gla::WindowContext::operator= (\fBWindowContext\fP && other)"
+
+.SS "virtual void gla::WindowContext::run ()\fR [pure virtual]\fP"
+
+.PP
+Virtual run method to overload when implementing a child class\&. Virtual run method to contain the rendering and window handling for your Application\&.
+
+.PP
+\fBNote\fP
+.RS 4
+Calling useContext is recomended in run to ensure the local context is used\&. 
+.RE
+.PP
+
+.SS "bool gla::WindowContext::shouldClose ()\fR [protected]\fP"
+
+.PP
+Checks if the Window should close\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If the GLFW Window is invalid\&. 
+.RE
+.PP
+
+.SS "void gla::WindowContext::swapBuffers ()\fR [protected]\fP"
+
+.PP
+Swaps the display buffers\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If the GLFW Window is invalid\&. 
+.RE
+.PP
+
+.SS "void gla::WindowContext::useContext ()\fR [protected]\fP"
+
+.PP
+Makes the owned window the current context\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP If the GLFW window is invalid\&. 
+.RE
+.PP
+
+.SH "Field Documentation"
+.PP 
+.SS "GLFWwindow* gla::WindowContext::window = NULL\fR [protected]\fP"
+
+.PP
+GLFW window handle for low level GLFW access\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

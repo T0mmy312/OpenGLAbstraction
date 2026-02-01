@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['window_0',['window',['../d2/d41/classegl_1_1_window_context.html#a7fa27fb25bb6fc261b2f4f65d7d202c2',1,'egl::WindowContext']]],
-  ['windowcontext_1',['WindowContext',['../d2/d41/classegl_1_1_window_context.html',1,'egl::WindowContext'],['../d2/d41/classegl_1_1_window_context.html#a9d294876b495bce3b21b8c79c6f46707',1,'egl::WindowContext::WindowContext(int width, int height, const char *windowName)'],['../d2/d41/classegl_1_1_window_context.html#a76f4c3976c3f7d53a4206a5eb950612e',1,'egl::WindowContext::WindowContext(WindowContext &amp;&amp;other)'],['../d2/d41/classegl_1_1_window_context.html#af44e5104f4b045da49824cbb5c87d5df',1,'egl::WindowContext::WindowContext(const WindowContext &amp;other)=delete']]],
+  ['window_0',['window',['../d8/d3c/classgla_1_1_window_context.html#a91ef69eb197ce203196779b51c94cb4b',1,'gla::WindowContext']]],
+  ['windowcontext_1',['WindowContext',['../d8/d3c/classgla_1_1_window_context.html',1,'gla::WindowContext'],['../d8/d3c/classgla_1_1_window_context.html#abfd1897736415f3c29033c896648e161',1,'gla::WindowContext::WindowContext(int width, int height, const char *windowName)'],['../d8/d3c/classgla_1_1_window_context.html#aa1655ad08baf94eafc0d202b2f57e1bf',1,'gla::WindowContext::WindowContext(WindowContext &amp;&amp;other)'],['../d8/d3c/classgla_1_1_window_context.html#a9600401e78710cb91fb29ee46e9c258d',1,'gla::WindowContext::WindowContext(const WindowContext &amp;other)=delete']]],
   ['windowcontext_2eh_2',['windowContext.h',['../d9/dcf/window_context_8h.html',1,'']]],
-  ['write_3',['Write',['../d1/d73/namespaceegl.html#a79ed3ca25fe4c77c1ebacb3f1283d4b2a1129c0e4d43f2d121652a7302712cff6',1,'egl']]]
+  ['write_3',['Write',['../d7/df0/namespacegla.html#ae8a5a47275ed0181bb48c170596019b6a1129c0e4d43f2d121652a7302712cff6',1,'gla']]]
 ];

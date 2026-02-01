@@ -1,0 +1,410 @@
+\doxysection{gla::\+Buffer Class Reference}
+\hypertarget{classgla_1_1_buffer}{}\label{classgla_1_1_buffer}\index{gla::Buffer@{gla::Buffer}}
+
+
+{\ttfamily \+\#include $<$buffer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} ()=delete
+\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_a68829de5745ec5a0de0c951d6411f2ed}{Buffer}} (\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classgla_1_1_buffer}{Buffer} object of given type. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_aaf51e73d7f01a657e269980dd73f76ea}{Buffer}} (Buffer \&\&other)
+\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_aee1fe74d1c803f53f9ab65eb826e8ee6}{Buffer}} (const Buffer \&other)=delete
+\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_aebd78e416c692f9ac2829d8f492f37e5}{\texorpdfstring{$\sim$}{\string~}\+Buffer}} () noexcept
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_a38d7676d6b21277a32a31a3221354ab8}{bind}} () const
+\begin{DoxyCompactList}\small\item\em Binds the \doxylink{classgla_1_1_buffer}{Buffer} to the appropriate binding point. \end{DoxyCompactList}\item 
+int64\+\_\+t \doxymbox{\hyperlink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the size in bytes of the \doxylink{classgla_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} \doxymbox{\hyperlink{classgla_1_1_buffer_afad8fb7b6e447dc205cf56b8667f907b}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type of the \doxylink{classgla_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_a746b579a3c423cac13dc97654f50533a}{set\+Data}} (int64\+\_\+t \doxymbox{\hyperlink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}}, const void \texorpdfstring{$\ast$}{*}data, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}} usage)
+\begin{DoxyCompactList}\small\item\em Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with a given usage. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{classgla_1_1_buffer_a719515fd9a4147ce2afea5066ddcefba}{set\+Data}} (std::\+vector$<$ T $>$ data, \doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}} usage)
+\begin{DoxyCompactList}\small\item\em Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with a given usage. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_afa948c43bf902ffaa8ec9d02ad5794f7}{set\+Storage}} (int64\+\_\+t \doxymbox{\hyperlink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}}, const void \texorpdfstring{$\ast$}{*}data, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} flags)
+\begin{DoxyCompactList}\small\item\em Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with given \doxylink{classgla_1_1_buffer}{Buffer} flags. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{classgla_1_1_buffer_a0b1ae8d7dcc60ef98ce1fb96f8e339ec}{set\+Storage}} (std::\+vector$<$ T $>$ data, \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} flags)
+\begin{DoxyCompactList}\small\item\em Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with given \doxylink{classgla_1_1_buffer}{Buffer} flags. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_a16213a1241af774f07b73391b49f04b8}{set\+Sub\+Data}} (int64\+\_\+t offset, int64\+\_\+t \doxymbox{\hyperlink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}}, const void \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Set a subset of the data in the \doxylink{classgla_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_a712acdeee1724d034fc4330b2b001c27}{get\+Sub\+Data}} (int64\+\_\+t offset, int64\+\_\+t \doxymbox{\hyperlink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}}, void \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Get a subset of the data in the \doxylink{classgla_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classgla_1_1_buffer_a3e633b091c59216eebfd7726303d2140}{map}} (int64\+\_\+t offset, int64\+\_\+t length, \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} access)
+\begin{DoxyCompactList}\small\item\em Map a part of the \doxylink{classgla_1_1_buffer}{Buffer} data to the client\textquotesingle{}s address space. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_a20c9e6fbf590f13b4512b3732934a484}{unmap}} ()
+\begin{DoxyCompactList}\small\item\em Unmaps the \doxylink{classgla_1_1_buffer}{Buffer}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \& \doxymbox{\hyperlink{classgla_1_1_buffer_a074a95f359501da8dab624d69c9a5c4b}{operator=}} (\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \&\&other)
+\item 
+\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \& \doxymbox{\hyperlink{classgla_1_1_buffer_aca3028600008ae238978727bb495e857}{operator=}} (const \doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \&other)=delete
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_ab7cc2bf1c143381c564a2032b6402932}{\+\_\+delete}} ()
+\item 
+void \doxymbox{\hyperlink{classgla_1_1_buffer_afc23ea8b57a6ad8c0d7e6ac855869bf6}{\+\_\+check}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \doxymbox{\hyperlink{classgla_1_1_buffer_adccd83891b7632f2cc3cd318787c840f}{\+\_\+id}} = 0
+\item 
+bool \doxymbox{\hyperlink{classgla_1_1_buffer_a7048d098b5df7a5f61bd47024f35e943}{\+\_\+mapped}} = false
+\item 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} \doxymbox{\hyperlink{classgla_1_1_buffer_adb760815cff363427258dff2fb53662b}{\+\_\+map\+Usage}} = \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a6adf97f83acf6453d4a6a4b1070f3754}{Map\+Usage::\+\+None}}
+\item 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} \doxymbox{\hyperlink{classgla_1_1_buffer_a17d674de78544e51b59dd908d59292a2}{\+\_\+flags}} = \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da6adf97f83acf6453d4a6a4b1070f3754}{Buffer\+Flag::\+\+None}}
+\item 
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} \doxymbox{\hyperlink{classgla_1_1_buffer_a61ddc1f032f58ea03167b0848f4b40c1}{\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classgla_1_1_buffer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}\index{gla::Buffer@{gla::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0} 
+gla::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_buffer_a68829de5745ec5a0de0c951d6411f2ed}\index{gla::Buffer@{gla::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a68829de5745ec5a0de0c951d6411f2ed} 
+gla::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classgla_1_1_buffer}{Buffer} object of given type. 
+
+\Hypertarget{classgla_1_1_buffer_aaf51e73d7f01a657e269980dd73f76ea}\index{gla::Buffer@{gla::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_aaf51e73d7f01a657e269980dd73f76ea} 
+gla::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}\item[{Buffer \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgla_1_1_buffer_aee1fe74d1c803f53f9ab65eb826e8ee6}\index{gla::Buffer@{gla::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_aee1fe74d1c803f53f9ab65eb826e8ee6} 
+gla::\+\+Buffer::\+\+Buffer (\begin{DoxyParamCaption}\item[{const Buffer \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_buffer_aebd78e416c692f9ac2829d8f492f37e5}\index{gla::Buffer@{gla::Buffer}!````~Buffer@{\texorpdfstring{$\sim$}{\string~}Buffer}}
+\index{````~Buffer@{\texorpdfstring{$\sim$}{\string~}Buffer}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Buffer()}{\string~Buffer()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_aebd78e416c692f9ac2829d8f492f37e5} 
+gla::\+\+Buffer::\+\texorpdfstring{$\sim$}{\string~}\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classgla_1_1_buffer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgla_1_1_buffer_afc23ea8b57a6ad8c0d7e6ac855869bf6}\index{gla::Buffer@{gla::Buffer}!\_check@{\_check}}
+\index{\_check@{\_check}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_check()}{\_check()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_afc23ea8b57a6ad8c0d7e6ac855869bf6} 
+void gla::\+\+Buffer::\+\+\_\+check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_buffer_ab7cc2bf1c143381c564a2032b6402932}\index{gla::Buffer@{gla::Buffer}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_ab7cc2bf1c143381c564a2032b6402932} 
+void gla::\+\+Buffer::\+\+\_\+delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_buffer_a38d7676d6b21277a32a31a3221354ab8}\index{gla::Buffer@{gla::Buffer}!bind@{bind}}
+\index{bind@{bind}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a38d7676d6b21277a32a31a3221354ab8} 
+void gla::\+\+Buffer::\+bind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Binds the \doxylink{classgla_1_1_buffer}{Buffer} to the appropriate binding point. 
+
+\Hypertarget{classgla_1_1_buffer_a712acdeee1724d034fc4330b2b001c27}\index{gla::Buffer@{gla::Buffer}!getSubData@{getSubData}}
+\index{getSubData@{getSubData}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{getSubData()}{getSubData()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a712acdeee1724d034fc4330b2b001c27} 
+void gla::\+\+Buffer::\+get\+Sub\+Data (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset}{, }\item[{int64\+\_\+t}]{size}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Get a subset of the data in the \doxylink{classgla_1_1_buffer}{Buffer}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If offset is negativ \\
+\hline
+{\em std::\+runtime\+\_\+error} & If size is negativ \\
+\hline
+{\em std::\+runtime\+\_\+error} & If offset + size is greater than the size of the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the \doxylink{classgla_1_1_buffer}{Buffer} is mapped and \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4}{Map\+Usage::\+\+Persistent} is not set\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset of the start of the subset to get in bytes \\
+\hline
+{\em \doxylink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}} & The size of the subset to get in bytes \\
+\hline
+{\em data} & The destination of the data of the subset (must be at least size bytes big) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_buffer_afad8fb7b6e447dc205cf56b8667f907b}\index{gla::Buffer@{gla::Buffer}!getType@{getType}}
+\index{getType@{getType}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_afad8fb7b6e447dc205cf56b8667f907b} 
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} gla::\+\+Buffer::\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the Type of the \doxylink{classgla_1_1_buffer}{Buffer}. 
+
+\Hypertarget{classgla_1_1_buffer_a3e633b091c59216eebfd7726303d2140}\index{gla::Buffer@{gla::Buffer}!map@{map}}
+\index{map@{map}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a3e633b091c59216eebfd7726303d2140} 
+void \texorpdfstring{$\ast$}{*} gla::\+\+Buffer::\+map (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset}{, }\item[{int64\+\_\+t}]{length}{, }\item[{\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}}}]{access}{}\end{DoxyParamCaption})}
+
+
+
+Map a part of the \doxylink{classgla_1_1_buffer}{Buffer} data to the client\textquotesingle{}s address space. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If the \doxylink{classgla_1_1_buffer}{Buffer} was allready mapped \\
+\hline
+{\em std::\+runtime\+\_\+error} & If length is less than or equal to 0 \\
+\hline
+{\em std::\+runtime\+\_\+error} & If offset is less than 0 \\
+\hline
+{\em std::\+runtime\+\_\+error} & If length + offset is greater than the size of the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage} is invalid \\
+\hline
+{\em std::\+runtime\+\_\+error} & If \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4}{Map\+Usage::\+\+Persistent} was requested without \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144da771e3ed8a1ecc75a7cbe5cae48bcbac0}{Buffer\+Flag::\+\+Map\+Persistent} being set through set\+Storage \\
+\hline
+{\em std::\+runtime\+\_\+error} & If mapping failed and a nullptr was returned\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset of the map range into the \doxylink{classgla_1_1_buffer}{Buffer} in bytes \\
+\hline
+{\em length} & The length of the map range in the \doxylink{classgla_1_1_buffer}{Buffer} in bytes \\
+\hline
+{\em access} & The usage of the mapped range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the beginning of the mapped range 
+\end{DoxyReturn}
+\Hypertarget{classgla_1_1_buffer_a074a95f359501da8dab624d69c9a5c4b}\index{gla::Buffer@{gla::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a074a95f359501da8dab624d69c9a5c4b} 
+\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \& gla::\+\+Buffer::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \&\&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgla_1_1_buffer_aca3028600008ae238978727bb495e857}\index{gla::Buffer@{gla::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_aca3028600008ae238978727bb495e857} 
+\doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \& gla::\+\+Buffer::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classgla_1_1_buffer_a2ed17f7bfbe557c7624777585e0cfbe0}{Buffer}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classgla_1_1_buffer_a746b579a3c423cac13dc97654f50533a}\index{gla::Buffer@{gla::Buffer}!setData@{setData}}
+\index{setData@{setData}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a746b579a3c423cac13dc97654f50533a} 
+void gla::\+\+Buffer::\+set\+Data (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{size}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}}}]{usage}{}\end{DoxyParamCaption})}
+
+
+
+Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with a given usage. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If size is negative\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}} & The size of the data in bytes \\
+\hline
+{\em data} & The data to store in the \doxylink{classgla_1_1_buffer}{Buffer} (must have at least size bytes of data) \\
+\hline
+{\em usage} & The usage hint of the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_buffer_a719515fd9a4147ce2afea5066ddcefba}\index{gla::Buffer@{gla::Buffer}!setData@{setData}}
+\index{setData@{setData}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a719515fd9a4147ce2afea5066ddcefba} 
+template$<$typename T$>$ \\
+void gla::\+\+Buffer::\+set\+Data (\begin{DoxyParamCaption}\item[{std::\+vector$<$ T $>$}]{data}{, }\item[{\doxymbox{\hyperlink{namespacegla_ab1275622d3bb4444f2d84c4ddec786d5}{Buffer\+Usage}}}]{usage}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with a given usage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to store in the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+{\em usage} & The usage hint of the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_buffer_afa948c43bf902ffaa8ec9d02ad5794f7}\index{gla::Buffer@{gla::Buffer}!setStorage@{setStorage}}
+\index{setStorage@{setStorage}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{setStorage()}{setStorage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_afa948c43bf902ffaa8ec9d02ad5794f7} 
+void gla::\+\+Buffer::\+set\+Storage (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{size}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{flags}{}\end{DoxyParamCaption})}
+
+
+
+Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with given \doxylink{classgla_1_1_buffer}{Buffer} flags. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If size is not greater than 0 \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} combination is invalid\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}} & The size of the data in bytes \\
+\hline
+{\em data} & The data to store in the \doxylink{classgla_1_1_buffer}{Buffer} (must have at least size bytes of data) \\
+\hline
+{\em flags} & The \doxylink{classgla_1_1_buffer}{Buffer} usage flags \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_buffer_a0b1ae8d7dcc60ef98ce1fb96f8e339ec}\index{gla::Buffer@{gla::Buffer}!setStorage@{setStorage}}
+\index{setStorage@{setStorage}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{setStorage()}{setStorage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a0b1ae8d7dcc60ef98ce1fb96f8e339ec} 
+template$<$typename T$>$ \\
+void gla::\+\+Buffer::\+set\+Storage (\begin{DoxyParamCaption}\item[{std::\+vector$<$ T $>$}]{data}{, }\item[{\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}}}]{flags}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the data of the \doxylink{classgla_1_1_buffer}{Buffer} with given \doxylink{classgla_1_1_buffer}{Buffer} flags. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If size is not greater than 0 \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the \doxylink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag} combination is invalid\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to store in the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+{\em flags} & The \doxylink{classgla_1_1_buffer}{Buffer} usage flags \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_buffer_a16213a1241af774f07b73391b49f04b8}\index{gla::Buffer@{gla::Buffer}!setSubData@{setSubData}}
+\index{setSubData@{setSubData}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{setSubData()}{setSubData()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a16213a1241af774f07b73391b49f04b8} 
+void gla::\+\+Buffer::\+set\+Sub\+Data (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset}{, }\item[{int64\+\_\+t}]{size}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Set a subset of the data in the \doxylink{classgla_1_1_buffer}{Buffer}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If offset is negativ \\
+\hline
+{\em std::\+runtime\+\_\+error} & If size is negativ \\
+\hline
+{\em std::\+runtime\+\_\+error} & If offset + size is greater than the size of the \doxylink{classgla_1_1_buffer}{Buffer} \\
+\hline
+{\em std::\+runtime\+\_\+error} & If the \doxylink{classgla_1_1_buffer}{Buffer} is mapped and \doxylink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a5fe7b9358c9cb1b9eaa8d5aec000def4}{Map\+Usage::\+\+Persistent} is not set\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset of the start of the subset to set in bytes \\
+\hline
+{\em \doxylink{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}{size}} & The size of the subset to set in bytes \\
+\hline
+{\em data} & The data of the subset (must have at least size bytes of data) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b}\index{gla::Buffer@{gla::Buffer}!size@{size}}
+\index{size@{size}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_afc25f58178ff8fd42c3e4aff5688447b} 
+int64\+\_\+t gla::\+\+Buffer::\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns the size in bytes of the \doxylink{classgla_1_1_buffer}{Buffer}. 
+
+\Hypertarget{classgla_1_1_buffer_a20c9e6fbf590f13b4512b3732934a484}\index{gla::Buffer@{gla::Buffer}!unmap@{unmap}}
+\index{unmap@{unmap}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{unmap()}{unmap()}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a20c9e6fbf590f13b4512b3732934a484} 
+void gla::\+\+Buffer::\+unmap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Unmaps the \doxylink{classgla_1_1_buffer}{Buffer}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & If Open\+GL signalled data corruption \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-variable-members}
+\Hypertarget{classgla_1_1_buffer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classgla_1_1_buffer_a17d674de78544e51b59dd908d59292a2}\index{gla::Buffer@{gla::Buffer}!\_flags@{\_flags}}
+\index{\_flags@{\_flags}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_flags}{\_flags}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a17d674de78544e51b59dd908d59292a2} 
+\doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144d}{Buffer\+Flag}} gla::\+\+Buffer::\+\+\_\+flags = \doxymbox{\hyperlink{namespacegla_a350bd3821a2aee5521c6872af830144da6adf97f83acf6453d4a6a4b1070f3754}{Buffer\+Flag::\+\+None}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_buffer_adccd83891b7632f2cc3cd318787c840f}\index{gla::Buffer@{gla::Buffer}!\_id@{\_id}}
+\index{\_id@{\_id}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_adccd83891b7632f2cc3cd318787c840f} 
+unsigned int gla::\+\+Buffer::\+\+\_\+id = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_buffer_a7048d098b5df7a5f61bd47024f35e943}\index{gla::Buffer@{gla::Buffer}!\_mapped@{\_mapped}}
+\index{\_mapped@{\_mapped}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_mapped}{\_mapped}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a7048d098b5df7a5f61bd47024f35e943} 
+bool gla::\+\+Buffer::\+\+\_\+mapped = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_buffer_adb760815cff363427258dff2fb53662b}\index{gla::Buffer@{gla::Buffer}!\_mapUsage@{\_mapUsage}}
+\index{\_mapUsage@{\_mapUsage}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_mapUsage}{\_mapUsage}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_adb760815cff363427258dff2fb53662b} 
+\doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6}{Map\+Usage}} gla::\+\+Buffer::\+\+\_\+map\+Usage = \doxymbox{\hyperlink{namespacegla_ae8a5a47275ed0181bb48c170596019b6a6adf97f83acf6453d4a6a4b1070f3754}{Map\+Usage::\+\+None}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgla_1_1_buffer_a61ddc1f032f58ea03167b0848f4b40c1}\index{gla::Buffer@{gla::Buffer}!\_type@{\_type}}
+\index{\_type@{\_type}!gla::Buffer@{gla::Buffer}}
+\doxysubsubsection{\texorpdfstring{\_type}{\_type}}
+{\footnotesize\ttfamily \label{classgla_1_1_buffer_a61ddc1f032f58ea03167b0848f4b40c1} 
+\doxymbox{\hyperlink{namespacegla_a7442220d0141215247011f052258ecad}{Buffer\+Type}} gla::\+\+Buffer::\+\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+inc/\+\+GLA/\+\doxymbox{\hyperlink{buffer_8h}{buffer.\+h}}\end{DoxyCompactItemize}

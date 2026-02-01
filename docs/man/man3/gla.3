@@ -1,0 +1,562 @@
+.TH "gla" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gla
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBBuffer\fP"
+.br
+.ti -1c
+.RI "class \fBProgramLinkError\fP"
+.br
+.RI "Exception thrown when \fBProgram\fP linking fails\&. "
+.ti -1c
+.RI "class \fBProgramValidateError\fP"
+.br
+.RI "Exception thrown when \fBProgram\fP validation fails, mainly used in debug builds\&. "
+.ti -1c
+.RI "struct \fB_uniformData\fP"
+.br
+.ti -1c
+.RI "class \fBProgram\fP"
+.br
+.RI "\fBProgram\fP class to abstract OpenGL \fBShader\fP Programs\&. "
+.ti -1c
+.RI "class \fBShaderCompileError\fP"
+.br
+.RI "Exception thrown when \fBShader\fP compilation fails\&. "
+.ti -1c
+.RI "class \fBShader\fP"
+.br
+.RI "\fBShader\fP class to abstract OpenGL Shaders\&. "
+.ti -1c
+.RI "class \fBVertexBuffer\fP"
+.br
+.ti -1c
+.RI "class \fBWindowContext\fP"
+.br
+.RI "An abstract class to contain an window based application\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBgla::_uniformData\fP \fBUniformData\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum class \fBBufferType\fP { \fBArray\fP, \fBAtomicCounter\fP, \fBCopyRead\fP, \fBCopyWrite\fP, \fBDispatchIndirect\fP, \fBDrawIndirect\fP, \fBElementArray\fP, \fBPixelPack\fP, \fBPixelUnpack\fP, \fBQuery\fP, \fBShaderStorage\fP, \fBTexture\fP, \fBTransformFeedback\fP, \fBUniform\fP }"
+.br
+.RI "Enum to indicate the type of \fBBuffer\fP\&. "
+.ti -1c
+.RI "enum class \fBBufferUsage\fP { \fBStreamDraw\fP, \fBStreamRead\fP, \fBStreamCopy\fP, \fBStaticDraw\fP, \fBStaticRead\fP, \fBStaticCopy\fP, \fBDynamicDraw\fP, \fBDynamicRead\fP, \fBDynamicCopy\fP }"
+.br
+.RI "Enum to indicate \fBBuffer\fP Usage\&. "
+.ti -1c
+.RI "enum class \fBMapUsage\fP : uint32_t { \fBNone\fP = 0, \fBRead\fP = 1 << 0, \fBWrite\fP = 1 << 1, \fBPersistent\fP = 1 << 2, \fBCoherent\fP = 1 << 3, \fBInvalidRange\fP = 1 << 4, \fBInvalidateBuffer\fP = 1 << 5, \fBFlushExplicit\fP = 1 << 6, \fBUnsynchronized\fP = 1 << 7 }"
+.br
+.RI "Enum flags to indicate \fBBuffer\fP map usage\&. "
+.ti -1c
+.RI "enum class \fBBufferFlag\fP : uint32_t { \fBNone\fP = 0, \fBDynamicStorage\fP = 1 << 0, \fBMapRead\fP = 1 << 1, \fBMapWrite\fP = 1 << 2, \fBMapPersistent\fP = 1 << 3, \fBMapCoherent\fP = 1 << 4, \fBClientStorage\fP = 1 << 5 }"
+.br
+.RI "Enum falgs for explicit \fBBuffer\fP usage in setStorage\&. "
+.ti -1c
+.RI "enum class \fBShaderType\fP { \fBFragment\fP, \fBVertex\fP, \fBGeometry\fP, \fBTessEvaluation\fP, \fBTessControl\fP, \fBCompute\fP }"
+.br
+.RI "\fBShaderType\fP enum to indicate usage\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMapUsage\fP \fBoperator|\fP (\fBMapUsage\fP a, \fBMapUsage\fP b)"
+.br
+.ti -1c
+.RI "\fBMapUsage\fP \fBoperator&\fP (\fBMapUsage\fP a, \fBMapUsage\fP b)"
+.br
+.ti -1c
+.RI "\fBMapUsage\fP & \fBoperator|=\fP (\fBMapUsage\fP &a, \fBMapUsage\fP b)"
+.br
+.ti -1c
+.RI "\fBBufferFlag\fP \fBoperator|\fP (\fBBufferFlag\fP a, \fBBufferFlag\fP b)"
+.br
+.ti -1c
+.RI "\fBBufferFlag\fP \fBoperator&\fP (\fBBufferFlag\fP a, \fBBufferFlag\fP b)"
+.br
+.ti -1c
+.RI "\fBBufferFlag\fP & \fBoperator|=\fP (\fBBufferFlag\fP &a, \fBBufferFlag\fP b)"
+.br
+.ti -1c
+.RI "unsigned int \fBtoGLenum\fP (\fBBufferType\fP type)"
+.br
+.RI "Converts a \fBBufferType\fP enum into a GLenum\&. "
+.ti -1c
+.RI "unsigned int \fBtoGLenum\fP (\fBBufferUsage\fP usage)"
+.br
+.RI "Converts a \fBBufferUsage\fP enum into a GLenum\&. "
+.ti -1c
+.RI "unsigned int \fBtoGLenum\fP (\fBMapUsage\fP usage)"
+.br
+.RI "Converts a \fBMapUsage\fP enum into a GLenum\&. "
+.ti -1c
+.RI "unsigned int \fBtoGLenum\fP (\fBBufferFlag\fP flag)"
+.br
+.RI "Converts a \fBBufferFlag\fP enum into a GLenum\&. "
+.ti -1c
+.RI "bool \fBvalidateMapUsage\fP (\fBMapUsage\fP usage, std::string &error)"
+.br
+.RI "Checks if the given \fBMapUsage\fP flag combination is valid\&. "
+.ti -1c
+.RI "bool \fBvalidateBufferFlag\fP (\fBBufferFlag\fP flag, std::string &error)"
+.br
+.RI "Checks if the given \fBBufferFlag\fP flag combination is valid\&. "
+.ti -1c
+.RI "const char * \fBglErrorString\fP (unsigned int err)"
+.br
+.RI "Gets a c-style string from from a OpenGL enum\&. "
+.ti -1c
+.RI "void \fBglCheckError\fP (const char *func, const char *file, int line)"
+.br
+.RI "Checks and prints if any OpenGL error has occured\&. "
+.ti -1c
+.RI "constexpr std::string \fBshaderTypeToString\fP (\fBShaderType\fP type)"
+.br
+.RI "Converts the \fBShaderType\fP enum into a std::string\&. "
+.ti -1c
+.RI "unsigned int \fBtoGLenum\fP (\fBShaderType\fP type)"
+.br
+.RI "Converts the \fBShaderType\fP enum into an OpenGL enum\&. "
+.ti -1c
+.RI "bool \fBinitGLFW\fP ()"
+.br
+.RI "Initialize GLFW\&. "
+.ti -1c
+.RI "void \fBterminateGLFW\fP ()"
+.br
+.RI "Terminates GLFW\&. "
+.ti -1c
+.RI "void \fBpollEvents\fP ()"
+.br
+.RI "Polls GLFW events\&. "
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBgla::_uniformData\fP \fBgla::UniformData\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum class \fBgla::BufferFlag\fP : uint32_t\fR [strong]\fP"
+
+.PP
+Enum falgs for explicit \fBBuffer\fP usage in setStorage\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BINone \fP
+.TP
+\f(BIDynamicStorage \fP
+Indicates that the contents of the data store may be updated after creation through calls to glBufferSubData\&. 
+.TP
+\f(BIMapRead \fP
+Indicates that the data store may be mapped by the client for read access and a pointer in the client's address space obtained that may be read from\&. 
+.TP
+\f(BIMapWrite \fP
+Indicates that the data store may be mapped by the client for write access and a pointer in the client's address space obtained that may be written through\&. 
+.TP
+\f(BIMapPersistent \fP
+Indicates that the client may request that the server read from or write to the buffer while it is mapped\&. The client's pointer to the data store remains valid so long as the data store is mapped, even during execution of drawing or dispatch commands\&. 
+.TP
+\f(BIMapCoherent \fP
+Indicates thar shared access to buffers that are simultaneously mapped for client access and are used by the server will be coherent, so long as that mapping is performed using glMapBufferRange\&. 
+.TP
+\f(BIClientStorage \fP
+When all other criteria for the buffer storage allocation are met, this bit may be used by an implementation to determine whether to use storage that is local to the server or to the client to serve as the backing store for the buffer\&. 
+.SS "enum class \fBgla::BufferType\fP\fR [strong]\fP"
+
+.PP
+Enum to indicate the type of \fBBuffer\fP\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIArray \fP
+Vertex attributes\&. 
+.TP
+\f(BIAtomicCounter \fP
+Atomic counter storage\&. 
+.TP
+\f(BICopyRead \fP
+\fBBuffer\fP copy source\&. 
+.TP
+\f(BICopyWrite \fP
+\fBBuffer\fP copy destination\&. 
+.TP
+\f(BIDispatchIndirect \fP
+Indirect compute dispatch commands\&. 
+.TP
+\f(BIDrawIndirect \fP
+Indirect command arguments\&. 
+.TP
+\f(BIElementArray \fP
+Vertex array indices\&. 
+.TP
+\f(BIPixelPack \fP
+Pixel read target\&. 
+.TP
+\f(BIPixelUnpack \fP
+Texture data source\&. 
+.TP
+\f(BIQuery \fP
+Query result buffer\&. 
+.TP
+\f(BIShaderStorage \fP
+Read-write storage for shaders\&. 
+.TP
+\f(BITexture \fP
+Texture data buffer\&. 
+.TP
+\f(BITransformFeedback \fP
+Transform feedback buffer\&. 
+.TP
+\f(BIUniform \fP
+Uniform block storage\&. 
+.SS "enum class \fBgla::BufferUsage\fP\fR [strong]\fP"
+
+.PP
+Enum to indicate \fBBuffer\fP Usage\&. The Usage of a \fBBuffer\fP can be split into two parts as follows:
+
+.PP
+The frequency of usage may be one of these:
+
+.PP
+Stream
+.IP "\(bu" 2
+The data store contents will be modified once and used at most a few times\&.
+.PP
+
+.PP
+Static
+.IP "\(bu" 2
+The data store contents will be modified once and used many times\&.
+.PP
+
+.PP
+Dynamic
+.IP "\(bu" 2
+The data store contents will be modified repeatedly and used many times\&.
+.PP
+
+.PP
+The nature of usage may be one of these:
+
+.PP
+Draw
+.IP "\(bu" 2
+The data store contents are modified by the application, and used as the source for GL drawing and image specification commands\&.
+.PP
+
+.PP
+Read
+.IP "\(bu" 2
+The data store contents are modified by reading data from the GL, and used to return that data when queried by the application\&.
+.PP
+
+.PP
+Copy
+.IP "\(bu" 2
+The data store contents are modified by reading data from the GL, and used as the source for GL drawing and image specification commands\&. 
+.PP
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIStreamDraw \fP
+.TP
+\f(BIStreamRead \fP
+.TP
+\f(BIStreamCopy \fP
+.TP
+\f(BIStaticDraw \fP
+.TP
+\f(BIStaticRead \fP
+.TP
+\f(BIStaticCopy \fP
+.TP
+\f(BIDynamicDraw \fP
+.TP
+\f(BIDynamicRead \fP
+.TP
+\f(BIDynamicCopy \fP
+.SS "enum class \fBgla::MapUsage\fP : uint32_t\fR [strong]\fP"
+
+.PP
+Enum flags to indicate \fBBuffer\fP map usage\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BINone \fP
+.TP
+\f(BIRead \fP
+Indicates that the returned pointer may be used to read buffer object data\&. 
+.TP
+\f(BIWrite \fP
+Indicates that the returned pointer may be used to modify buffer object data\&. 
+.TP
+\f(BIPersistent \fP
+Indicates that the mapping is to be made in a persistent fassion and that the client intends to hold and use the returned pointer during subsequent GL operation\&. 
+.TP
+\f(BICoherent \fP
+Indicates that a persistent mapping is also to be coherent\&. Coherent maps guarantee that the effect of writes to a buffer's data store by either the client or server will eventually become visible to the other without further intervention from the application\&. 
+.TP
+\f(BIInvalidRange \fP
+Indicates that the previous contents of the specified range may be discarded\&. Data within this range are undefined with the exception of subsequently written data\&. 
+.TP
+\f(BIInvalidateBuffer \fP
+Indicates that the previous contents of the entire buffer may be discarded\&. Data within the entire buffer are undefined with the exception of subsequently written data\&. 
+.TP
+\f(BIFlushExplicit \fP
+Indicates that one or more discrete subranges of the mapping may be modified\&. When this flag is set, modifications to each subrange must be explicitly flushed by calling glFlushMappedBufferRange\&. 
+.TP
+\f(BIUnsynchronized \fP
+Indicates that the GL should not attempt to synchronize pending operations on the buffer prior to returning from glMapBufferRange or glMapNamedBufferRange\&. 
+.SS "enum class \fBgla::ShaderType\fP\fR [strong]\fP"
+
+.PP
+\fBShaderType\fP enum to indicate usage\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIFragment \fP
+A \fBShader\fP that is intended to run on the programmable fragment processor\&. 
+.TP
+\f(BIVertex \fP
+A \fBShader\fP that is intended to run on the programmable vertex processor\&. 
+.TP
+\f(BIGeometry \fP
+A \fBShader\fP that is intended to run on the programmable geometry processor\&. 
+.TP
+\f(BITessEvaluation \fP
+A \fBShader\fP that is intended to run on the programmable tessellation processor in the evaluation stage\&. 
+.TP
+\f(BITessControl \fP
+A \fBShader\fP that is intended to run on the programmable tessellation processor in the control stage\&. 
+.TP
+\f(BICompute \fP
+A \fBShader\fP intended to run on the programmable compute processor\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void gla::glCheckError (const char * func, const char * file, int line)"
+
+.PP
+Checks and prints if any OpenGL error has occured\&. Iterates over the OpenGL error flags with glGetError and prints them until no error are found anymore\&.
+
+.PP
+\fBNote\fP
+.RS 4
+Mainly used in the GL_CALL macro in the backend of the Easy OpenGL abstraction\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfunc\fP The line of code that is being checked as a c-style string for debug output 
+.br
+\fIfile\fP The file in which this function was called as a c-style string for debug output 
+.br
+\fIline\fP The line on which this function was called for debug output 
+.RE
+.PP
+
+.SS "const char * gla::glErrorString (unsigned int err)"
+
+.PP
+Gets a c-style string from from a OpenGL enum\&. 
+.PP
+\fBNote\fP
+.RS 4
+Returns "UNKNOWN_ERROR" if the error is not known\&. 
+
+.PP
+Mainly used in the GL_CALL macro in the backend of the Easy OpenGL abstraction\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIerr\fP OpenGL error enum to get the string of 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+c-style NULL terminated string 
+.RE
+.PP
+
+.SS "bool gla::initGLFW ()"
+
+.PP
+Initialize GLFW\&. Sets up error callbacks and calls glfwInit\&.
+
+.PP
+\fBNote\fP
+.RS 4
+\fBgla::initGLFW\fP is not thread safe and may only be called from the main thread\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if GLFW has been successfully initialized\&. 
+.RE
+.PP
+
+.SS "\fBBufferFlag\fP gla::operator& (\fBBufferFlag\fP a, \fBBufferFlag\fP b)\fR [inline]\fP"
+
+.SS "\fBMapUsage\fP gla::operator& (\fBMapUsage\fP a, \fBMapUsage\fP b)\fR [inline]\fP"
+
+.SS "\fBBufferFlag\fP gla::operator| (\fBBufferFlag\fP a, \fBBufferFlag\fP b)\fR [inline]\fP"
+
+.SS "\fBMapUsage\fP gla::operator| (\fBMapUsage\fP a, \fBMapUsage\fP b)\fR [inline]\fP"
+
+.SS "\fBBufferFlag\fP & gla::operator|= (\fBBufferFlag\fP & a, \fBBufferFlag\fP b)\fR [inline]\fP"
+
+.SS "\fBMapUsage\fP & gla::operator|= (\fBMapUsage\fP & a, \fBMapUsage\fP b)\fR [inline]\fP"
+
+.SS "void gla::pollEvents ()"
+
+.PP
+Polls GLFW events\&. 
+.PP
+\fBNote\fP
+.RS 4
+\fBgla::pollEvents\fP is not thread safe and may only be called from the main thread\&. 
+.RE
+.PP
+
+.SS "std::string gla::shaderTypeToString (\fBShaderType\fP type)\fR [constexpr]\fP"
+
+.PP
+Converts the \fBShaderType\fP enum into a std::string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItype\fP The \fBShaderType\fP to convert to a std::string\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The name of the given \fBShaderType\fP (if unknown "INVALID" is returned)\&. 
+.RE
+.PP
+
+.SS "void gla::terminateGLFW ()"
+
+.PP
+Terminates GLFW\&. 
+.PP
+\fBNote\fP
+.RS 4
+\fBgla::terminateGLFW\fP is not thread safe and may only be called from the main thread\&. 
+.RE
+.PP
+
+.SS "unsigned int gla::toGLenum (\fBBufferFlag\fP flag)"
+
+.PP
+Converts a \fBBufferFlag\fP enum into a GLenum\&. 
+.SS "unsigned int gla::toGLenum (\fBBufferType\fP type)"
+
+.PP
+Converts a \fBBufferType\fP enum into a GLenum\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP If the \fBBufferType\fP is invalid\&. 
+.RE
+.PP
+
+.SS "unsigned int gla::toGLenum (\fBBufferUsage\fP usage)"
+
+.PP
+Converts a \fBBufferUsage\fP enum into a GLenum\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP If the \fBBufferUsage\fP is invalid\&. 
+.RE
+.PP
+
+.SS "unsigned int gla::toGLenum (\fBMapUsage\fP usage)"
+
+.PP
+Converts a \fBMapUsage\fP enum into a GLenum\&. 
+.SS "unsigned int gla::toGLenum (\fBShaderType\fP type)"
+
+.PP
+Converts the \fBShaderType\fP enum into an OpenGL enum\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::logic_error\fP If the \fBShaderType\fP is invalid\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fItype\fP The \fBShaderType\fP to convert to a std::string\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The resulting OpenGL enum\&. 
+.RE
+.PP
+
+.SS "bool gla::validateBufferFlag (\fBBufferFlag\fP flag, std::string & error)"
+
+.PP
+Checks if the given \fBBufferFlag\fP flag combination is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP \fBBufferFlag\fP flag combination to check 
+.br
+\fIerror\fP Error string output if the combination is invalid
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the \fBBufferFlag\fP combination is valid 
+.RE
+.PP
+
+.SS "bool gla::validateMapUsage (\fBMapUsage\fP usage, std::string & error)"
+
+.PP
+Checks if the given \fBMapUsage\fP flag combination is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIusage\fP \fBMapUsage\fP flag combination to check 
+.br
+\fIerror\fP Error string output if the combination is invalid
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the \fBMapUsage\fP combination is valid 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.

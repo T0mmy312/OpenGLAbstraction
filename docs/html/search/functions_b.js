@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reset_0',['reset',['../d6/d3a/classegl_1_1_program.html#a0d9bf7750add025ffc566b823e6f76ad',1,'egl::Program::reset()'],['../db/de5/classegl_1_1_shader.html#a2dda7169e2fef7b36a890887a807c18f',1,'egl::Shader::reset()']]],
-  ['run_1',['run',['../d2/d41/classegl_1_1_window_context.html#acd76c03d3bdf79bcdd83e022cdfa1127',1,'egl::WindowContext']]]
+  ['reset_0',['reset',['../d0/dac/classgla_1_1_program.html#abab59908a135680e931c00ffbfd711c1',1,'gla::Program::reset()'],['../d1/dc3/classgla_1_1_shader.html#ac0adaac6e0537834a471049bb86c30e5',1,'gla::Shader::reset()']]],
+  ['run_1',['run',['../d8/d3c/classgla_1_1_window_context.html#abfba43a1a6f8eb445ac2c9dd7deaf0f8',1,'gla::WindowContext']]]
 ];
