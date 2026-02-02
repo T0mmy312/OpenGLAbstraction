@@ -34,7 +34,41 @@ void \doxymbox{\hyperlink{classgla_1_1_window_context_a2807e9c49f62f2e8e2aa52ec5
 bool \doxymbox{\hyperlink{classgla_1_1_window_context_a14e5f7c28370bdf67a5f91332e569143}{should\+Close}} ()
 \begin{DoxyCompactList}\small\item\em Checks if the Window should close. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{classgla_1_1_window_context_ac11855beb1caf71a571bf654319cd4cf}{swap\+Buffers}} ()
-\begin{DoxyCompactList}\small\item\em Swaps the display buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Swaps the display buffers. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga8a950eef1d01e18d2c1a4a4f789f825f}{on\+Resize}} (int width, int height)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_gae274b473c9a03a41b7931cf825c5f1b0}{on\+Close}} ()
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga9e0d915c8f4b9def08319247c8225e2a}{on\+Char}} (unsigned int codepoint)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_gadb385d14c0bcfad0667dba8f49aaa238}{on\+Char\+Mods}} (unsigned int codepoint, int mods)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga5f1508c7ea98589da7ea9b3337327480}{on\+Cursor\+Enter}} (int entered)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga77c86e2445ca775c7966162de6fe7ee9}{on\+Cursor\+Pos}} (double xpos, double ypos)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_gaf95ce01c2a2b512eaba5fa178d8081a8}{on\+Drop}} (int count, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}paths)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga1e47a676976dbf4951a71cd647b3c192}{on\+Framebuffer\+Size}} (int width, int height)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga72ef4687a3482e14b240aaa9f1bcd04a}{on\+Key}} (int key, int scancode, int action, int mods)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga6dc03e47006ebceab94ec38b97bf6a94}{on\+Mouse\+Button}} (int button, int action, int mods)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga4c36bc30a79b6c1e639e55be32464d9e}{on\+Scroll}} (double xoffset, double yoffset)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_gae660e62915d3291ac22e24e76bf8c9c2}{on\+Window\+Content\+Scale}} (float xscale, float yscale)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_gaed283ca72fb9adbbe1c005bb6885aa93}{on\+Window\+Focus}} (int focused)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga4524131d8f2e214d458c22607f5db976}{on\+Window\+Iconify}} (int iconified)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_gae80a06974a20af3e5539e283b04bfdf7}{on\+Window\+Maximize}} (int maximized)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga61c9a909d8cd1bbd7eae2b6912d3b711}{on\+Window\+Pos}} (int xpos, int ypos)
+\item 
+virtual void \doxymbox{\hyperlink{group___window_callbacks_ga2e9f717174a30201e8f46dffdffaa78c}{on\+Window\+Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window needs to be redrawn. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 

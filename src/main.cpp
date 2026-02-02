@@ -19,8 +19,24 @@ struct Vertex {
 };
 
 class TestWindow : public gla::WindowContext {
+private:
+    int _width, _height;
+
+    bool _resize = false;
+    bool _focus = true;
+
+    void onResize(int width, int height) override {
+        _width = width;
+        _height = height;
+        _resize = true;
+    }
+
+    void onWindowFocus(int focus) override {
+        _focus = focus;
+    }
+
 public:
-    TestWindow(int width, int height, const char* name) : gla::WindowContext(width, height, name) {}
+    TestWindow(int width, int height, const char* name) : _width(width), _height(height), gla::WindowContext(width, height, name) {}
 
     void run() override {
         useContext();
@@ -55,11 +71,19 @@ public:
 
         while (!shouldClose())
         {
+            if (_resize) {
+                glViewport(0, 0, _width, _height);
+                _resize = false;
+            }
+
             GL_CALL(glClear(GL_COLOR_BUFFER_BIT));
 
             auto duration = start - std::chrono::system_clock::now();
             float val = (std::sin(std::chrono::duration_cast<std::chrono::milliseconds>(duration).count() / 1000.0f) + 1) / 2.0f;
-            program["uColor"] = glm::vec4(1.0f, val, val, 1.0f);
+            if (_focus)
+                program["uColor"] = glm::vec4(1.0f, val, val, 1.0f);
+            else
+                program["uColor"] = glm::vec4(val, 1.0f, val, 1.0f);
 
             GL_CALL(glDrawArrays(GL_TRIANGLES, 0, (int)positions.size()));
 

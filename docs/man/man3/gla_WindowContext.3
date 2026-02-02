@@ -51,6 +51,58 @@ gla::WindowContext \- An abstract class to contain an window based application\&
 .RI "void \fBswapBuffers\fP ()"
 .br
 .RI "Swaps the display buffers\&. "
+.ti -1c
+.RI "virtual void \fBonResize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "virtual void \fBonClose\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonChar\fP (unsigned int codepoint)"
+.br
+.ti -1c
+.RI "virtual void \fBonCharMods\fP (unsigned int codepoint, int mods)"
+.br
+.ti -1c
+.RI "virtual void \fBonCursorEnter\fP (int entered)"
+.br
+.ti -1c
+.RI "virtual void \fBonCursorPos\fP (double xpos, double ypos)"
+.br
+.ti -1c
+.RI "virtual void \fBonDrop\fP (int count, const char **paths)"
+.br
+.ti -1c
+.RI "virtual void \fBonFramebufferSize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "virtual void \fBonKey\fP (int key, int scancode, int action, int mods)"
+.br
+.ti -1c
+.RI "virtual void \fBonMouseButton\fP (int button, int action, int mods)"
+.br
+.ti -1c
+.RI "virtual void \fBonScroll\fP (double xoffset, double yoffset)"
+.br
+.ti -1c
+.RI "virtual void \fBonWindowContentScale\fP (float xscale, float yscale)"
+.br
+.ti -1c
+.RI "virtual void \fBonWindowFocus\fP (int focused)"
+.br
+.ti -1c
+.RI "virtual void \fBonWindowIconify\fP (int iconified)"
+.br
+.ti -1c
+.RI "virtual void \fBonWindowMaximize\fP (int maximized)"
+.br
+.ti -1c
+.RI "virtual void \fBonWindowPos\fP (int xpos, int ypos)"
+.br
+.ti -1c
+.RI "virtual void \fBonWindowRefresh\fP ()"
+.br
+.RI "Called when the window needs to be redrawn\&. "
 .in -1c
 .SS "Protected Attributes"
 

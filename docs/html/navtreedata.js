@@ -28,6 +28,7 @@ var NAVTREE =
     [ "Introduction", "d8/d0d/md_inc_2_g_l_a_2mainpage.html", [
       [ "Recommended Setup", "d8/d0d/md_inc_2_g_l_a_2mainpage.html#autotoc_md1", null ]
     ] ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -60,7 +61,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d1/dc3/classgla_1_1_shader.html#a67aa6e6e65e7252eb236e15b4e8e7e11",
-"d7/df0/namespacegla.html#a2a352da354cf3e19ca3d50d32811d801ad35523d81610cee8b87cdac1853ad51f"
+"d7/df0/namespacegla.html#a04224fa648564f5d2de7fb96b722c068"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

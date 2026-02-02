@@ -1,0 +1,116 @@
+.TH "WindowCallbacks" 3 "OpenGL Abstraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WindowCallbacks \- Window Callback Virtual Methods
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onResize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onClose\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onChar\fP (unsigned int codepoint)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onCharMods\fP (unsigned int codepoint, int mods)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onCursorEnter\fP (int entered)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onCursorPos\fP (double xpos, double ypos)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onDrop\fP (int count, const char **paths)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onFramebufferSize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onKey\fP (int key, int scancode, int action, int mods)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onMouseButton\fP (int button, int action, int mods)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onScroll\fP (double xoffset, double yoffset)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onWindowContentScale\fP (float xscale, float yscale)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onWindowFocus\fP (int focused)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onWindowIconify\fP (int iconified)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onWindowMaximize\fP (int maximized)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onWindowPos\fP (int xpos, int ypos)"
+.br
+.ti -1c
+.RI "virtual void \fBgla::WindowContext::onWindowRefresh\fP ()"
+.br
+.RI "Called when the window needs to be redrawn\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Virtual methods to override for window events\&.
+
+.PP
+\fBWarning\fP
+.RS 4
+These are callbacks, so their execution time is not guaranteed\&. Modifying global state within them (e\&.g\&., calling useContext or binding a \fBBuffer\fP) may cause undefined behavior\&. Use a flag to control or defer such changes\&. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "virtual void gla::WindowContext::onChar (unsigned int codepoint)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when a Unicode character is input\&. 
+.SS "virtual void gla::WindowContext::onCharMods (unsigned int codepoint, int mods)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when a character with modifiers is input\&. 
+.SS "virtual void gla::WindowContext::onClose ()\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window is requested to close\&. 
+.SS "virtual void gla::WindowContext::onCursorEnter (int entered)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the cursor enters or leaves the window\&. 
+.SS "virtual void gla::WindowContext::onCursorPos (double xpos, double ypos)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the cursor moves\&. 
+.SS "virtual void gla::WindowContext::onDrop (int count, const char ** paths)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when files are dropped on the window\&. 
+.SS "virtual void gla::WindowContext::onFramebufferSize (int width, int height)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when framebuffer size changes\&. 
+.SS "virtual void gla::WindowContext::onKey (int key, int scancode, int action, int mods)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when a key is pressed, repeated, or released\&. 
+.SS "virtual void gla::WindowContext::onMouseButton (int button, int action, int mods)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when a mouse button is pressed or released\&. 
+.SS "virtual void gla::WindowContext::onResize (int width, int height)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window is resized\&. 
+.SS "virtual void gla::WindowContext::onScroll (double xoffset, double yoffset)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the scroll wheel is used\&. 
+.SS "virtual void gla::WindowContext::onWindowContentScale (float xscale, float yscale)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window content scale changes\&. 
+.SS "virtual void gla::WindowContext::onWindowFocus (int focused)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window gains or loses focus\&. 
+.SS "virtual void gla::WindowContext::onWindowIconify (int iconified)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window is iconified or restored\&. 
+.SS "virtual void gla::WindowContext::onWindowMaximize (int maximized)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window is maximized or restored\&. 
+.SS "virtual void gla::WindowContext::onWindowPos (int xpos, int ypos)\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+Called when the window position changes\&. 
+.SS "virtual void gla::WindowContext::onWindowRefresh ()\fR [inline]\fP, \fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Called when the window needs to be redrawn\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenGL Abstraction from the source code\&.
